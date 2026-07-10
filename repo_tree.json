@@ -1,0 +1,87 @@
+{
+  "sha": "3e10ecbde942ff0d5d6ed0e9f5caa847cf7beff2",
+  "url": "https://api.github.com/repos/michaeljb/legendary-complete-card-txt/git/trees/3e10ecbde942ff0d5d6ed0e9f5caa847cf7beff2",
+  "tree": [
+    {
+      "path": "0_op.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4679f6c5c79f79ba8a8e1567e7aa3aab32f7d1a",
+      "size": 4551,
+      "url": "https://api.github.com/repos/michaeljb/legendary-complete-card-txt/git/blobs/b4679f6c5c79f79ba8a8e1567e7aa3aab32f7d1a"
+    },
+    {
+      "path": "1_starting_and_setup_cards.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef270d594f76cda23f145fdd6d192558ac9fd09f",
+      "size": 14365,
+      "url": "https://api.github.com/repos/michaeljb/legendary-complete-card-txt/git/blobs/ef270d594f76cda23f145fdd6d192558ac9fd09f"
+    },
+    {
+      "path": "2_heroes_and_allies.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66da8ab3f98a9a9225f1f8cdb73cb781c51b5da3",
+      "size": 218045,
+      "url": "https://api.github.com/repos/michaeljb/legendary-complete-card-txt/git/blobs/66da8ab3f98a9a9225f1f8cdb73cb781c51b5da3"
+    },
+    {
+      "path": "3_schemes_and_plots.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "721b28cb8ea68517e3c6827a103c738da15c88f8",
+      "size": 50314,
+      "url": "https://api.github.com/repos/michaeljb/legendary-complete-card-txt/git/blobs/721b28cb8ea68517e3c6827a103c738da15c88f8"
+    },
+    {
+      "path": "4_masterminds_and_commanders.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa3315dc9cf35326e0d714f4d17642dda1f8158c",
+      "size": 67067,
+      "url": "https://api.github.com/repos/michaeljb/legendary-complete-card-txt/git/blobs/fa3315dc9cf35326e0d714f4d17642dda1f8158c"
+    },
+    {
+      "path": "5_villain_and_adversary_groups.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2866a408ddfaa4ca6739b99e91e76dcff72ac4d",
+      "size": 86091,
+      "url": "https://api.github.com/repos/michaeljb/legendary-complete-card-txt/git/blobs/d2866a408ddfaa4ca6739b99e91e76dcff72ac4d"
+    },
+    {
+      "path": "6_henchmen_and_backup.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "891cf0a0b491cc7dd038b767534d4c4b5495ef13",
+      "size": 6207,
+      "url": "https://api.github.com/repos/michaeljb/legendary-complete-card-txt/git/blobs/891cf0a0b491cc7dd038b767534d4c4b5495ef13"
+    },
+    {
+      "path": "7_ambitions.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74960f9800e297dae8af9894b9860888c357ce35",
+      "size": 8462,
+      "url": "https://api.github.com/repos/michaeljb/legendary-complete-card-txt/git/blobs/74960f9800e297dae8af9894b9860888c357ce35"
+    },
+    {
+      "path": "8_keywords.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bef20b8477415eef143bf1eceed51cd2e415b53",
+      "size": 52927,
+      "url": "https://api.github.com/repos/michaeljb/legendary-complete-card-txt/git/blobs/7bef20b8477415eef143bf1eceed51cd2e415b53"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd53b122f01a6ac3c6da8c8fa6b9edfd5ae2b86c",
+      "size": 293,
+      "url": "https://api.github.com/repos/michaeljb/legendary-complete-card-txt/git/blobs/dd53b122f01a6ac3c6da8c8fa6b9edfd5ae2b86c"
+    }
+  ],
+  "truncated": false
+}

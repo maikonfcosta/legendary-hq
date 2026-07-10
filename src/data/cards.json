@@ -1,0 +1,3863 @@
+{
+  "expansions": [
+    {
+      "id": "core",
+      "name": "Core Set",
+      "image": "Core+Set.jpg"
+    },
+    {
+      "id": "core_2nd",
+      "name": "Core Set (2nd Edition)",
+      "image": "Core+Set+2nd+Edition+Box+Art.PNG"
+    },
+    {
+      "id": "dark_city",
+      "name": "Dark City",
+      "image": "Dark+City.jpg"
+    },
+    {
+      "id": "fantastic_four",
+      "name": "Fantastic Four",
+      "image": "Fantastic+Four.jpg"
+    },
+    {
+      "id": "paint_the_town_red",
+      "name": "Paint the Town Red",
+      "image": "Paint+the+Town+Red.jpg"
+    },
+    {
+      "id": "villains",
+      "name": "Villains",
+      "image": "Villains.jpg"
+    },
+    {
+      "id": "guardians",
+      "name": "Guardians of the Galaxy",
+      "image": "Guardians+of+the+Galaxy.jpg"
+    },
+    {
+      "id": "fear_itself",
+      "name": "Fear Itself",
+      "image": "Fear+Itself.jpg"
+    },
+    {
+      "id": "secret_wars_1",
+      "name": "Secret Wars, Vol 1",
+      "image": "Secret+Wars+Vol+1.jpg"
+    },
+    {
+      "id": "secret_wars_2",
+      "name": "Secret Wars, Vol 2",
+      "image": "Secret+Wars+Vol+2.jpg"
+    },
+    {
+      "id": "cap_75",
+      "name": "Captain America 75th",
+      "image": "Captain+America+75.jpg"
+    },
+    {
+      "id": "civil_war",
+      "name": "Civil War",
+      "image": "Civil+War.jpg"
+    },
+    {
+      "id": "deadpool",
+      "name": "Deadpool",
+      "image": "Deadpool.jpg"
+    },
+    {
+      "id": "noir",
+      "name": "Noir",
+      "image": "Noir.jpg"
+    },
+    {
+      "id": "xmen",
+      "name": "X-Men",
+      "image": "X-Men.jpg"
+    },
+    {
+      "id": "spiderman_homecoming",
+      "name": "Spider-Man Homecoming",
+      "image": "MCU+Spiderman+Homecoming.jpg"
+    },
+    {
+      "id": "champions",
+      "name": "Champions",
+      "image": "Champions.jpg"
+    },
+    {
+      "id": "world_war_hulk",
+      "name": "World War Hulk",
+      "image": "World+War+Hulk.jpg"
+    },
+    {
+      "id": "phase_1",
+      "name": "Marvel Studios Phase 1",
+      "image": "MCU+Phase+1.jpg"
+    },
+    {
+      "id": "ant_man",
+      "name": "Ant-Man",
+      "image": "Ant-Man.jpg"
+    },
+    {
+      "id": "venom",
+      "name": "Venom",
+      "image": "Venom.jpg"
+    },
+    {
+      "id": "dimensions",
+      "name": "Dimensions",
+      "image": "Dimensions.jpg"
+    },
+    {
+      "id": "revelations",
+      "name": "Revelations",
+      "image": "Revelations.jpg"
+    },
+    {
+      "id": "shield",
+      "name": "S.H.I.E.L.D.",
+      "image": "SHIELD.jpg"
+    },
+    {
+      "id": "heroes_of_asgard",
+      "name": "Heroes of Asgard",
+      "image": "Heroes+of+Asgard.jpg"
+    },
+    {
+      "id": "new_mutants",
+      "name": "The New Mutants",
+      "image": "New+Mutants.jpg"
+    },
+    {
+      "id": "into_the_cosmos",
+      "name": "Into the Cosmos",
+      "image": "Into+the+Cosmos.jpg"
+    },
+    {
+      "id": "realm_of_kings",
+      "name": "Realm of Kings",
+      "image": "Realm+of+Kings.jpg"
+    },
+    {
+      "id": "annihilation",
+      "name": "Annihilation",
+      "image": "Annihilation.jpg"
+    },
+    {
+      "id": "messiah_complex",
+      "name": "Messiah Complex",
+      "image": "Messiah+Complex.jpg"
+    },
+    {
+      "id": "doctor_strange",
+      "name": "Doctor Strange",
+      "image": "Doctor+Strange.jpg"
+    },
+    {
+      "id": "mcu_guardians",
+      "name": "MCU Guardians of the Galaxy",
+      "image": "MCU+Guardians+of+the+Galaxy.jpg"
+    },
+    {
+      "id": "black_panther",
+      "name": "Black Panther",
+      "image": "Black+Panther.jpg"
+    },
+    {
+      "id": "black_widow",
+      "name": "Black Widow",
+      "image": "Black+Widow.jpg"
+    },
+    {
+      "id": "infinity_saga",
+      "name": "The Infinity Saga",
+      "image": "MCU+Infinity+Saga.jpg"
+    },
+    {
+      "id": "midnight_sons",
+      "name": "Midnight Sons",
+      "image": "Midnight+Sons.jpg"
+    },
+    {
+      "id": "ant_man_wasp",
+      "name": "Ant-Man & Wasp",
+      "image": "ant-man+and+the+wasp+ad.png"
+    },
+    {
+      "id": "2099",
+      "name": "2099",
+      "image": "box-legendary2099+jpeg.jpg"
+    },
+    {
+      "id": "weapon_x",
+      "name": "Weapon X",
+      "image": "weapon+x+box.jpg"
+    },
+    {
+      "id": "what_if",
+      "name": "What If...?",
+      "image": "What+If+available+now.jpg"
+    }
+  ],
+  "masterminds": [
+    {
+      "id": "dr_doom",
+      "name": "Dr. Doom",
+      "alwaysLeads": "Doombot Legion",
+      "expansion": "core"
+    },
+    {
+      "id": "loki",
+      "name": "Loki",
+      "alwaysLeads": "Enemies of Asgard",
+      "expansion": "core"
+    },
+    {
+      "id": "magneto",
+      "name": "Magneto",
+      "alwaysLeads": "Brotherhood",
+      "expansion": "core"
+    },
+    {
+      "id": "red_skull",
+      "name": "Red Skull",
+      "alwaysLeads": "HYDRA",
+      "expansion": "core"
+    },
+    {
+      "id": "apocalypse",
+      "name": "Apocalypse",
+      "alwaysLeads": "Four Horsemen",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "kingpin",
+      "name": "Kingpin",
+      "alwaysLeads": "Streets of New York",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "mephisto",
+      "name": "Mephisto",
+      "alwaysLeads": "Underworld",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "mr_sinister",
+      "name": "Mr. Sinister",
+      "alwaysLeads": "Marauders",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "stryfe",
+      "name": "Stryfe",
+      "alwaysLeads": "MLF",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "galactus",
+      "name": "Galactus",
+      "alwaysLeads": "Heralds of Galactus",
+      "expansion": "fantastic_four"
+    },
+    {
+      "id": "mole_man",
+      "name": "Mole Man",
+      "alwaysLeads": "Subterranea",
+      "expansion": "fantastic_four"
+    },
+    {
+      "id": "carnage",
+      "name": "Carnage",
+      "alwaysLeads": "Maximum Carnage",
+      "expansion": "paint_the_town_red"
+    },
+    {
+      "id": "mysterio",
+      "name": "Mysterio",
+      "alwaysLeads": "Sinister Six",
+      "expansion": "paint_the_town_red"
+    },
+    {
+      "id": "dr_strange",
+      "name": "Dr. Strange",
+      "alwaysLeads": "Defenders.",
+      "expansion": "villains"
+    },
+    {
+      "id": "nick_fury",
+      "name": "Nick Fury",
+      "alwaysLeads": "Avengers.",
+      "expansion": "villains"
+    },
+    {
+      "id": "odin",
+      "name": "Odin",
+      "alwaysLeads": "Asgardian Warriors.",
+      "expansion": "villains"
+    },
+    {
+      "id": "professor_x",
+      "name": "Professor X",
+      "alwaysLeads": "X-men First Class.",
+      "expansion": "villains"
+    },
+    {
+      "id": "supreme_intelligence_of_the_kree",
+      "name": "Supreme Intelligence of the Kree",
+      "alwaysLeads": "Kree Starforce",
+      "expansion": "guardians"
+    },
+    {
+      "id": "thanos",
+      "name": "Thanos",
+      "alwaysLeads": "Infinity Gems",
+      "expansion": "guardians"
+    },
+    {
+      "id": "uru_enchanted_iron_man",
+      "name": "Uru-Enchanted Iron Man",
+      "alwaysLeads": "The Mighty.",
+      "expansion": "fear_itself"
+    },
+    {
+      "id": "madelyne_pryor_goblin_queen",
+      "name": "Madelyne Pryor, Goblin Queen",
+      "alwaysLeads": "Limbo",
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "nimrod_super_sentinel",
+      "name": "Nimrod, Super Sentinel",
+      "alwaysLeads": "Sentinel Territories",
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "wasteland_hulk",
+      "name": "Wasteland Hulk",
+      "alwaysLeads": "Wasteland",
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "zombie_green_goblin",
+      "name": "Zombie Green Goblin",
+      "alwaysLeads": "The Deadlands",
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "immortal_emperor_zheng_zhu",
+      "name": "Immortal Emperor Zheng-Zhu",
+      "alwaysLeads": "K'un-Lun",
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "king_hyperion",
+      "name": "King Hyperion",
+      "alwaysLeads": "Utopolis",
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "shiklah_the_demon_bride",
+      "name": "Shiklah, the Demon Bride",
+      "alwaysLeads": "Monster Metropolis",
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "spider_queen",
+      "name": "Spider-Queen",
+      "alwaysLeads": "Spider-Infected",
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "arnim_zola",
+      "name": "Arnim Zola",
+      "alwaysLeads": "Zola's Creations",
+      "expansion": "cap_75"
+    },
+    {
+      "id": "baron_heinrich_zemo",
+      "name": "Baron Heinrich Zemo",
+      "alwaysLeads": "Masters of Evil (WWII)",
+      "expansion": "cap_75"
+    },
+    {
+      "id": "authoritarian_iron_man",
+      "name": "Authoritarian Iron Man",
+      "alwaysLeads": "Superhuman Registration Act",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "baron_helmut_zemo",
+      "name": "Baron Helmut Zemo",
+      "alwaysLeads": "Thunderbolts",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "maria_hill_director_of_s_h_i_e_l_d",
+      "name": "Maria Hill, Director of S.H.I.E.L.D.",
+      "alwaysLeads": "S.H.I.E.L.D. Elite.",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "misty_knight",
+      "name": "Misty Knight",
+      "alwaysLeads": "Heroes for Hire",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "ragnarok",
+      "name": "Ragnarok",
+      "alwaysLeads": "Registration Enforcers",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "evil_deadpool",
+      "name": "Evil Deadpool",
+      "alwaysLeads": "Evil Deadpool Corpse",
+      "expansion": "deadpool"
+    },
+    {
+      "id": "macho_gomez",
+      "name": "Macho Gomez",
+      "alwaysLeads": "[/b] Deadpool's \"Friends\"",
+      "expansion": "deadpool"
+    },
+    {
+      "id": "charles_xavier",
+      "name": "Charles Xavier",
+      "alwaysLeads": "X-Men Noir",
+      "expansion": "noir"
+    },
+    {
+      "id": "the_goblin_underworld_boss",
+      "name": "The Goblin, Underworld Boss",
+      "alwaysLeads": "Goblin's Freak Show",
+      "expansion": "noir"
+    },
+    {
+      "id": "arcade",
+      "name": "Arcade",
+      "alwaysLeads": "Murderworld",
+      "expansion": "xmen"
+    },
+    {
+      "id": "epic_arcade",
+      "name": "Epic Arcade",
+      "alwaysLeads": "Murderworld",
+      "expansion": "xmen"
+    },
+    {
+      "id": "dark_phoenix",
+      "name": "Dark Phoenix",
+      "alwaysLeads": "Hellfire Club",
+      "expansion": "xmen"
+    },
+    {
+      "id": "epic_dark_phoenix",
+      "name": "Epic Dark Phoenix",
+      "alwaysLeads": "Hellfire Club",
+      "expansion": "xmen"
+    },
+    {
+      "id": "deathbird",
+      "name": "Deathbird",
+      "alwaysLeads": "Shi'ar Imperial Guard and a Shi'ar Henchmen Group.",
+      "expansion": "xmen"
+    },
+    {
+      "id": "epic_deathbird",
+      "name": "Epic Deathbird",
+      "alwaysLeads": "Shi'ar Imperial Guard and a Shi'ar Henchmen Group.",
+      "expansion": "xmen"
+    },
+    {
+      "id": "mojo",
+      "name": "Mojo",
+      "alwaysLeads": "Mojoverse",
+      "expansion": "xmen"
+    },
+    {
+      "id": "epic_mojo",
+      "name": "Epic Mojo",
+      "alwaysLeads": "Mojoverse",
+      "expansion": "xmen"
+    },
+    {
+      "id": "onslaught",
+      "name": "Onslaught",
+      "alwaysLeads": "Dark Descendants",
+      "expansion": "xmen"
+    },
+    {
+      "id": "epic_onslaught",
+      "name": "Epic Onslaught",
+      "alwaysLeads": "Dark Descendants",
+      "expansion": "xmen"
+    },
+    {
+      "id": "shadow_king",
+      "name": "Shadow King",
+      "alwaysLeads": "Shadow-X",
+      "expansion": "xmen"
+    },
+    {
+      "id": "epic_shadow_king",
+      "name": "Epic Shadow King",
+      "alwaysLeads": "Shadow-X",
+      "expansion": "xmen"
+    },
+    {
+      "id": "adrian_toomes",
+      "name": "Adrian Toomes",
+      "alwaysLeads": "Salvagers",
+      "expansion": "spiderman_homecoming"
+    },
+    {
+      "id": "epic_adrian_toomes",
+      "name": "Epic Adrian Toomes",
+      "alwaysLeads": "Vulture Tech",
+      "expansion": "spiderman_homecoming"
+    },
+    {
+      "id": "fin_fang_foom",
+      "name": "Fin Fang Foom",
+      "alwaysLeads": "Monsters Unleashed",
+      "expansion": "champions"
+    },
+    {
+      "id": "epic_fin_fang_foom",
+      "name": "Epic Fin Fang Foom",
+      "alwaysLeads": "Monsters Unleashed",
+      "expansion": "champions"
+    },
+    {
+      "id": "pagliacci",
+      "name": "Pagliacci",
+      "alwaysLeads": "Wrecking Crew",
+      "expansion": "champions"
+    },
+    {
+      "id": "epic_pagliacci",
+      "name": "Epic Pagliacci",
+      "alwaysLeads": "Wrecking Crew",
+      "expansion": "champions"
+    },
+    {
+      "id": "general_ross",
+      "name": "General Ross",
+      "alwaysLeads": "Code Red",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "illuminati_secret_society",
+      "name": "Illuminati, Secret Society",
+      "alwaysLeads": "Illuminati.",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "king_hulk_sakaarson",
+      "name": "King Hulk, Sakaarson",
+      "alwaysLeads": "Warbound.",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "m_o_d_o_k",
+      "name": "M.O.D.O.K.",
+      "alwaysLeads": "Intelligencia.",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "the_red_king",
+      "name": "The Red King",
+      "alwaysLeads": "Sakaar Imperial Guard.",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "the_sentry",
+      "name": "The Sentry",
+      "alwaysLeads": "Aspects of the Void.",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "iron_monger",
+      "name": "Iron Monger",
+      "alwaysLeads": "[/b] Iron Foes",
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "loki",
+      "name": "Loki",
+      "alwaysLeads": "Enemies of Asgard",
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "red_skull",
+      "name": "Red Skull",
+      "alwaysLeads": "HYDRA",
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "ultron",
+      "name": "Ultron",
+      "alwaysLeads": "[/b] Ultron's Legacy",
+      "expansion": "ant_man"
+    },
+    {
+      "id": "epic_ultron",
+      "name": "Epic Ultron",
+      "alwaysLeads": "[/b] Ultron's Legacy",
+      "expansion": "ant_man"
+    },
+    {
+      "id": "morgana_le_fay",
+      "name": "Morgana Le Fay",
+      "alwaysLeads": "[/b] Queen's Vengeance",
+      "expansion": "ant_man"
+    },
+    {
+      "id": "epic_morgan_le_fay",
+      "name": "Epic Morgan Le Fay",
+      "alwaysLeads": "[/b] Queen's Vengeance",
+      "expansion": "ant_man"
+    },
+    {
+      "id": "hybrid",
+      "name": "Hybrid",
+      "alwaysLeads": "[/b] Life Foundation",
+      "expansion": "venom"
+    },
+    {
+      "id": "epic_hybrid",
+      "name": "Epic Hybrid",
+      "alwaysLeads": "[/b] Life Foundation",
+      "expansion": "venom"
+    },
+    {
+      "id": "poison_thanos",
+      "name": "Poison Thanos",
+      "alwaysLeads": "[/b] Poisons",
+      "expansion": "venom"
+    },
+    {
+      "id": "epic_poison_thanos",
+      "name": "Epic Poison Thanos",
+      "alwaysLeads": "[/b] Poisons",
+      "expansion": "venom"
+    },
+    {
+      "id": "j_jonah_jameson",
+      "name": "J. Jonah Jameson",
+      "alwaysLeads": "[/b] Spider-Slayers",
+      "expansion": "dimensions"
+    },
+    {
+      "id": "epic_j_jonah_jameson",
+      "name": "Epic J. Jonah Jameson",
+      "alwaysLeads": "[/b] Spider-Slayers",
+      "expansion": "dimensions"
+    }
+  ],
+  "schemes": [
+    {
+      "id": "the_legacy_virus",
+      "name": "The Legacy Virus",
+      "expansion": "core"
+    },
+    {
+      "id": "midtown_bank_robbery",
+      "name": "Midtown Bank Robbery",
+      "expansion": "core"
+    },
+    {
+      "id": "negative_zone_prison_breakout",
+      "name": "Negative Zone Prison Breakout",
+      "expansion": "core"
+    },
+    {
+      "id": "portals_to_the_dark_dimension",
+      "name": "Portals to the Dark Dimension",
+      "expansion": "core"
+    },
+    {
+      "id": "replace_earth_s_leaders_with_killbots",
+      "name": "Replace Earth's Leaders with Killbots",
+      "expansion": "core"
+    },
+    {
+      "id": "secret_invasion_of_the_skrull_shapeshifters",
+      "name": "Secret Invasion of the Skrull Shapeshifters",
+      "expansion": "core"
+    },
+    {
+      "id": "super_hero_civil_war",
+      "name": "Super Hero Civil War",
+      "expansion": "core"
+    },
+    {
+      "id": "unleash_the_power_of_the_cosmic_cube",
+      "name": "Unleash the Power of the Cosmic Cube",
+      "expansion": "core"
+    },
+    {
+      "id": "capture_baby_hope",
+      "name": "Capture Baby Hope",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "detonate_the_helicarrier",
+      "name": "Detonate the Helicarrier",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "massive_earthquake_generator",
+      "name": "Massive Earthquake Generator",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "organized_crime_wave",
+      "name": "Organized Crime Wave",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "save_humanity",
+      "name": "Save Humanity",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "steal_the_weaponized_plutonium",
+      "name": "Steal the Weaponized Plutonium",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "transform_citizens_into_demons",
+      "name": "Transform Citizens Into Demons",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "x_cutioner_s_song",
+      "name": "X-Cutioner's Song",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "bathe_the_earth_in_cosmic_rays",
+      "name": "Bathe the Earth in Cosmic Rays",
+      "expansion": "fantastic_four"
+    },
+    {
+      "id": "flood_the_planet_with_melted_glaciers",
+      "name": "Flood the Planet with Melted Glaciers",
+      "expansion": "fantastic_four"
+    },
+    {
+      "id": "invincible_force_field",
+      "name": "Invincible Force Field",
+      "expansion": "fantastic_four"
+    },
+    {
+      "id": "pull_reality_into_the_negative_zone",
+      "name": "Pull Reality Into the Negative Zone",
+      "expansion": "fantastic_four"
+    },
+    {
+      "id": "the_clone_saga",
+      "name": "The Clone Saga",
+      "expansion": "paint_the_town_red"
+    },
+    {
+      "id": "invade_the_daily_bugle_news_hq",
+      "name": "Invade the Daily Bugle News HQ",
+      "expansion": "paint_the_town_red"
+    },
+    {
+      "id": "splice_humans_with_spider_dna",
+      "name": "Splice Humans with Spider DNA",
+      "expansion": "paint_the_town_red"
+    },
+    {
+      "id": "weave_a_web_of_lies",
+      "name": "Weave a Web of Lies",
+      "expansion": "paint_the_town_red"
+    },
+    {
+      "id": "build_an_underground_megavault_prison",
+      "name": "Build an Underground MegaVault Prison",
+      "expansion": "villains"
+    },
+    {
+      "id": "cage_villains_in_power_suppressing_cells",
+      "name": "Cage Villains in Power-Suppressing Cells",
+      "expansion": "villains"
+    },
+    {
+      "id": "crown_thor_king_of_asgard",
+      "name": "Crown Thor King of Asgard",
+      "expansion": "villains"
+    },
+    {
+      "id": "crush_hydra",
+      "name": "Crush HYDRA",
+      "expansion": "villains"
+    },
+    {
+      "id": "graduation_at_xavier_s_x_academy",
+      "name": "Graduation at Xavier's X-Academy",
+      "expansion": "villains"
+    },
+    {
+      "id": "infiltrate_the_lair_with_spies",
+      "name": "Infiltrate the Lair with Spies",
+      "expansion": "villains"
+    },
+    {
+      "id": "mass_produce_war_machine_armor",
+      "name": "Mass Produce War Machine Armor",
+      "expansion": "villains"
+    },
+    {
+      "id": "resurrect_heroes_with_norn_stones",
+      "name": "Resurrect Heroes with Norn Stones",
+      "expansion": "villains"
+    },
+    {
+      "id": "forge_the_infinity_gauntlet",
+      "name": "Forge the Infinity Gauntlet",
+      "expansion": "guardians"
+    },
+    {
+      "id": "intergalactic_kree_nega_bomb",
+      "name": "Intergalactic Kree Nega-Bomb",
+      "expansion": "guardians"
+    },
+    {
+      "id": "the_kree_skrull_war",
+      "name": "The Kree-Skrull War",
+      "expansion": "guardians"
+    },
+    {
+      "id": "unite_the_shards",
+      "name": "Unite the Shards",
+      "expansion": "guardians"
+    },
+    {
+      "id": "fear_itself",
+      "name": "Fear Itself",
+      "expansion": "fear_itself"
+    },
+    {
+      "id": "last_stand_at_avengers_tower",
+      "name": "Last Stand at Avengers Tower",
+      "expansion": "fear_itself"
+    },
+    {
+      "id": "the_traitor",
+      "name": "The Traitor",
+      "expansion": "fear_itself"
+    },
+    {
+      "id": "build_an_army_of_annihilation",
+      "name": "Build an Army of Annihilation",
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "corrupt_the_next_generation_of_heroes",
+      "name": "Corrupt the Next Generation of Heroes",
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "crush_them_with_my_bare_hands",
+      "name": "Crush Them With My Bare Hands",
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "dark_alliance",
+      "name": "Dark Alliance",
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "fragmented_realities",
+      "name": "Fragmented Realities",
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "master_of_tyrants",
+      "name": "Master of Tyrants",
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "pan_dimensional_plague",
+      "name": "Pan-Dimensional Plague",
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "smash_two_dimensions_together",
+      "name": "Smash Two Dimensions Together",
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "deadlands_hordes_charge_the_wall",
+      "name": "Deadlands Hordes Charge the Wall",
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "enthrone_the_barons_of_battleworld",
+      "name": "Enthrone the Barons of Battleworld",
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "the_fountain_of_eternal_life",
+      "name": "The Fountain of Eternal Life",
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "the_god_emperor_of_battleworld",
+      "name": "The God-Emperor of Battleworld",
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "the_mark_of_khonshu",
+      "name": "The Mark of Khonshu",
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "master_the_mysteries_of_kung_fu",
+      "name": "Master the Mysteries of Kung-Fu",
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "secret_wars",
+      "name": "Secret Wars",
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "sinister_ambitions",
+      "name": "Sinister Ambitions",
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "brainwash_the_military",
+      "name": "Brainwash the Military",
+      "expansion": "cap_75"
+    },
+    {
+      "id": "change_the_outcome_of_wwii",
+      "name": "Change the Outcome of WWII",
+      "expansion": "cap_75"
+    },
+    {
+      "id": "go_back_in_time_to_slay_heroes_ancestors",
+      "name": "Go Back in Time to Slay Heroes' Ancestors",
+      "expansion": "cap_75"
+    },
+    {
+      "id": "the_unbreakable_enigma_code",
+      "name": "The Unbreakable Enigma Code",
+      "expansion": "cap_75"
+    },
+    {
+      "id": "avengers_vs_x_men",
+      "name": "Avengers vs. X-Men",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "dark_reign_of_h_a_m_m_e_r_officers",
+      "name": "Dark Reign of H.A.M.M.E.R. Officers",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "epic_super_hero_civil_war",
+      "name": "Epic Super Hero Civil War",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "imprison_unregistered_superhumans",
+      "name": "Imprison Unregistered Superhumans",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "nitro_the_supervillain_threatens_crowds",
+      "name": "Nitro the Supervillain Threatens Crowds",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "predict_future_crime",
+      "name": "Predict Future Crime",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "reveal_heroes_secret_identities",
+      "name": "Reveal Heroes' Secret Identities",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "united_states_split_by_civil_war",
+      "name": "United States Split by Civil War",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "deadpool_kills_the_marvel_universe",
+      "name": "Deadpool Kills the Marvel Universe",
+      "expansion": "deadpool"
+    },
+    {
+      "id": "deadpool_wants_a_chimichanga",
+      "name": "Deadpool Wants a Chimichanga",
+      "expansion": "deadpool"
+    },
+    {
+      "id": "deadpool_writes_a_scheme",
+      "name": "Deadpool Writes a Scheme",
+      "expansion": "deadpool"
+    },
+    {
+      "id": "everybody_hates_deadpool",
+      "name": "Everybody Hates Deadpool",
+      "expansion": "deadpool"
+    },
+    {
+      "id": "find_the_split_personality_killer",
+      "name": "Find the Split Personality Killer",
+      "expansion": "noir"
+    },
+    {
+      "id": "silence_the_witnesses",
+      "name": "Silence the Witnesses",
+      "expansion": "noir"
+    },
+    {
+      "id": "five_families_of_crime",
+      "name": "Five Families of Crime",
+      "expansion": "noir"
+    },
+    {
+      "id": "hidden_heart_of_darkness",
+      "name": "Hidden Heart of Darkness",
+      "expansion": "noir"
+    },
+    {
+      "id": "alien_brood_encounters",
+      "name": "Alien Brood Encounters",
+      "expansion": "xmen"
+    },
+    {
+      "id": "anti_mutant_hatred",
+      "name": "Anti-Mutant Hatred",
+      "expansion": "xmen"
+    },
+    {
+      "id": "the_dark_phoenix_saga",
+      "name": "The Dark Phoenix Saga",
+      "expansion": "xmen"
+    },
+    {
+      "id": "horror_of_horrors",
+      "name": "Horror of Horrors",
+      "expansion": "xmen"
+    },
+    {
+      "id": "mutant_hunting_super_sentinels",
+      "name": "Mutant-Hunting Super Sentinels",
+      "expansion": "xmen"
+    },
+    {
+      "id": "nuclear_armageddon",
+      "name": "Nuclear Armageddon",
+      "expansion": "xmen"
+    },
+    {
+      "id": "televised_deathtraps_of_mojoworld",
+      "name": "Televised Deathtraps of Mojoworld",
+      "expansion": "xmen"
+    },
+    {
+      "id": "x_men_danger_room_goes_berserk",
+      "name": "X-Men Danger Room Goes Berserk",
+      "expansion": "xmen"
+    },
+    {
+      "id": "distract_the_hero",
+      "name": "Distract the Hero",
+      "expansion": "spiderman_homecoming"
+    },
+    {
+      "id": "explosion_at_the_washington_monument",
+      "name": "Explosion at the Washington Monument",
+      "expansion": "spiderman_homecoming"
+    },
+    {
+      "id": "ferry_disaster",
+      "name": "Ferry Disaster",
+      "expansion": "spiderman_homecoming"
+    },
+    {
+      "id": "scavenge_alien_weaponry",
+      "name": "Scavenge Alien Weaponry",
+      "expansion": "spiderman_homecoming"
+    },
+    {
+      "id": "clash_of_the_monsters_unleashed",
+      "name": "Clash of the Monsters Unleashed",
+      "expansion": "champions"
+    },
+    {
+      "id": "divide_and_conquer",
+      "name": "Divide and Conquer",
+      "expansion": "champions"
+    },
+    {
+      "id": "hypnotize_every_human",
+      "name": "Hypnotize Every Human",
+      "expansion": "champions"
+    },
+    {
+      "id": "steal_all_oxygen_on_earth",
+      "name": "Steal All Oxygen on Earth",
+      "expansion": "champions"
+    },
+    {
+      "id": "break_the_planet_asunder",
+      "name": "Break the Planet Asunder",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "cytoplasm_spike_invasion",
+      "name": "Cytoplasm Spike Invasion",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "fall_of_the_hulks",
+      "name": "Fall of the Hulks",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "gladiator_pits_of_sakaar",
+      "name": "Gladiator Pits of Sakaar",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "mutating_gamma_rays",
+      "name": "Mutating Gamma Rays",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "shoot_hulk_into_space",
+      "name": "Shoot Hulk into Space",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "subjugate_with_obedience_disks",
+      "name": "Subjugate with Obedience Disks",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "world_war_hulk",
+      "name": "World War Hulk",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "asgard_under_siege",
+      "name": "Asgard Under Siege",
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "destroy_the_cities_of_earth",
+      "name": "Destroy the Cities of Earth!",
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "enslave_minds_with_the_chitauri_scepter",
+      "name": "Enslave Minds with the Chitauri Scepter",
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "invade_asgard",
+      "name": "Invade Asgard",
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "radioactive_palladium_poisoning",
+      "name": "Radioactive Palladium Poisoning",
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "replace_earth_s_leaders_with_hydra",
+      "name": "Replace Earth's Leaders with HYDRA",
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "super_hero_civil_war",
+      "name": "Super Hero Civil War",
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "unleash_the_power_of_the_cosmic_cube",
+      "name": "Unleash the Power of the Cosmic Cube",
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "age_of_ultron",
+      "name": "Age of Ultron",
+      "expansion": "ant_man"
+    },
+    {
+      "id": "pull_earth_into_medieval_times",
+      "name": "Pull Earth into Medieval Times",
+      "expansion": "ant_man"
+    },
+    {
+      "id": "transform_commuters_into_giant_ants",
+      "name": "Transform Commuters into Giant Ants",
+      "expansion": "ant_man"
+    },
+    {
+      "id": "trap_heroes_in_the_microverse",
+      "name": "Trap Heroes in the Microverse",
+      "expansion": "ant_man"
+    },
+    {
+      "id": "invasion_of_the_venom_symbiotes",
+      "name": "Invasion of the Venom Symbiotes",
+      "expansion": "venom"
+    },
+    {
+      "id": "maximum_carnage",
+      "name": "Maximum Carnage",
+      "expansion": "venom"
+    },
+    {
+      "id": "paralyzing_venom",
+      "name": "Paralyzing Venom",
+      "expansion": "venom"
+    },
+    {
+      "id": "symbiotic_absorption",
+      "name": "Symbiotic Absorption",
+      "expansion": "venom"
+    }
+  ],
+  "villains": [
+    {
+      "id": "brotherhood",
+      "name": "Brotherhood",
+      "expansion": "core"
+    },
+    {
+      "id": "enemies_of_asgard",
+      "name": "Enemies of Asgard",
+      "expansion": "core"
+    },
+    {
+      "id": "hydra",
+      "name": "HYDRA",
+      "expansion": "core"
+    },
+    {
+      "id": "masters_of_evil",
+      "name": "Masters of Evil",
+      "expansion": "core"
+    },
+    {
+      "id": "radiation",
+      "name": "Radiation",
+      "expansion": "core"
+    },
+    {
+      "id": "skrulls",
+      "name": "Skrulls",
+      "expansion": "core"
+    },
+    {
+      "id": "spider_foes",
+      "name": "Spider-Foes",
+      "expansion": "core"
+    },
+    {
+      "id": "emissaries_of_evil",
+      "name": "Emissaries of Evil",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "four_horsemen",
+      "name": "Four Horsemen",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "marauders",
+      "name": "Marauders",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "mlf",
+      "name": "MLF",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "streets_of_new_york",
+      "name": "Streets of New York",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "underworld",
+      "name": "Underworld",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "heralds_of_galactus",
+      "name": "Heralds of Galactus",
+      "expansion": "fantastic_four"
+    },
+    {
+      "id": "subterranea",
+      "name": "Subterranea",
+      "expansion": "fantastic_four"
+    },
+    {
+      "id": "maximum_carnage",
+      "name": "Maximum Carnage",
+      "expansion": "paint_the_town_red"
+    },
+    {
+      "id": "sinister_six",
+      "name": "Sinister Six",
+      "expansion": "paint_the_town_red"
+    },
+    {
+      "id": "avengers",
+      "name": "Avengers",
+      "expansion": "villains"
+    },
+    {
+      "id": "defenders",
+      "name": "Defenders",
+      "expansion": "villains"
+    },
+    {
+      "id": "marvel_knights",
+      "name": "Marvel Knights",
+      "expansion": "villains"
+    },
+    {
+      "id": "spider_friends",
+      "name": "Spider Friends",
+      "expansion": "villains"
+    },
+    {
+      "id": "uncanny_avengers",
+      "name": "Uncanny Avengers",
+      "expansion": "villains"
+    },
+    {
+      "id": "uncanny_x_men",
+      "name": "Uncanny X-Men",
+      "expansion": "villains"
+    },
+    {
+      "id": "x_men_first_class",
+      "name": "X-Men First Class",
+      "expansion": "villains"
+    },
+    {
+      "id": "kree_starforce",
+      "name": "Kree Starforce",
+      "expansion": "guardians"
+    },
+    {
+      "id": "infinity_gems",
+      "name": "Infinity Gems",
+      "expansion": "guardians"
+    },
+    {
+      "id": "the_mighty",
+      "name": "The Mighty",
+      "expansion": "fear_itself"
+    },
+    {
+      "id": "the_deadlands",
+      "name": "The Deadlands",
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "domain_of_apocalypse",
+      "name": "Domain of Apocalypse",
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "limbo",
+      "name": "Limbo",
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "manhattan_earth_1610",
+      "name": "Manhattan (Earth-1610)",
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "sentinel_territories",
+      "name": "Sentinel Territories",
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "wasteland",
+      "name": "Wasteland",
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "deadpool_s_secret_secret_wars",
+      "name": "Deadpool's Secret Secret Wars",
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "guardians_of_knowhere",
+      "name": "Guardians of Knowhere",
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "k_un_lun",
+      "name": "K'un-lun",
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "monster_metropolis",
+      "name": "Monster Metropolis",
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "utopolis",
+      "name": "Utopolis",
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "x_men_92",
+      "name": "X-Men '92",
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "zola_s_creations",
+      "name": "Zola's Creations",
+      "expansion": "cap_75"
+    },
+    {
+      "id": "masters_of_evil_wwii",
+      "name": "Masters of Evil (WWII)",
+      "expansion": "cap_75"
+    },
+    {
+      "id": "csa_special_marshals",
+      "name": "CSA Special Marshals",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "great_lakes_avengers",
+      "name": "Great Lakes Avengers",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "heroes_for_hire",
+      "name": "Heroes for Hire",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "registration_enforcers",
+      "name": "Registration Enforcers",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "s_h_i_e_l_d_elite",
+      "name": "S.H.I.E.L.D. Elite",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "superhuman_registration_act",
+      "name": "Superhuman Registration Act",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "thunderbolts",
+      "name": "Thunderbolts",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "deadpool_s_friends",
+      "name": "Deadpool's \"Friends\"",
+      "expansion": "deadpool"
+    },
+    {
+      "id": "evil_deadpool_corpse",
+      "name": "Evil Deadpool Corpse",
+      "expansion": "deadpool"
+    },
+    {
+      "id": "goblin_s_freak_show",
+      "name": "Goblin's Freak Show",
+      "expansion": "noir"
+    },
+    {
+      "id": "x_men_noir",
+      "name": "X-Men Noir",
+      "expansion": "noir"
+    },
+    {
+      "id": "dark_descendants",
+      "name": "Dark Descendants",
+      "expansion": "xmen"
+    },
+    {
+      "id": "hellfire_club",
+      "name": "Hellfire Club",
+      "expansion": "xmen"
+    },
+    {
+      "id": "mojoverse",
+      "name": "Mojoverse",
+      "expansion": "xmen"
+    },
+    {
+      "id": "murderworld",
+      "name": "Murderworld",
+      "expansion": "xmen"
+    },
+    {
+      "id": "shadow_x",
+      "name": "Shadow-X",
+      "expansion": "xmen"
+    },
+    {
+      "id": "shi_ar_imperial_guard",
+      "name": "Shi'ar Imperial Guard",
+      "expansion": "xmen"
+    },
+    {
+      "id": "sisterhood_of_mutants",
+      "name": "Sisterhood of Mutants",
+      "expansion": "xmen"
+    },
+    {
+      "id": "token_villains",
+      "name": "Token Villains",
+      "expansion": "xmen"
+    },
+    {
+      "id": "salvagers",
+      "name": "Salvagers",
+      "expansion": "spiderman_homecoming"
+    },
+    {
+      "id": "vulture_tech",
+      "name": "Vulture Tech",
+      "expansion": "spiderman_homecoming"
+    },
+    {
+      "id": "monsters_unleashed",
+      "name": "Monsters Unleashed",
+      "expansion": "champions"
+    },
+    {
+      "id": "wrecking_crew",
+      "name": "Wrecking Crew",
+      "expansion": "champions"
+    },
+    {
+      "id": "aspects_of_the_void",
+      "name": "Aspects of the Void",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "code_red",
+      "name": "Code Red",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "illuminati",
+      "name": "Illuminati",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "intelligencia",
+      "name": "Intelligencia",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "sakaar_imperial_guard",
+      "name": "Sakaar Imperial Guard",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "u_foes",
+      "name": "U-Foes",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "warbound",
+      "name": "Warbound",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "chitauri",
+      "name": "Chitauri",
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "enemies_of_asgard",
+      "name": "Enemies of Asgard",
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "gamma_hunters",
+      "name": "Gamma Hunters",
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "hydra",
+      "name": "HYDRA",
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "iron_foes",
+      "name": "Iron Foes",
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "ultron_s_legacy",
+      "name": "Ultron's Legacy",
+      "expansion": "ant_man"
+    },
+    {
+      "id": "queen_s_vengeance",
+      "name": "Queen's Vengeance",
+      "expansion": "ant_man"
+    },
+    {
+      "id": "life_foundation",
+      "name": "Life Foundation",
+      "expansion": "venom"
+    },
+    {
+      "id": "poisons",
+      "name": "Poisons",
+      "expansion": "venom"
+    }
+  ],
+  "henchmen": [
+    {
+      "id": "doombot_legion",
+      "name": "Doombot Legion",
+      "expansion": "core"
+    },
+    {
+      "id": "hand_ninjas",
+      "name": "Hand Ninjas",
+      "expansion": "core"
+    },
+    {
+      "id": "savage_land_mutates",
+      "name": "Savage Land Mutates",
+      "expansion": "core"
+    },
+    {
+      "id": "sentinel",
+      "name": "Sentinel",
+      "expansion": "core"
+    },
+    {
+      "id": "maggia_goons",
+      "name": "Maggia Goons",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "phalanx",
+      "name": "Phalanx",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "asgardian_warriors",
+      "name": "Asgardian Warriors",
+      "expansion": "villains"
+    },
+    {
+      "id": "cops",
+      "name": "Cops",
+      "expansion": "villains"
+    },
+    {
+      "id": "multiple_man",
+      "name": "Multiple Man",
+      "expansion": "villains"
+    },
+    {
+      "id": "s_h_i_e_l_d_assault_squad",
+      "name": "S.H.I.E.L.D. Assault Squad",
+      "expansion": "villains"
+    },
+    {
+      "id": "ghost_racers",
+      "name": "Ghost Racers",
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "m_o_d_o_k_s",
+      "name": "M.O.D.O.K.s",
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "thor_corps",
+      "name": "Thor Corps",
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "khonshu_guardians",
+      "name": "Khonshu Guardians",
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "magma_men",
+      "name": "Magma Men",
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "fateful_resurrection",
+      "name": "Fateful Resurrection",
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "spider_infected",
+      "name": "Spider-Infected",
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "mandroid",
+      "name": "Mandroid",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "cape_killers",
+      "name": "Cape-Killers",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "the_brood",
+      "name": "The Brood",
+      "expansion": "xmen"
+    },
+    {
+      "id": "hellfire_cult",
+      "name": "Hellfire Cult",
+      "expansion": "xmen"
+    },
+    {
+      "id": "sapien_league",
+      "name": "Sapien League",
+      "expansion": "xmen"
+    },
+    {
+      "id": "shi_ar_death_commandos",
+      "name": "Shi'ar Death Commandos",
+      "expansion": "xmen"
+    },
+    {
+      "id": "shi_ar_patrol_craft",
+      "name": "Shi'ar Patrol Craft",
+      "expansion": "xmen"
+    },
+    {
+      "id": "circus_of_crime",
+      "name": "Circus of Crime",
+      "expansion": "3d"
+    },
+    {
+      "id": "spider_slayer",
+      "name": "Spider Slayer",
+      "expansion": "3d"
+    },
+    {
+      "id": "cytoplasm_spikes",
+      "name": "Cytoplasm Spikes",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "death_s_heads",
+      "name": "Death's Heads",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "sakaaran_hivelings",
+      "name": "Sakaaran Hivelings",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "hammer_drone_army",
+      "name": "Hammer Drone Army",
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "hydra_pilots",
+      "name": "HYDRA Pilots",
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "hydra_spies",
+      "name": "HYDRA Spies",
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "ten_rings_fanatics",
+      "name": "Ten Rings Fanatics",
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "circus_of_crime",
+      "name": "Circus of Crime",
+      "expansion": "dimensions"
+    },
+    {
+      "id": "spider_slayer",
+      "name": "Spider-Slayer",
+      "expansion": "dimensions"
+    }
+  ],
+  "heroes": [
+    {
+      "id": "black_widow",
+      "name": "Black Widow",
+      "team": "avengers",
+      "classes": [
+        "covert",
+        "tech"
+      ],
+      "expansion": "core"
+    },
+    {
+      "id": "captain_america",
+      "name": "Captain America",
+      "team": "avengers",
+      "classes": [
+        "instinct",
+        "strength",
+        "tech",
+        "covert"
+      ],
+      "expansion": "core"
+    },
+    {
+      "id": "cyclops",
+      "name": "Cyclops",
+      "team": "x_men",
+      "classes": [
+        "strength",
+        "ranged"
+      ],
+      "expansion": "core"
+    },
+    {
+      "id": "deadpool",
+      "name": "Deadpool",
+      "team": "unaffiliated",
+      "classes": [
+        "tech",
+        "covert",
+        "instinct"
+      ],
+      "expansion": "core"
+    },
+    {
+      "id": "emma_frost",
+      "name": "Emma Frost",
+      "team": "x_men",
+      "classes": [
+        "ranged",
+        "covert",
+        "instinct",
+        "strength"
+      ],
+      "expansion": "core"
+    },
+    {
+      "id": "gambit",
+      "name": "Gambit",
+      "team": "x_men",
+      "classes": [
+        "ranged",
+        "covert",
+        "instinct"
+      ],
+      "expansion": "core"
+    },
+    {
+      "id": "hawkeye",
+      "name": "Hawkeye",
+      "team": "avengers",
+      "classes": [
+        "instinct",
+        "tech"
+      ],
+      "expansion": "core"
+    },
+    {
+      "id": "hulk",
+      "name": "Hulk",
+      "team": "avengers",
+      "classes": [
+        "strength",
+        "instinct"
+      ],
+      "expansion": "core"
+    },
+    {
+      "id": "iron_man",
+      "name": "Iron Man",
+      "team": "avengers",
+      "classes": [
+        "tech",
+        "ranged"
+      ],
+      "expansion": "core"
+    },
+    {
+      "id": "nick_fury",
+      "name": "Nick Fury",
+      "team": "shield",
+      "classes": [
+        "covert",
+        "tech",
+        "strength"
+      ],
+      "expansion": "core"
+    },
+    {
+      "id": "rogue",
+      "name": "Rogue",
+      "team": "x_men",
+      "classes": [
+        "strength",
+        "covert"
+      ],
+      "expansion": "core"
+    },
+    {
+      "id": "spider_man",
+      "name": "Spider-Man",
+      "team": "spider_friends",
+      "classes": [
+        "strength",
+        "instinct",
+        "tech",
+        "covert"
+      ],
+      "expansion": "core"
+    },
+    {
+      "id": "storm",
+      "name": "Storm",
+      "team": "x_men",
+      "classes": [
+        "ranged",
+        "covert"
+      ],
+      "expansion": "core"
+    },
+    {
+      "id": "thor",
+      "name": "Thor",
+      "team": "avengers",
+      "classes": [
+        "strength",
+        "ranged"
+      ],
+      "expansion": "core"
+    },
+    {
+      "id": "wolverine",
+      "name": "Wolverine",
+      "team": "x_men",
+      "classes": [
+        "instinct"
+      ],
+      "expansion": "core"
+    },
+    {
+      "id": "angel_dark_city",
+      "name": "Angel",
+      "team": "x_men",
+      "classes": [
+        "strength",
+        "covert",
+        "instinct"
+      ],
+      "expansion": "dark_city"
+    },
+    {
+      "id": "bishop_dark_city",
+      "name": "Bishop",
+      "team": "x_men",
+      "classes": [
+        "covert",
+        "ranged",
+        "tech"
+      ],
+      "expansion": "dark_city"
+    },
+    {
+      "id": "blade_dark_city",
+      "name": "Blade",
+      "team": "marvel_knights",
+      "classes": [
+        "strength",
+        "covert",
+        "tech",
+        "instinct"
+      ],
+      "expansion": "dark_city"
+    },
+    {
+      "id": "cable_dark_city",
+      "name": "Cable",
+      "team": "x_force",
+      "classes": [
+        "tech",
+        "ranged",
+        "covert"
+      ],
+      "expansion": "dark_city"
+    },
+    {
+      "id": "colossus_dark_city",
+      "name": "Colossus",
+      "team": "x_force",
+      "classes": [
+        "strength",
+        "covert"
+      ],
+      "expansion": "dark_city"
+    },
+    {
+      "id": "daredevil_dark_city",
+      "name": "Daredevil",
+      "team": "marvel_knights",
+      "classes": [
+        "strength",
+        "instinct",
+        "covert"
+      ],
+      "expansion": "dark_city"
+    },
+    {
+      "id": "domino_dark_city",
+      "name": "Domino",
+      "team": "x_force",
+      "classes": [
+        "tech",
+        "instinct",
+        "covert"
+      ],
+      "expansion": "dark_city"
+    },
+    {
+      "id": "elektra_dark_city",
+      "name": "Elektra",
+      "team": "marvel_knights",
+      "classes": [
+        "covert",
+        "instinct"
+      ],
+      "expansion": "dark_city"
+    },
+    {
+      "id": "forge_dark_city",
+      "name": "Forge",
+      "team": "x_force",
+      "classes": [
+        "tech"
+      ],
+      "expansion": "dark_city"
+    },
+    {
+      "id": "ghost_rider_dark_city",
+      "name": "Ghost Rider",
+      "team": "marvel_knights",
+      "classes": [
+        "ranged",
+        "tech",
+        "strength"
+      ],
+      "expansion": "dark_city"
+    },
+    {
+      "id": "iceman_dark_city",
+      "name": "Iceman",
+      "team": "x_men",
+      "classes": [
+        "ranged",
+        "strength"
+      ],
+      "expansion": "dark_city"
+    },
+    {
+      "id": "iron_fist_dark_city",
+      "name": "Iron Fist",
+      "team": "marvel_knights",
+      "classes": [
+        "instinct",
+        "strength"
+      ],
+      "expansion": "dark_city"
+    },
+    {
+      "id": "jean_grey_dark_city",
+      "name": "Jean Grey",
+      "team": "x_men",
+      "classes": [
+        "ranged",
+        "covert"
+      ],
+      "expansion": "dark_city"
+    },
+    {
+      "id": "nightcrawler_dark_city",
+      "name": "Nightcrawler",
+      "team": "x_men",
+      "classes": [
+        "instinct",
+        "covert"
+      ],
+      "expansion": "dark_city"
+    },
+    {
+      "id": "professor_x_dark_city",
+      "name": "Professor X",
+      "team": "x_men",
+      "classes": [
+        "instinct",
+        "ranged",
+        "covert"
+      ],
+      "expansion": "dark_city"
+    },
+    {
+      "id": "punisher_dark_city",
+      "name": "Punisher",
+      "team": "marvel_knights",
+      "classes": [
+        "tech",
+        "strength"
+      ],
+      "expansion": "dark_city"
+    },
+    {
+      "id": "wolverine_dark_city",
+      "name": "Wolverine",
+      "team": "x_force",
+      "classes": [
+        "instinct",
+        "covert",
+        "strength"
+      ],
+      "expansion": "dark_city"
+    },
+    {
+      "id": "human_torch_fantastic_four",
+      "name": "Human Torch",
+      "team": "fantastic_four",
+      "classes": [
+        "instinct",
+        "ranged"
+      ],
+      "expansion": "fantastic_four"
+    },
+    {
+      "id": "invisible_woman_fantastic_four",
+      "name": "Invisible Woman",
+      "team": "fantastic_four",
+      "classes": [
+        "covert",
+        "ranged"
+      ],
+      "expansion": "fantastic_four"
+    },
+    {
+      "id": "mr_fantastic_fantastic_four",
+      "name": "Mr. Fantastic",
+      "team": "fantastic_four",
+      "classes": [
+        "tech",
+        "instinct"
+      ],
+      "expansion": "fantastic_four"
+    },
+    {
+      "id": "silver_surfer_fantastic_four",
+      "name": "Silver Surfer",
+      "team": "unaffiliated",
+      "classes": [
+        "strength",
+        "covert",
+        "ranged"
+      ],
+      "expansion": "fantastic_four"
+    },
+    {
+      "id": "thing_fantastic_four",
+      "name": "Thing",
+      "team": "fantastic_four",
+      "classes": [
+        "instinct",
+        "strength"
+      ],
+      "expansion": "fantastic_four"
+    },
+    {
+      "id": "black_cat_paint_the_town_red",
+      "name": "Black Cat",
+      "team": "spider_friends",
+      "classes": [
+        "covert",
+        "instinct"
+      ],
+      "expansion": "paint_the_town_red"
+    },
+    {
+      "id": "moon_knight_paint_the_town_red",
+      "name": "Moon Knight",
+      "team": "marvel_knights",
+      "classes": [
+        "tech",
+        "instinct"
+      ],
+      "expansion": "paint_the_town_red"
+    },
+    {
+      "id": "scarlet_spider_paint_the_town_red",
+      "name": "Scarlet Spider",
+      "team": "spider_friends",
+      "classes": [
+        "strength",
+        "instinct",
+        "covert"
+      ],
+      "expansion": "paint_the_town_red"
+    },
+    {
+      "id": "spider_woman_paint_the_town_red",
+      "name": "Spider-Woman",
+      "team": "spider_friends",
+      "classes": [
+        "ranged",
+        "strength",
+        "covert"
+      ],
+      "expansion": "paint_the_town_red"
+    },
+    {
+      "id": "symbiote_spider_man_paint_the_town_red",
+      "name": "Symbiote Spider-Man",
+      "team": "spider_friends",
+      "classes": [
+        "strength",
+        "instinct",
+        "covert",
+        "ranged"
+      ],
+      "expansion": "paint_the_town_red"
+    },
+    {
+      "id": "bullseye_villains",
+      "name": "Bullseye",
+      "team": "crime_syndicate",
+      "classes": [
+        "ranged",
+        "instinct",
+        "covert"
+      ],
+      "expansion": "villains"
+    },
+    {
+      "id": "dr_octopus_villains",
+      "name": "Dr. Octopus",
+      "team": "sinister_six",
+      "classes": [
+        "tech",
+        "strength"
+      ],
+      "expansion": "villains"
+    },
+    {
+      "id": "electro_villains",
+      "name": "Electro",
+      "team": "sinister_six",
+      "classes": [
+        "ranged",
+        "instinct"
+      ],
+      "expansion": "villains"
+    },
+    {
+      "id": "enchantress_villains",
+      "name": "Enchantress",
+      "team": "foes_of_asgard",
+      "classes": [
+        "ranged",
+        "covert"
+      ],
+      "expansion": "villains"
+    },
+    {
+      "id": "green_goblin_villains",
+      "name": "Green Goblin",
+      "team": "sinister_six",
+      "classes": [
+        "tech",
+        "instinct"
+      ],
+      "expansion": "villains"
+    },
+    {
+      "id": "juggernaut_villains",
+      "name": "Juggernaut",
+      "team": "brotherhood",
+      "classes": [
+        "strength"
+      ],
+      "expansion": "villains"
+    },
+    {
+      "id": "kingpin_villains",
+      "name": "Kingpin",
+      "team": "crime_syndicate",
+      "classes": [
+        "covert",
+        "strength",
+        "tech"
+      ],
+      "expansion": "villains"
+    },
+    {
+      "id": "kraven_villains",
+      "name": "Kraven",
+      "team": "sinister_six",
+      "classes": [
+        "instinct",
+        "covert",
+        "strength"
+      ],
+      "expansion": "villains"
+    },
+    {
+      "id": "loki_villains",
+      "name": "Loki",
+      "team": "foes_of_asgard",
+      "classes": [
+        "covert",
+        "ranged"
+      ],
+      "expansion": "villains"
+    },
+    {
+      "id": "magneto_villains",
+      "name": "Magneto",
+      "team": "brotherhood",
+      "classes": [
+        "ranged",
+        "strength"
+      ],
+      "expansion": "villains"
+    },
+    {
+      "id": "mysterio_villains",
+      "name": "Mysterio",
+      "team": "sinister_six",
+      "classes": [
+        "ranged",
+        "covert",
+        "tech",
+        "instinct"
+      ],
+      "expansion": "villains"
+    },
+    {
+      "id": "mystique_villains",
+      "name": "Mystique",
+      "team": "brotherhood",
+      "classes": [
+        "tech",
+        "instinct",
+        "covert"
+      ],
+      "expansion": "villains"
+    },
+    {
+      "id": "sabretooth_villains",
+      "name": "Sabretooth",
+      "team": "brotherhood",
+      "classes": [
+        "instinct",
+        "covert",
+        "strength"
+      ],
+      "expansion": "villains"
+    },
+    {
+      "id": "ultron_villains",
+      "name": "Ultron",
+      "team": "unaffiliated",
+      "classes": [
+        "tech"
+      ],
+      "expansion": "villains"
+    },
+    {
+      "id": "venom_villains",
+      "name": "Venom",
+      "team": "sinister_six",
+      "classes": [
+        "instinct",
+        "strength"
+      ],
+      "expansion": "villains"
+    },
+    {
+      "id": "drax_the_destroyer_guardians",
+      "name": "Drax the Destroyer",
+      "team": "guardians",
+      "classes": [
+        "strength",
+        "instinct"
+      ],
+      "expansion": "guardians"
+    },
+    {
+      "id": "gamora_guardians",
+      "name": "Gamora",
+      "team": "guardians",
+      "classes": [
+        "covert",
+        "instinct"
+      ],
+      "expansion": "guardians"
+    },
+    {
+      "id": "groot_guardians",
+      "name": "Groot",
+      "team": "guardians",
+      "classes": [
+        "strength",
+        "covert"
+      ],
+      "expansion": "guardians"
+    },
+    {
+      "id": "rocket_raccoon_guardians",
+      "name": "Rocket Raccoon",
+      "team": "guardians",
+      "classes": [
+        "tech",
+        "ranged",
+        "instinct"
+      ],
+      "expansion": "guardians"
+    },
+    {
+      "id": "star_lord_guardians",
+      "name": "Star-Lord",
+      "team": "guardians",
+      "classes": [
+        "ranged",
+        "covert",
+        "tech"
+      ],
+      "expansion": "guardians"
+    },
+    {
+      "id": "greithoth_breaker_of_wills_fear_itself",
+      "name": "Greithoth, Breaker of Wills",
+      "team": "foes_of_asgard",
+      "classes": [
+        "instinct",
+        "covert",
+        "strength"
+      ],
+      "expansion": "fear_itself"
+    },
+    {
+      "id": "kuurth_breaker_of_stone_fear_itself",
+      "name": "Kuurth, Breaker of Stone",
+      "team": "foes_of_asgard",
+      "classes": [
+        "ranged",
+        "strength"
+      ],
+      "expansion": "fear_itself"
+    },
+    {
+      "id": "nerkkod_breaker_of_oceans_fear_itself",
+      "name": "Nerkkod, Breaker of Oceans",
+      "team": "foes_of_asgard",
+      "classes": [
+        "strength",
+        "covert",
+        "ranged",
+        "instinct"
+      ],
+      "expansion": "fear_itself"
+    },
+    {
+      "id": "nul_breaker_of_worlds_fear_itself",
+      "name": "Nul, Breaker of Worlds",
+      "team": "foes_of_asgard",
+      "classes": [
+        "strength",
+        "instinct"
+      ],
+      "expansion": "fear_itself"
+    },
+    {
+      "id": "skadi_fear_itself",
+      "name": "Skadi",
+      "team": "hydra",
+      "classes": [
+        "tech",
+        "strength",
+        "covert"
+      ],
+      "expansion": "fear_itself"
+    },
+    {
+      "id": "skirn_breaker_of_men_fear_itself",
+      "name": "Skirn, Breaker of Men",
+      "team": "foes_of_asgard",
+      "classes": [
+        "instinct",
+        "covert",
+        "ranged",
+        "strength"
+      ],
+      "expansion": "fear_itself"
+    },
+    {
+      "id": "apocalyptic_kitty_pryde_secret_wars_volume_1",
+      "name": "Apocalyptic Kitty Pryde",
+      "team": "x_men",
+      "classes": [
+        "covert",
+        "tech"
+      ],
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "black_bolt_secret_wars_volume_1",
+      "name": "Black Bolt",
+      "team": "illuminati",
+      "classes": [
+        "ranged",
+        "covert",
+        "strength"
+      ],
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "black_panther_secret_wars_volume_1",
+      "name": "Black Panther",
+      "team": "illuminati",
+      "classes": [
+        "instinct",
+        "strength"
+      ],
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "captain_marvel_secret_wars_volume_1",
+      "name": "Captain Marvel",
+      "team": "avengers",
+      "classes": [
+        "ranged",
+        "strength"
+      ],
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "dr_strange_secret_wars_volume_1",
+      "name": "Dr. Strange",
+      "team": "illuminati",
+      "classes": [
+        "ranged",
+        "instinct",
+        "covert"
+      ],
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "lady_thor_secret_wars_volume_1",
+      "name": "Lady Thor",
+      "team": "avengers",
+      "classes": [
+        "ranged",
+        "strength"
+      ],
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "magik_secret_wars_volume_1",
+      "name": "Magik",
+      "team": "x_men",
+      "classes": [
+        "covert",
+        "ranged"
+      ],
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "maximus_secret_wars_volume_1",
+      "name": "Maximus",
+      "team": "cabal",
+      "classes": [
+        "covert",
+        "tech"
+      ],
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "namor_the_sub_mariner_secret_wars_volume_1",
+      "name": "Namor, the Sub-Mariner",
+      "team": "cabal",
+      "classes": [
+        "instinct",
+        "strength"
+      ],
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "old_man_logan_secret_wars_volume_1",
+      "name": "Old Man Logan",
+      "team": "x_men",
+      "classes": [
+        "instinct"
+      ],
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "proxima_midnight_secret_wars_volume_1",
+      "name": "Proxima Midnight",
+      "team": "cabal",
+      "classes": [
+        "instinct",
+        "covert"
+      ],
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "superior_iron_man_secret_wars_volume_1",
+      "name": "Superior Iron Man",
+      "team": "illuminati",
+      "classes": [
+        "tech",
+        "ranged"
+      ],
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "thanos_secret_wars_volume_1",
+      "name": "Thanos",
+      "team": "cabal",
+      "classes": [
+        "strength",
+        "ranged"
+      ],
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "ultimate_spider_man_secret_wars_volume_1",
+      "name": "Ultimate Spider-Man",
+      "team": "spider_friends",
+      "classes": [
+        "instinct",
+        "strength",
+        "tech",
+        "covert"
+      ],
+      "expansion": "secret_wars_volume_1"
+    },
+    {
+      "id": "agent_venom_secret_wars_volume_2",
+      "name": "Agent Venom",
+      "team": "spider_friends",
+      "classes": [
+        "tech",
+        "instinct",
+        "strength"
+      ],
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "arkon_the_magnificent_secret_wars_volume_2",
+      "name": "Arkon the Magnificent",
+      "team": "unaffiliated",
+      "classes": [
+        "strength",
+        "ranged",
+        "instinct"
+      ],
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "beast_secret_wars_volume_2",
+      "name": "Beast",
+      "team": "illuminati",
+      "classes": [
+        "strength",
+        "tech"
+      ],
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "black_swan_secret_wars_volume_2",
+      "name": "Black Swan",
+      "team": "cabal",
+      "classes": [
+        "ranged",
+        "instinct",
+        "covert"
+      ],
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "the_captain_and_the_devil_secret_wars_volume_2",
+      "name": "The Captain and the Devil",
+      "team": "avengers",
+      "classes": [
+        "strength",
+        "instinct",
+        "covert",
+        "ranged"
+      ],
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "captain_britain_secret_wars_volume_2",
+      "name": "Captain Britain",
+      "team": "illuminati",
+      "classes": [
+        "strength",
+        "covert"
+      ],
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "corvus_glaive_secret_wars_volume_2",
+      "name": "Corvus Glaive",
+      "team": "cabal",
+      "classes": [
+        "instinct",
+        "strength",
+        "tech"
+      ],
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "dr_punisher_soldier_supreme_secret_wars_volume_2",
+      "name": "Dr. Punisher, Soldier Supreme",
+      "team": "marvel_knights",
+      "classes": [
+        "tech",
+        "ranged"
+      ],
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "elsa_bloodstone_secret_wars_volume_2",
+      "name": "Elsa Bloodstone",
+      "team": "shield",
+      "classes": [
+        "instinct",
+        "tech",
+        "ranged",
+        "strength"
+      ],
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "phoenix_force_cyclops_secret_wars_volume_2",
+      "name": "Phoenix Force Cyclops",
+      "team": "x_men",
+      "classes": [
+        "ranged",
+        "covert",
+        "instinct"
+      ],
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "ruby_summers_secret_wars_volume_2",
+      "name": "Ruby Summers",
+      "team": "x_men",
+      "classes": [
+        "ranged",
+        "strength"
+      ],
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "shang_chi_secret_wars_volume_2",
+      "name": "Shang-Chi",
+      "team": "marvel_knights",
+      "classes": [
+        "instinct",
+        "covert"
+      ],
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "silk_secret_wars_volume_2",
+      "name": "Silk",
+      "team": "spider_friends",
+      "classes": [
+        "ranged",
+        "instinct",
+        "covert",
+        "tech"
+      ],
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "soulsword_colossus_secret_wars_volume_2",
+      "name": "Soulsword Colossus",
+      "team": "x_men",
+      "classes": [
+        "covert",
+        "strength",
+        "instinct"
+      ],
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "spider_gwen_secret_wars_volume_2",
+      "name": "Spider-Gwen",
+      "team": "spider_friends",
+      "classes": [
+        "instinct",
+        "tech",
+        "strength",
+        "covert"
+      ],
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "time_traveling_jean_grey_secret_wars_volume_2",
+      "name": "Time-Traveling Jean Grey",
+      "team": "x_men",
+      "classes": [
+        "covert",
+        "instinct"
+      ],
+      "expansion": "secret_wars_volume_2"
+    },
+    {
+      "id": "agent_x_13_cap_75",
+      "name": "Agent X-13",
+      "team": "shield",
+      "classes": [
+        "ranged",
+        "tech",
+        "covert",
+        "instinct"
+      ],
+      "expansion": "cap_75"
+    },
+    {
+      "id": "captain_america_falcon_cap_75",
+      "name": "Captain America (Falcon)",
+      "team": "avengers",
+      "classes": [
+        "instinct",
+        "ranged",
+        "tech",
+        "covert"
+      ],
+      "expansion": "cap_75"
+    },
+    {
+      "id": "captain_america_1941_cap_75",
+      "name": "Captain America 1941",
+      "team": "avengers",
+      "classes": [
+        "strength",
+        "tech",
+        "covert",
+        "instinct"
+      ],
+      "expansion": "cap_75"
+    },
+    {
+      "id": "steve_rogers_director_of_s_h_i_e_l_d_cap_75",
+      "name": "Steve Rogers, Director of S.H.I.E.L.D.",
+      "team": "shield",
+      "classes": [
+        "strength",
+        "instinct",
+        "covert",
+        "tech"
+      ],
+      "expansion": "cap_75"
+    },
+    {
+      "id": "winter_soldier_cap_75",
+      "name": "Winter Soldier",
+      "team": "unaffiliated",
+      "classes": [
+        "strength",
+        "tech",
+        "covert"
+      ],
+      "expansion": "cap_75"
+    },
+    {
+      "id": "captain_america_secret_avenger_civil_war",
+      "name": "Captain America, Secret Avenger",
+      "team": "avengers",
+      "classes": [
+        "covert",
+        "strength",
+        "instinct",
+        "tech",
+        "ranged"
+      ],
+      "expansion": "civil_war"
+    },
+    {
+      "id": "cloak_dagger_civil_war",
+      "name": "Cloak & Dagger",
+      "team": "avengers_marvel_knights",
+      "classes": [
+        "covert",
+        "ranged"
+      ],
+      "expansion": "civil_war"
+    },
+    {
+      "id": "daredevil_civil_war",
+      "name": "Daredevil",
+      "team": "avengers_marvel_knights",
+      "classes": [
+        "instinct",
+        "covert",
+        "strength"
+      ],
+      "expansion": "civil_war"
+    },
+    {
+      "id": "falcon_civil_war",
+      "name": "Falcon",
+      "team": "avengers",
+      "classes": [
+        "tech",
+        "ranged",
+        "instinct"
+      ],
+      "expansion": "civil_war"
+    },
+    {
+      "id": "goliath_civil_war",
+      "name": "Goliath",
+      "team": "avengers",
+      "classes": [
+        "tech",
+        "strength"
+      ],
+      "expansion": "civil_war"
+    },
+    {
+      "id": "hercules_civil_war",
+      "name": "Hercules",
+      "team": "avengers",
+      "classes": [
+        "instinct",
+        "strength",
+        "tech"
+      ],
+      "expansion": "civil_war"
+    },
+    {
+      "id": "hulkling_civil_war",
+      "name": "Hulkling",
+      "team": "avengers",
+      "classes": [
+        "strength",
+        "covert"
+      ],
+      "expansion": "civil_war"
+    },
+    {
+      "id": "luke_cage_civil_war",
+      "name": "Luke Cage",
+      "team": "avengers",
+      "classes": [
+        "strength",
+        "instinct"
+      ],
+      "expansion": "civil_war"
+    },
+    {
+      "id": "patriot_civil_war",
+      "name": "Patriot",
+      "team": "avengers",
+      "classes": [
+        "instinct",
+        "strength",
+        "covert",
+        "tech"
+      ],
+      "expansion": "civil_war"
+    },
+    {
+      "id": "peter_parker_civil_war",
+      "name": "Peter Parker",
+      "team": "avengers_spider_friends",
+      "classes": [
+        "tech",
+        "instinct"
+      ],
+      "expansion": "civil_war"
+    },
+    {
+      "id": "speedball_civil_war",
+      "name": "Speedball",
+      "team": "new_warriors",
+      "classes": [
+        "covert",
+        "ranged"
+      ],
+      "expansion": "civil_war"
+    },
+    {
+      "id": "stature_civil_war",
+      "name": "Stature",
+      "team": "avengers",
+      "classes": [
+        "tech",
+        "strength"
+      ],
+      "expansion": "civil_war"
+    },
+    {
+      "id": "storm_black_panther_civil_war",
+      "name": "Storm & Black Panther",
+      "team": "x_men_avengers",
+      "classes": [
+        "ranged",
+        "instinct",
+        "covert",
+        "tech"
+      ],
+      "expansion": "civil_war"
+    },
+    {
+      "id": "tigra_civil_war",
+      "name": "Tigra",
+      "team": "avengers",
+      "classes": [
+        "covert",
+        "instinct"
+      ],
+      "expansion": "civil_war"
+    },
+    {
+      "id": "vision_civil_war",
+      "name": "Vision",
+      "team": "avengers",
+      "classes": [
+        "ranged",
+        "tech"
+      ],
+      "expansion": "civil_war"
+    },
+    {
+      "id": "wiccan_civil_war",
+      "name": "Wiccan",
+      "team": "avengers",
+      "classes": [
+        "ranged",
+        "covert"
+      ],
+      "expansion": "civil_war"
+    },
+    {
+      "id": "howard_the_duck_3d",
+      "name": "Howard the Duck",
+      "team": "unaffiliated",
+      "classes": [
+        "instinct",
+        "covert",
+        "tech"
+      ],
+      "expansion": "3d"
+    },
+    {
+      "id": "man_thing_3d",
+      "name": "Man-Thing",
+      "team": "unaffiliated",
+      "classes": [
+        "strength",
+        "instinct",
+        "covert"
+      ],
+      "expansion": "3d"
+    },
+    {
+      "id": "bob_agent_of_hydra_deadpool",
+      "name": "Bob, Agent of HYDRA",
+      "team": "hydra",
+      "classes": [
+        "covert",
+        "tech"
+      ],
+      "expansion": "deadpool"
+    },
+    {
+      "id": "deadpool_deadpool",
+      "name": "Deadpool",
+      "team": "mercs_for_money",
+      "classes": [
+        "instinct",
+        "tech",
+        "covert",
+        "strength"
+      ],
+      "expansion": "deadpool"
+    },
+    {
+      "id": "slapstick_deadpool",
+      "name": "Slapstick",
+      "team": "mercs_for_money",
+      "classes": [
+        "ranged",
+        "strength"
+      ],
+      "expansion": "deadpool"
+    },
+    {
+      "id": "solo_deadpool",
+      "name": "Solo",
+      "team": "mercs_for_money",
+      "classes": [
+        "tech",
+        "instinct"
+      ],
+      "expansion": "deadpool"
+    },
+    {
+      "id": "stingray_deadpool",
+      "name": "Stingray",
+      "team": "mercs_for_money",
+      "classes": [
+        "tech",
+        "ranged"
+      ],
+      "expansion": "deadpool"
+    },
+    {
+      "id": "angel_noir_noir",
+      "name": "Angel Noir",
+      "team": "x_men",
+      "classes": [
+        "instinct",
+        "strength",
+        "covert"
+      ],
+      "expansion": "noir"
+    },
+    {
+      "id": "daredevil_noir_noir",
+      "name": "Daredevil Noir",
+      "team": "marvel_knights",
+      "classes": [
+        "covert",
+        "instinct"
+      ],
+      "expansion": "noir"
+    },
+    {
+      "id": "iron_man_noir_noir",
+      "name": "Iron Man Noir",
+      "team": "avengers",
+      "classes": [
+        "ranged",
+        "tech"
+      ],
+      "expansion": "noir"
+    },
+    {
+      "id": "luke_cage_noir_noir",
+      "name": "Luke Cage Noir",
+      "team": "marvel_knights",
+      "classes": [
+        "covert",
+        "strength"
+      ],
+      "expansion": "noir"
+    },
+    {
+      "id": "spider_man_noir_noir",
+      "name": "Spider-Man Noir",
+      "team": "spider_friends",
+      "classes": [
+        "tech",
+        "ranged",
+        "instinct",
+        "strength"
+      ],
+      "expansion": "noir"
+    },
+    {
+      "id": "aurora_northstar_xmen",
+      "name": "Aurora & Northstar",
+      "team": "x_men",
+      "classes": [
+        "covert",
+        "ranged",
+        "strength",
+        "instinct"
+      ],
+      "expansion": "xmen"
+    },
+    {
+      "id": "banshee_xmen",
+      "name": "Banshee",
+      "team": "x_men",
+      "classes": [
+        "covert",
+        "ranged"
+      ],
+      "expansion": "xmen"
+    },
+    {
+      "id": "beast_xmen",
+      "name": "Beast",
+      "team": "x_men",
+      "classes": [
+        "tech",
+        "strength"
+      ],
+      "expansion": "xmen"
+    },
+    {
+      "id": "cannonball_xmen",
+      "name": "Cannonball",
+      "team": "x_men",
+      "classes": [
+        "instinct",
+        "strength"
+      ],
+      "expansion": "xmen"
+    },
+    {
+      "id": "colossus_wolverine_xmen",
+      "name": "Colossus & Wolverine",
+      "team": "x_men",
+      "classes": [
+        "strength",
+        "instinct"
+      ],
+      "expansion": "xmen"
+    },
+    {
+      "id": "dazzler_xmen",
+      "name": "Dazzler",
+      "team": "x_men",
+      "classes": [
+        "instinct",
+        "ranged",
+        "tech"
+      ],
+      "expansion": "xmen"
+    },
+    {
+      "id": "havok_xmen",
+      "name": "Havok",
+      "team": "x_men",
+      "classes": [
+        "ranged",
+        "tech"
+      ],
+      "expansion": "xmen"
+    },
+    {
+      "id": "jubilee_xmen",
+      "name": "Jubilee",
+      "team": "x_men",
+      "classes": [
+        "covert",
+        "ranged",
+        "instinct"
+      ],
+      "expansion": "xmen"
+    },
+    {
+      "id": "kitty_pryde_xmen",
+      "name": "Kitty Pryde",
+      "team": "x_men",
+      "classes": [
+        "instinct",
+        "covert",
+        "tech",
+        "ranged"
+      ],
+      "expansion": "xmen"
+    },
+    {
+      "id": "legion_xmen",
+      "name": "Legion",
+      "team": "x_men",
+      "classes": [
+        "strength",
+        "covert",
+        "tech",
+        "ranged",
+        "instinct"
+      ],
+      "expansion": "xmen"
+    },
+    {
+      "id": "longshot_xmen",
+      "name": "Longshot",
+      "team": "x_men",
+      "classes": [
+        "instinct",
+        "tech",
+        "covert"
+      ],
+      "expansion": "xmen"
+    },
+    {
+      "id": "phoenix_xmen",
+      "name": "Phoenix",
+      "team": "x_men",
+      "classes": [
+        "strength",
+        "ranged",
+        "covert"
+      ],
+      "expansion": "xmen"
+    },
+    {
+      "id": "polaris_xmen",
+      "name": "Polaris",
+      "team": "x_men",
+      "classes": [
+        "covert",
+        "ranged"
+      ],
+      "expansion": "xmen"
+    },
+    {
+      "id": "psylocke_xmen",
+      "name": "Psylocke",
+      "team": "x_men",
+      "classes": [
+        "instinct",
+        "covert"
+      ],
+      "expansion": "xmen"
+    },
+    {
+      "id": "x_23_xmen",
+      "name": "X-23",
+      "team": "x_men",
+      "classes": [
+        "tech",
+        "instinct",
+        "covert"
+      ],
+      "expansion": "xmen"
+    },
+    {
+      "id": "happy_hogan_spiderman_homecoming",
+      "name": "Happy Hogan",
+      "team": "unaffiliated",
+      "classes": [
+        "instinct",
+        "tech"
+      ],
+      "expansion": "spiderman_homecoming"
+    },
+    {
+      "id": "high_tech_spider_man_spiderman_homecoming",
+      "name": "High-Tech Spider-Man",
+      "team": "spider_friends",
+      "classes": [
+        "covert",
+        "tech"
+      ],
+      "expansion": "spiderman_homecoming"
+    },
+    {
+      "id": "peter_s_allies_spiderman_homecoming",
+      "name": "Peter's Allies",
+      "team": "spider_friends",
+      "classes": [
+        "covert",
+        "instinct"
+      ],
+      "expansion": "spiderman_homecoming"
+    },
+    {
+      "id": "peter_parker_homecoming_spiderman_homecoming",
+      "name": "Peter Parker, Homecoming",
+      "team": "spider_friends",
+      "classes": [
+        "instinct",
+        "covert",
+        "tech",
+        "strength"
+      ],
+      "expansion": "spiderman_homecoming"
+    },
+    {
+      "id": "tony_stark_spiderman_homecoming",
+      "name": "Tony Stark",
+      "team": "avengers",
+      "classes": [
+        "tech",
+        "ranged"
+      ],
+      "expansion": "spiderman_homecoming"
+    },
+    {
+      "id": "gwenpool_champions",
+      "name": "Gwenpool",
+      "team": "champions",
+      "classes": [
+        "covert",
+        "instinct"
+      ],
+      "expansion": "champions"
+    },
+    {
+      "id": "ms_marvel_champions",
+      "name": "Ms. Marvel",
+      "team": "champions",
+      "classes": [
+        "covert",
+        "strength"
+      ],
+      "expansion": "champions"
+    },
+    {
+      "id": "nova_champions",
+      "name": "Nova",
+      "team": "champions",
+      "classes": [
+        "strength",
+        "ranged"
+      ],
+      "expansion": "champions"
+    },
+    {
+      "id": "totally_awesome_hulk_champions",
+      "name": "Totally Awesome Hulk",
+      "team": "champions",
+      "classes": [
+        "strength",
+        "tech"
+      ],
+      "expansion": "champions"
+    },
+    {
+      "id": "viv_vision_champions",
+      "name": "Viv Vision",
+      "team": "champions",
+      "classes": [
+        "tech",
+        "ranged"
+      ],
+      "expansion": "champions"
+    },
+    {
+      "id": "amadeus_cho_world_war_hulk",
+      "name": "Amadeus Cho",
+      "team": "champions",
+      "classes": [
+        "instinct",
+        "tech",
+        "strength"
+      ],
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "bruce_banner_world_war_hulk",
+      "name": "Bruce Banner",
+      "team": "avengers",
+      "classes": [
+        "tech",
+        "strength"
+      ],
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "caiera_world_war_hulk",
+      "name": "Caiera",
+      "team": "warbound",
+      "classes": [
+        "covert",
+        "strength",
+        "instinct"
+      ],
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "gladiator_hulk_world_war_hulk",
+      "name": "Gladiator Hulk",
+      "team": "warbound",
+      "classes": [
+        "strength",
+        "instinct"
+      ],
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "hiroim_world_war_hulk",
+      "name": "Hiroim",
+      "team": "warbound",
+      "classes": [
+        "covert",
+        "strength",
+        "instinct"
+      ],
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "hulkbuster_iron_man_world_war_hulk",
+      "name": "Hulkbuster Iron Man",
+      "team": "avengers",
+      "classes": [
+        "strength",
+        "tech"
+      ],
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "joe_fixit_grey_hulk_world_war_hulk",
+      "name": "Joe Fixit, Grey Hulk",
+      "team": "crime_syndicate",
+      "classes": [
+        "strength",
+        "covert",
+        "instinct"
+      ],
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "korg_world_war_hulk",
+      "name": "Korg",
+      "team": "warbound",
+      "classes": [
+        "strength",
+        "covert"
+      ],
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "miek_the_unhived_world_war_hulk",
+      "name": "Miek, The Unhived",
+      "team": "warbound",
+      "classes": [
+        "instinct",
+        "covert",
+        "strength"
+      ],
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "namora_world_war_hulk",
+      "name": "Namora",
+      "team": "champions",
+      "classes": [
+        "ranged",
+        "covert",
+        "strength"
+      ],
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "no_name_brood_queen_world_war_hulk",
+      "name": "No-Name, Brood Queen",
+      "team": "warbound",
+      "classes": [
+        "covert",
+        "strength",
+        "instinct"
+      ],
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "rick_jones_world_war_hulk",
+      "name": "Rick Jones",
+      "team": "shield",
+      "classes": [
+        "tech",
+        "instinct",
+        "ranged",
+        "strength",
+        "covert"
+      ],
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "sentry_world_war_hulk",
+      "name": "Sentry",
+      "team": "avengers",
+      "classes": [
+        "covert",
+        "strength",
+        "ranged"
+      ],
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "she_hulk_world_war_hulk",
+      "name": "She-Hulk",
+      "team": "avengers",
+      "classes": [
+        "instinct",
+        "strength"
+      ],
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "skaar_son_of_hulk_world_war_hulk",
+      "name": "Skaar, Son Of Hulk",
+      "team": "avengers",
+      "classes": [
+        "strength",
+        "instinct"
+      ],
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "black_widow_marvel_studios_phase_1",
+      "name": "Black Widow",
+      "team": "avengers",
+      "classes": [
+        "covert",
+        "tech"
+      ],
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "captain_america_marvel_studios_phase_1",
+      "name": "Captain America",
+      "team": "avengers",
+      "classes": [
+        "instinct",
+        "strength",
+        "tech",
+        "covert"
+      ],
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "hawkeye_marvel_studios_phase_1",
+      "name": "Hawkeye",
+      "team": "avengers",
+      "classes": [
+        "instinct",
+        "tech"
+      ],
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "hulk_marvel_studios_phase_1",
+      "name": "Hulk",
+      "team": "avengers",
+      "classes": [
+        "strength",
+        "instinct"
+      ],
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "iron_man_marvel_studios_phase_1",
+      "name": "Iron Man",
+      "team": "avengers",
+      "classes": [
+        "tech",
+        "ranged"
+      ],
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "nick_fury_marvel_studios_phase_1",
+      "name": "Nick Fury",
+      "team": "shield",
+      "classes": [
+        "covert",
+        "tech",
+        "strength"
+      ],
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "thor_marvel_studios_phase_1",
+      "name": "Thor",
+      "team": "avengers",
+      "classes": [
+        "strength",
+        "ranged"
+      ],
+      "expansion": "marvel_studios_phase_1"
+    },
+    {
+      "id": "ant_man_ant_man",
+      "name": "Ant-Man",
+      "team": "avengers",
+      "classes": [
+        "tech",
+        "strength"
+      ],
+      "expansion": "ant_man"
+    },
+    {
+      "id": "wasp_ant_man",
+      "name": "Wasp",
+      "team": "avengers",
+      "classes": [
+        "covert",
+        "ranged"
+      ],
+      "expansion": "ant_man"
+    },
+    {
+      "id": "jocasta_ant_man",
+      "name": "Jocasta",
+      "team": "avengers",
+      "classes": [
+        "tech",
+        "ranged"
+      ],
+      "expansion": "ant_man"
+    },
+    {
+      "id": "wonder_man_ant_man",
+      "name": "Wonder Man",
+      "team": "avengers",
+      "classes": [
+        "strength",
+        "ranged"
+      ],
+      "expansion": "ant_man"
+    },
+    {
+      "id": "black_knight_ant_man",
+      "name": "Black Knight",
+      "team": "avengers",
+      "classes": [
+        "instinct",
+        "strength",
+        "covert"
+      ],
+      "expansion": "ant_man"
+    },
+    {
+      "id": "carnage_venom",
+      "name": "Carnage",
+      "team": "venomverse",
+      "classes": [
+        "instinct",
+        "strength",
+        "covert"
+      ],
+      "expansion": "venom"
+    },
+    {
+      "id": "venom_venom",
+      "name": "Venom",
+      "team": "venomverse",
+      "classes": [
+        "instinct",
+        "strength"
+      ],
+      "expansion": "venom"
+    },
+    {
+      "id": "venom_rocket_venom",
+      "name": "Venom Rocket",
+      "team": "venomverse",
+      "classes": [
+        "instinct",
+        "tech",
+        "ranged"
+      ],
+      "expansion": "venom"
+    },
+    {
+      "id": "venomized_dr_strange_venom",
+      "name": "Venomized Dr. Strange",
+      "team": "venomverse",
+      "classes": [
+        "ranged",
+        "instinct"
+      ],
+      "expansion": "venom"
+    },
+    {
+      "id": "venompool_venom",
+      "name": "Venompool",
+      "team": "venomverse",
+      "classes": [
+        "strength",
+        "tech",
+        "instinct"
+      ],
+      "expansion": "venom"
+    },
+    {
+      "id": "howard_the_duck_dimensions",
+      "name": "Howard the Duck",
+      "team": "unaffiliated",
+      "classes": [
+        "instinct",
+        "covert",
+        "tech"
+      ],
+      "expansion": "dimensions"
+    },
+    {
+      "id": "jessica_jones_dimensions",
+      "name": "Jessica Jones",
+      "team": "marvel_knights",
+      "classes": [
+        "strength",
+        "covert"
+      ],
+      "expansion": "dimensions"
+    },
+    {
+      "id": "man_thing_dimensions",
+      "name": "Man-Thing",
+      "team": "unaffiliated",
+      "classes": [
+        "strength",
+        "instinct",
+        "covert"
+      ],
+      "expansion": "dimensions"
+    },
+    {
+      "id": "ms_america_dimensions",
+      "name": "Ms. America",
+      "team": "avengers",
+      "classes": [
+        "strength",
+        "ranged",
+        "covert"
+      ],
+      "expansion": "dimensions"
+    },
+    {
+      "id": "squirrel_girl_dimensions",
+      "name": "Squirrel Girl",
+      "team": "avengers",
+      "classes": [
+        "instinct",
+        "covert"
+      ],
+      "expansion": "dimensions"
+    }
+  ]
+}

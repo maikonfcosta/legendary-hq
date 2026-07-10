@@ -1,32 +1,41 @@
-# React + TypeScript + Vite
+# Legendary HQ 🦸‍♂️🦸‍♀️
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**Legendary HQ** é o seu assistente definitivo para o jogo de cartas **Legendary: A Marvel Deck Building Game**.
 
-Currently, two official plugins are available:
+Criado com o objetivo de agilizar e aprimorar a experiência de jogo na mesa, o aplicativo atua como um Randomizer Inteligente, Game Tracker e Enciclopédia de Regras, suportando as +40 expansões lançadas do jogo!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Funcionalidades Principais
 
-## React Compiler
+- 🎲 **Smart Randomizer:** Sorteia Masterminds, Schemes, Villains, Henchmen e Heroes baseados exclusivamente na sua coleção pessoal.
+- 📦 **Minha Coleção:** Permite que você marque exatamente quais expansões você tem na estante.
+- 📊 **Game Tracker:** Assuma o controle da partida pelo celular! Conte seus Pontos de Recrutamento (Recruit), Pontos de Ataque, Master Strikes, Scheme Twists e Bystanders nocauteados.
+- 📖 **Manuais e Regras:** Leia todos os PDFs oficiais de todas as expansões perfeitamente integrados ao aplicativo, com foco em uma navegação rápida durante as partidas.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tecnologias
 
-## Expanding the Oxlint configuration
+- **React 19**
+- **TypeScript**
+- **Vite**
+- **Oxlint**
+- Estilização limpa e moderna utilizando a técnica de *Glassmorphism*.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## 📥 Como Rodar Localmente
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+1. Clone o repositório:
+```bash
+git clone https://github.com/maikonfcosta/legendary-hq.git
+```
+2. Instale as dependências:
+```bash
+npm install
+```
+3. Rode o servidor de desenvolvimento:
+```bash
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## ⚖️ Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+O conteúdo das cartas e as regras originais do jogo são propriedade intelectual e marcas registradas da **Upper Deck** e da **Marvel**. Este aplicativo é criado de fã para fã, sem fins lucrativos.

@@ -414,6 +414,25 @@ function App() {
           <Rules ownedExpansions={ownedExpansions} />
         )}
       </main>
+
+      {/* Footer / Créditos */}
+      <footer style={{
+        marginTop: 'auto',
+        padding: '2rem',
+        textAlign: 'center',
+        borderTop: '1px solid rgba(255, 255, 255, 0.05)',
+        background: 'rgba(0, 0, 0, 0.3)',
+        color: 'var(--text-secondary)',
+        fontSize: '0.85rem'
+      }}>
+        <p style={{ margin: '0 0 10px 0' }}>
+          <strong>Legendary HQ</strong> — Criado por <strong>Maikon Costa</strong> com ❤️ para a comunidade.
+        </p>
+        <p style={{ margin: 0, opacity: 0.6, fontSize: '0.75rem', maxWidth: '800px', marginInline: 'auto' }}>
+          Marvel Legendary e seus personagens são marcas registradas da Marvel e Upper Deck. 
+          Este é um aplicativo não-oficial, criado de fã para fã.
+        </p>
+      </footer>
     </div>
   )
 }

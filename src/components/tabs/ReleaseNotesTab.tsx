@@ -2,77 +2,65 @@ import { Tag, CheckCircle2, Star, Rocket } from 'lucide-react';
 
 const releases = [
   {
-    version: "1.0.0",
+    version: "1.1.0",
     date: "13 de Julho de 2026",
-    title: "O Lançamento Oficial do Legendary HQ 🚀",
-    description: "A primeira versão oficial e consolidada da sua Central de Comandos para Marvel Legendary.",
+    title: "UI Premium, Estatísticas & Quality of Life ✨",
+    description: "Uma camada massiva de polimento visual e a aguardada aba de Estatísticas globais.",
     highlights: [
       {
         icon: <Rocket size={18} style={{ color: 'var(--primary-color)' }} />,
-        text: "Design Final & Release Notes: Interface moderna consolidada (Glassmorphism), layout da Home refinado e menu centralizado inspirado na nossa biblioteca raiz."
-      }
-    ],
-    features: [
-      "Integração do Changelog (Release Notes) no rodapé do aplicativo.",
-      "Proteção anti-crash no Firebase para uso Offline Local.",
-      "Correções de tipagem rigorosa (TypeScript Strict Mode) no sistema de navegação."
-    ]
-  },
-  {
-    version: "0.9.0",
-    date: "Julho de 2026",
-    title: "Histórico e Estatísticas Globais 📊",
-    description: "Implementação da Fase 4 de nossa engenharia, focada em análise de dados do jogador.",
-    highlights: [
-      {
-        icon: <CheckCircle2 size={18} style={{ color: '#10b981' }} />,
-        text: "Estatísticas em Tempo Real: Cálculo automático de Win Rate e exibição gráfica colorida dos seus resultados."
+        text: "Estatísticas & Histórico Avançado: Cálculo automático de Win Rate, gráficos coloridos e a capacidade de adicionar partidas retroativas."
       },
-      {
-        icon: <Tag size={18} style={{ color: 'var(--secondary-color)' }} />,
-        text: "Registro Manual: Adição de partidas retroativas no histórico."
-      }
-    ],
-    features: [
-      "Botão de 'Concluir Partida' no Tracker, enviando dados de Vitória/Derrota automaticamente para o Banco.",
-      "Hooks customizados (useGameHistory) para salvar partidas no Firestore."
-    ]
-  },
-  {
-    version: "0.8.0",
-    date: "Julho de 2026",
-    title: "A Nuvem & Game Tracker ☁️",
-    description: "Reformulação da arquitetura de estados e início da Fase 3.",
-    highlights: [
       {
         icon: <Star size={18} style={{ color: '#fbc02d' }} />,
-        text: "Autenticação Cloud: Login com Google via Firebase e migração da coleção local para a nuvem."
-      },
-      {
-        icon: <CheckCircle2 size={18} style={{ color: '#10b981' }} />,
-        text: "Game Tracker: Controle pontos de recrutamento, ataque e rastreie os Master Strikes sem precisar de tokens físicos."
+        text: "UI Premium & Novo Layout: A página inicial foi transformada em um painel informativo organizado, e o menu lateral agora conta com card de Perfil no topo."
       }
     ],
     features: [
-      "Criação de contextos de autenticação (AuthContext) e Firebase Web SDK.",
-      "Sincronização Offline-first das Expansões (useSyncedCollection)."
+      "Lançamento do Changelog Interativo (Release Notes) no rodapé do aplicativo.",
+      "Proteção anti-crash no Firebase para funcionamento perfeito em ambiente local.",
+      "Layout do rodapé fixo e centralização fluida do conteúdo principal em telas largas."
+    ]
+  },
+  {
+    version: "1.0.0",
+    date: "Sexta-feira (Julho de 2026)",
+    title: "O Lançamento Oficial do Legendary HQ 🚀",
+    description: "A grande atualização que transformou o projeto em uma verdadeira Central de Comandos.",
+    highlights: [
+      {
+        icon: <Rocket size={18} style={{ color: 'var(--primary-color)' }} />,
+        text: "Setup Randomizer Completo: Motor capaz de sortear perfeitamente Masterminds, Schemes, Vilões e Heróis."
+      },
+      {
+        icon: <Star size={18} style={{ color: '#fbc02d' }} />,
+        text: "Game Tracker Robusto: Controle de pontos de recrutamento, ataque e Master Strikes, com envio de dados de vitória direto para a nuvem."
+      },
+      {
+        icon: <CheckCircle2 size={18} style={{ color: '#10b981' }} />,
+        text: "Nuvem Firebase e Autenticação: Seu histórico e lista de expansões protegidos e sincronizados pelo Login do Google."
+      }
+    ],
+    features: [
+      "Integração PWA (Progressive Web App) para experiência nativa.",
+      "Sincronização Offline-first das Expansões.",
+      "Criação de contextos de autenticação (AuthContext) e hooks customizados."
     ]
   },
   {
     version: "0.1.0",
-    date: "Lançamento Inicial",
+    date: "Alpha Build",
     title: "Fundação do Quartel General 🏗️",
-    description: "Versão protótipo (Fases 1 e 2) contendo as mecânicas cruciais.",
+    description: "A base técnica e estrutural onde o aplicativo começou a ser desenhado.",
     highlights: [
       {
-        icon: <Rocket size={18} style={{ color: 'var(--primary-color)' }} />,
-        text: "Setup Randomizer: Motor capaz de sortear Masterminds, Schemes, Vilões, Henchmen e Heróis perfeitamente balanceados."
+        icon: <CheckCircle2 size={18} style={{ color: '#10b981' }} />,
+        text: "Arquitetura Sólida: Setup inicial com Vite, React 19, testes automatizados rigorosos e regras de CI/CD."
       }
     ],
     features: [
-      "Base de dados JSON com todas as cartas iniciais mapeadas.",
-      "Engenharia de Qualidade: Testes Vitest, Linter OXLint e validação pré-commit.",
-      "Sistema básico de navegação e componentes modulares."
+      "Base de dados JSON contendo todas as cartas iniciais mapeadas.",
+      "Sistema de navegação (abas) e componentes modulares da UI inicial."
     ]
   }
 ];

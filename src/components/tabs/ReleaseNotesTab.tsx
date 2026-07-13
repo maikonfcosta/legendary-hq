@@ -2,6 +2,27 @@ import { Tag, CheckCircle2, Star, Rocket } from 'lucide-react';
 
 const releases = [
   {
+    version: "1.2.0",
+    date: new Date().toLocaleDateString('pt-BR'),
+    title: "TopBar, Configurações e Temas 🎨",
+    description: "Expansão da navegação com uma nova barra de controle e personalização visual profunda.",
+    highlights: [
+      {
+        icon: <Rocket size={18} style={{ color: 'var(--primary-color)' }} />,
+        text: "Sistema de Temas Dinâmicos: Aplicação de estilos baseados nos arquétipos (Covert, Instinct, Ranged, Strength e Tech)."
+      },
+      {
+        icon: <Star size={18} style={{ color: '#fbc02d' }} />,
+        text: "Painel de Configurações: Centralização das preferências de usuário, incluindo controle de SFX e gerenciamento de conta."
+      }
+    ],
+    features: [
+      "Migração do Login, Status da Nuvem e Idioma para uma Barra Superior (TopBar).",
+      "Painel de Configurações adicionado (Ícone de Engrenagem).",
+      "Inclusão de Efeitos Sonoros (SFX) nos cliques com opção de Mutar."
+    ]
+  },
+  {
     version: "1.1.0",
     date: "13 de Julho de 2026",
     title: "UI Premium, Estatísticas & Quality of Life ✨",

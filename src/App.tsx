@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Globe, Settings, Volume2, VolumeX, Palette, Cloud } from 'lucide-react';
+import { Menu, X, Globe, Settings, Volume2, VolumeX, Palette } from 'lucide-react';
 import type { SetupResult } from './utils/randomizer';
 import { generateSetup } from './utils/randomizer';
 import { useLocalStorage } from './hooks/useLocalStorage';
@@ -191,7 +191,7 @@ function App() {
 
           {currentUser ? (
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <span style={{ fontSize: '0.8rem', color: '#86efac', display: 'flex', alignItems: 'center', gap: '4px' }} title="Nuvem Sincronizada">✓ <Cloud size={14} /> Nuvem</span>
+              <span style={{ fontSize: '0.8rem', color: '#86efac' }} title="Nuvem Sincronizada">OK</span>
               <img src={currentUser.photoURL || ''} alt="User" style={{ width: 32, height: 32, borderRadius: '50%' }} title={currentUser.displayName || ''} />
               <button onClick={logoutUser} className="btn btn-secondary" style={{ padding: '6px 12px', fontSize: '0.85rem' }}>Sair</button>
             </div>

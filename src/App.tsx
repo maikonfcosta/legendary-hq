@@ -100,60 +100,55 @@ function App() {
       {/* Sidebar Navigation */}
       <Sidebar activeTab={activeTab} handleTabChange={handleTabChange} isMobileMenuOpen={isMobileMenuOpen} />
 
-      {/* Main Content Area */}
-      <main className="main-content">
-        {activeTab === 'home' && <HomeTab onNavigate={handleTabChange} />}
-        {activeTab === 'stats' && (
-          <StatsTab 
-            onNavigate={handleTabChange} 
-            history={history} 
-            addMatch={addMatch} 
-            ownedExpansions={ownedExpansions} 
-          />
-        )}
-        {activeTab === 'randomizer' && (
-          <RandomizerTab 
-            playerCount={playerCount} setPlayerCount={setPlayerCount}
-            result={result} setResult={setResult}
-            handleDraw={handleDraw}
-          />
-        )}
-        {activeTab === 'tracker' && (
-          <TrackerTab 
-            recruit={recruit} setRecruit={setRecruit}
-            attack={attack} setAttack={setAttack}
-            masterStrikes={masterStrikes} setMasterStrikes={setMasterStrikes}
-            schemeTwists={schemeTwists} setSchemeTwists={setSchemeTwists}
-            bystanders={bystanders} setBystanders={setBystanders}
-            resetTracker={resetTracker}
-            currentSetup={result}
-            onFinishMatch={handleFinishMatch}
-          />
-        )}
-        {activeTab === 'collection' && (
-          <CollectionTab ownedExpansions={ownedExpansions} toggleExpansion={toggleExpansion} />
-        )}
-        {activeTab === 'rules' && <Rules ownedExpansions={ownedExpansions} />}
-      </main>
+      <div className="main-content-wrapper">
+        {/* Main Content Area */}
+        <main className="main-content">
+          {activeTab === 'home' && <HomeTab onNavigate={handleTabChange} />}
+          {activeTab === 'stats' && (
+            <StatsTab 
+              onNavigate={handleTabChange} 
+              history={history} 
+              addMatch={addMatch} 
+              ownedExpansions={ownedExpansions} 
+            />
+          )}
+          {activeTab === 'randomizer' && (
+            <RandomizerTab 
+              playerCount={playerCount} setPlayerCount={setPlayerCount}
+              result={result} setResult={setResult}
+              handleDraw={handleDraw}
+            />
+          )}
+          {activeTab === 'tracker' && (
+            <TrackerTab 
+              recruit={recruit} setRecruit={setRecruit}
+              attack={attack} setAttack={setAttack}
+              masterStrikes={masterStrikes} setMasterStrikes={setMasterStrikes}
+              schemeTwists={schemeTwists} setSchemeTwists={setSchemeTwists}
+              bystanders={bystanders} setBystanders={setBystanders}
+              resetTracker={resetTracker}
+              currentSetup={result}
+              onFinishMatch={handleFinishMatch}
+            />
+          )}
+          {activeTab === 'collection' && (
+            <CollectionTab ownedExpansions={ownedExpansions} toggleExpansion={toggleExpansion} />
+          )}
+          {activeTab === 'rules' && <Rules ownedExpansions={ownedExpansions} />}
+        </main>
 
-      {/* Footer / Créditos */}
-      <footer style={{
-        marginTop: 'auto',
-        padding: '2rem',
-        textAlign: 'center',
-        borderTop: '1px solid rgba(255, 255, 255, 0.05)',
-        background: 'rgba(0, 0, 0, 0.3)',
-        color: 'var(--text-secondary)',
-        fontSize: '0.85rem'
-      }}>
-        <p style={{ margin: '0 0 10px 0' }}>
-          <strong>Legendary HQ</strong> — Criado por <strong>Maikon Costa</strong> com ❤️ para a comunidade.
-        </p>
-        <p style={{ margin: 0, opacity: 0.6, fontSize: '0.75rem', maxWidth: '800px', marginInline: 'auto' }}>
-          Marvel Legendary e seus personagens são marcas registradas da Marvel e Upper Deck. 
-          Este é um aplicativo não-oficial, criado de fã para fã.
-        </p>
-      </footer>
+        {/* Footer / Créditos */}
+        <footer style={{ borderTop: '1px solid var(--surface-border)', padding: '24px', textAlign: 'center', color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
+          <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+            <p style={{ marginBottom: '8px' }}>
+              <strong>Legendary HQ</strong> &copy; {new Date().getFullYear()}
+            </p>
+            <p>
+              Este aplicativo não possui fins lucrativos e não é afiliado de forma alguma à Marvel ou Upper Deck.
+            </p>
+          </div>
+        </footer>
+      </div>
     </div>
   );
 }

@@ -657,6 +657,498 @@
       "name": "Epic J. Jonah Jameson",
       "alwaysLeads": "[/b] Spider-Slayers",
       "expansion": "dimensions"
+    },
+    {
+      "id": "alchemax_executives",
+      "name": "Alchemax Executives",
+      "expansion": "2099",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "sinister_six_2099",
+      "name": "Sinister Six 2099",
+      "expansion": "2099",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "iron_monger",
+      "name": "Iron Monger",
+      "expansion": "phase_1",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "loki",
+      "name": "Loki",
+      "expansion": "phase_1",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "red_skull",
+      "name": "Red Skull",
+      "expansion": "phase_1",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "hank_pym_yellowjacket",
+      "name": "Hank Pym, Yellowjacket",
+      "expansion": "what_if",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "hankpymyellowjacket_tactic1",
+      "name": "HankPymYellowjacket Tactic1",
+      "expansion": "what_if",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "hankpymyellowjacket_tactic2",
+      "name": "HankPymYellowjacket Tactic2",
+      "expansion": "what_if",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "hankpymyellowjacket_tactic3",
+      "name": "HankPymYellowjacket Tactic3",
+      "expansion": "what_if",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "hankpymyellowjacket_tactic4",
+      "name": "HankPymYellowjacket Tactic4",
+      "expansion": "what_if",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "killmonger_the_betrayer",
+      "name": "Killmonger, The Betrayer",
+      "expansion": "what_if",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "ultron_infinity",
+      "name": "Ultron Infinity",
+      "expansion": "what_if",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "zombie_scarlet_witch",
+      "name": "Zombie Scarlet Witch",
+      "expansion": "what_if",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "annihilus",
+      "name": "Annihilus",
+      "expansion": "annihilation",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "kang_the_conqueror",
+      "name": "Kang the Conqueror",
+      "expansion": "annihilation",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "morgan_le_fay",
+      "name": "Morgan Le Fay",
+      "expansion": "ant_man",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "killmonger",
+      "name": "Killmonger",
+      "expansion": "black_panther",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "klaw",
+      "name": "Klaw",
+      "expansion": "black_panther",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "indestructible_man",
+      "name": "Indestructible Man",
+      "expansion": "black_widow",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "taskmaster",
+      "name": "Taskmaster",
+      "expansion": "black_widow",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "henchmen",
+      "name": "Henchmen",
+      "expansion": "dimensions",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "circus_of_crime_and_spider_slayer",
+      "name": "Circus of Crime and Spider-Slayer",
+      "expansion": "dimensions",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "spider_slayer",
+      "name": "Spider Slayer",
+      "expansion": "dimensions",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "dormammu",
+      "name": "Dormammu",
+      "expansion": "doctor_strange",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "nightmare",
+      "name": "Nightmare",
+      "expansion": "doctor_strange",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "uru_enchantedironman",
+      "name": "Uru EnchantedIronMan",
+      "expansion": "fear_itself",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "uru_enchantedironmantactic1",
+      "name": "Uru EnchantedIronManTactic1",
+      "expansion": "fear_itself",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "uru_enchantedironmantactic2",
+      "name": "Uru EnchantedIronManTactic2",
+      "expansion": "fear_itself",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "uru_enchantedironmantactic3",
+      "name": "Uru EnchantedIronManTactic3",
+      "expansion": "fear_itself",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "uru_enchantedironmantactic4",
+      "name": "Uru EnchantedIronManTactic4",
+      "expansion": "fear_itself",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "hela_goddess_of_death",
+      "name": "Hela, Goddess of Death",
+      "expansion": "heroes_of_asgard",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "malekith_the_accursed",
+      "name": "Malekith the Accursed",
+      "expansion": "heroes_of_asgard",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "the_beyonder",
+      "name": "The Beyonder",
+      "expansion": "into_the_cosmos",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "grandmaster",
+      "name": "Grandmaster",
+      "expansion": "into_the_cosmos",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "magus",
+      "name": "Magus",
+      "expansion": "into_the_cosmos",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "bastion",
+      "name": "Bastion",
+      "expansion": "messiah_complex",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "exodus",
+      "name": "Exodus",
+      "expansion": "messiah_complex",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "lady_deathstrike",
+      "name": "Lady Deathstrike",
+      "expansion": "messiah_complex",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "darren_cross_yellowjacket",
+      "name": "Darren Cross / Yellowjacket",
+      "expansion": "ant_man_wasp",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "darrencross_transformed",
+      "name": "DarrenCross Transformed",
+      "expansion": "ant_man_wasp",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "ghost_master_thief_ghost_intangible",
+      "name": "Ghost, Master Thief / Ghost, Intangible",
+      "expansion": "ant_man_wasp",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "ghostmasterthief_transformed",
+      "name": "GhostMasterThief Transformed",
+      "expansion": "ant_man_wasp",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "kangquantumconqueror_transformed",
+      "name": "KangQuantumConqueror Transformed",
+      "expansion": "ant_man_wasp",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "ego_the_living_planet",
+      "name": "Ego, The Living Planet",
+      "expansion": "mcu_guardians",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "ronan_the_accuser",
+      "name": "Ronan the Accuser",
+      "expansion": "mcu_guardians",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "ebony_maw",
+      "name": "Ebony Maw",
+      "expansion": "infinity_saga",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "thanos",
+      "name": "Thanos",
+      "expansion": "infinity_saga",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "lilith_mother_of_demons",
+      "name": "Lilith, Mother of Demons",
+      "expansion": "midnight_sons",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "zarathos",
+      "name": "Zarathos",
+      "expansion": "midnight_sons",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "belasco",
+      "name": "Belasco",
+      "expansion": "new_mutants",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "emma_frost_the_white_queen",
+      "name": "Emma Frost, The White Queen",
+      "expansion": "new_mutants",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "charles_xavier_professor_of_crime",
+      "name": "Charles Xavier, Professor of Crime",
+      "expansion": "noir",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "emperor_vulcan_of_the_shi_ar",
+      "name": "Emperor Vulcan of the Shi’ar",
+      "expansion": "realm_of_kings",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "maximus_the_mad",
+      "name": "Maximus the Mad",
+      "expansion": "realm_of_kings",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "grim_reaper",
+      "name": "Grim Reaper",
+      "expansion": "revelations",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "the_hood",
+      "name": "The Hood",
+      "expansion": "revelations",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "mandarin",
+      "name": "Mandarin",
+      "expansion": "revelations",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "hydra_high_council",
+      "name": "HYDRA High Council",
+      "expansion": "shield",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "hydra_super_adaptoid",
+      "name": "HYDRA Super-Adaptoid",
+      "expansion": "shield",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "hydrasuper_adaptoid2",
+      "name": "HydraSuper Adaptoid2",
+      "expansion": "shield",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "hydrasuper_adaptoid1",
+      "name": "HydraSuper Adaptoid1",
+      "expansion": "shield",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "hydrasuper_adaptoid3",
+      "name": "HydraSuper Adaptoid3",
+      "expansion": "shield",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "hydrasuper_adaptoid4",
+      "name": "HydraSuper Adaptoid4",
+      "expansion": "shield",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "madelyne_pryor_goblin_queen",
+      "name": "Madelyne Pryor, Goblin Queen",
+      "expansion": "secret_wars_1",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "nimrod_super_sentinel",
+      "name": "Nimrod, Super Sentinel",
+      "expansion": "secret_wars_1",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "wasteland_hulk",
+      "name": "Wasteland Hulk",
+      "expansion": "secret_wars_1",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "zombie_green_goblin",
+      "name": "Zombie Green Goblin",
+      "expansion": "secret_wars_1",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "immortal_emperor_zheng_zhu",
+      "name": "Immortal Emperor Zheng-Zhu",
+      "expansion": "secret_wars_2",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "king_hyperion",
+      "name": "King Hyperion",
+      "expansion": "secret_wars_2",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "shiklah_the_demon_bride",
+      "name": "Shiklah, the Demon Bride",
+      "expansion": "secret_wars_2",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "spider_queen",
+      "name": "Spider Queen",
+      "expansion": "secret_wars_2",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "spider_queentactic2",
+      "name": "Spider QueenTactic2",
+      "expansion": "secret_wars_2",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "spider_queentactic3",
+      "name": "Spider QueenTactic3",
+      "expansion": "secret_wars_2",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "spider_queentactic1",
+      "name": "Spider QueenTactic1",
+      "expansion": "secret_wars_2",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "spider_queentactic4",
+      "name": "Spider QueenTactic4",
+      "expansion": "secret_wars_2",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "vulture",
+      "name": "Vulture",
+      "expansion": "spiderman_homecoming",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "omega_red",
+      "name": "Omega Red",
+      "expansion": "weapon_x",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "romulus",
+      "name": "Romulus",
+      "expansion": "weapon_x",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "sabretooth",
+      "name": "Sabretooth",
+      "expansion": "weapon_x",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "general_thunderbolt_ross_red_hulk",
+      "name": "General “Thunderbolt” Ross / Red Hulk",
+      "expansion": "world_war_hulk",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "modok",
+      "name": "MODOK",
+      "expansion": "world_war_hulk",
+      "alwaysLeads": "unknown"
+    },
+    {
+      "id": "the_sentry_the_void",
+      "name": "The Sentry / The Void",
+      "expansion": "world_war_hulk",
+      "alwaysLeads": "unknown"
     }
   ],
   "schemes": [
@@ -1234,6 +1726,1026 @@
       "id": "symbiotic_absorption",
       "name": "Symbiotic Absorption",
       "expansion": "venom"
+    },
+    {
+      "id": "become_president_of_the_united_states",
+      "name": "Become President of the United States",
+      "expansion": "2099"
+    },
+    {
+      "id": "befoul_earth_into_a_polluted_wasteland",
+      "name": "Befoul Earth into a Polluted Wasteland",
+      "expansion": "2099"
+    },
+    {
+      "id": "pull_reality_into_cyberspace",
+      "name": "Pull Reality into Cyberspace",
+      "expansion": "2099"
+    },
+    {
+      "id": "subjugate_earth_with_mega_corporations",
+      "name": "Subjugate Earth with Mega Corporations",
+      "expansion": "2099"
+    },
+    {
+      "id": "mcu_asgard_under_siege",
+      "name": "MCU Asgard Under Siege",
+      "expansion": "phase_1"
+    },
+    {
+      "id": "mcu_destroy_the_cities_of_earth",
+      "name": "MCU Destroy the Cities of Earth",
+      "expansion": "phase_1"
+    },
+    {
+      "id": "mcu_enslave_minds_with_the_chitauri_scepter",
+      "name": "MCU Enslave Minds with the Chitauri Scepter",
+      "expansion": "phase_1"
+    },
+    {
+      "id": "mcu_invade_asgard",
+      "name": "MCU Invade Asgard",
+      "expansion": "phase_1"
+    },
+    {
+      "id": "mcu_radioactive_palladium_poisoning",
+      "name": "MCU Radioactive Palladium Poisoning",
+      "expansion": "phase_1"
+    },
+    {
+      "id": "mcu_replace_earths_leaders_with_hydra",
+      "name": "MCU Replace Earths Leaders with Hydra",
+      "expansion": "phase_1"
+    },
+    {
+      "id": "mcu_super_hero_civil_war",
+      "name": "MCU Super Hero Civil War",
+      "expansion": "phase_1"
+    },
+    {
+      "id": "mcu_unleash_the_power_of_the_cosmic_cube",
+      "name": "MCU Unleash the Power of the Cosmic Cube",
+      "expansion": "phase_1"
+    },
+    {
+      "id": "breach_the_nexus_of_all_realities",
+      "name": "Breach The Nexus Of All Realities",
+      "expansion": "what_if"
+    },
+    {
+      "id": "collect_an_interstellar_zoo",
+      "name": "Collect An Interstellar Zoo",
+      "expansion": "what_if"
+    },
+    {
+      "id": "marvel_zombies",
+      "name": "Marvel Zombies",
+      "expansion": "what_if"
+    },
+    {
+      "id": "trash_earth_with_hugest_party_ever_promo",
+      "name": "Trash Earth With Hugest Party Ever Promo",
+      "expansion": "what_if"
+    },
+    {
+      "id": "trash_earth_with_hugest_party_ever",
+      "name": "Trash Earth With Hugest Party Ever",
+      "expansion": "what_if"
+    },
+    {
+      "id": "breach_parallel_dimensions",
+      "name": "Breach Parallel Dimensions",
+      "expansion": "annihilation"
+    },
+    {
+      "id": "pulse_waves_from_the_negative_zone",
+      "name": "Pulse Waves from the Negative Zone",
+      "expansion": "annihilation"
+    },
+    {
+      "id": "put_humanity_on_trial",
+      "name": "Put Humanity on Trial",
+      "expansion": "annihilation"
+    },
+    {
+      "id": "sneak_attack_the_heroes_homes",
+      "name": "Sneak Attack the Heroes Homes",
+      "expansion": "annihilation"
+    },
+    {
+      "id": "poison_lakes_with_nanite_microbots",
+      "name": "Poison Lakes with Nanite Microbots",
+      "expansion": "black_panther"
+    },
+    {
+      "id": "plunder_wakandas_vibranium",
+      "name": "Plunder Wakandas Vibranium",
+      "expansion": "black_panther"
+    },
+    {
+      "id": "provoke_a_clash_of_nations",
+      "name": "Provoke a Clash of Nations",
+      "expansion": "black_panther"
+    },
+    {
+      "id": "seize_the_wakandan_throne",
+      "name": "Seize the Wakandan Throne",
+      "expansion": "black_panther"
+    },
+    {
+      "id": "frame_heroes_for_murder",
+      "name": "Frame Heroes for Murder",
+      "expansion": "black_widow"
+    },
+    {
+      "id": "corrupt_the_spy_agencies",
+      "name": "Corrupt the Spy Agencies",
+      "expansion": "black_widow"
+    },
+    {
+      "id": "sniper_rifle_assassins",
+      "name": "Sniper Rifle Assassins",
+      "expansion": "black_widow"
+    },
+    {
+      "id": "train_black_widows_in_the_red_room",
+      "name": "Train Black Widows in the Red Room",
+      "expansion": "black_widow"
+    },
+    {
+      "id": "train_black_widows_in_the_red_room_promo",
+      "name": "Train Black Widows in the Red Room Promo",
+      "expansion": "black_widow"
+    },
+    {
+      "id": "go_back_in_time_to_slay_heroes_ancestors",
+      "name": "Go Back in Time to Slay Heroes Ancestors",
+      "expansion": "cap_75"
+    },
+    {
+      "id": "unbreakable_enigma_code_the",
+      "name": "Unbreakable Enigma Code the",
+      "expansion": "cap_75"
+    },
+    {
+      "id": "avengers_vs_x_men",
+      "name": "Avengers vs X Men",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "dark_reign_of_hammer_officers",
+      "name": "Dark Reign of HAMMER Officers",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "nitro_the_supervillian_threatens_crowds",
+      "name": "Nitro the Supervillian Threatens Crowds",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "reveal_heroes_secret_identities",
+      "name": "Reveal Heroes Secret Identities",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "sidekicks",
+      "name": "Sidekicks",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "hairball",
+      "name": "Hairball",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "lockheed",
+      "name": "Lockheed",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "lockjaw",
+      "name": "Lockjaw",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "ms_lion",
+      "name": "Ms Lion",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "redwing",
+      "name": "Redwing",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "throg",
+      "name": "Throg",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "zabu",
+      "name": "Zabu",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "x_cutioners_song",
+      "name": "X Cutioners Song",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "cursed_pages_of_the_darkhold_tome",
+      "name": "Cursed Pages of the Darkhold Tome",
+      "expansion": "doctor_strange"
+    },
+    {
+      "id": "duels_of_science_and_magic",
+      "name": "Duels of Science and Magic",
+      "expansion": "doctor_strange"
+    },
+    {
+      "id": "claim_souls_for_demons",
+      "name": "Claim Souls for Demons",
+      "expansion": "doctor_strange"
+    },
+    {
+      "id": "war_for_the_dream_dimension",
+      "name": "War for the Dream Dimension",
+      "expansion": "doctor_strange"
+    },
+    {
+      "id": "bathe_earth_in_cosmic_rays",
+      "name": "Bathe Earth in Cosmic Rays",
+      "expansion": "fantastic_four"
+    },
+    {
+      "id": "traitor_the",
+      "name": "Traitor the",
+      "expansion": "fear_itself"
+    },
+    {
+      "id": "intergalactic_kree_nega_bomb",
+      "name": "Intergalactic Kree Nega Bomb",
+      "expansion": "guardians"
+    },
+    {
+      "id": "kree_skrull_war_the",
+      "name": "Kree Skrull War the",
+      "expansion": "guardians"
+    },
+    {
+      "id": "asgardian_test_of_worth",
+      "name": "Asgardian Test of Worth",
+      "expansion": "heroes_of_asgard"
+    },
+    {
+      "id": "dark_world_of_svartalfheim_the",
+      "name": "Dark World of Svartalfheim the",
+      "expansion": "heroes_of_asgard"
+    },
+    {
+      "id": "ragnarok_twilight_of_the_gods",
+      "name": "Ragnarok Twilight of the Gods",
+      "expansion": "heroes_of_asgard"
+    },
+    {
+      "id": "war_of_the_frost_giants",
+      "name": "War of the Frost Giants",
+      "expansion": "heroes_of_asgard"
+    },
+    {
+      "id": "annihilation_conquest",
+      "name": "Annihilation Conquest",
+      "expansion": "into_the_cosmos"
+    },
+    {
+      "id": "contest_of_champions_the",
+      "name": "Contest of Champions the",
+      "expansion": "into_the_cosmos"
+    },
+    {
+      "id": "destroy_the_nova_corps",
+      "name": "Destroy the Nova Corps",
+      "expansion": "into_the_cosmos"
+    },
+    {
+      "id": "turn_the_soul_of_adam_warlock",
+      "name": "Turn the Soul of Adam Warlock",
+      "expansion": "into_the_cosmos"
+    },
+    {
+      "id": "drain_mutants_powers_to",
+      "name": "Drain Mutants Powers to",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "hack_cerebro_servers_to",
+      "name": "Hack Cerebro Servers to",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "hire_singularity_investigators_to",
+      "name": "Hire Singularity Investigators to",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "raid_gene_banks_to",
+      "name": "Raid Gene Banks to",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "open_rifts_to_future_timelines",
+      "name": "Open Rifts to Future Timelines",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "control_the_mutant_messiah",
+      "name": "Control The Mutant Messiah",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "reveal_the_heroes_evil_clones",
+      "name": "Reveal the Heroes Evil Clones",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "unleash_an_anti_mutant_bioweapon",
+      "name": "Unleash an Anti Mutant Bioweapon",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "sidekicks",
+      "name": "Sidekicks",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "boom_boom",
+      "name": "Boom Boom",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "darwin",
+      "name": "Darwin",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "layla_miller",
+      "name": "Layla Miller",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "prodigy",
+      "name": "Prodigy",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "rockslide",
+      "name": "Rockslide",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "rusty_firefist_collins",
+      "name": "Rusty Firefist Collins",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "skids",
+      "name": "Skids",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "auction_shrink_tech_to_highest_bidder",
+      "name": "Auction Shrink Tech To Highest Bidder",
+      "expansion": "ant_man_wasp"
+    },
+    {
+      "id": "escape_an_imprisoning_dimension",
+      "name": "Escape An Imprisoning Dimension",
+      "expansion": "ant_man_wasp"
+    },
+    {
+      "id": "safeguard_dark_secrets",
+      "name": "Safeguard Dark Secrets",
+      "expansion": "ant_man_wasp"
+    },
+    {
+      "id": "siphon_energy_from_the_quantum_realm",
+      "name": "Siphon Energy From The Quantum Realm",
+      "expansion": "ant_man_wasp"
+    },
+    {
+      "id": "inescapable_kyln_space_prison",
+      "name": "Inescapable Kyln Space Prison",
+      "expansion": "mcu_guardians"
+    },
+    {
+      "id": "provoke_the_sovereign_war_fleet",
+      "name": "Provoke the Sovereign War Fleet",
+      "expansion": "mcu_guardians"
+    },
+    {
+      "id": "star_lords_awesome_mix_tape",
+      "name": "Star lords Awesome Mix Tape",
+      "expansion": "mcu_guardians"
+    },
+    {
+      "id": "unleash_the_abilisk_space_monster",
+      "name": "Unleash The Abilisk Space Monster",
+      "expansion": "mcu_guardians"
+    },
+    {
+      "id": "halve_all_life_in_the_universe",
+      "name": "Halve All Life in the Universe",
+      "expansion": "infinity_saga"
+    },
+    {
+      "id": "sacrifice_for_the_soul_stone",
+      "name": "Sacrifice for the Soul Stone",
+      "expansion": "infinity_saga"
+    },
+    {
+      "id": "time_heist_the",
+      "name": "Time Heist The",
+      "expansion": "infinity_saga"
+    },
+    {
+      "id": "warp_reality_into_a_tv_show",
+      "name": "Warp Reality Into a TV Show",
+      "expansion": "infinity_saga"
+    },
+    {
+      "id": "midnight_massacre",
+      "name": "Midnight Massacre",
+      "expansion": "midnight_sons"
+    },
+    {
+      "id": "ritual_sacrifice_to_summon_chthon",
+      "name": "Ritual Sacrifice to Summon Chthon",
+      "expansion": "midnight_sons"
+    },
+    {
+      "id": "great_old_one_chthon",
+      "name": "Great Old One Chthon",
+      "expansion": "midnight_sons"
+    },
+    {
+      "id": "sire_vampires_at_the_blood_bank",
+      "name": "Sire Vampires at the Blood Bank",
+      "expansion": "midnight_sons"
+    },
+    {
+      "id": "wager_at_blackjack_for_heroes_souls",
+      "name": "Wager at Blackjack for Heroes Souls",
+      "expansion": "midnight_sons"
+    },
+    {
+      "id": "crash_the_moon_into_the_sun",
+      "name": "Crash the Moon into the Sun",
+      "expansion": "new_mutants"
+    },
+    {
+      "id": "demon_bear_saga_the",
+      "name": "Demon Bear Saga the",
+      "expansion": "new_mutants"
+    },
+    {
+      "id": "superhuman_baseball_game",
+      "name": "Superhuman Baseball Game",
+      "expansion": "new_mutants"
+    },
+    {
+      "id": "trapped_in_the_insane_asylum",
+      "name": "Trapped in the Insane Asylum",
+      "expansion": "new_mutants"
+    },
+    {
+      "id": "bystander",
+      "name": "Bystander",
+      "expansion": "noir"
+    },
+    {
+      "id": "detective_wolverine",
+      "name": "Detective Wolverine",
+      "expansion": "noir"
+    },
+    {
+      "id": "clone_saga_the",
+      "name": "Clone Saga the",
+      "expansion": "paint_the_town_red"
+    },
+    {
+      "id": "ruin_the_perfect_wedding",
+      "name": "Ruin The Perfect Wedding",
+      "expansion": "realm_of_kings"
+    },
+    {
+      "id": "devolve_with_xerogen_crystals",
+      "name": "Devolve With Xerogen Crystals",
+      "expansion": "realm_of_kings"
+    },
+    {
+      "id": "tornado_of_terrigen_mists",
+      "name": "Tornado of Terrigen Mists",
+      "expansion": "realm_of_kings"
+    },
+    {
+      "id": "war_of_kings",
+      "name": "War of Kings",
+      "expansion": "realm_of_kings"
+    },
+    {
+      "id": "earthquake_drains_the_ocean",
+      "name": "Earthquake Drains the Ocean",
+      "expansion": "revelations"
+    },
+    {
+      "id": "house_of_m",
+      "name": "House of M",
+      "expansion": "revelations"
+    },
+    {
+      "id": "korvac_saga_the",
+      "name": "Korvac Saga The",
+      "expansion": "revelations"
+    },
+    {
+      "id": "secret_hydra_corruption",
+      "name": "Secret Hydra Corruption",
+      "expansion": "revelations"
+    },
+    {
+      "id": "tsunami_crushes_the_coast",
+      "name": "Tsunami Crushes the Coast",
+      "expansion": "revelations"
+    },
+    {
+      "id": "no_more_mutants",
+      "name": "No More Mutants",
+      "expansion": "revelations"
+    },
+    {
+      "id": "korvac_revealed",
+      "name": "Korvac Revealed",
+      "expansion": "revelations"
+    },
+    {
+      "id": "open_hydra_revolution",
+      "name": "Open Hydra Revolution",
+      "expansion": "revelations"
+    },
+    {
+      "id": "hail_hydra",
+      "name": "Hail Hydra",
+      "expansion": "shield"
+    },
+    {
+      "id": "hydra_helicarriers_hunt_heroes",
+      "name": "Hydra Helicarriers Hunt Heroes",
+      "expansion": "shield"
+    },
+    {
+      "id": "shield_vs_hydra_war",
+      "name": "SHIELD vs Hydra War",
+      "expansion": "shield"
+    },
+    {
+      "id": "secret_empire_of_betrayal",
+      "name": "Secret Empire of Betrayal",
+      "expansion": "shield"
+    },
+    {
+      "id": "s_h_i_e_l_d_officers",
+      "name": "S.H.I.E.L.D. Officers",
+      "expansion": "shield"
+    },
+    {
+      "id": "dum_dum_dugan",
+      "name": "Dum Dum Dugan",
+      "expansion": "shield"
+    },
+    {
+      "id": "grant_ward",
+      "name": "Grant Ward",
+      "expansion": "shield"
+    },
+    {
+      "id": "gw_bridge",
+      "name": "GW Bridge",
+      "expansion": "shield"
+    },
+    {
+      "id": "leo_fitz_and_jemma_simmons",
+      "name": "Leo Fitz and Jemma Simmons",
+      "expansion": "shield"
+    },
+    {
+      "id": "melinda_may",
+      "name": "Melinda May",
+      "expansion": "shield"
+    },
+    {
+      "id": "sharon_carter",
+      "name": "Sharon Carter",
+      "expansion": "shield"
+    },
+    {
+      "id": "victoria_hand",
+      "name": "Victoria Hand",
+      "expansion": "shield"
+    },
+    {
+      "id": "yo_yo_rodriguez",
+      "name": "Yo Yo Rodriguez",
+      "expansion": "shield"
+    },
+    {
+      "id": "build_an_army_of_annihilation",
+      "name": "Build an Army of Annihilation",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "corrupt_the_next_generation_of_heroes",
+      "name": "Corrupt the Next Generation of Heroes",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "crush_them_with_my_bare_hands",
+      "name": "Crush Them with my Bare Hands",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "dark_alliance",
+      "name": "Dark Alliance",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "fragmented_realities",
+      "name": "Fragmented Realities",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "master_of_tyrants",
+      "name": "Master of Tyrants",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "pan_dimensional_plague",
+      "name": "Pan Dimensional Plague",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "smash_two_dimensions_together",
+      "name": "Smash Two Dimensions Together",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "ambitions",
+      "name": "Ambitions",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "abduction",
+      "name": "Abduction",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "bank_robbery",
+      "name": "Bank Robbery",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "breakout",
+      "name": "Breakout",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "cleave",
+      "name": "Cleave",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "collateral_damage",
+      "name": "Collateral Damage",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "crackdown",
+      "name": "Crackdown",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "crime_surge",
+      "name": "Crime Surge",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "crush_the_weak",
+      "name": "Crush the Weak",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "dark_apprentice",
+      "name": "Dark Apprentice",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "deceive",
+      "name": "Deceive",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "empower",
+      "name": "Empower",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "entrap",
+      "name": "Entrap",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "force_field",
+      "name": "Force Field",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "identity_theft",
+      "name": "Identity Theft",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "infiltrate_shield",
+      "name": "Infiltrate SHIELD",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "inflict_pain",
+      "name": "Inflict Pain",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "insane_twist",
+      "name": "Insane Twist",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "kidnap",
+      "name": "Kidnap",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "last_minute_escape",
+      "name": "Last Minute Escape",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "painful_choice",
+      "name": "Painful Choice",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "pressure_point",
+      "name": "Pressure Point",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "pummel",
+      "name": "Pummel",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "pure_evil",
+      "name": "Pure Evil",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "ruthless_strike",
+      "name": "Ruthless Strike",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "secret_plans",
+      "name": "Secret Plans",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "thirst_for_power",
+      "name": "Thirst for Power",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "thirst_for_vengeance",
+      "name": "Thirst for Vengeance",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "tide_of_destruction",
+      "name": "Tide of Destruction",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "wave_of_punishment",
+      "name": "Wave of Punishment",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "wipe_out",
+      "name": "Wipe Out",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "bystander",
+      "name": "Bystander",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "banker",
+      "name": "Banker",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "sidekicks",
+      "name": "Sidekicks",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "sidekick",
+      "name": "Sidekick",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "deadlands_hordes_charge_the_wall",
+      "name": "Deadlands Hordes Charge the Wall",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "enthrone_the_barons_of_battleworld",
+      "name": "Enthrone the Barons of Battleworld",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "fountain_of_eternal_life_the",
+      "name": "Fountain of Eternal Life the",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "god_emperor_of_battleworld_the",
+      "name": "God Emperor of Battleworld the",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "mark_of_khonshu_the",
+      "name": "Mark of Khonshu the",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "master_the_mysteries_of_kung_fu",
+      "name": "Master the Mysteries of Kung Fu",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "secret_wars",
+      "name": "Secret Wars",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "sinister_ambitions",
+      "name": "Sinister Ambitions",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "ambitions",
+      "name": "Ambitions",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "crazed_charge",
+      "name": "Crazed Charge",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "detonate_the_bridge",
+      "name": "Detonate the Bridge",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "devastate_shield",
+      "name": "Devastate SHIELD",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "hostage_situation",
+      "name": "Hostage Situation",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "puzzle_trap",
+      "name": "Puzzle Trap",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "rack_and_ruin",
+      "name": "Rack and Ruin",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "secret_escape_tunnels",
+      "name": "Secret Escape Tunnels",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "seize_the_high_ground",
+      "name": "Seize the High Ground",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "shadowy_disciple",
+      "name": "Shadowy Disciple",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "this_is_a_stickup",
+      "name": "This is a Stickup",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "district_the_hero",
+      "name": "District the Hero",
+      "expansion": "spiderman_homecoming"
+    },
+    {
+      "id": "bystander",
+      "name": "Bystander",
+      "expansion": "spiderman_homecoming"
+    },
+    {
+      "id": "damage_control",
+      "name": "Damage Control",
+      "expansion": "spiderman_homecoming"
+    },
+    {
+      "id": "condition_logan_into_weapon_x",
+      "name": "Condition Logan into Weapon X",
+      "expansion": "weapon_x"
+    },
+    {
+      "id": "go_after_heroes_loved_ones",
+      "name": "Go After Heroes Loved Ones",
+      "expansion": "weapon_x"
+    },
+    {
+      "id": "wipe_heroes_memories",
+      "name": "Wipe Heroes Memories",
+      "expansion": "weapon_x"
+    },
+    {
+      "id": "enraging_wounds",
+      "name": "Enraging Wounds",
+      "expansion": "weapon_x"
+    },
+    {
+      "id": "anti_mutant_hatred",
+      "name": "Anti Mutant Hatred",
+      "expansion": "xmen"
+    },
+    {
+      "id": "dark_phoenix_saga_the",
+      "name": "Dark Phoenix Saga the",
+      "expansion": "xmen"
+    },
+    {
+      "id": "mutant_hunting_super_sentries",
+      "name": "Mutant Hunting Super Sentries",
+      "expansion": "xmen"
+    },
+    {
+      "id": "televised_deathworlds_of_mojoworld",
+      "name": "Televised Deathworlds of Mojoworld",
+      "expansion": "xmen"
+    },
+    {
+      "id": "x_men_danger_room_goes_berserk",
+      "name": "X Men Danger Room Goes Berserk",
+      "expansion": "xmen"
+    },
+    {
+      "id": "legacy_virus_the",
+      "name": "Legacy Virus the",
+      "expansion": "core"
+    },
+    {
+      "id": "replace_earths_leaders_with_killbots",
+      "name": "Replace Earths Leaders with Killbots",
+      "expansion": "core"
+    },
+    {
+      "id": "unleash_the_power_of_the_cosmic_cube_core",
+      "name": "Unleash the Power of the Cosmic Cube core",
+      "expansion": "core"
+    },
+    {
+      "id": "core_scheme_twist",
+      "name": "Core Scheme Twist",
+      "expansion": "core"
     }
   ],
   "villains": [
@@ -1636,6 +3148,686 @@
       "id": "poisons",
       "name": "Poisons",
       "expansion": "venom"
+    },
+    {
+      "id": "alchemax_enforcers",
+      "name": "Alchemax Enforcers",
+      "expansion": "2099"
+    },
+    {
+      "id": "alchemaxenforcerscyber_nostra",
+      "name": "AlchemaxEnforcersCyber Nostra",
+      "expansion": "2099"
+    },
+    {
+      "id": "false_aesir_of_alchemax",
+      "name": "False Aesir of Alchemax",
+      "expansion": "2099"
+    },
+    {
+      "id": "chitauri",
+      "name": "Chitauri",
+      "expansion": "phase_1"
+    },
+    {
+      "id": "enemies_of_asgard",
+      "name": "Enemies of Asgard",
+      "expansion": "phase_1"
+    },
+    {
+      "id": "gamma_hunters",
+      "name": "Gamma Hunters",
+      "expansion": "phase_1"
+    },
+    {
+      "id": "hydra",
+      "name": "Hydra",
+      "expansion": "phase_1"
+    },
+    {
+      "id": "iron_foes",
+      "name": "Iron Foes",
+      "expansion": "phase_1"
+    },
+    {
+      "id": "black_order_guards",
+      "name": "Black Order Guards",
+      "expansion": "what_if"
+    },
+    {
+      "id": "intergalactic_party_animals",
+      "name": "Intergalactic Party Animals",
+      "expansion": "what_if"
+    },
+    {
+      "id": "rival_overlords",
+      "name": "Rival Overlords",
+      "expansion": "what_if"
+    },
+    {
+      "id": "strange_s_demons",
+      "name": "Strange’s Demons",
+      "expansion": "what_if"
+    },
+    {
+      "id": "strangesdemonstwo_headedramdemon",
+      "name": "StrangesDemonsTwo HeadedRamDemon",
+      "expansion": "what_if"
+    },
+    {
+      "id": "zombie_avengers",
+      "name": "Zombie Avengers",
+      "expansion": "what_if"
+    },
+    {
+      "id": "annihilation_wave",
+      "name": "Annihilation Wave",
+      "expansion": "annihilation"
+    },
+    {
+      "id": "timelines_of_kang",
+      "name": "Timelines of Kang",
+      "expansion": "annihilation"
+    },
+    {
+      "id": "timelinesofkangpharaohrama_tut",
+      "name": "TimelinesOfKangPharaohRama Tut",
+      "expansion": "annihilation"
+    },
+    {
+      "id": "queen_s_vengeance",
+      "name": "Queen’s Vengeance",
+      "expansion": "ant_man"
+    },
+    {
+      "id": "queensvengeancestar_knight",
+      "name": "QueensVengeanceStar Knight",
+      "expansion": "ant_man"
+    },
+    {
+      "id": "ultron_s_legacy",
+      "name": "Ultron’s Legacy",
+      "expansion": "ant_man"
+    },
+    {
+      "id": "ultronslegacyoriginalultron_1",
+      "name": "UltronsLegacyOriginalUltron 1",
+      "expansion": "ant_man"
+    },
+    {
+      "id": "ultronslegacybrutishultron_14",
+      "name": "UltronsLegacyBrutishUltron 14",
+      "expansion": "ant_man"
+    },
+    {
+      "id": "ultronslegacyultron_pym",
+      "name": "UltronsLegacyUltron Pym",
+      "expansion": "ant_man"
+    },
+    {
+      "id": "enemies_of_wakanda",
+      "name": "Enemies of Wakanda",
+      "expansion": "black_panther"
+    },
+    {
+      "id": "killmonger_s_league",
+      "name": "Killmonger’s League",
+      "expansion": "black_panther"
+    },
+    {
+      "id": "elite_assassins",
+      "name": "Elite Assassins",
+      "expansion": "black_widow"
+    },
+    {
+      "id": "taskmaster_s_thunderbolts",
+      "name": "Taskmaster’s Thunderbolts",
+      "expansion": "black_widow"
+    },
+    {
+      "id": "zola_s_creations",
+      "name": "Zola’s Creations",
+      "expansion": "cap_75"
+    },
+    {
+      "id": "zolascreationsman_fish",
+      "name": "ZolasCreationsMan Fish",
+      "expansion": "cap_75"
+    },
+    {
+      "id": "great_lake_avengers",
+      "name": "Great Lake Avengers",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "heroesforhireshang_chi",
+      "name": "HeroesForHireShang Chi",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "superhumanregistrationactshe_hulk",
+      "name": "SuperhumanRegistrationActShe Hulk",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "thunderboltsmach_iv",
+      "name": "ThunderboltsMach IV",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "mlfzero",
+      "name": "MLFZero",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "mlfforearm",
+      "name": "MLFForearm",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "mlfwildside",
+      "name": "MLFWildside",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "mlfreignfire",
+      "name": "MLFReignfire",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "deadpool_s_friends",
+      "name": "Deadpool’s “Friends”",
+      "expansion": "deadpool"
+    },
+    {
+      "id": "fear_lords",
+      "name": "Fear Lords",
+      "expansion": "doctor_strange"
+    },
+    {
+      "id": "lords_of_the_netherworld",
+      "name": "Lords of the Netherworld",
+      "expansion": "doctor_strange"
+    },
+    {
+      "id": "themightyspider_man",
+      "name": "TheMightySpider Man",
+      "expansion": "fear_itself"
+    },
+    {
+      "id": "themightyredshe_hulk",
+      "name": "TheMightyRedShe Hulk",
+      "expansion": "fear_itself"
+    },
+    {
+      "id": "dark_council",
+      "name": "Dark Council",
+      "expansion": "heroes_of_asgard"
+    },
+    {
+      "id": "omens_of_ragnarok",
+      "name": "Omens of Ragnarok",
+      "expansion": "heroes_of_asgard"
+    },
+    {
+      "id": "omensofragnarokthehel_crown",
+      "name": "OmensOfRagnarokTheHel Crown",
+      "expansion": "heroes_of_asgard"
+    },
+    {
+      "id": "omensofragnarokjormungandtheworld_serpent",
+      "name": "OmensOfRagnarokJormungandTheWorld Serpent",
+      "expansion": "heroes_of_asgard"
+    },
+    {
+      "id": "black_order_of_thanos",
+      "name": "Black Order of Thanos",
+      "expansion": "into_the_cosmos"
+    },
+    {
+      "id": "celestials",
+      "name": "Celestials",
+      "expansion": "into_the_cosmos"
+    },
+    {
+      "id": "elders_of_the_universe",
+      "name": "Elders of the Universe",
+      "expansion": "into_the_cosmos"
+    },
+    {
+      "id": "from_beyond",
+      "name": "From Beyond",
+      "expansion": "into_the_cosmos"
+    },
+    {
+      "id": "acolytes",
+      "name": "Acolytes",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "clan_yashida",
+      "name": "Clan Yashida",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "purifiers",
+      "name": "Purifiers",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "purifierspredatorx_covert",
+      "name": "PurifiersPredatorX Covert",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "purifierspredatorx_instinct",
+      "name": "PurifiersPredatorX Instinct",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "purifierspredatorx_ranged",
+      "name": "PurifiersPredatorX Ranged",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "purifierspredatorx_strength",
+      "name": "PurifiersPredatorX Strength",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "purifierspredatorx_tech",
+      "name": "PurifiersPredatorX Tech",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "reavers",
+      "name": "Reavers",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "armada_of_kang",
+      "name": "Armada of Kang",
+      "expansion": "ant_man_wasp"
+    },
+    {
+      "id": "cross_technologies",
+      "name": "Cross Technologies",
+      "expansion": "ant_man_wasp"
+    },
+    {
+      "id": "ghost_chasers",
+      "name": "Ghost Chasers",
+      "expansion": "ant_man_wasp"
+    },
+    {
+      "id": "ghostchasersambushschemehigh_speedcarchase",
+      "name": "GhostChasersAmbushSchemeHigh SpeedCarChase",
+      "expansion": "ant_man_wasp"
+    },
+    {
+      "id": "quantum_realm",
+      "name": "Quantum Realm",
+      "expansion": "ant_man_wasp"
+    },
+    {
+      "id": "followers_of_ronan",
+      "name": "Followers of Ronan",
+      "expansion": "mcu_guardians"
+    },
+    {
+      "id": "ravagers",
+      "name": "Ravagers",
+      "expansion": "mcu_guardians"
+    },
+    {
+      "id": "children_of_thanos",
+      "name": "Children of Thanos",
+      "expansion": "infinity_saga"
+    },
+    {
+      "id": "infinity_stones",
+      "name": "Infinity Stones",
+      "expansion": "infinity_saga"
+    },
+    {
+      "id": "fallen",
+      "name": "Fallen",
+      "expansion": "midnight_sons"
+    },
+    {
+      "id": "lilin",
+      "name": "Lilin",
+      "expansion": "midnight_sons"
+    },
+    {
+      "id": "demons_of_limbo",
+      "name": "Demons of Limbo",
+      "expansion": "new_mutants"
+    },
+    {
+      "id": "hellions",
+      "name": "Hellions",
+      "expansion": "new_mutants"
+    },
+    {
+      "id": "goblin_s_freak_show",
+      "name": "Goblin’s Freak Show",
+      "expansion": "noir"
+    },
+    {
+      "id": "x_mennoirbobbyicemandrake",
+      "name": "X MenNoirBobbyIcemanDrake",
+      "expansion": "noir"
+    },
+    {
+      "id": "x_mennoirororomunroestorm_tossed",
+      "name": "X MenNoirOroroMunroeStorm Tossed",
+      "expansion": "noir"
+    },
+    {
+      "id": "x_mennoircomraderasputinsteelwall",
+      "name": "X MenNoirComradeRasputinSteelWall",
+      "expansion": "noir"
+    },
+    {
+      "id": "x_mennoirhenrybeastmccoy",
+      "name": "X MenNoirHenryBeastMcCoy",
+      "expansion": "noir"
+    },
+    {
+      "id": "x_mennoirjeangreynoir",
+      "name": "X MenNoirJeanGreyNoir",
+      "expansion": "noir"
+    },
+    {
+      "id": "x_mennoirscottcyclopssummers",
+      "name": "X MenNoirScottCyclopsSummers",
+      "expansion": "noir"
+    },
+    {
+      "id": "x_mennoirwardenemmafrost",
+      "name": "X MenNoirWardenEmmaFrost",
+      "expansion": "noir"
+    },
+    {
+      "id": "inhuman_rebellion",
+      "name": "Inhuman Rebellion",
+      "expansion": "realm_of_kings"
+    },
+    {
+      "id": "shi_ar_imperial_elite",
+      "name": "Shi’ar Imperial Elite",
+      "expansion": "realm_of_kings"
+    },
+    {
+      "id": "army_of_evil",
+      "name": "Army of Evil",
+      "expansion": "revelations"
+    },
+    {
+      "id": "dark_avengers",
+      "name": "Dark Avengers",
+      "expansion": "revelations"
+    },
+    {
+      "id": "darkavengerscaptainmarvelnoh_varr",
+      "name": "DarkAvengersCaptainMarvelNoh Varr",
+      "expansion": "revelations"
+    },
+    {
+      "id": "hood_s_gang",
+      "name": "Hood’s Gang",
+      "expansion": "revelations"
+    },
+    {
+      "id": "lethal_legion",
+      "name": "Lethal Legion",
+      "expansion": "revelations"
+    },
+    {
+      "id": "a_i_m_hydra_offshoot",
+      "name": "A.I.M., HYDRA Offshoot",
+      "expansion": "shield"
+    },
+    {
+      "id": "hydra_elite",
+      "name": "HYDRA Elite",
+      "expansion": "shield"
+    },
+    {
+      "id": "the_deadlands",
+      "name": "The Deadlands",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "domain_of_apocalypse",
+      "name": "Domain of Apocalypse",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "limbo",
+      "name": "Limbo",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "manhattan_earth_1610",
+      "name": "Manhattan (Earth-1610)",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "sentinel_territories",
+      "name": "Sentinel Territories",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "wasteland",
+      "name": "Wasteland",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "wastelandwastelandspider_girl",
+      "name": "WastelandWastelandSpider Girl",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "deadpool_s_secret_secret_wars",
+      "name": "Deadpool’s Secret Secret Wars",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "guardians_of_knowhere",
+      "name": "Guardians of Knowhere",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "k_un_lun",
+      "name": "K’un Lun",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "kun_lunrazorfist",
+      "name": "Kun LunRazorFist",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "kun_lunredsai",
+      "name": "Kun LunRedSai",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "kun_lunlaughingskull",
+      "name": "Kun LunLaughingSkull",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "kun_lunrandkai",
+      "name": "Kun LunRandKai",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "monster_metropolis",
+      "name": "Monster Metropolis",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "monstermetropolisman_thing",
+      "name": "MonsterMetropolisMan Thing",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "utopolis",
+      "name": "Utopolis",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "x_men_92",
+      "name": "X-Men ‘92",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "x_men9292jubilee",
+      "name": "X Men9292Jubilee",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "x_men9292beast",
+      "name": "X Men9292Beast",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "x_men9292wolverine",
+      "name": "X Men9292Wolverine",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "x_men9292professorx",
+      "name": "X Men9292ProfessorX",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "poisonspoisonspider_man",
+      "name": "PoisonsPoisonSpider Man",
+      "expansion": "venom"
+    },
+    {
+      "id": "berserkers",
+      "name": "Berserkers",
+      "expansion": "weapon_x"
+    },
+    {
+      "id": "weapon_plus",
+      "name": "Weapon Plus",
+      "expansion": "weapon_x"
+    },
+    {
+      "id": "aspectsofthevoidinfini_tendrils",
+      "name": "AspectsOfTheVoidInfini Tendrils",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "aspectsofthevoidblackanti_hurricane",
+      "name": "AspectsOfTheVoidBlackAnti Hurricane",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "coderedredshe_hulk",
+      "name": "CodeRedRedShe Hulk",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "u_foesunidentifiedflyingu_foes",
+      "name": "U FoesUnidentifiedFlyingU Foes",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "u_foesvapor",
+      "name": "U FoesVapor",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "u_foesvector",
+      "name": "U FoesVector",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "u_foesx_ray",
+      "name": "U FoesX Ray",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "u_foesironclad",
+      "name": "U FoesIronclad",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "warboundno_namebroodqueen",
+      "name": "WarboundNo NameBroodQueen",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "dark_descendents",
+      "name": "Dark Descendents",
+      "expansion": "xmen"
+    },
+    {
+      "id": "shadow_xdarkbetrayaloftheshadow",
+      "name": "Shadow XDarkBetrayalOfTheShadow",
+      "expansion": "xmen"
+    },
+    {
+      "id": "shadow_xdarkangel",
+      "name": "Shadow XDarkAngel",
+      "expansion": "xmen"
+    },
+    {
+      "id": "shadow_xdarkmarvelgirl",
+      "name": "Shadow XDarkMarvelGirl",
+      "expansion": "xmen"
+    },
+    {
+      "id": "shadow_xdarkbeast",
+      "name": "Shadow XDarkBeast",
+      "expansion": "xmen"
+    },
+    {
+      "id": "shadow_xdarkiceman",
+      "name": "Shadow XDarkIceman",
+      "expansion": "xmen"
+    },
+    {
+      "id": "shadow_xdarkcyclops",
+      "name": "Shadow XDarkCyclops",
+      "expansion": "xmen"
+    },
+    {
+      "id": "shi_ar_imperial_guard",
+      "name": "Shi’ar Imperial Guard",
+      "expansion": "xmen"
+    },
+    {
+      "id": "skrullssuper_skrull",
+      "name": "SkrullsSuper Skrull",
+      "expansion": "core"
+    },
+    {
+      "id": "spider_foesthelizard",
+      "name": "Spider FoesTheLizard",
+      "expansion": "core"
+    },
+    {
+      "id": "spider_foesdoctoroctopus",
+      "name": "Spider FoesDoctorOctopus",
+      "expansion": "core"
+    },
+    {
+      "id": "spider_foesvenom",
+      "name": "Spider FoesVenom",
+      "expansion": "core"
+    },
+    {
+      "id": "spider_foesgreengoblin",
+      "name": "Spider FoesGreenGoblin",
+      "expansion": "core"
     }
   ],
   "henchmen": [
@@ -1813,6 +4005,101 @@
       "id": "spider_slayer",
       "name": "Spider-Slayer",
       "expansion": "dimensions"
+    },
+    {
+      "id": "ultronsentries_covert",
+      "name": "UltronSentries Covert",
+      "expansion": "what_if"
+    },
+    {
+      "id": "ultronsentries_instinct",
+      "name": "UltronSentries Instinct",
+      "expansion": "what_if"
+    },
+    {
+      "id": "ultronsentries_ranged",
+      "name": "UltronSentries Ranged",
+      "expansion": "what_if"
+    },
+    {
+      "id": "ultronsentries_strength",
+      "name": "UltronSentries Strength",
+      "expansion": "what_if"
+    },
+    {
+      "id": "ultronsentries_tech",
+      "name": "UltronSentries Tech",
+      "expansion": "what_if"
+    },
+    {
+      "id": "cape_killers_and_mandroid",
+      "name": "Cape-Killers and Mandroid",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "cape_killers",
+      "name": "Cape Killers",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "maggia_goons_and_phalanx",
+      "name": "Maggia Goons and Phalanx",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "mr_sinister_clones_and_sentinel_squad_o_n_e",
+      "name": "Mr. Sinister Clones and Sentinel Squad O.N.E.",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "sentinelsquado_n_e",
+      "name": "SentinelSquadO N E",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "armies_of_kang_quantum_hound_and_tardigrade",
+      "name": "Armies of Kang, Quantum Hound, and Tardigrade",
+      "expansion": "ant_man_wasp"
+    },
+    {
+      "id": "quantumnauts",
+      "name": "Quantumnauts",
+      "expansion": "ant_man_wasp"
+    },
+    {
+      "id": "hydra_base_and_mandarin_s_rings",
+      "name": "Hydra Base and Mandarin’s Rings",
+      "expansion": "revelations"
+    },
+    {
+      "id": "mandarinsringsliarthemento_intensifier",
+      "name": "MandarinsRingsLiarTheMento Intensifier",
+      "expansion": "revelations"
+    },
+    {
+      "id": "mandarinsringslightningtheelectro_blast",
+      "name": "MandarinsRingsLightningTheElectro Blast",
+      "expansion": "revelations"
+    },
+    {
+      "id": "ghost_racers_m_o_d_o_k_s_and_thor_corps",
+      "name": "Ghost Racers, M.O.D.O.K.S, and Thor Corps",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "modoks",
+      "name": "MODOKS",
+      "expansion": "secret_wars_1"
+    },
+    {
+      "id": "khonshu_guardians_magma_men_spider_infected",
+      "name": "Khonshu Guardians, Magma Men, Spider-Infected",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "spider_infected",
+      "name": "Spider Infected",
+      "expansion": "secret_wars_2"
     }
   ],
   "heroes": [
@@ -3858,6 +6145,1635 @@
         "covert"
       ],
       "expansion": "dimensions"
+    },
+    {
+      "id": "doctor_doom_2099",
+      "name": "Doctor Doom 2099",
+      "expansion": "2099",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "ghost_rider_2099",
+      "name": "Ghost Rider 2099",
+      "expansion": "2099",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "hulk_2099",
+      "name": "Hulk 2099",
+      "expansion": "2099",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "ravage_2099",
+      "name": "Ravage 2099",
+      "expansion": "2099",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "spider_man_2099",
+      "name": "Spider-Man 2099",
+      "expansion": "2099",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "black_widow",
+      "name": "Black Widow",
+      "expansion": "phase_1",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "captain_america",
+      "name": "Captain America",
+      "expansion": "phase_1",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "hawkeye",
+      "name": "Hawkeye",
+      "expansion": "phase_1",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "hulk",
+      "name": "Hulk",
+      "expansion": "phase_1",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "iron_man",
+      "name": "Iron Man",
+      "expansion": "phase_1",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "nick_fury",
+      "name": "Nick Fury",
+      "expansion": "phase_1",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "thor",
+      "name": "Thor",
+      "expansion": "phase_1",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "apocalyptic_black_widow",
+      "name": "Apocalyptic Black Widow",
+      "expansion": "what_if",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "captain_carter",
+      "name": "Captain Carter",
+      "expansion": "what_if",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "doctor_strange_supreme",
+      "name": "Doctor Strange Supreme",
+      "expansion": "what_if",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "gamora_destroyer_of_thanos",
+      "name": "Gamora, Destroyer of Thanos",
+      "expansion": "what_if",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "killmonger_spec_ops",
+      "name": "Killmonger, Spec Ops",
+      "expansion": "what_if",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "party_thor",
+      "name": "Party Thor",
+      "expansion": "what_if",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "star_lord_t_challa",
+      "name": "Star-Lord T’Challa",
+      "expansion": "what_if",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "uatu_the_watcher",
+      "name": "Uatu, The Watcher",
+      "expansion": "what_if",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "brainstorm",
+      "name": "Brainstorm",
+      "expansion": "annihilation",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "fantastic_four_united",
+      "name": "Fantastic Four United",
+      "expansion": "annihilation",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "heralds_of_galactus",
+      "name": "Heralds of Galactus",
+      "expansion": "annihilation",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "psi_lord",
+      "name": "Psi-Lord",
+      "expansion": "annihilation",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "super_skrull",
+      "name": "Super-Skrull",
+      "expansion": "annihilation",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "general_okoye",
+      "name": "General Okoye",
+      "expansion": "black_panther",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "king_black_panther",
+      "name": "King Black Panther",
+      "expansion": "black_panther",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "princess_shuri",
+      "name": "Princess Shuri",
+      "expansion": "black_panther",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "queen_storm_of_wakanda",
+      "name": "Queen Storm of Wakanda",
+      "expansion": "black_panther",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "white_wolf",
+      "name": "White Wolf",
+      "expansion": "black_panther",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "black_widow",
+      "name": "Black Widow",
+      "expansion": "black_widow",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "falcon_winter_soldier",
+      "name": "Falcon & Winter Soldier",
+      "expansion": "black_widow",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "red_guardian",
+      "name": "Red Guardian",
+      "expansion": "black_widow",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "white_tiger",
+      "name": "White Tiger",
+      "expansion": "black_widow",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "yelena_belova",
+      "name": "Yelena Belova",
+      "expansion": "black_widow",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "captain_america_falcon",
+      "name": "Captain America Falcon",
+      "expansion": "cap_75",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "x_force_wolverine",
+      "name": "X-Force Wolverine",
+      "expansion": "dark_city",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "the_ancient_one",
+      "name": "The Ancient One",
+      "expansion": "doctor_strange",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "clea",
+      "name": "Clea",
+      "expansion": "doctor_strange",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "doctor_strange",
+      "name": "Doctor Strange",
+      "expansion": "doctor_strange",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "doctor_voodoo",
+      "name": "Doctor Voodoo",
+      "expansion": "doctor_strange",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "the_vishanti",
+      "name": "The Vishanti",
+      "expansion": "doctor_strange",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "beta_ray_bill",
+      "name": "Beta Ray Bill",
+      "expansion": "heroes_of_asgard",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "lady_sif",
+      "name": "Lady Sif",
+      "expansion": "heroes_of_asgard",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "thor",
+      "name": "Thor",
+      "expansion": "heroes_of_asgard",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "valkyrie",
+      "name": "Valkyrie",
+      "expansion": "heroes_of_asgard",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "the_warriors_three",
+      "name": "The Warriors Three",
+      "expansion": "heroes_of_asgard",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "adam_warlock",
+      "name": "Adam Warlock",
+      "expansion": "into_the_cosmos",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "captain_mar_vell",
+      "name": "Captain Mar-Vell",
+      "expansion": "into_the_cosmos",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "moondragon",
+      "name": "Moondragon",
+      "expansion": "into_the_cosmos",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "nebula",
+      "name": "Nebula",
+      "expansion": "into_the_cosmos",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "nova",
+      "name": "Nova",
+      "expansion": "into_the_cosmos",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "phyla_vell",
+      "name": "Phyla-Vell",
+      "expansion": "into_the_cosmos",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "quasar",
+      "name": "Quasar",
+      "expansion": "into_the_cosmos",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "ronan_the_accuser",
+      "name": "Ronan the Accuser",
+      "expansion": "into_the_cosmos",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "yondu",
+      "name": "Yondu",
+      "expansion": "into_the_cosmos",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "multiple_man",
+      "name": "Multiple Man",
+      "expansion": "messiah_complex",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "rictor",
+      "name": "Rictor",
+      "expansion": "messiah_complex",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "shatterstar",
+      "name": "Shatterstar",
+      "expansion": "messiah_complex",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "siryn",
+      "name": "Siryn",
+      "expansion": "messiah_complex",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "stepford_cuckoos",
+      "name": "Stepford Cuckoos",
+      "expansion": "messiah_complex",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "strong_guy",
+      "name": "Strong Guy",
+      "expansion": "messiah_complex",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "warpath",
+      "name": "Warpath",
+      "expansion": "messiah_complex",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "ant_army",
+      "name": "Ant Army",
+      "expansion": "ant_man_wasp",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "ant_man",
+      "name": "Ant-Man",
+      "expansion": "ant_man_wasp",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "cassie_lang",
+      "name": "Cassie Lang",
+      "expansion": "ant_man_wasp",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "freedom_fighters",
+      "name": "Freedom Fighters",
+      "expansion": "ant_man_wasp",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "janet_van_dyne",
+      "name": "Janet Van Dyne",
+      "expansion": "ant_man_wasp",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "jentorra",
+      "name": "Jentorra",
+      "expansion": "ant_man_wasp",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "scott_lang_cat_burgler",
+      "name": "Scott Lang, Cat Burgler",
+      "expansion": "ant_man_wasp",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "wasp",
+      "name": "Wasp",
+      "expansion": "ant_man_wasp",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "drax",
+      "name": "Drax",
+      "expansion": "mcu_guardians",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "gamora",
+      "name": "Gamora",
+      "expansion": "mcu_guardians",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "mantis",
+      "name": "Mantis",
+      "expansion": "mcu_guardians",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "rocket_groot",
+      "name": "Rocket & Groot",
+      "expansion": "mcu_guardians",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "star_lord",
+      "name": "Star-Lord",
+      "expansion": "mcu_guardians",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "black_panther",
+      "name": "Black Panther",
+      "expansion": "infinity_saga",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "bruce_banner",
+      "name": "Bruce Banner",
+      "expansion": "infinity_saga",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "captain_marvel",
+      "name": "Captain Marvel",
+      "expansion": "infinity_saga",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "doctor_strange",
+      "name": "Doctor Strange",
+      "expansion": "infinity_saga",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "wanda_vision",
+      "name": "Wanda & Vision",
+      "expansion": "infinity_saga",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "blade_daywalker",
+      "name": "Blade, Daywalker",
+      "expansion": "midnight_sons",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "elsa_bloodstone",
+      "name": "Elsa Bloodstone",
+      "expansion": "midnight_sons",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "morbius",
+      "name": "Morbius",
+      "expansion": "midnight_sons",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "werewolf_by_night",
+      "name": "Werewolf By Night",
+      "expansion": "midnight_sons",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "wong_master_of_the_mystic_arts",
+      "name": "Wong, Master of the Mystic Arts",
+      "expansion": "midnight_sons",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "karma",
+      "name": "Karma",
+      "expansion": "new_mutants",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "mirage",
+      "name": "Mirage",
+      "expansion": "new_mutants",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "sunspot",
+      "name": "Sunspot",
+      "expansion": "new_mutants",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "warlock",
+      "name": "Warlock",
+      "expansion": "new_mutants",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "wolfsbane",
+      "name": "Wolfsbane",
+      "expansion": "new_mutants",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "black_bolt",
+      "name": "Black Bolt",
+      "expansion": "realm_of_kings",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "crystal",
+      "name": "Crystal",
+      "expansion": "realm_of_kings",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "gorgon",
+      "name": "Gorgon",
+      "expansion": "realm_of_kings",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "karnak",
+      "name": "Karnak",
+      "expansion": "realm_of_kings",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "medusa",
+      "name": "Medusa",
+      "expansion": "realm_of_kings",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "captain_marvel_agent_of_s_h_i_e_l_d",
+      "name": "Captain Marvel - Agent of S.H.I.E.L.D.",
+      "expansion": "revelations",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "darkhawk",
+      "name": "Darkhawk",
+      "expansion": "revelations",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "hellcat",
+      "name": "Hellcat",
+      "expansion": "revelations",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "photon",
+      "name": "Photon",
+      "expansion": "revelations",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "quicksilver",
+      "name": "Quicksilver",
+      "expansion": "revelations",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "ronin",
+      "name": "Ronin",
+      "expansion": "revelations",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "scarlet_witch",
+      "name": "Scarlet Witch",
+      "expansion": "revelations",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "speed",
+      "name": "Speed",
+      "expansion": "revelations",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "war_machine",
+      "name": "War Machine",
+      "expansion": "revelations",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "agent_phil_coulson",
+      "name": "Agent Phil Coulson",
+      "expansion": "shield",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "deathlok",
+      "name": "Deathlok",
+      "expansion": "shield",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "mockingbird",
+      "name": "Mockingbird",
+      "expansion": "shield",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "quake",
+      "name": "Quake",
+      "expansion": "shield",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "apocalyptic_kitty_pryde",
+      "name": "Apocalyptic Kitty Pryde",
+      "expansion": "secret_wars_1",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "black_bolt",
+      "name": "Black Bolt",
+      "expansion": "secret_wars_1",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "black_panther",
+      "name": "Black Panther",
+      "expansion": "secret_wars_1",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "captain_marvel",
+      "name": "Captain Marvel",
+      "expansion": "secret_wars_1",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "dr_strange",
+      "name": "Dr. Strange",
+      "expansion": "secret_wars_1",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "lady_thor",
+      "name": "Lady Thor",
+      "expansion": "secret_wars_1",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "magik",
+      "name": "Magik",
+      "expansion": "secret_wars_1",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "maximus",
+      "name": "Maximus",
+      "expansion": "secret_wars_1",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "namor",
+      "name": "Namor",
+      "expansion": "secret_wars_1",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "old_man_logan",
+      "name": "Old Man Logan",
+      "expansion": "secret_wars_1",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "proxima_midnight",
+      "name": "Proxima Midnight",
+      "expansion": "secret_wars_1",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "superior_iron_man",
+      "name": "Superior Iron Man",
+      "expansion": "secret_wars_1",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "thanos",
+      "name": "Thanos",
+      "expansion": "secret_wars_1",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "ultimate_spider_man",
+      "name": "Ultimate Spider-Man",
+      "expansion": "secret_wars_1",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "agent_venom",
+      "name": "Agent Venom",
+      "expansion": "secret_wars_2",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "arkon_the_magnificent",
+      "name": "Arkon the Magnificent",
+      "expansion": "secret_wars_2",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "beast",
+      "name": "Beast",
+      "expansion": "secret_wars_2",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "black_swan",
+      "name": "Black Swan",
+      "expansion": "secret_wars_2",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "the_captain_and_the_devil",
+      "name": "The Captain and the Devil",
+      "expansion": "secret_wars_2",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "captain_britain",
+      "name": "Captain Britain",
+      "expansion": "secret_wars_2",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "corvus_glaive",
+      "name": "Corvus Glaive",
+      "expansion": "secret_wars_2",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "dr_punisher_the_soldier_supreme",
+      "name": "Dr. Punisher the Soldier Supreme",
+      "expansion": "secret_wars_2",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "elsa_bloodstone",
+      "name": "Elsa Bloodstone",
+      "expansion": "secret_wars_2",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "phoenix_force_cyclops",
+      "name": "Phoenix Force Cyclops",
+      "expansion": "secret_wars_2",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "ruby_summers",
+      "name": "Ruby Summers",
+      "expansion": "secret_wars_2",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "shang_chi",
+      "name": "Shang-Chi",
+      "expansion": "secret_wars_2",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "silk",
+      "name": "Silk",
+      "expansion": "secret_wars_2",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "soulsword_colossus",
+      "name": "Soulsword Colossus",
+      "expansion": "secret_wars_2",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "spider_gwen",
+      "name": "Spider-Gwen",
+      "expansion": "secret_wars_2",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "time_traveling_jean_grey",
+      "name": "Time-Traveling Jean Grey",
+      "expansion": "secret_wars_2",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "hightech_spider_man",
+      "name": "Hightech Spider-Man",
+      "expansion": "spiderman_homecoming",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "peter_s_allies",
+      "name": "Peter’s Allies",
+      "expansion": "spiderman_homecoming",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "fantomex",
+      "name": "Fantomex",
+      "expansion": "weapon_x",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "marrow",
+      "name": "Marrow",
+      "expansion": "weapon_x",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "weapon_h",
+      "name": "Weapon H",
+      "expansion": "weapon_x",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "weapon_x_wolverine",
+      "name": "Weapon X (Wolverine)",
+      "expansion": "weapon_x",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "amadeuscho_3transformed",
+      "name": "AmadeusCho 3Transformed",
+      "expansion": "world_war_hulk",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "brucebanner_3transformed",
+      "name": "BruceBanner 3Transformed",
+      "expansion": "world_war_hulk",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "caiera_1transform",
+      "name": "Caiera 1Transform",
+      "expansion": "world_war_hulk",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "gladiatorhulk_3transformed",
+      "name": "GladiatorHulk 3Transformed",
+      "expansion": "world_war_hulk",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "hiroim_3transformed",
+      "name": "Hiroim 3Transformed",
+      "expansion": "world_war_hulk",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "joe_fix_it_the_grey_hulk",
+      "name": "Joe Fix-It, the Grey Hulk",
+      "expansion": "world_war_hulk",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "joefixitgreyhulk_4transformed",
+      "name": "JoeFixitGreyHulk 4Transformed",
+      "expansion": "world_war_hulk",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "korg_4transformed",
+      "name": "Korg 4Transformed",
+      "expansion": "world_war_hulk",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "miektheunhived_1transformed",
+      "name": "MiekTheUnhived 1Transformed",
+      "expansion": "world_war_hulk",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "namora_4transformed",
+      "name": "Namora 4Transformed",
+      "expansion": "world_war_hulk",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "no_name_brood_queen",
+      "name": "No Name, Brood Queen",
+      "expansion": "world_war_hulk",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "no_namebroodqueen_4transformed",
+      "name": "No NameBroodQueen 4Transformed",
+      "expansion": "world_war_hulk",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "rickjones_3transformed",
+      "name": "RickJones 3Transformed",
+      "expansion": "world_war_hulk",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "rickjones_4transformed",
+      "name": "RickJones 4Transformed",
+      "expansion": "world_war_hulk",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "rickjones_1transformed",
+      "name": "RickJones 1Transformed",
+      "expansion": "world_war_hulk",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "sentry_2transformed",
+      "name": "Sentry 2Transformed",
+      "expansion": "world_war_hulk",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "sentry_4transformed",
+      "name": "Sentry 4Transformed",
+      "expansion": "world_war_hulk",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "she_hulk_2transformed",
+      "name": "She Hulk 2Transformed",
+      "expansion": "world_war_hulk",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "skaarsonofhulk_4transformed",
+      "name": "SkaarSonOfHulk 4Transformed",
+      "expansion": "world_war_hulk",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "aurora_and_northstar",
+      "name": "Aurora and Northstar",
+      "expansion": "xmen",
+      "team": "unknown",
+      "classes": []
+    },
+    {
+      "id": "colossus_and_wolverine",
+      "name": "Colossus and Wolverine",
+      "expansion": "xmen",
+      "team": "unknown",
+      "classes": []
+    }
+  ],
+  "bystanders": [
+    {
+      "id": "mcu_bystander",
+      "name": "MCU Bystander",
+      "expansion": "phase_1"
+    },
+    {
+      "id": "mcu_b_happy_hogan",
+      "name": "MCU B Happy Hogan",
+      "expansion": "phase_1"
+    },
+    {
+      "id": "mcu_b_jane_foster",
+      "name": "MCU B Jane Foster",
+      "expansion": "phase_1"
+    },
+    {
+      "id": "mcu_b_peggy_carter",
+      "name": "MCU B Peggy Carter",
+      "expansion": "phase_1"
+    },
+    {
+      "id": "mcu_b_pepper_potts",
+      "name": "MCU B Pepper Potts",
+      "expansion": "phase_1"
+    },
+    {
+      "id": "mcu_agent",
+      "name": "MCU Agent",
+      "expansion": "phase_1"
+    },
+    {
+      "id": "mcu_trooper",
+      "name": "MCU Trooper",
+      "expansion": "phase_1"
+    },
+    {
+      "id": "mcu_officer",
+      "name": "MCU Officer",
+      "expansion": "phase_1"
+    },
+    {
+      "id": "mcu_wound",
+      "name": "MCU Wound",
+      "expansion": "phase_1"
+    },
+    {
+      "id": "mcu_master_strike",
+      "name": "MCU Master Strike",
+      "expansion": "phase_1"
+    },
+    {
+      "id": "mcu_scheme_twist",
+      "name": "MCU Scheme Twist",
+      "expansion": "phase_1"
+    },
+    {
+      "id": "what_if_b_happy_hogan",
+      "name": "What If B Happy Hogan",
+      "expansion": "what_if"
+    },
+    {
+      "id": "what_if_b_howard_stark",
+      "name": "What If B Howard Stark",
+      "expansion": "what_if"
+    },
+    {
+      "id": "what_if_b_howard_the_duck",
+      "name": "What If B Howard the Duck",
+      "expansion": "what_if"
+    },
+    {
+      "id": "what_if_b_pepper_potts",
+      "name": "What If B Pepper Potts",
+      "expansion": "what_if"
+    },
+    {
+      "id": "what_if_b_scott_langs_head",
+      "name": "What If B Scott Langs Head",
+      "expansion": "what_if"
+    },
+    {
+      "id": "what_if_bystander",
+      "name": "What If Bystander",
+      "expansion": "what_if"
+    },
+    {
+      "id": "what_if_shield_agent",
+      "name": "What If SHIELD Agent",
+      "expansion": "what_if"
+    },
+    {
+      "id": "what_if_shield_trooper",
+      "name": "What If SHIELD Trooper",
+      "expansion": "what_if"
+    },
+    {
+      "id": "what_if_shield_officer",
+      "name": "What If SHIELD Officer",
+      "expansion": "what_if"
+    },
+    {
+      "id": "what_if_wound",
+      "name": "What If Wound",
+      "expansion": "what_if"
+    },
+    {
+      "id": "what_if_master_strike",
+      "name": "What If Master Strike",
+      "expansion": "what_if"
+    },
+    {
+      "id": "what_if_scheme_twist",
+      "name": "What If Scheme Twist",
+      "expansion": "what_if"
+    },
+    {
+      "id": "aspiring_hero",
+      "name": "Aspiring Hero",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "comic_shop_keeper",
+      "name": "Comic Shop Keeper",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "grievous_wounds",
+      "name": "Grievous Wounds",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "grievouswound_blindingflash",
+      "name": "GrievousWound BlindingFlash",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "grievouswound_bluntforcetrauma",
+      "name": "GrievousWound BluntForceTrauma",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "grievouswound_corrosivewebbing",
+      "name": "GrievousWound CorrosiveWebbing",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "grievouswound_fatalblow",
+      "name": "GrievousWound FatalBlow",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "grievouswound_psychictrauma",
+      "name": "GrievousWound PsychicTrauma",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "grievouswound_spreadingnanovirus",
+      "name": "GrievousWound SpreadingNanovirus",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "grievouswound_subdermaltracker",
+      "name": "GrievousWound SubdermalTracker",
+      "expansion": "civil_war"
+    },
+    {
+      "id": "news_reporter",
+      "name": "News Reporter",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "paramedic",
+      "name": "Paramedic",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "radiation_scientist",
+      "name": "Radiation Scientist",
+      "expansion": "dark_city"
+    },
+    {
+      "id": "bulldozer_driver",
+      "name": "Bulldozer Driver",
+      "expansion": "dimensions"
+    },
+    {
+      "id": "double_agent_of_shield",
+      "name": "Double Agent of Shield",
+      "expansion": "dimensions"
+    },
+    {
+      "id": "forklift_driver",
+      "name": "Forklift Driver",
+      "expansion": "dimensions"
+    },
+    {
+      "id": "fortune_teller",
+      "name": "Fortune Teller",
+      "expansion": "dimensions"
+    },
+    {
+      "id": "photographer",
+      "name": "Photographer",
+      "expansion": "dimensions"
+    },
+    {
+      "id": "board_gamer",
+      "name": "Board Gamer",
+      "expansion": "into_the_cosmos"
+    },
+    {
+      "id": "legendary_game_designer",
+      "name": "Legendary Game Designer",
+      "expansion": "into_the_cosmos"
+    },
+    {
+      "id": "pizza_delivery_guy",
+      "name": "Pizza Delivery Guy",
+      "expansion": "into_the_cosmos"
+    },
+    {
+      "id": "cloning_technician",
+      "name": "Cloning Technician",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "opera_singer",
+      "name": "Opera Singer",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "private_investigator",
+      "name": "Private Investigator",
+      "expansion": "messiah_complex"
+    },
+    {
+      "id": "agent_jimmy_woo",
+      "name": "Agent Jimmy Woo",
+      "expansion": "ant_man_wasp"
+    },
+    {
+      "id": "maggie_lang",
+      "name": "Maggie Lang",
+      "expansion": "ant_man_wasp"
+    },
+    {
+      "id": "officer_jim_paxton",
+      "name": "Officer Jim Paxton",
+      "expansion": "ant_man_wasp"
+    },
+    {
+      "id": "young_cassie_lang",
+      "name": "Young Cassie Lang",
+      "expansion": "ant_man_wasp"
+    },
+    {
+      "id": "dog_show_judge",
+      "name": "Dog Show Judge",
+      "expansion": "revelations"
+    },
+    {
+      "id": "lawyer",
+      "name": "Lawyer",
+      "expansion": "revelations"
+    },
+    {
+      "id": "rocket_test_pilot",
+      "name": "Rocket Test Pilot",
+      "expansion": "revelations"
+    },
+    {
+      "id": "alligator_trapper",
+      "name": "Alligator Trapper",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "shapeshifter_copycat",
+      "name": "Shapeshifter Copycat",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "undercover_agent",
+      "name": "Undercover Agent",
+      "expansion": "secret_wars_2"
+    },
+    {
+      "id": "actor",
+      "name": "Actor",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "animal_trainer",
+      "name": "Animal Trainer",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "tourist_couple",
+      "name": "Tourist Couple",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "triage_nurse",
+      "name": "Triage Nurse",
+      "expansion": "world_war_hulk"
+    },
+    {
+      "id": "cypher",
+      "name": "Cypher",
+      "expansion": "xmen"
+    },
+    {
+      "id": "heartless_computer_scientist",
+      "name": "Heartless Computer Scientist",
+      "expansion": "xmen"
+    },
+    {
+      "id": "karma",
+      "name": "Karma",
+      "expansion": "xmen"
+    },
+    {
+      "id": "magik",
+      "name": "Magik",
+      "expansion": "xmen"
+    },
+    {
+      "id": "magma",
+      "name": "Magma",
+      "expansion": "xmen"
+    },
+    {
+      "id": "martial_arts_master",
+      "name": "Martial Arts Master",
+      "expansion": "xmen"
+    },
+    {
+      "id": "mirage",
+      "name": "Mirage",
+      "expansion": "xmen"
+    },
+    {
+      "id": "sunspot",
+      "name": "Sunspot",
+      "expansion": "xmen"
+    },
+    {
+      "id": "warlock",
+      "name": "Warlock",
+      "expansion": "xmen"
+    },
+    {
+      "id": "wolfsbane",
+      "name": "Wolfsbane",
+      "expansion": "xmen"
+    },
+    {
+      "id": "horrors",
+      "name": "Horrors",
+      "expansion": "xmen"
+    },
+    {
+      "id": "army_of_evil",
+      "name": "Army of Evil",
+      "expansion": "xmen"
+    },
+    {
+      "id": "empire_of_oppression",
+      "name": "Empire Of Oppression",
+      "expansion": "xmen"
+    },
+    {
+      "id": "endless_hatred",
+      "name": "Endless Hatred",
+      "expansion": "xmen"
+    },
+    {
+      "id": "enraged_mastermind",
+      "name": "Enraged Mastermind",
+      "expansion": "xmen"
+    },
+    {
+      "id": "fight_to_the_end",
+      "name": "Fight to the End",
+      "expansion": "xmen"
+    },
+    {
+      "id": "growing_threat",
+      "name": "Growing Threat",
+      "expansion": "xmen"
+    },
+    {
+      "id": "legions_upon_legions",
+      "name": "Legions Upon Legions",
+      "expansion": "xmen"
+    },
+    {
+      "id": "maniacal_mastermind",
+      "name": "Maniacal Mastermind",
+      "expansion": "xmen"
+    },
+    {
+      "id": "misery_upon_misery",
+      "name": "Misery Upon Misery",
+      "expansion": "xmen"
+    },
+    {
+      "id": "opening_salvo",
+      "name": "Opening Salvo",
+      "expansion": "xmen"
+    },
+    {
+      "id": "pain_upon_pain",
+      "name": "Pain Upon Pain",
+      "expansion": "xmen"
+    },
+    {
+      "id": "plots_upon_plots",
+      "name": "Plots Upon Plots",
+      "expansion": "xmen"
+    },
+    {
+      "id": "psychic_infection",
+      "name": "Psychic Infection",
+      "expansion": "xmen"
+    },
+    {
+      "id": "shadow_of_the_discipline",
+      "name": "Shadow of the Discipline.",
+      "expansion": "xmen"
+    },
+    {
+      "id": "master_plan",
+      "name": "Master Plan",
+      "expansion": "xmen"
+    },
+    {
+      "id": "surprise_assault",
+      "name": "Surprise Assault",
+      "expansion": "xmen"
+    },
+    {
+      "id": "the_apprentice_rises",
+      "name": "The Apprentice Rises",
+      "expansion": "xmen"
+    },
+    {
+      "id": "the_blood_thickens",
+      "name": "The Blood Thickens",
+      "expansion": "xmen"
+    },
+    {
+      "id": "the_plot_thickens",
+      "name": "The Plot Thickens",
+      "expansion": "xmen"
+    },
+    {
+      "id": "tyrant_mastermind",
+      "name": "Tyrant Mastermind",
+      "expansion": "xmen"
+    },
+    {
+      "id": "viral_infection",
+      "name": "Viral Infection",
+      "expansion": "xmen"
     }
   ]
 }

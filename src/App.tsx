@@ -20,7 +20,7 @@ import { TrackerTab } from './components/tabs/TrackerTab';
 import { ReleaseNotesTab } from './components/tabs/ReleaseNotesTab';
 
 function App() {
-  const [playerCount, setPlayerCount] = useState(2);
+  const [playerCount, setPlayerCount] = useState(1);
   const [activeTab, setActiveTab] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [result, setResult] = useState<SetupResult | null>(null);
@@ -81,6 +81,12 @@ function App() {
     return () => document.removeEventListener('click', clickHandler);
   }, []);
 
+  useEffect(() => {
+    if (activeTab !== 'randomizer') {
+      setResult(null);
+    }
+  }, [activeTab]);
+
   const changeTheme = (newTheme: string) => {
     setTheme(newTheme);
     document.body.setAttribute('data-theme', newTheme);
@@ -121,6 +127,7 @@ function App() {
       score: 0
     });
     
+    setActiveTab('history');
     alert(`Partida salva no histórico com sucesso!`);
     
     // Zera contadores
@@ -252,6 +259,7 @@ function App() {
               playerCount={playerCount} setPlayerCount={setPlayerCount}
               result={result} setResult={setResult}
               handleDraw={handleDraw}
+              handleFinishMatch={handleFinishMatch}
             />
           )}
           {activeTab === 'tracker' && (

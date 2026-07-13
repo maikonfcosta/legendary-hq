@@ -163,7 +163,7 @@ export function Rules({ ownedExpansions }: RulesProps) {
               • 30 Reféns (Virados para baixo)
             </p>
 
-            <h4 style={{ color: 'white', fontSize: '1.3rem', marginBottom: '0.8rem', marginTop: '1.5rem' }}>Baralho de Vilões (Por Número de Jogadores)</h4>
+            <h4 style={{ color: 'white', fontSize: '1.3rem', marginBottom: '0.8rem', marginTop: '1.5rem' }}>Baralhos (Por Número de Jogadores)</h4>
             <div style={{ background: 'rgba(0,0,0,0.3)', padding: '15px', borderRadius: '8px', border: '1px solid var(--surface-border)' }}>
               <table style={{ width: '100%', color: 'var(--text-secondary)', textAlign: 'left', borderCollapse: 'collapse' }}>
                 <thead>
@@ -172,32 +172,51 @@ export function Rules({ ownedExpansions }: RulesProps) {
                     <th style={{ padding: '8px' }}>Grupos de Vilões</th>
                     <th style={{ padding: '8px' }}>Grupos de Capangas</th>
                     <th style={{ padding: '8px' }}>Reféns</th>
+                    <th style={{ padding: '8px' }}>Heróis no QG</th>
                   </tr>
                 </thead>
                 <tbody>
+                  <tr style={{ borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+                    <td style={{ padding: '8px' }}>1 (Solo Base)</td>
+                    <td style={{ padding: '8px' }}>1</td>
+                    <td style={{ padding: '8px' }}>1</td>
+                    <td style={{ padding: '8px' }}>1</td>
+                    <td style={{ padding: '8px' }}>3</td>
+                  </tr>
+                  <tr style={{ borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+                    <td style={{ padding: '8px' }}>1 (Advanced Solo)</td>
+                    <td style={{ padding: '8px' }}>2</td>
+                    <td style={{ padding: '8px' }}>1</td>
+                    <td style={{ padding: '8px' }}>2</td>
+                    <td style={{ padding: '8px' }}>5</td>
+                  </tr>
                   <tr style={{ borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
                     <td style={{ padding: '8px' }}>2</td>
                     <td style={{ padding: '8px' }}>2</td>
                     <td style={{ padding: '8px' }}>1</td>
                     <td style={{ padding: '8px' }}>2</td>
+                    <td style={{ padding: '8px' }}>5</td>
                   </tr>
                   <tr style={{ borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
                     <td style={{ padding: '8px' }}>3</td>
                     <td style={{ padding: '8px' }}>3</td>
                     <td style={{ padding: '8px' }}>1</td>
                     <td style={{ padding: '8px' }}>8</td>
+                    <td style={{ padding: '8px' }}>5</td>
                   </tr>
                   <tr style={{ borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
                     <td style={{ padding: '8px' }}>4</td>
                     <td style={{ padding: '8px' }}>3</td>
                     <td style={{ padding: '8px' }}>2</td>
                     <td style={{ padding: '8px' }}>8</td>
+                    <td style={{ padding: '8px' }}>5</td>
                   </tr>
                   <tr>
                     <td style={{ padding: '8px' }}>5</td>
                     <td style={{ padding: '8px' }}>4</td>
                     <td style={{ padding: '8px' }}>2</td>
                     <td style={{ padding: '8px' }}>12</td>
+                    <td style={{ padding: '8px' }}>6</td>
                   </tr>
                 </tbody>
               </table>

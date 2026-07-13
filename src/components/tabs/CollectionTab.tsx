@@ -11,12 +11,12 @@ interface CollectionTabProps {
 export function CollectionTab({ ownedExpansions, toggleExpansion }: CollectionTabProps) {
   return (
     <section className="fade-in">
-      <div className="result-header">
-        <h2>Minha Coleção</h2>
+      <div className="page-header" style={{ marginBottom: '24px' }}>
+        <h2 className="page-title">Sua Coleção</h2>
+        <p className="page-subtitle">
+          Selecione as expansões que você possui para usá-las no gerador e nas estatísticas.
+        </p>
       </div>
-      <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>
-        Clique nas expansões que você possui para habilitá-las no Randomizer.
-      </p>
       
       <div className="collection-grid">
         {cardsData.expansions.map(exp => {

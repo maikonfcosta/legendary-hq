@@ -30,11 +30,9 @@ export function StatsTab({ history }: StatsTabProps) {
 
   return (
     <div className="fade-in">
-      <div className="result-header">
-        <div>
-          <h2>Estatísticas</h2>
-          <p style={{ color: 'var(--text-secondary)' }}>Analise seu desempenho nas partidas.</p>
-        </div>
+      <div className="page-header" style={{ marginBottom: '24px' }}>
+        <h2 className="page-title">Estatísticas</h2>
+        <p className="page-subtitle">Analise seu desempenho nas partidas.</p>
       </div>
 
       {totalGames === 0 ? (
@@ -42,7 +40,7 @@ export function StatsTab({ history }: StatsTabProps) {
           <BarChart2 size={64} style={{ color: 'var(--text-secondary)', margin: '0 auto 1.5rem', opacity: 0.5 }} />
           <h2 style={{ fontSize: '2rem', marginBottom: '1rem', color: 'white' }}>Sem Histórico</h2>
           <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto 2rem auto', lineHeight: 1.6 }}>
-            Jogue ou cadastre algumas partidas na aba Histórico para ver seu desempenho aqui!
+            Jogue algumas partidas e registre-as no histórico ou no Gerador para ver seu desempenho aqui!
           </p>
         </div>
       ) : (

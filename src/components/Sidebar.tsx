@@ -23,7 +23,7 @@ export function Sidebar({ activeTab, handleTabChange, isMobileMenuOpen }: Sideba
           <Activity size={20} /> Tracker
         </button>
         <button className={`nav-link ${activeTab === 'randomizer' ? 'active' : ''}`} onClick={() => handleTabChange('randomizer')}>
-          <Shuffle size={20} /> Sorteio
+          <Shuffle size={20} /> Gerador
         </button>
         <button className={`nav-link ${activeTab === 'stats' ? 'active' : ''}`} onClick={() => handleTabChange('stats')}>
           <BarChart2 size={20} /> Estatísticas
@@ -32,7 +32,7 @@ export function Sidebar({ activeTab, handleTabChange, isMobileMenuOpen }: Sideba
           <ScrollText size={20} /> Histórico
         </button>
         <button className={`nav-link ${activeTab === 'collection' ? 'active' : ''}`} onClick={() => handleTabChange('collection')}>
-          <Layers size={20} /> Minha Coleção
+          <Layers size={20} /> Coleção
         </button>
         <button className={`nav-link ${activeTab === 'rules' ? 'active' : ''}`} onClick={() => handleTabChange('rules')}>
           <BookOpen size={20} /> Regras

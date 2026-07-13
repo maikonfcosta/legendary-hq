@@ -41,18 +41,40 @@ export function HistoryTab({ history, addMatch, ownedExpansions }: HistoryTabPro
     setFormData({ mastermind: '', scheme: '', victory: true, playerCount: 2, score: 0 });
   };
 
+  const totalMatches = history.length;
+  const wins = history.filter(m => m.victory).length;
+  const winRate = totalMatches > 0 ? Math.round((wins / totalMatches) * 100) : 0;
+
   return (
     <div className="fade-in">
-      <div className="result-header">
+      <div className="page-header" style={{ marginBottom: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div>
-          <h2>Histórico de Partidas</h2>
-          <p style={{ color: 'var(--text-secondary)' }}>Registre e consulte seus embates contra os Masterminds.</p>
+          <h2 className="page-title">Histórico de Partidas</h2>
+          <p className="page-subtitle">Registre e consulte seus embates contra os Masterminds.</p>
         </div>
         <button className="btn btn-primary" onClick={() => setShowModal(true)}>
           <Plus size={18} style={{ marginRight: '8px', verticalAlign: 'middle' }} />
-          Adicionar
+          Adicionar Partida
         </button>
       </div>
+
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px', marginBottom: '32px' }}>
+        <div className="glass-panel" style={{ padding: '24px', textAlign: 'center' }}>
+          <h4 style={{ color: 'var(--text-secondary)', marginBottom: '8px' }}>Total de Partidas</h4>
+          <span style={{ fontSize: '2.5rem', fontWeight: 'bold' }}>{totalMatches}</span>
+        </div>
+        <div className="glass-panel" style={{ padding: '24px', textAlign: 'center' }}>
+          <h4 style={{ color: 'var(--text-secondary)', marginBottom: '8px' }}>Vitórias</h4>
+          <span style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#10b981' }}>{wins}</span>
+        </div>
+        <div className="glass-panel" style={{ padding: '24px', textAlign: 'center' }}>
+          <h4 style={{ color: 'var(--text-secondary)', marginBottom: '8px' }}>Taxa de Vitória</h4>
+          <span style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#60a5fa' }}>{winRate}%</span>
+        </div>
+      </div>
+
+      <h3 style={{ marginBottom: '16px', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '8px' }}>Diário de Batalha</h3>
+
 
       {history.length === 0 ? (
         <div className="glass-panel" style={{ textAlign: 'center', padding: '3rem 2rem' }}>
@@ -86,50 +108,51 @@ export function HistoryTab({ history, addMatch, ownedExpansions }: HistoryTabPro
           <div className="mobile-overlay open" onClick={() => setShowModal(false)} style={{ zIndex: 999 }}></div>
           <div className="glass-panel fade-in" style={{
             position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
-            width: '90%', maxWidth: '500px', zIndex: 1000, padding: '2rem'
+            width: '90%', maxWidth: '500px', zIndex: 1000, padding: '2rem',
+            background: 'var(--bg-main)'
           }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
               <h2 style={{ margin: 0 }}>Registrar Partida</h2>
               <button className="btn" style={{ padding: '4px', background: 'transparent' }} onClick={() => setShowModal(false)}><X size={24} /></button>
             </div>
             
-            <form onSubmit={handleManualSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <form onSubmit={handleManualSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
               <div className="input-group" style={{ margin: '0' }}>
-                <label style={{alignSelf: 'flex-start'}}>Resultado:</label>
-                <select className="glass-select" value={formData.victory ? 'win' : 'loss'} onChange={(e) => setFormData({...formData, victory: e.target.value === 'win'})}>
+                <label style={{alignSelf: 'flex-start', color: 'var(--text-secondary)', marginBottom: '4px', fontWeight: 600}}>Resultado da Partida</label>
+                <select className="glass-select" style={{ width: '100%', maxWidth: '100%', background: 'rgba(0,0,0,0.4)', color: formData.victory ? '#10b981' : '#ef4444' }} value={formData.victory ? 'win' : 'loss'} onChange={(e) => setFormData({...formData, victory: e.target.value === 'win'})}>
                   <option value="win">Vitória</option>
                   <option value="loss">Derrota</option>
                 </select>
               </div>
 
               <div className="input-group" style={{ margin: '0' }}>
-                <label style={{alignSelf: 'flex-start'}}>Mastermind:</label>
-                <select className="glass-select" value={formData.mastermind} onChange={(e) => setFormData({...formData, mastermind: e.target.value})} required>
-                  <option value="">-- Selecione --</option>
+                <label style={{alignSelf: 'flex-start', color: 'var(--text-secondary)', marginBottom: '4px', fontWeight: 600}}>Mastermind</label>
+                <select className="glass-select" style={{ width: '100%', maxWidth: '100%', background: 'rgba(0,0,0,0.4)' }} value={formData.mastermind} onChange={(e) => setFormData({...formData, mastermind: e.target.value})} required>
+                  <option value="">-- Selecione o Mastermind --</option>
                   {availableMasterminds.map(m => <option key={m.id} value={m.name}>{m.name}</option>)}
                 </select>
               </div>
 
               <div className="input-group" style={{ margin: '0' }}>
-                <label style={{alignSelf: 'flex-start'}}>Scheme:</label>
-                <select className="glass-select" value={formData.scheme} onChange={(e) => setFormData({...formData, scheme: e.target.value})} required>
-                  <option value="">-- Selecione --</option>
+                <label style={{alignSelf: 'flex-start', color: 'var(--text-secondary)', marginBottom: '4px', fontWeight: 600}}>Scheme</label>
+                <select className="glass-select" style={{ width: '100%', maxWidth: '100%', background: 'rgba(0,0,0,0.4)' }} value={formData.scheme} onChange={(e) => setFormData({...formData, scheme: e.target.value})} required>
+                  <option value="">-- Selecione o Scheme --</option>
                   {availableSchemes.map(s => <option key={s.id} value={s.name}>{s.name}</option>)}
                 </select>
               </div>
 
               <div className="input-group" style={{ display: 'flex', flexDirection: 'row', gap: '1rem', margin: '0' }}>
                 <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-                  <label>Jogadores:</label>
-                  <input type="number" min="1" max="5" className="glass-select" value={formData.playerCount} onChange={(e) => setFormData({...formData, playerCount: Number(e.target.value)})} />
+                  <label style={{color: 'var(--text-secondary)', marginBottom: '4px', fontWeight: 600}}>Jogadores</label>
+                  <input type="number" min="1" max="5" className="glass-select" style={{ width: '100%', maxWidth: '100%', background: 'rgba(0,0,0,0.4)' }} value={formData.playerCount} onChange={(e) => setFormData({...formData, playerCount: Number(e.target.value)})} />
                 </div>
                 <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-                  <label>Score (opcional):</label>
-                  <input type="number" className="glass-select" value={formData.score} onChange={(e) => setFormData({...formData, score: Number(e.target.value)})} />
+                  <label style={{color: 'var(--text-secondary)', marginBottom: '4px', fontWeight: 600}}>Score (Opcional)</label>
+                  <input type="number" className="glass-select" style={{ width: '100%', maxWidth: '100%', background: 'rgba(0,0,0,0.4)' }} value={formData.score} onChange={(e) => setFormData({...formData, score: Number(e.target.value)})} />
                 </div>
               </div>
 
-              <button type="submit" className="btn btn-primary" style={{ marginTop: '1rem' }}>Salvar no Histórico</button>
+              <button type="submit" className="btn btn-primary" style={{ marginTop: '1rem', padding: '12px' }}>Salvar no Histórico</button>
             </form>
           </div>
         </>

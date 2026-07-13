@@ -2,6 +2,27 @@ import { Tag, CheckCircle2, Star, Rocket } from 'lucide-react';
 
 const releases = [
   {
+    version: "1.3.0",
+    date: new Date().toLocaleDateString('pt-BR'),
+    title: "Expansão Massiva & Automação do Solo 🃏",
+    description: "Inclusão de todas as cartas existentes de mais de 40 expansões oficiais e otimizações para o jogador solo.",
+    highlights: [
+      {
+        icon: <Rocket size={18} style={{ color: 'var(--primary-color)' }} />,
+        text: "Scraping Completo de Cartas: Heróis, Vilões, Masterminds e Esquemas de 40 expansões da editora integrados à Base de Dados."
+      },
+      {
+        icon: <Star size={18} style={{ color: '#fbc02d' }} />,
+        text: "Fallback Visual Inteligente: Agora as cartas sem foto própria puxam automaticamente a bela imagem da Caixa da Expansão original."
+      }
+    ],
+    features: [
+      "Motor do Gerador nativamente setado para 1 Jogador, com botões para registrar direto no Histórico ao finalizar.",
+      "Tabela da página de Regras atualizada com informações detalhadas do Modo Solo e Advanced Solo.",
+      "Gerador de setup reseta automaticamente após uso."
+    ]
+  },
+  {
     version: "1.2.1",
     date: new Date().toLocaleDateString('pt-BR'),
     title: "Refinamento Visual 🖌️",

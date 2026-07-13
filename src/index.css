@@ -541,3 +541,30 @@ button {
   border-color: rgba(255,255,255,0.2);
 }
 
+
+[data-theme="covert"] {
+  --primary-color: #e62429;
+  --primary-hover: #f03a3e;
+  --primary-glow: rgba(230, 36, 41, 0.4);
+}
+[data-theme="instinct"] {
+  --primary-color: #fbc02d;
+  --primary-hover: #fdd835;
+  --primary-glow: rgba(251, 192, 45, 0.4);
+}
+[data-theme="ranged"] {
+  --primary-color: #2b82d9;
+  --primary-hover: #2196f3;
+  --primary-glow: rgba(43, 130, 217, 0.4);
+}
+[data-theme="strength"] {
+  --primary-color: #10b981;
+  --primary-hover: #34d399;
+  --primary-glow: rgba(16, 185, 129, 0.4);
+}
+[data-theme="tech"] {
+  --primary-color: #94a3b8;
+  --primary-hover: #cbd5e1;
+  --primary-glow: rgba(148, 163, 184, 0.4);
+}
+

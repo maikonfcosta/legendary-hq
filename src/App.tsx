@@ -1,9 +1,10 @@
-import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Menu, X, Globe, Settings, Volume2, VolumeX, Palette } from 'lucide-react';
 import type { SetupResult } from './utils/randomizer';
 import { generateSetup } from './utils/randomizer';
 import { useLocalStorage } from './hooks/useLocalStorage';
 import { useSyncedCollection } from './hooks/useSyncedCollection';
+import { useAuth } from './contexts/AuthContext';
 import { useGameHistory } from './hooks/useGameHistory';
 import packageJson from '../package.json';
 
@@ -25,6 +26,71 @@ function App() {
   
   const [ownedExpansions, setOwnedExpansions] = useSyncedCollection('lhq_ownedExpansions', ['core', 'core_2nd']);
   const { history, addMatch } = useGameHistory();
+  const { currentUser, login, logoutUser } = useAuth();
+
+  const [showSettings, setShowSettings] = useState(false);
+  const [sfxEnabled, setSfxEnabled] = useState(true);
+  const [theme, setTheme] = useState('covert');
+  
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('lhq_theme');
+    if (savedTheme) {
+      setTheme(savedTheme);
+      document.body.setAttribute('data-theme', savedTheme);
+    } else {
+      document.body.setAttribute('data-theme', 'covert');
+    }
+    const savedSfx = localStorage.getItem('lhq_sfx');
+    if (savedSfx !== null) {
+      setSfxEnabled(savedSfx === 'true');
+    }
+
+    const clickHandler = (e: MouseEvent) => {
+      if (localStorage.getItem('lhq_sfx') === 'false') return;
+      
+      const target = (e.target as HTMLElement).closest('button, a, .home-card');
+      if (target) {
+        try {
+          const ctx = new (window.AudioContext || (window as any).webkitAudioContext)();
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          
+          if (target.classList.contains('btn-primary') || target.tagName === 'A' || target.classList.contains('home-card')) {
+            osc.frequency.setValueAtTime(600, ctx.currentTime);
+            osc.frequency.exponentialRampToValueAtTime(300, ctx.currentTime + 0.05);
+            gain.gain.setValueAtTime(0.05, ctx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.05);
+            osc.start();
+            osc.stop(ctx.currentTime + 0.05);
+          } else {
+            osc.frequency.setValueAtTime(300, ctx.currentTime);
+            osc.frequency.exponentialRampToValueAtTime(100, ctx.currentTime + 0.08);
+            gain.gain.setValueAtTime(0.08, ctx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.08);
+            osc.start();
+            osc.stop(ctx.currentTime + 0.08);
+          }
+        } catch { /* ignore audio context errors if blocked */ }
+      }
+    };
+    
+    document.addEventListener('click', clickHandler);
+    return () => document.removeEventListener('click', clickHandler);
+  }, []);
+
+  const changeTheme = (newTheme: string) => {
+    setTheme(newTheme);
+    document.body.setAttribute('data-theme', newTheme);
+    localStorage.setItem('lhq_theme', newTheme);
+  };
+
+  const toggleSfx = () => {
+    const newVal = !sfxEnabled;
+    setSfxEnabled(newVal);
+    localStorage.setItem('lhq_sfx', String(newVal));
+  };
 
   // Tracker State
   const [recruit, setRecruit] = useLocalStorage('lhq_recruit', 0);
@@ -103,6 +169,74 @@ function App() {
       <Sidebar activeTab={activeTab} handleTabChange={handleTabChange} isMobileMenuOpen={isMobileMenuOpen} />
 
       <div className="main-content-wrapper">
+        <header className="topbar" style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', padding: '24px 32px 0 32px', gap: '24px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-secondary)' }}>
+            <Globe size={18} />
+            <select 
+              style={{ background: 'transparent', color: 'var(--text-secondary)', border: 'none', cursor: 'pointer', outline: 'none', fontSize: '0.9rem' }}
+            >
+              <option value="pt">PT</option>
+              <option value="en">EN</option>
+              <option value="es">ES</option>
+            </select>
+          </div>
+
+          <button 
+            onClick={() => setShowSettings(true)}
+            style={{ background: 'transparent', color: 'var(--text-secondary)', border: 'none', padding: '4px', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+            title="Configurações"
+          >
+            <Settings size={22} />
+          </button>
+
+          {currentUser ? (
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <span style={{ fontSize: '0.8rem', color: '#86efac' }} title="Nuvem Sincronizada">✓ Nuvem</span>
+              <img src={currentUser.photoURL || ''} alt="User" style={{ width: 32, height: 32, borderRadius: '50%' }} title={currentUser.displayName || ''} />
+              <button onClick={logoutUser} className="btn btn-secondary" style={{ padding: '6px 12px', fontSize: '0.85rem' }}>Sair</button>
+            </div>
+          ) : (
+            <button onClick={login} className="btn btn-primary" style={{ padding: '8px 16px', fontSize: '0.9rem' }}>
+              Login
+            </button>
+          )}
+        </header>
+
+        {/* Modal de Configurações */}
+        {showSettings && (
+          <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.8)', zIndex: 9999, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div className="glass-panel" style={{ width: '90%', maxWidth: '400px', padding: '30px', position: 'relative' }}>
+              <button onClick={() => setShowSettings(false)} style={{ position: 'absolute', top: '15px', right: '15px', background: 'transparent', border: 'none', color: 'white', cursor: 'pointer' }}>
+                <X size={24} />
+              </button>
+              
+              <h2 style={{ marginBottom: '24px', display: 'flex', alignItems: 'center', gap: '10px' }}><Settings /> Configurações</h2>
+              
+              <div style={{ marginBottom: '30px' }}>
+                <h4 style={{ color: 'var(--text-secondary)', marginBottom: '15px', display: 'flex', alignItems: 'center', gap: '8px' }}><Volume2 size={18} /> Áudio</h4>
+                <button 
+                  onClick={toggleSfx} 
+                  className={`btn ${sfxEnabled ? 'btn-primary' : 'btn-secondary'}`}
+                  style={{ width: '100%', display: 'flex', justifyContent: 'center', gap: '8px' }}
+                >
+                  {sfxEnabled ? <><Volume2 size={20} /> Efeitos Ativados</> : <><VolumeX size={20} /> Mutado</>}
+                </button>
+              </div>
+
+              <div>
+                <h4 style={{ color: 'var(--text-secondary)', marginBottom: '15px', display: 'flex', alignItems: 'center', gap: '8px' }}><Palette size={18} /> Tema de Classe</h4>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+                  <button onClick={() => changeTheme('covert')} className="btn" style={{ borderColor: theme === 'covert' ? '#e62429' : '', color: theme === 'covert' ? '#e62429' : 'white' }}>Covert</button>
+                  <button onClick={() => changeTheme('instinct')} className="btn" style={{ borderColor: theme === 'instinct' ? '#fbc02d' : '', color: theme === 'instinct' ? '#fbc02d' : 'white' }}>Instinct</button>
+                  <button onClick={() => changeTheme('ranged')} className="btn" style={{ borderColor: theme === 'ranged' ? '#2b82d9' : '', color: theme === 'ranged' ? '#2b82d9' : 'white' }}>Ranged</button>
+                  <button onClick={() => changeTheme('strength')} className="btn" style={{ borderColor: theme === 'strength' ? '#10b981' : '', color: theme === 'strength' ? '#10b981' : 'white' }}>Strength</button>
+                  <button onClick={() => changeTheme('tech')} className="btn" style={{ gridColumn: '1 / -1', borderColor: theme === 'tech' ? '#94a3b8' : '', color: theme === 'tech' ? '#94a3b8' : 'white' }}>Tech</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Main Content Area */}
         <main className="main-content">
           {activeTab === 'home' && <HomeTab onNavigate={handleTabChange} />}

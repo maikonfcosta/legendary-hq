@@ -4,22 +4,25 @@ import { generateSetup } from './utils/randomizer'
 import type { SetupResult } from './utils/randomizer'
 import { getCardImage } from './utils/imageLookup'
 import { Rules } from './components/Rules'
+import { useLocalStorage } from './hooks/useLocalStorage'
 import cardsData from './data/cards.json'
 import imageDB from './data/imageDB.json'
+
+const imageDBTyped = imageDB as Record<string, string>;
 
 function App() {
   const [playerCount, setPlayerCount] = useState(2)
   const [activeTab, setActiveTab] = useState('home')
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [result, setResult] = useState<SetupResult | null>(null)
-  const [ownedExpansions, setOwnedExpansions] = useState<string[]>(['core', 'core_2nd'])
+  const [ownedExpansions, setOwnedExpansions] = useLocalStorage<string[]>('lhq_ownedExpansions', ['core', 'core_2nd'])
 
   // Tracker State
-  const [recruit, setRecruit] = useState(0)
-  const [attack, setAttack] = useState(0)
-  const [masterStrikes, setMasterStrikes] = useState(0)
-  const [schemeTwists, setSchemeTwists] = useState(0)
-  const [bystanders, setBystanders] = useState(0)
+  const [recruit, setRecruit] = useLocalStorage('lhq_recruit', 0)
+  const [attack, setAttack] = useLocalStorage('lhq_attack', 0)
+  const [masterStrikes, setMasterStrikes] = useLocalStorage('lhq_masterStrikes', 0)
+  const [schemeTwists, setSchemeTwists] = useLocalStorage('lhq_schemeTwists', 0)
+  const [bystanders, setBystanders] = useLocalStorage('lhq_bystanders', 0)
 
   const resetTracker = () => {
     if (confirm('Deseja zerar os contadores e começar uma nova partida?')) {
@@ -41,15 +44,15 @@ function App() {
     try {
       const setup = generateSetup(playerCount, ownedExpansions)
       setResult(setup)
-    } catch (e: any) {
-      alert(e.message);
+    } catch (e: unknown) {
+      alert(e instanceof Error ? e.message : String(e));
     }
   }
 
   const renderCard = (type: 'mastermind' | 'scheme' | 'villain' | 'henchmen' | 'hero' | 'bystander', title: string, name: string, subtitle?: string, highlight: boolean = false, expansion?: string) => {
     let imgSrc;
     if (type === 'bystander') {
-      imgSrc = (imageDB as any)["Core Bystander.jpg"];
+      imgSrc = imageDBTyped["Core Bystander.jpg"];
     } else {
       imgSrc = getCardImage(name, type, expansion);
     }
@@ -388,8 +391,8 @@ function App() {
             
             <div className="collection-grid">
               {cardsData.expansions.map(exp => {
-                const imgKey = (exp as any).image;
-                const imgSrc = imgKey ? (imageDB as any)[imgKey] : '/logo.jpg';
+                const imgKey = 'image' in exp ? (exp as { image: string }).image : undefined;
+                const imgSrc = imgKey && imgKey in imageDBTyped ? imageDBTyped[imgKey] : '/logo.jpg';
                 const isOwned = ownedExpansions.includes(exp.id);
                 return (
                   <div 

@@ -58,5 +58,6 @@ export const getCardImage = (cardName: string, category: 'mastermind' | 'scheme'
     return a.length - b.length;
   });
 
-  return images[matches[0]];
+  const bestMatch = matches[0];
+  return bestMatch ? images[bestMatch] : undefined;
 };

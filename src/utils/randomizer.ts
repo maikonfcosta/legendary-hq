@@ -12,10 +12,16 @@ export interface SetupResult {
   bystanders: number;
 }
 
-const getRandomItem = <T,>(array: T[]): T => array[Math.floor(Math.random() * array.length)];
+const getRandomItem = <T,>(array: T[]): T => array[Math.floor(Math.random() * array.length)]!;
 const getRandomItems = <T,>(array: T[], count: number, exclude: T[] = []): T[] => {
   const filtered = array.filter(item => !exclude.includes(item));
-  const shuffled = [...filtered].sort(() => 0.5 - Math.random());
+  const shuffled = [...filtered];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const temp = shuffled[i]!;
+    shuffled[i] = shuffled[j]!;
+    shuffled[j] = temp;
+  }
   return shuffled.slice(0, count);
 };
 
@@ -42,6 +48,13 @@ export const generateSetup = (playerCount: number, ownedExpansions: string[]): S
 
   if (availableMasterminds.length === 0 || availableSchemes.length === 0 || availableHeroes.length < config.heroes) {
     throw new Error(`Você não tem expansões suficientes selecionadas para sortear. Precisamos de pelo menos ${config.heroes} heróis diferentes e você tem ${availableHeroes.length}.`);
+  }
+
+  if (availableVillains.length < config.villains) {
+    throw new Error(`Faltam Grupos de Vilões. Necessário: ${config.villains}. Disponível: ${availableVillains.length}. Adicione mais expansões.`);
+  }
+  if (availableHenchmen.length < config.henchmen) {
+    throw new Error(`Faltam Grupos de Capangas. Necessário: ${config.henchmen}. Disponível: ${availableHenchmen.length}. Adicione mais expansões.`);
   }
 
   // 1. Draw Mastermind

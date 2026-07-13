@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { BookOpen, ShieldAlert, Swords, Users, Target, FileText, Download, X } from 'lucide-react'
 
+const PDF_BASE_URL = import.meta.env.VITE_PDF_BASE_URL || 'https://legendary-hq-docs.s3.amazonaws.com/docs';
+
 const pdfManuals = [
   { name: 'Core Set (Inglês)', file: 'legendary_a_marvel_regras_ingles_13288.pdf', type: 'core', id: 'core' },
   { name: 'Core Set 2nd Edition', file: 'Legendary_2ndEdition_Rulebook.pdf', type: 'core', id: 'core_2nd' },
@@ -296,7 +298,7 @@ export function Rules({ ownedExpansions }: RulesProps) {
                 pdfManuals.filter(m => m.type === 'core' && ownedExpansions.includes(m.id)).map((manual, index) => (
                   <button 
                     key={index} 
-                    onClick={() => setSelectedPdfUrl(`/docs/${manual.file}`)}
+                    onClick={() => setSelectedPdfUrl(`${PDF_BASE_URL}/${manual.file}`)}
                     className="glass-panel" 
                     style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '15px', textDecoration: 'none', transition: 'all 0.2s', borderLeft: '4px solid var(--primary-color)', textAlign: 'left', cursor: 'pointer', background: 'transparent', border: '1px solid var(--surface-border)' }}
                   >
@@ -322,7 +324,7 @@ export function Rules({ ownedExpansions }: RulesProps) {
                 pdfManuals.filter(m => m.type === 'expansion' && ownedExpansions.includes(m.id)).map((manual, index) => (
                   <button 
                     key={index} 
-                    onClick={() => setSelectedPdfUrl(`/docs/${manual.file}`)}
+                    onClick={() => setSelectedPdfUrl(`${PDF_BASE_URL}/${manual.file}`)}
                     className="glass-panel pdf-card" 
                     style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '15px', textDecoration: 'none', transition: 'all 0.2s', textAlign: 'left', cursor: 'pointer', background: 'transparent', border: '1px solid var(--surface-border)' }}
                   >

@@ -1,4 +1,4 @@
-import { Home, Shuffle, Activity, BarChart2, Layers, BookOpen } from 'lucide-react';
+import { Home, Shuffle, Activity, BarChart2, Layers, BookOpen, ScrollText } from 'lucide-react';
 
 interface SidebarProps {
   activeTab: string;
@@ -27,6 +27,9 @@ export function Sidebar({ activeTab, handleTabChange, isMobileMenuOpen }: Sideba
         </button>
         <button className={`nav-link ${activeTab === 'stats' ? 'active' : ''}`} onClick={() => handleTabChange('stats')}>
           <BarChart2 size={20} /> Estatísticas
+        </button>
+        <button className={`nav-link ${activeTab === 'history' ? 'active' : ''}`} onClick={() => handleTabChange('history')}>
+          <ScrollText size={20} /> Histórico
         </button>
         <button className={`nav-link ${activeTab === 'collection' ? 'active' : ''}`} onClick={() => handleTabChange('collection')}>
           <Layers size={20} /> Minha Coleção

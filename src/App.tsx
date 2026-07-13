@@ -13,6 +13,7 @@ import { Sidebar } from './components/Sidebar';
 import { Rules } from './components/Rules';
 import { HomeTab } from './components/tabs/HomeTab';
 import { StatsTab } from './components/tabs/StatsTab';
+import { HistoryTab } from './components/tabs/HistoryTab';
 import { CollectionTab } from './components/tabs/CollectionTab';
 import { RandomizerTab } from './components/tabs/RandomizerTab';
 import { TrackerTab } from './components/tabs/TrackerTab';
@@ -241,12 +242,10 @@ function App() {
         <main className="main-content">
           {activeTab === 'home' && <HomeTab onNavigate={handleTabChange} />}
           {activeTab === 'stats' && (
-            <StatsTab 
-              onNavigate={handleTabChange} 
-              history={history} 
-              addMatch={addMatch} 
-              ownedExpansions={ownedExpansions} 
-            />
+            <StatsTab history={history} />
+          )}
+          {activeTab === 'history' && (
+            <HistoryTab history={history} addMatch={addMatch} ownedExpansions={ownedExpansions} />
           )}
           {activeTab === 'randomizer' && (
             <RandomizerTab 

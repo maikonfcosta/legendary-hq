@@ -1,4 +1,4 @@
-import { Dices, Swords, Archive, BookOpen, BarChart2 } from 'lucide-react';
+import { Shuffle, Activity, Layers, BookOpen, BarChart2 } from 'lucide-react';
 
 interface HomeTabProps {
   onNavigate: (tab: string) => void;
@@ -22,43 +22,43 @@ export function HomeTab({ onNavigate }: HomeTabProps) {
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px', width: '100%', maxWidth: '1000px' }}>
-        <button className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '15px', border: '1px solid var(--surface-border)', borderTop: '4px solid #fbc02d', cursor: 'pointer', transition: 'all 0.2s', background: 'rgba(255,255,255,0.02)', textAlign: 'left' }} onClick={() => onNavigate('collection')}>
-          <Archive size={40} color="#fbc02d" />
+        <button className="glass-panel home-card" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '15px', border: '1px solid var(--surface-border)', borderTop: '4px solid var(--primary-color)', cursor: 'pointer', transition: 'all 0.2s', background: 'rgba(255,255,255,0.02)', textAlign: 'left' }} onClick={() => onNavigate('collection')}>
+          <Layers size={40} color="var(--primary-color)" />
           <div>
             <h3 style={{ margin: '0 0 5px 0', fontSize: '1.3rem', color: 'white' }}>Minha Coleção</h3>
-            <span style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>Gerencie quais expansões você possui</span>
+            <span style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>Marque as caixas e expansões que você possui</span>
           </div>
         </button>
 
-        <button className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '15px', border: '1px solid var(--surface-border)', borderTop: '4px solid var(--secondary-color)', cursor: 'pointer', transition: 'all 0.2s', background: 'rgba(255,255,255,0.02)', textAlign: 'left' }} onClick={() => onNavigate('randomizer')}>
-          <Dices size={40} color="var(--secondary-color)" />
+        <button className="glass-panel home-card" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '15px', border: '1px solid var(--surface-border)', borderTop: '4px solid #fbc02d', cursor: 'pointer', transition: 'all 0.2s', background: 'rgba(255,255,255,0.02)', textAlign: 'left' }} onClick={() => onNavigate('tracker')}>
+          <Activity size={40} color="#fbc02d" />
           <div>
-            <h3 style={{ margin: '0 0 5px 0', fontSize: '1.3rem', color: 'white' }}>Setup Randomizer</h3>
-            <span style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>Gere setups aleatórios com suas expansões</span>
+            <h3 style={{ margin: '0 0 5px 0', fontSize: '1.3rem', color: 'white' }}>Tracker</h3>
+            <span style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>Controle pontos de recrutamento, ataque e master strikes</span>
           </div>
         </button>
 
-        <button className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '15px', border: '1px solid var(--surface-border)', borderTop: '4px solid #10b981', cursor: 'pointer', transition: 'all 0.2s', background: 'rgba(255,255,255,0.02)', textAlign: 'left' }} onClick={() => onNavigate('tracker')}>
-          <Swords size={40} color="#10b981" />
+        <button className="glass-panel home-card" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '15px', border: '1px solid var(--surface-border)', borderTop: '4px solid var(--secondary-color)', cursor: 'pointer', transition: 'all 0.2s', background: 'rgba(255,255,255,0.02)', textAlign: 'left' }} onClick={() => onNavigate('randomizer')}>
+          <Shuffle size={40} color="var(--secondary-color)" />
           <div>
-            <h3 style={{ margin: '0 0 5px 0', fontSize: '1.3rem', color: 'white' }}>Game Tracker</h3>
-            <span style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>Controle os pontos e vilões em tempo real</span>
+            <h3 style={{ margin: '0 0 5px 0', fontSize: '1.3rem', color: 'white' }}>Sorteio</h3>
+            <span style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>Gere setups aleatórios perfeitamente balanceados</span>
           </div>
         </button>
 
-        <button className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '15px', border: '1px solid var(--surface-border)', borderTop: '4px solid var(--primary-color)', cursor: 'pointer', transition: 'all 0.2s', background: 'rgba(255,255,255,0.02)', textAlign: 'left' }} onClick={() => onNavigate('stats')}>
+        <button className="glass-panel home-card" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '15px', border: '1px solid var(--surface-border)', borderTop: '4px solid var(--primary-color)', cursor: 'pointer', transition: 'all 0.2s', background: 'rgba(255,255,255,0.02)', textAlign: 'left' }} onClick={() => onNavigate('stats')}>
           <BarChart2 size={40} color="var(--primary-color)" />
           <div>
             <h3 style={{ margin: '0 0 5px 0', fontSize: '1.3rem', color: 'white' }}>Estatísticas</h3>
-            <span style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>Acompanhe seu histórico de vitórias</span>
+            <span style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>Acompanhe seu desempenho e histórico de vitórias</span>
           </div>
         </button>
 
-        <button className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '15px', border: '1px solid var(--surface-border)', borderTop: '4px solid #94a3b8', cursor: 'pointer', transition: 'all 0.2s', background: 'rgba(255,255,255,0.02)', textAlign: 'left', gridColumn: '1 / -1' }} onClick={() => onNavigate('rules')}>
-          <BookOpen size={40} color="#94a3b8" />
+        <button className="glass-panel home-card" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '15px', border: '1px solid var(--surface-border)', borderTop: '4px solid #10b981', cursor: 'pointer', transition: 'all 0.2s', background: 'rgba(255,255,255,0.02)', textAlign: 'left', gridColumn: '1 / -1' }} onClick={() => onNavigate('rules')}>
+          <BookOpen size={40} color="#10b981" />
           <div>
-            <h3 style={{ margin: '0 0 5px 0', fontSize: '1.3rem', color: 'white' }}>Regras & PDFs</h3>
-            <span style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>Consulte regras e manuais originais para todas as expansões</span>
+            <h3 style={{ margin: '0 0 5px 0', fontSize: '1.3rem', color: 'white' }}>Regras</h3>
+            <span style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>Consulte regras e palavras-chave de todas as expansões</span>
           </div>
         </button>
       </div>

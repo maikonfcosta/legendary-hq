@@ -1,4 +1,4 @@
-import { Home, Dices, Swords, BarChart2, Archive, BookOpen } from 'lucide-react';
+import { Home, Shuffle, Activity, BarChart2, Layers, BookOpen } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 
 interface SidebarProps {
@@ -21,17 +21,17 @@ export function Sidebar({ activeTab, handleTabChange, isMobileMenuOpen }: Sideba
         <button className={`nav-link ${activeTab === 'home' ? 'active' : ''}`} onClick={() => handleTabChange('home')}>
           <Home size={20} /> Início
         </button>
-        <button className={`nav-link ${activeTab === 'randomizer' ? 'active' : ''}`} onClick={() => handleTabChange('randomizer')}>
-          <Dices size={20} /> Setup Randomizer
-        </button>
         <button className={`nav-link ${activeTab === 'tracker' ? 'active' : ''}`} onClick={() => handleTabChange('tracker')}>
-          <Swords size={20} /> Game Tracker
+          <Activity size={20} /> Tracker
+        </button>
+        <button className={`nav-link ${activeTab === 'randomizer' ? 'active' : ''}`} onClick={() => handleTabChange('randomizer')}>
+          <Shuffle size={20} /> Sorteio
         </button>
         <button className={`nav-link ${activeTab === 'stats' ? 'active' : ''}`} onClick={() => handleTabChange('stats')}>
           <BarChart2 size={20} /> Estatísticas
         </button>
         <button className={`nav-link ${activeTab === 'collection' ? 'active' : ''}`} onClick={() => handleTabChange('collection')}>
-          <Archive size={20} /> Minha Coleção
+          <Layers size={20} /> Minha Coleção
         </button>
         <button className={`nav-link ${activeTab === 'rules' ? 'active' : ''}`} onClick={() => handleTabChange('rules')}>
           <BookOpen size={20} /> Regras

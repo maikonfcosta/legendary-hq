@@ -5,25 +5,74 @@ const releases = [
     version: "1.0.0",
     date: "13 de Julho de 2026",
     title: "O Lançamento Oficial do Legendary HQ 🚀",
-    description: "A primeira versão oficial da sua Central de Comandos para Marvel Legendary.",
+    description: "A primeira versão oficial e consolidada da sua Central de Comandos para Marvel Legendary.",
     highlights: [
       {
         icon: <Rocket size={18} style={{ color: 'var(--primary-color)' }} />,
-        text: "Setup Randomizer: Sorteie Masterminds, Schemes, Vilões, Henchmen e Heróis perfeitamente balanceados baseado nas suas caixas."
-      },
-      {
-        icon: <Star size={18} style={{ color: '#fbc02d' }} />,
-        text: "Game Tracker: Controle pontos de recrutamento, ataque e rastreie os Master Strikes e Scheme Twists sem precisar de dados ou tokens físicos."
-      },
-      {
-        icon: <CheckCircle2 size={18} style={{ color: '#10b981' }} />,
-        text: "Nuvem Firebase: Suas estatísticas de Win Rate e suas expansões ficam gravadas na nuvem, acessíveis de qualquer dispositivo com Login Google."
+        text: "Design Final & Release Notes: Interface moderna consolidada (Glassmorphism), layout da Home refinado e menu centralizado inspirado na nossa biblioteca raiz."
       }
     ],
     features: [
-      "Integração PWA (Progressive Web App).",
-      "UI moderna (Glassmorphism) com navegação em abas baseada no Champions HQ.",
-      "Registro de Partidas manual na aba Estatísticas para migrar seu histórico antigo."
+      "Integração do Changelog (Release Notes) no rodapé do aplicativo.",
+      "Proteção anti-crash no Firebase para uso Offline Local.",
+      "Correções de tipagem rigorosa (TypeScript Strict Mode) no sistema de navegação."
+    ]
+  },
+  {
+    version: "0.9.0",
+    date: "Julho de 2026",
+    title: "Histórico e Estatísticas Globais 📊",
+    description: "Implementação da Fase 4 de nossa engenharia, focada em análise de dados do jogador.",
+    highlights: [
+      {
+        icon: <CheckCircle2 size={18} style={{ color: '#10b981' }} />,
+        text: "Estatísticas em Tempo Real: Cálculo automático de Win Rate e exibição gráfica colorida dos seus resultados."
+      },
+      {
+        icon: <Tag size={18} style={{ color: 'var(--secondary-color)' }} />,
+        text: "Registro Manual: Adição de partidas retroativas no histórico."
+      }
+    ],
+    features: [
+      "Botão de 'Concluir Partida' no Tracker, enviando dados de Vitória/Derrota automaticamente para o Banco.",
+      "Hooks customizados (useGameHistory) para salvar partidas no Firestore."
+    ]
+  },
+  {
+    version: "0.8.0",
+    date: "Julho de 2026",
+    title: "A Nuvem & Game Tracker ☁️",
+    description: "Reformulação da arquitetura de estados e início da Fase 3.",
+    highlights: [
+      {
+        icon: <Star size={18} style={{ color: '#fbc02d' }} />,
+        text: "Autenticação Cloud: Login com Google via Firebase e migração da coleção local para a nuvem."
+      },
+      {
+        icon: <CheckCircle2 size={18} style={{ color: '#10b981' }} />,
+        text: "Game Tracker: Controle pontos de recrutamento, ataque e rastreie os Master Strikes sem precisar de tokens físicos."
+      }
+    ],
+    features: [
+      "Criação de contextos de autenticação (AuthContext) e Firebase Web SDK.",
+      "Sincronização Offline-first das Expansões (useSyncedCollection)."
+    ]
+  },
+  {
+    version: "0.1.0",
+    date: "Lançamento Inicial",
+    title: "Fundação do Quartel General 🏗️",
+    description: "Versão protótipo (Fases 1 e 2) contendo as mecânicas cruciais.",
+    highlights: [
+      {
+        icon: <Rocket size={18} style={{ color: 'var(--primary-color)' }} />,
+        text: "Setup Randomizer: Motor capaz de sortear Masterminds, Schemes, Vilões, Henchmen e Heróis perfeitamente balanceados."
+      }
+    ],
+    features: [
+      "Base de dados JSON com todas as cartas iniciais mapeadas.",
+      "Engenharia de Qualidade: Testes Vitest, Linter OXLint e validação pré-commit.",
+      "Sistema básico de navegação e componentes modulares."
     ]
   }
 ];

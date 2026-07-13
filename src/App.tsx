@@ -4,6 +4,7 @@ import type { SetupResult } from './utils/randomizer';
 import { generateSetup } from './utils/randomizer';
 import { useLocalStorage } from './hooks/useLocalStorage';
 import { useSyncedCollection } from './hooks/useSyncedCollection';
+import { useGameHistory } from './hooks/useGameHistory';
 
 // Components
 import { Sidebar } from './components/Sidebar';
@@ -19,7 +20,9 @@ function App() {
   const [activeTab, setActiveTab] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [result, setResult] = useState<SetupResult | null>(null);
+  
   const [ownedExpansions, setOwnedExpansions] = useSyncedCollection('lhq_ownedExpansions', ['core', 'core_2nd']);
+  const { history, addMatch } = useGameHistory();
 
   // Tracker State
   const [recruit, setRecruit] = useLocalStorage('lhq_recruit', 0);
@@ -36,6 +39,27 @@ function App() {
       setSchemeTwists(0);
       setBystanders(0);
     }
+  };
+
+  const handleFinishMatch = async (victory: boolean) => {
+    if (!result) return;
+    
+    await addMatch({
+      mastermind: result.mastermind.name,
+      scheme: result.scheme.name,
+      victory,
+      playerCount,
+      score: 0
+    });
+    
+    alert(`Partida salva no histórico com sucesso!`);
+    
+    // Zera contadores
+    setRecruit(0); setAttack(0); setMasterStrikes(0); setSchemeTwists(0); setBystanders(0);
+    
+    // Opcional: redimensiona pra stats e limpa randomizer
+    setActiveTab('stats');
+    setResult(null); 
   };
 
   const toggleExpansion = (id: string) => {
@@ -79,7 +103,14 @@ function App() {
       {/* Main Content Area */}
       <main className="main-content">
         {activeTab === 'home' && <HomeTab onNavigate={handleTabChange} />}
-        {activeTab === 'stats' && <StatsTab onNavigate={handleTabChange} />}
+        {activeTab === 'stats' && (
+          <StatsTab 
+            onNavigate={handleTabChange} 
+            history={history} 
+            addMatch={addMatch} 
+            ownedExpansions={ownedExpansions} 
+          />
+        )}
         {activeTab === 'randomizer' && (
           <RandomizerTab 
             playerCount={playerCount} setPlayerCount={setPlayerCount}
@@ -95,6 +126,8 @@ function App() {
             schemeTwists={schemeTwists} setSchemeTwists={setSchemeTwists}
             bystanders={bystanders} setBystanders={setBystanders}
             resetTracker={resetTracker}
+            currentSetup={result}
+            onFinishMatch={handleFinishMatch}
           />
         )}
         {activeTab === 'collection' && (

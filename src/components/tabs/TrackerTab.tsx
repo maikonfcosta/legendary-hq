@@ -1,4 +1,6 @@
-import { RotateCcw, Star, Swords, Skull, AlertTriangle, Users } from 'lucide-react';
+import { useState } from 'react';
+import { RotateCcw, Star, Swords, Skull, AlertTriangle, Users, CheckSquare } from 'lucide-react';
+import type { SetupResult } from '../../utils/randomizer';
 
 interface TrackerTabProps {
   recruit: number; setRecruit: (val: number) => void;
@@ -7,9 +9,18 @@ interface TrackerTabProps {
   schemeTwists: number; setSchemeTwists: (val: number) => void;
   bystanders: number; setBystanders: (val: number) => void;
   resetTracker: () => void;
+  currentSetup: SetupResult | null;
+  onFinishMatch: (victory: boolean) => void;
 }
 
-export function TrackerTab({ recruit, setRecruit, attack, setAttack, masterStrikes, setMasterStrikes, schemeTwists, setSchemeTwists, bystanders, setBystanders, resetTracker }: TrackerTabProps) {
+export function TrackerTab({ recruit, setRecruit, attack, setAttack, masterStrikes, setMasterStrikes, schemeTwists, setSchemeTwists, bystanders, setBystanders, resetTracker, currentSetup, onFinishMatch }: TrackerTabProps) {
+  const [showFinishModal, setShowFinishModal] = useState(false);
+
+  const handleFinish = (victory: boolean) => {
+    onFinishMatch(victory);
+    setShowFinishModal(false);
+  };
+
   return (
     <section className="fade-in">
       <div className="result-header">
@@ -17,10 +28,18 @@ export function TrackerTab({ recruit, setRecruit, attack, setAttack, masterStrik
           <h2>Game Tracker</h2>
           <p style={{ color: 'var(--text-secondary)' }}>Acompanhe os pontos do turno e o andamento da partida.</p>
         </div>
-        <button className="btn" style={{ background: 'transparent', border: '1px solid var(--text-muted)' }} onClick={resetTracker}>
-          <RotateCcw size={18} style={{ marginRight: '8px', verticalAlign: 'middle' }} />
-          Resetar Partida
-        </button>
+        <div style={{ display: 'flex', gap: '10px' }}>
+          {currentSetup && (
+            <button className="btn btn-primary" onClick={() => setShowFinishModal(true)}>
+              <CheckSquare size={18} style={{ marginRight: '8px', verticalAlign: 'middle' }} />
+              Concluir Partida
+            </button>
+          )}
+          <button className="btn" style={{ background: 'transparent', border: '1px solid var(--text-muted)' }} onClick={resetTracker}>
+            <RotateCcw size={18} style={{ marginRight: '8px', verticalAlign: 'middle' }} />
+            Limpar Tracker
+          </button>
+        </div>
       </div>
 
       <div className="section-title" style={{ marginTop: '2rem' }}>Recursos do Turno (Zere ao final do turno)</div>
@@ -79,8 +98,35 @@ export function TrackerTab({ recruit, setRecruit, attack, setAttack, masterStrik
             <button className="btn" style={{ padding: '8px 16px', border: '1px solid #3b82f6', background: 'transparent' }} onClick={() => setBystanders(bystanders + 1)}>+</button>
           </div>
         </div>
-
       </div>
+
+      {showFinishModal && currentSetup && (
+        <>
+          <div className="mobile-overlay open" onClick={() => setShowFinishModal(false)} style={{ zIndex: 999 }}></div>
+          <div className="glass-panel fade-in" style={{
+            position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
+            width: '90%', maxWidth: '500px', zIndex: 1000, padding: '2rem', textAlign: 'center'
+          }}>
+            <h2 style={{ margin: '0 0 1rem 0' }}>Fim de Jogo!</h2>
+            <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>
+              Você conseguiu derrotar <strong>{currentSetup.mastermind.name}</strong> antes que o Scheme <em>"{currentSetup.scheme.name}"</em> se concretizasse?
+            </p>
+            
+            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
+              <button className="btn" style={{ background: '#10b981', flex: 1 }} onClick={() => handleFinish(true)}>
+                Sim, Vitória!
+              </button>
+              <button className="btn" style={{ background: '#ef4444', flex: 1 }} onClick={() => handleFinish(false)}>
+                Não, Fui Derrotado
+              </button>
+            </div>
+            
+            <button className="btn" style={{ marginTop: '1.5rem', background: 'transparent', border: '1px solid var(--surface-border)' }} onClick={() => setShowFinishModal(false)}>
+              Cancelar
+            </button>
+          </div>
+        </>
+      )}
     </section>
   );
 }

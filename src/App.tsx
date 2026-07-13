@@ -5,6 +5,7 @@ import { generateSetup } from './utils/randomizer';
 import { useLocalStorage } from './hooks/useLocalStorage';
 import { useSyncedCollection } from './hooks/useSyncedCollection';
 import { useGameHistory } from './hooks/useGameHistory';
+import packageJson from '../package.json';
 
 // Components
 import { Sidebar } from './components/Sidebar';
@@ -141,9 +142,10 @@ function App() {
         <footer style={{ borderTop: '1px solid var(--surface-border)', padding: '24px', textAlign: 'center', color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
           <div style={{ maxWidth: '800px', margin: '0 auto' }}>
             <p style={{ marginBottom: '8px' }}>
-              <strong>Legendary HQ</strong> &copy; {new Date().getFullYear()}
+              <strong>Legendary HQ</strong> &copy; {new Date().getFullYear()}. Desenvolvido por Fãs, para Fãs. v{packageJson.version}
             </p>
-            <p>
+            <p style={{ opacity: 0.7, lineHeight: 1.5 }}>
+              Marvel Legendary e todos os personagens, textos de cartas e imagens são de propriedade intelectual da Marvel e Upper Deck Entertainment.<br />
               Este aplicativo não possui fins lucrativos e não é afiliado de forma alguma à Marvel ou Upper Deck.
             </p>
           </div>

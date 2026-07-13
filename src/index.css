@@ -419,6 +419,10 @@ button {
     padding: 4px 8px !important;
   }
 
+  .hide-on-mobile {
+    display: none !important;
+  }
+
   .card-grid {
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 12px;

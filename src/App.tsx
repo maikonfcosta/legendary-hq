@@ -206,9 +206,9 @@ function App() {
 
           {currentUser ? (
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <span style={{ fontSize: '0.8rem', color: '#86efac' }} title="Nuvem Sincronizada">OK</span>
+              <span className="hide-on-mobile" style={{ fontSize: '0.8rem', color: '#86efac' }} title="Nuvem Sincronizada">OK</span>
               <img src={currentUser.photoURL || ''} alt="User" style={{ width: 32, height: 32, borderRadius: '50%' }} title={currentUser.displayName || ''} />
-              <button onClick={logoutUser} className="btn btn-secondary" style={{ padding: '6px 12px', fontSize: '0.85rem' }}>Sair</button>
+              <button onClick={logoutUser} className="btn btn-secondary hide-on-mobile" style={{ padding: '6px 12px', fontSize: '0.85rem' }}>Sair</button>
             </div>
           ) : (
             <button onClick={login} className="btn btn-primary" style={{ padding: '8px 16px', fontSize: '0.9rem' }}>

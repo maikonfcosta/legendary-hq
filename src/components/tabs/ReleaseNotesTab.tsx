@@ -2,6 +2,16 @@ import { Tag, CheckCircle2, Star, Rocket } from 'lucide-react';
 
 const releases = [
   {
+    version: "1.2.1",
+    date: new Date().toLocaleDateString('pt-BR'),
+    title: "Refinamento Visual 🖌️",
+    description: "Pequenos ajustes na experiência do usuário e interface.",
+    highlights: [],
+    features: [
+      "Customização global da barra de rolagem (Scrollbar) idêntica à interface do Marvel Champions."
+    ]
+  },
+  {
     version: "1.2.0",
     date: new Date().toLocaleDateString('pt-BR'),
     title: "TopBar, Configurações e Temas 🎨",

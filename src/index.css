@@ -568,3 +568,21 @@ button {
   --primary-glow: rgba(148, 163, 184, 0.4);
 }
 
+
+/* =========================================
+   Scrollbar Customization
+   ========================================= */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--surface-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+

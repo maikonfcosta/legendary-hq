@@ -24,6 +24,7 @@ function App() {
   const [activeTab, setActiveTab] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [result, setResult] = useState<SetupResult | null>(null);
+  const [popupMsg, setPopupMsg] = useState<string | null>(null);
   
   const [ownedExpansions, setOwnedExpansions] = useSyncedCollection('lhq_ownedExpansions', ['core', 'core_2nd']);
   const { history, addMatch } = useGameHistory();
@@ -128,7 +129,7 @@ function App() {
     });
     
     setActiveTab('history');
-    alert(`Partida salva no histórico com sucesso!`);
+    setPopupMsg(`Partida salva no histórico com sucesso!`);
     
     // Zera contadores
     setRecruit(0); setAttack(0); setMasterStrikes(0); setSchemeTwists(0); setBystanders(0);
@@ -149,7 +150,7 @@ function App() {
       const setup = generateSetup(playerCount, ownedExpansions);
       setResult(setup);
     } catch (e: unknown) {
-      alert(e instanceof Error ? e.message : String(e));
+      setPopupMsg(e instanceof Error ? e.message : String(e));
     }
   };
 
@@ -177,8 +178,14 @@ function App() {
       <Sidebar activeTab={activeTab} handleTabChange={handleTabChange} isMobileMenuOpen={isMobileMenuOpen} />
 
       <div className="main-content-wrapper">
-        <header className="topbar" style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', padding: '24px 32px 0 32px', gap: '24px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-secondary)' }}>
+        <header className="topbar" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '24px 32px 0 32px' }}>
+          <div className="mobile-logo-container" style={{ display: 'none', alignItems: 'center', gap: '10px' }}>
+            <img src="/logo.jpg" alt="Legendary HQ Logo" style={{ width: '36px', height: '36px', borderRadius: '8px', boxShadow: '0 4px 12px rgba(230, 36, 41, 0.4)' }} />
+            <h2 style={{ fontSize: '1.2rem', margin: 0, fontWeight: 'bold', letterSpacing: '-0.5px' }}>LEGENDARY HQ</h2>
+          </div>
+          
+          <div className="topbar-right-actions" style={{ display: 'flex', alignItems: 'center', gap: '24px', marginLeft: 'auto' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-secondary)' }}>
             <Globe size={18} />
             <select 
               style={{ background: 'transparent', color: 'var(--text-secondary)', border: 'none', cursor: 'pointer', outline: 'none', fontSize: '0.9rem' }}
@@ -207,8 +214,22 @@ function App() {
             <button onClick={login} className="btn btn-primary" style={{ padding: '8px 16px', fontSize: '0.9rem' }}>
               Login
             </button>
-          )}
+            )}
+          </div>
         </header>
+        {/* Popups e Modais */}
+        {popupMsg && (
+          <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.8)', zIndex: 99999, display: 'flex', alignItems: 'center', justifyContent: 'center', animation: 'fadeIn 0.2s ease-out' }}>
+            <div className="glass-panel" style={{ width: '90%', maxWidth: '350px', padding: '30px', position: 'relative', textAlign: 'center' }}>
+              <button onClick={() => setPopupMsg(null)} style={{ position: 'absolute', top: '15px', right: '15px', background: 'transparent', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer' }}>
+                <X size={20} />
+              </button>
+              <h3 style={{ color: 'white', margin: '0 0 16px 0', fontSize: '1.2rem' }}>Aviso</h3>
+              <p style={{ color: 'var(--text-secondary)', marginBottom: '24px', lineHeight: '1.5' }}>{popupMsg}</p>
+              <button onClick={() => setPopupMsg(null)} className="btn btn-primary" style={{ width: '100%' }}>OK</button>
+            </div>
+          </div>
+        )}
 
         {/* Modal de Configurações */}
         {showSettings && (

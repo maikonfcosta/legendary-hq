@@ -391,6 +391,34 @@ button {
     padding-bottom: 5rem; /* space for the floating menu btn */
   }
 
+  .topbar {
+    padding: 16px 16px 0 16px !important;
+  }
+  
+  .mobile-logo-container {
+    display: flex !important;
+    gap: 8px !important;
+  }
+
+  .mobile-logo-container img {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .mobile-logo-container h2 {
+    font-size: 0.95rem !important;
+    letter-spacing: -0.2px !important;
+  }
+  
+  .topbar-right-actions {
+    gap: 8px !important;
+  }
+
+  .topbar-right-actions select, .topbar-right-actions .btn {
+    font-size: 0.8rem !important;
+    padding: 4px 8px !important;
+  }
+
   .card-grid {
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 12px;

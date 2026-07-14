@@ -57,8 +57,179 @@
     ]
   },
   {
+    "id": "custom_core",
+    "title": "A Ameaça Inicial (Core Set)",
+    "description": "Uma campanha introdutória com 5 missões exclusivas usando apenas as cartas do jogo base.",
+    "image": "https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?w=400&q=80",
+    "requiredExpansions": [
+      "core"
+    ],
+    "missions": [
+      {
+        "id": "c1_m1",
+        "title": "Missão 1",
+        "description": "Derrote as ameaças do Core Set.",
+        "setup": {
+          "mastermind": "Dr. Doom",
+          "scheme": "Unleash the Power of the Cosmic Cube core"
+        }
+      },
+      {
+        "id": "c1_m2",
+        "title": "Missão 2",
+        "description": "Derrote as ameaças do Core Set.",
+        "setup": {
+          "mastermind": "Magneto",
+          "scheme": "The Legacy Virus"
+        }
+      },
+      {
+        "id": "c1_m3",
+        "title": "Missão 3",
+        "description": "Derrote as ameaças do Core Set.",
+        "setup": {
+          "mastermind": "Dr. Doom",
+          "scheme": "Midtown Bank Robbery"
+        }
+      },
+      {
+        "id": "c1_m4",
+        "title": "Missão 4",
+        "description": "Derrote as ameaças do Core Set.",
+        "setup": {
+          "mastermind": "Red Skull",
+          "scheme": "The Legacy Virus"
+        }
+      },
+      {
+        "id": "c1_m5",
+        "title": "Missão 5",
+        "description": "Derrote as ameaças do Core Set.",
+        "setup": {
+          "mastermind": "Magneto",
+          "scheme": "Secret Invasion of the Skrull Shapeshifters"
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_darkcity",
+    "title": "Sombras da Cidade (Core + Dark City)",
+    "description": "O submundo de Nova York desperta. 5 missões brutais que combinam o jogo base com a infame expansão Dark City.",
+    "image": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400&q=80",
+    "requiredExpansions": [
+      "core",
+      "dark_city"
+    ],
+    "missions": [
+      {
+        "id": "c2_m1",
+        "title": "Missão 1",
+        "description": "Enfrente os tiranos do submundo.",
+        "setup": {
+          "mastermind": "Loki",
+          "scheme": "Core Scheme Twist"
+        }
+      },
+      {
+        "id": "c2_m2",
+        "title": "Missão 2",
+        "description": "Enfrente os tiranos do submundo.",
+        "setup": {
+          "mastermind": "Mr. Sinister",
+          "scheme": "X-Cutioner's Song"
+        }
+      },
+      {
+        "id": "c2_m3",
+        "title": "Missão 3",
+        "description": "Enfrente os tiranos do submundo.",
+        "setup": {
+          "mastermind": "Red Skull",
+          "scheme": "Portals to the Dark Dimension"
+        }
+      },
+      {
+        "id": "c2_m4",
+        "title": "Missão 4",
+        "description": "Enfrente os tiranos do submundo.",
+        "setup": {
+          "mastermind": "Magneto",
+          "scheme": "Save Humanity"
+        }
+      },
+      {
+        "id": "c2_m5",
+        "title": "Missão 5",
+        "description": "Enfrente os tiranos do submundo.",
+        "setup": {
+          "mastermind": "Mr. Sinister",
+          "scheme": "Legacy Virus the"
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_xmen",
+    "title": "O Despertar Mutante (Core + DC + X-Men)",
+    "description": "Apocalypse e Magneto se juntam à briga. Uma campanha de 5 missões com dificuldade altíssima.",
+    "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=400&q=80",
+    "requiredExpansions": [
+      "core",
+      "dark_city",
+      "xmen"
+    ],
+    "missions": [
+      {
+        "id": "c3_m1",
+        "title": "Missão 1",
+        "description": "Salve o mundo das ameaças de nível Ômega.",
+        "setup": {
+          "mastermind": "Arcade",
+          "scheme": "Nuclear Armageddon"
+        }
+      },
+      {
+        "id": "c3_m2",
+        "title": "Missão 2",
+        "description": "Salve o mundo das ameaças de nível Ômega.",
+        "setup": {
+          "mastermind": "Deathbird",
+          "scheme": "Steal the Weaponized Plutonium"
+        }
+      },
+      {
+        "id": "c3_m3",
+        "title": "Missão 3",
+        "description": "Salve o mundo das ameaças de nível Ômega.",
+        "setup": {
+          "mastermind": "Shadow King",
+          "scheme": "Replace Earth's Leaders with Killbots"
+        }
+      },
+      {
+        "id": "c3_m4",
+        "title": "Missão 4",
+        "description": "Salve o mundo das ameaças de nível Ômega.",
+        "setup": {
+          "mastermind": "Onslaught",
+          "scheme": "Massive Earthquake Generator"
+        }
+      },
+      {
+        "id": "c3_m5",
+        "title": "Missão 5",
+        "description": "Salve o mundo das ameaças de nível Ômega.",
+        "setup": {
+          "mastermind": "Epic Shadow King",
+          "scheme": "Replace Earths Leaders with Killbots"
+        }
+      }
+    ]
+  },
+  {
     "id": "ml_campaign_saga_1",
-    "title": "Saga 1",
+    "title": "Saga 1: Ameaças Urbanas",
     "description": "Missões 1 a 10 da ML Campaign.",
     "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
     "requiredExpansions": [
@@ -169,7 +340,7 @@
   },
   {
     "id": "ml_campaign_saga_2",
-    "title": "Saga 2",
+    "title": "Saga 2: Dimensões Obscuras",
     "description": "Missões 11 a 20 da ML Campaign.",
     "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
     "requiredExpansions": [
@@ -282,7 +453,7 @@
   },
   {
     "id": "ml_campaign_saga_3",
-    "title": "Saga 3",
+    "title": "Saga 3: O Início da Guerra Civil",
     "description": "Missões 21 a 30 da ML Campaign.",
     "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
     "requiredExpansions": [
@@ -398,7 +569,7 @@
   },
   {
     "id": "ml_campaign_saga_4",
-    "title": "Saga 4",
+    "title": "Saga 4: Conflitos Globais",
     "description": "Missões 31 a 40 da ML Campaign.",
     "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
     "requiredExpansions": [
@@ -507,7 +678,7 @@
   },
   {
     "id": "ml_campaign_saga_5",
-    "title": "Saga 5",
+    "title": "Saga 5: Ameaças Cósmicas",
     "description": "Missões 41 a 50 da ML Campaign.",
     "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
     "requiredExpansions": [
@@ -618,7 +789,7 @@
   },
   {
     "id": "ml_campaign_saga_6",
-    "title": "Saga 6",
+    "title": "Saga 6: Retorno dos Tiranos",
     "description": "Missões 51 a 60 da ML Campaign.",
     "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
     "requiredExpansions": [
@@ -731,7 +902,7 @@
   },
   {
     "id": "ml_campaign_saga_7",
-    "title": "Saga 7",
+    "title": "Saga 7: Invasões Alienígenas",
     "description": "Missões 61 a 70 da ML Campaign.",
     "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
     "requiredExpansions": [
@@ -844,7 +1015,7 @@
   },
   {
     "id": "ml_campaign_saga_8",
-    "title": "Saga 8",
+    "title": "Saga 8: Sombras do Passado",
     "description": "Missões 71 a 80 da ML Campaign.",
     "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
     "requiredExpansions": [
@@ -956,7 +1127,7 @@
   },
   {
     "id": "ml_campaign_saga_9",
-    "title": "Saga 9",
+    "title": "Saga 9: O Caos Mutante",
     "description": "Missões 81 a 90 da ML Campaign.",
     "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
     "requiredExpansions": [
@@ -1070,7 +1241,7 @@
   },
   {
     "id": "ml_campaign_saga_10",
-    "title": "Saga 10",
+    "title": "Saga 10: Ascensão das Trevas",
     "description": "Missões 91 a 100 da ML Campaign.",
     "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
     "requiredExpansions": [
@@ -1184,7 +1355,7 @@
   },
   {
     "id": "ml_campaign_saga_11",
-    "title": "Saga 11",
+    "title": "Saga 11: Crise Multiversal",
     "description": "Missões 101 a 110 da ML Campaign.",
     "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
     "requiredExpansions": [
@@ -1298,7 +1469,7 @@
   },
   {
     "id": "ml_campaign_saga_12",
-    "title": "Saga 12",
+    "title": "Saga 12: Tempos Sombrios",
     "description": "Missões 111 a 120 da ML Campaign.",
     "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
     "requiredExpansions": [
@@ -1413,7 +1584,7 @@
   },
   {
     "id": "ml_campaign_saga_13",
-    "title": "Saga 13",
+    "title": "Saga 13: Guerra Infinita",
     "description": "Missões 121 a 130 da ML Campaign.",
     "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
     "requiredExpansions": [
@@ -1527,7 +1698,7 @@
   },
   {
     "id": "ml_campaign_saga_14",
-    "title": "Saga 14",
+    "title": "Saga 14: Aniquilação Total",
     "description": "Missões 131 a 140 da ML Campaign.",
     "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
     "requiredExpansions": [
@@ -1641,7 +1812,7 @@
   },
   {
     "id": "ml_campaign_saga_15",
-    "title": "Saga 15",
+    "title": "Saga 15: O Julgamento Final",
     "description": "Missões 141 a 150 da ML Campaign.",
     "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
     "requiredExpansions": [
@@ -1755,7 +1926,7 @@
   },
   {
     "id": "ml_campaign_saga_16",
-    "title": "Saga 16",
+    "title": "Saga 16: O Destino do Universo",
     "description": "Missões 151 a 151 da ML Campaign.",
     "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
     "requiredExpansions": [

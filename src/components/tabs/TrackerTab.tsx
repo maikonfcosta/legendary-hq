@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { RotateCcw, Star, Swords, Skull, AlertTriangle, Users, CheckSquare } from 'lucide-react';
+import { RotateCcw, Star, Swords, Skull, AlertTriangle, Users, CheckSquare, HelpCircle } from 'lucide-react';
 import type { SetupResult } from '../../utils/randomizer';
+import { TurnAssistantModal } from '../TurnAssistantModal';
 
 interface TrackerTabProps {
   recruit: number; setRecruit: (val: number) => void;
@@ -15,6 +16,7 @@ interface TrackerTabProps {
 
 export function TrackerTab({ recruit, setRecruit, attack, setAttack, masterStrikes, setMasterStrikes, schemeTwists, setSchemeTwists, bystanders, setBystanders, resetTracker, currentSetup, onFinishMatch }: TrackerTabProps) {
   const [showFinishModal, setShowFinishModal] = useState(false);
+  const [showAssistant, setShowAssistant] = useState(false);
 
   const handleFinish = (victory: boolean) => {
     onFinishMatch(victory);
@@ -25,7 +27,16 @@ export function TrackerTab({ recruit, setRecruit, attack, setAttack, masterStrik
     <section className="fade-in">
       <div className="result-header">
         <div>
-          <h2>Game Tracker</h2>
+          <h2 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            Game Tracker
+            <button 
+              onClick={() => setShowAssistant(true)}
+              style={{ background: 'transparent', border: 'none', color: 'var(--primary-color)', cursor: 'pointer', padding: 0, display: 'flex' }}
+              title="Assistente de Turno"
+            >
+              <HelpCircle size={20} />
+            </button>
+          </h2>
           <p style={{ color: 'var(--text-secondary)' }}>Acompanhe os pontos do turno e o andamento da partida.</p>
         </div>
         <div style={{ display: 'flex', gap: '10px' }}>
@@ -127,6 +138,8 @@ export function TrackerTab({ recruit, setRecruit, attack, setAttack, masterStrik
           </div>
         </>
       )}
+
+      {showAssistant && <TurnAssistantModal onClose={() => setShowAssistant(false)} />}
     </section>
   );
 }

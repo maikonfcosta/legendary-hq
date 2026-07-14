@@ -41,7 +41,7 @@ export const generateSetup = (playerCount: number, ownedExpansions: string[]): S
     items.filter(item => ownedExpansions.includes(item.expansion) || (item.expansion === 'core' && ownedExpansions.includes('core_2nd')));
 
   const availableMasterminds = filterByExpansion(db.masterminds);
-  const availableSchemes = filterByExpansion(db.schemes);
+  const availableSchemes = filterByExpansion(db.schemes).filter(s => !s.name.toLowerCase().includes('scheme twist'));
   const availableVillains = filterByExpansion(db.villains);
   const availableHenchmen = filterByExpansion(db.henchmen);
   const availableHeroes = filterByExpansion(db.heroes);

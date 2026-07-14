@@ -2,6 +2,28 @@ import { Tag, CheckCircle2, Star, Rocket } from 'lucide-react';
 
 const releases = [
   {
+    version: "1.4.0",
+    date: new Date().toLocaleDateString('pt-BR'),
+    title: "Avatar & Assistente de Turno 🦸‍♂️",
+    description: "Personalização de perfil e guias de jogatina para ajudar novos jogadores e deixar o app com a sua cara.",
+    highlights: [
+      {
+        icon: <Star size={18} style={{ color: '#fbc02d' }} />,
+        text: "Customização de Perfil (Avatar): Escolha qualquer herói do jogo como seu Avatar. A imagem dele será exibida na barra superior."
+      },
+      {
+        icon: <CheckCircle2 size={18} style={{ color: '#10b981' }} />,
+        text: "Assistente de Turno: Um modal de referência rápida no Tracker com o passo a passo das fases do jogo (Vilão, Jogador e Fim de Turno)."
+      }
+    ],
+    features: [
+      "No Gerador (Randomizer), cada carta sorteada agora exibe no rodapé de qual Expansão ela pertence.",
+      "Correção no Gerador que impedia sortear acidentalmente cartas de 'Scheme Twist' em vez de um Scheme de missão.",
+      "Sincronização do Avatar salva no LocalStorage e no Firestore para nuvem.",
+      "Sistema de Prompt de Atualização (PWA) ativado para avisar quando novas versões do App estiverem disponíveis em cache."
+    ]
+  },
+  {
     version: "1.3.0",
     date: new Date().toLocaleDateString('pt-BR'),
     title: "Expansão Massiva & Automação do Solo 🃏",

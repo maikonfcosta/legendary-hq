@@ -18,6 +18,10 @@ import { CollectionTab } from './components/tabs/CollectionTab';
 import { RandomizerTab } from './components/tabs/RandomizerTab';
 import { TrackerTab } from './components/tabs/TrackerTab';
 import { ReleaseNotesTab } from './components/tabs/ReleaseNotesTab';
+import { ReloadPrompt } from './components/ReloadPrompt';
+import { useAvatar } from './hooks/useAvatar';
+import { AvatarPickerModal } from './components/AvatarPickerModal';
+import { getCardImage } from './utils/imageLookup';
 
 function App() {
   const [playerCount, setPlayerCount] = useState(1);
@@ -31,8 +35,10 @@ function App() {
   const { currentUser, login, logoutUser } = useAuth();
 
   const [showSettings, setShowSettings] = useState(false);
+  const [showAvatarPicker, setShowAvatarPicker] = useState(false);
   const [sfxEnabled, setSfxEnabled] = useState(true);
   const [theme, setTheme] = useState('covert');
+  const [avatarId] = useAvatar();
   
   useEffect(() => {
     const savedTheme = localStorage.getItem('lhq_theme');
@@ -207,7 +213,17 @@ function App() {
           {currentUser ? (
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               <span className="hide-on-mobile" style={{ fontSize: '0.8rem', color: '#86efac' }} title="Nuvem Sincronizada">OK</span>
-              <img src={currentUser.photoURL || ''} alt="User" style={{ width: 32, height: 32, borderRadius: '50%' }} title={currentUser.displayName || ''} />
+              <div 
+                onClick={() => setShowAvatarPicker(true)} 
+                style={{ cursor: 'pointer', borderRadius: '50%', overflow: 'hidden', width: 32, height: 32, border: '2px solid var(--primary-color)' }}
+                title={currentUser.displayName || 'Mudar Avatar'}
+              >
+                <img 
+                  src={(avatarId && getCardImage(avatarId, 'hero')) || currentUser.photoURL || ''} 
+                  alt="User" 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                />
+              </div>
               <button onClick={logoutUser} className="btn btn-secondary hide-on-mobile" style={{ padding: '6px 12px', fontSize: '0.85rem' }}>Sair</button>
             </div>
           ) : (
@@ -266,6 +282,8 @@ function App() {
           </div>
         )}
 
+        {showAvatarPicker && <AvatarPickerModal onClose={() => setShowAvatarPicker(false)} />}
+
         {/* Main Content Area */}
         <main className="main-content">
           {activeTab === 'home' && <HomeTab onNavigate={handleTabChange} />}
@@ -318,6 +336,7 @@ function App() {
           </div>
         </footer>
       </div>
+      <ReloadPrompt />
     </div>
   );
 }

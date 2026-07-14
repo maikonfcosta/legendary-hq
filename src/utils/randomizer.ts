@@ -92,12 +92,19 @@ export const generateSetup = (playerCount: number, ownedExpansions: string[]): S
   // 6. Draw Heroes
   const heroes = getRandomItems(availableHeroes, config.heroes);
 
+  const formatCard = <T extends { expansion: string }>(card: T): T => {
+    if (card.expansion === 'core' && ownedExpansions.includes('core_2nd') && !ownedExpansions.includes('core')) {
+      return { ...card, expansion: 'core_2nd' };
+    }
+    return card;
+  };
+
   return {
-    mastermind,
-    scheme,
-    villains,
-    henchmen,
-    heroes,
+    mastermind: formatCard(mastermind),
+    scheme: formatCard(scheme),
+    villains: villains.map(formatCard),
+    henchmen: henchmen.map(formatCard),
+    heroes: heroes.map(formatCard),
     bystanders: config.bystanders
   };
 };

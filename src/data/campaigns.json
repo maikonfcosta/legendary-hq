@@ -3,7 +3,9 @@
     "id": "c_hydra_threat",
     "title": "A Ameaça da HYDRA",
     "description": "O Caveira Vermelha e o Doutor Destino estão unindo forças. Impeça seus roubos e evite que o Cubo Cósmico seja ativado!",
-    "requiredExpansions": ["core"],
+    "requiredExpansions": [
+      "core"
+    ],
     "missions": [
       {
         "id": "m1_bank_robbery",
@@ -11,8 +13,12 @@
         "setup": {
           "mastermind": "Red Skull",
           "scheme": "Midtown Bank Robbery",
-          "villains": ["HYDRA"],
-          "henchmen": ["Hand Ninjas"],
+          "villains": [
+            "HYDRA"
+          ],
+          "henchmen": [
+            "Hand Ninjas"
+          ],
           "heroRestrictions": "Nenhuma restrição"
         }
       },
@@ -22,8 +28,13 @@
         "setup": {
           "mastermind": "Dr. Doom",
           "scheme": "Replace Earth's Leaders with Killbots",
-          "villains": ["HYDRA", "Masters of Evil"],
-          "henchmen": ["Doombot Legion"],
+          "villains": [
+            "HYDRA",
+            "Masters of Evil"
+          ],
+          "henchmen": [
+            "Doombot Legion"
+          ],
           "heroRestrictions": "Apenas Vingadores"
         }
       },
@@ -33,140 +44,1733 @@
         "setup": {
           "mastermind": "Red Skull",
           "scheme": "Unleash the Power of the Cosmic Cube",
-          "villains": ["HYDRA", "Masters of Evil"],
-          "henchmen": ["Sentinel"],
+          "villains": [
+            "HYDRA",
+            "Masters of Evil"
+          ],
+          "henchmen": [
+            "Sentinel"
+          ],
           "heroRestrictions": "Nenhuma restrição"
         }
       }
     ]
   },
   {
-    "id": "c_skrull_invasion",
-    "title": "Invasão Secreta",
-    "description": "Uma invasão Skrull está causando caos e dividindo os heróis. E Loki parece estar por trás do fortalecimento dessas forças intergaláticas.",
-    "requiredExpansions": ["core"],
+    "id": "ml_campaign_saga_1",
+    "title": "Saga 1",
+    "description": "Missões 1 a 10 da ML Campaign.",
+    "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
+    "requiredExpansions": [
+      "xmen",
+      "new_mutants",
+      "core",
+      "noir",
+      "revelations",
+      "dark_city",
+      "shield",
+      "spiderman_homecoming",
+      "paint_the_town_red",
+      "fantastic_four",
+      "deadpool"
+    ],
     "missions": [
       {
-        "id": "m1_skrulls",
-        "title": "Missão 1: Infiltração",
+        "id": "m1",
+        "title": "Missão 1",
+        "description": "Distract the Hero liderado por Mole Man.",
         "setup": {
-          "mastermind": "Loki",
-          "scheme": "Secret Invasion of the Skrull Shapeshifters",
-          "villains": ["Skrulls"],
-          "henchmen": ["Savage Land Mutates"],
-          "heroRestrictions": "Heróis S.H.I.E.L.D. obrigatórios"
+          "mastermind": "Mole Man",
+          "scheme": "Distract the Hero"
         }
       },
       {
-        "id": "m2_civil_war",
-        "title": "Missão 2: Guerra Civil",
+        "id": "m2",
+        "title": "Missão 2",
+        "description": "Organized Crime Wave liderado por The Goblin, Underworld Boss.",
         "setup": {
-          "mastermind": "Dr. Doom",
-          "scheme": "Super Hero Civil War",
-          "villains": ["Skrulls", "Spider-Foes"],
-          "henchmen": ["Doombot Legion"],
-          "heroRestrictions": "Sem X-Men permitidos"
+          "mastermind": "The Goblin, Underworld Boss",
+          "scheme": "Organized Crime Wave"
         }
       },
       {
-        "id": "m3_dark_dimension",
-        "title": "Missão 3: Portais Negros",
+        "id": "m3",
+        "title": "Missão 3",
+        "description": "Explosion at the Washington Monument liderado por The Hood.",
         "setup": {
-          "mastermind": "Loki",
-          "scheme": "Portals to the Dark Dimension",
-          "villains": ["Enemies of Asgard", "Skrulls"],
-          "henchmen": ["Hand Ninjas"],
-          "heroRestrictions": "Nenhuma restrição"
+          "mastermind": "The Hood",
+          "scheme": "Explosion at the Washington Monument"
+        }
+      },
+      {
+        "id": "m4",
+        "title": "Missão 4",
+        "description": "Midtown Bank Robbery liderado por Adrian Toomes.",
+        "setup": {
+          "mastermind": "Adrian Toomes",
+          "scheme": "Midtown Bank Robbery"
+        }
+      },
+      {
+        "id": "m5",
+        "title": "Missão 5",
+        "description": "Ferry Disaster liderado por Mandarin.",
+        "setup": {
+          "mastermind": "Mandarin",
+          "scheme": "Ferry Disaster"
+        }
+      },
+      {
+        "id": "m6",
+        "title": "Missão 6",
+        "description": "Five Families of Crime liderado por Macho Gomez.",
+        "setup": {
+          "mastermind": "Macho Gomez",
+          "scheme": "Five Families of Crime"
+        }
+      },
+      {
+        "id": "m7",
+        "title": "Missão 7",
+        "description": "Silence the Witnesses liderado por Onslaught.",
+        "setup": {
+          "mastermind": "Onslaught",
+          "scheme": "Silence the Witnesses"
+        }
+      },
+      {
+        "id": "m8",
+        "title": "Missão 8",
+        "description": "Weave A Web of Lies liderado por Shiklah, The Demon Bride.",
+        "setup": {
+          "mastermind": "Shiklah, The Demon Bride",
+          "scheme": "Weave a Web of Lies"
+        }
+      },
+      {
+        "id": "m9",
+        "title": "Missão 9",
+        "description": "Invade the Daily Bugle News HQ liderado por Adrian Toomes.",
+        "setup": {
+          "mastermind": "Adrian Toomes",
+          "scheme": "Invade the Daily Bugle News HQ"
+        }
+      },
+      {
+        "id": "m10",
+        "title": "Missão 10",
+        "description": "Secret Empire of Betrayal liderado por Emma Frost.",
+        "setup": {
+          "mastermind": "Emma Frost, The White Queen",
+          "scheme": "Secret Empire of Betrayal"
         }
       }
     ]
   },
   {
-    "id": "c_mutant_danger",
-    "title": "A Irmandade",
-    "description": "Magneto lidera a Irmandade de Mutantes na liberação de prisioneiros e agora uma doença ameaça todos com o gene X.",
-    "requiredExpansions": ["core"],
+    "id": "ml_campaign_saga_2",
+    "title": "Saga 2",
+    "description": "Missões 11 a 20 da ML Campaign.",
+    "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
+    "requiredExpansions": [
+      "xmen",
+      "venom",
+      "core",
+      "noir",
+      "fantastic_four",
+      "secret_wars_1",
+      "dark_city",
+      "ant_man",
+      "champions",
+      "world_war_hulk",
+      "paint_the_town_red",
+      "civil_war",
+      "deadpool"
+    ],
     "missions": [
       {
-        "id": "m1_prison_break",
-        "title": "Missão 1: Fuga da Prisão",
+        "id": "m11",
+        "title": "Missão 11",
+        "description": "Replace Earth’s Leaders With Killbots liderado por Pagliacci.",
         "setup": {
-          "mastermind": "Magneto",
-          "scheme": "Negative Zone Prison Breakout",
-          "villains": ["Brotherhood"],
-          "henchmen": ["Sentinel"],
-          "heroRestrictions": "Nenhuma restrição"
+          "mastermind": "Pagliacci",
+          "scheme": "Replace Earths Leaders with Killbots"
         }
       },
       {
-        "id": "m2_legacy_virus",
-        "title": "Missão 2: Vírus Legado",
+        "id": "m12",
+        "title": "Missão 12",
+        "description": "Paralyzing Venom liderado por Evil Deadpool.",
         "setup": {
-          "mastermind": "Magneto",
-          "scheme": "The Legacy Virus",
-          "villains": ["Brotherhood", "Radiation"],
-          "henchmen": ["Sentinel", "Savage Land Mutates"],
-          "heroRestrictions": "Apenas X-Men"
-        }
-      }
-    ]
-  },
-  {
-    "id": "c_dark_city_underworld",
-    "title": "Sombras de Dark City",
-    "description": "O submundo de Nova York está em polvorosa. O Rei do Crime governa as ruas, e demônios invadem as noites da cidade sombria.",
-    "requiredExpansions": ["core", "dark_city"],
-    "missions": [
-      {
-        "id": "m1_kingpin_streets",
-        "title": "Missão 1: Dominando as Ruas",
-        "setup": {
-          "mastermind": "Kingpin",
-          "scheme": "Organize the Underworld",
-          "villains": ["Streets of New York"],
-          "henchmen": ["Maggia Goons"],
-          "heroRestrictions": "Apenas heróis do tipo Marvel Knights (ex: Daredevil, Blade)"
+          "mastermind": "Evil Deadpool",
+          "scheme": "Paralyzing Venom"
         }
       },
       {
-        "id": "m2_mephisto_demons",
-        "title": "Missão 2: A Ameaça Demoníaca",
+        "id": "m13",
+        "title": "Missão 13",
+        "description": "Invasion of the Venom Symbiotes liderado por The Sentry.",
+        "setup": {
+          "mastermind": "The Sentry",
+          "scheme": "Invasion of the Venom Symbiotes"
+        }
+      },
+      {
+        "id": "m14",
+        "title": "Missão 14",
+        "description": "Symbiotic Absorption liderado por Mephisto.",
         "setup": {
           "mastermind": "Mephisto",
-          "scheme": "Transform Citizens into Demons",
-          "villains": ["Underworld"],
-          "henchmen": ["Phalanx"],
-          "heroRestrictions": "Nenhuma restrição"
+          "scheme": "Symbiotic Absorption"
+        }
+      },
+      {
+        "id": "m15",
+        "title": "Missão 15",
+        "description": "Portals to the Dark Dimension liderado por Dr. Doom.",
+        "setup": {
+          "mastermind": "Dr. Doom",
+          "scheme": "Portals to the Dark Dimension"
+        }
+      },
+      {
+        "id": "m16",
+        "title": "Missão 16",
+        "description": "Pull Earth Into Medieval Times liderado por Madelyne Pryor.",
+        "setup": {
+          "mastermind": "Madelyne Pryor, Goblin Queen",
+          "scheme": "Pull Earth into Medieval Times"
+        }
+      },
+      {
+        "id": "m17",
+        "title": "Missão 17",
+        "description": "Pull Reality Into the Negative Zone liderado por Mysterio.",
+        "setup": {
+          "mastermind": "Mysterio",
+          "scheme": "Pull Reality Into the Negative Zone"
+        }
+      },
+      {
+        "id": "m18",
+        "title": "Missão 18",
+        "description": "Negative Zone Prison Breakout liderado por Apocalypse.",
+        "setup": {
+          "mastermind": "Apocalypse",
+          "scheme": "Negative Zone Prison Breakout"
+        }
+      },
+      {
+        "id": "m19",
+        "title": "Missão 19",
+        "description": "Fragmented Realities liderado por Mojo.",
+        "setup": {
+          "mastermind": "Mojo",
+          "scheme": "Fragmented Realities"
+        }
+      },
+      {
+        "id": "m20",
+        "title": "Missão 20",
+        "description": "Predict Future Crime liderado por Charles Xavier. Professor of Crime.",
+        "setup": {
+          "mastermind": "Charles Xavier, Professor of Crime",
+          "scheme": "Predict Future Crime"
         }
       }
     ]
   },
   {
-    "id": "c_apocalypse_rise",
-    "title": "A Ascensão do Apocalipse",
-    "description": "Apocalipse convocou seus Cavaleiros e está orquestrando a aniquilação dos mais fracos. Apenas os X-Men podem detê-lo.",
-    "requiredExpansions": ["core", "dark_city"],
+    "id": "ml_campaign_saga_3",
+    "title": "Saga 3",
+    "description": "Missões 21 a 30 da ML Campaign.",
+    "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
+    "requiredExpansions": [
+      "xmen",
+      "heroes_of_asgard",
+      "infinity_saga",
+      "core",
+      "noir",
+      "world_war_hulk",
+      "secret_wars_1",
+      "secret_wars_2",
+      "guardians",
+      "dimensions",
+      "dark_city",
+      "shield",
+      "marvel_studios_phase_1",
+      "champions",
+      "secret_wars_volume_2",
+      "civil_war"
+    ],
     "missions": [
       {
-        "id": "m1_sinister_clones",
-        "title": "Missão 1: A Experiência do Sr. Sinistro",
+        "id": "m21",
+        "title": "Missão 21",
+        "description": "Find the Split Personality Killer liderado por J. Jonah Jameson.",
         "setup": {
-          "mastermind": "Mr. Sinister",
-          "scheme": "Capture Baby Hope",
-          "villains": ["Marauders"],
-          "henchmen": ["Sentinel"],
-          "heroRestrictions": "Apenas X-Men e X-Force"
+          "mastermind": "J. Jonah Jameson",
+          "scheme": "Find the Split Personality Killer"
         }
       },
       {
-        "id": "m2_apocalypse_horsemen",
-        "title": "Missão 2: Os Quatro Cavaleiros",
+        "id": "m22",
+        "title": "Missão 22",
+        "description": "Nitro the Supervillain Threatens Crowds liderado por Deathbird.",
+        "setup": {
+          "mastermind": "Deathbird",
+          "scheme": "Nitro the Supervillain Threatens Crowds"
+        }
+      },
+      {
+        "id": "m23",
+        "title": "Missão 23",
+        "description": "The Fountain of Eternal Life liderado por Pagliacci.",
+        "setup": {
+          "mastermind": "Pagliacci",
+          "scheme": "The Fountain of Eternal Life"
+        }
+      },
+      {
+        "id": "m24",
+        "title": "Missão 24",
+        "description": "Dark Alliance liderado por Kingpin.",
+        "setup": {
+          "mastermind": "Kingpin",
+          "scheme": "Dark Alliance"
+        }
+      },
+      {
+        "id": "m25",
+        "title": "Missão 25",
+        "description": "Master of Tyrants liderado por King Hyperion.",
+        "setup": {
+          "mastermind": "King Hyperion",
+          "scheme": "Master of Tyrants"
+        }
+      },
+      {
+        "id": "m26",
+        "title": "Missão 26",
+        "description": "Divide and Conquer liderado por Hydra Super Adaptoids.",
+        "setup": {
+          "mastermind": "HydraSuper Adaptoid2",
+          "scheme": "Divide and Conquer"
+        }
+      },
+      {
+        "id": "m27",
+        "title": "Missão 27",
+        "description": "United States Split By Civil War liderado por The Supreme Intelligence of the Kree.",
+        "setup": {
+          "mastermind": "Supreme Intelligence of the Kree",
+          "scheme": "United States Split by Civil War"
+        }
+      },
+      {
+        "id": "m28",
+        "title": "Missão 28",
+        "description": "Superhero Civil War liderado por Hela.",
+        "setup": {
+          "mastermind": "Hela, Goddess of Death",
+          "scheme": "Super Hero Civil War"
+        }
+      },
+      {
+        "id": "m29",
+        "title": "Missão 29",
+        "description": "Epic Superhero Civil War liderado por Magneto.",
+        "setup": {
+          "mastermind": "Magneto",
+          "scheme": "Super Hero Civil War"
+        }
+      },
+      {
+        "id": "m30",
+        "title": "Missão 30",
+        "description": "Shoot Hulk Into Space liderado por Poison Thanos.",
+        "setup": {
+          "mastermind": "Thanos",
+          "scheme": "Shoot Hulk into Space"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ml_campaign_saga_4",
+    "title": "Saga 4",
+    "description": "Missões 31 a 40 da ML Campaign.",
+    "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
+    "requiredExpansions": [
+      "core",
+      "cap_75",
+      "phase_1",
+      "secret_wars_1",
+      "dark_city",
+      "heroes_of_asgard",
+      "world_war_hulk",
+      "civil_war",
+      "deadpool"
+    ],
+    "missions": [
+      {
+        "id": "m31",
+        "title": "Missão 31",
+        "description": "Fall of the Hulks liderado por Illuminati-Secret Society.",
+        "setup": {
+          "mastermind": "Illuminati-Secret Society",
+          "scheme": "Fall of the Hulks"
+        }
+      },
+      {
+        "id": "m32",
+        "title": "Missão 32",
+        "description": "Gladiator Pits of Sakaar liderado por Wasteland Hulk.",
+        "setup": {
+          "mastermind": "Wasteland Hulk",
+          "scheme": "Gladiator Pits of Sakaar"
+        }
+      },
+      {
+        "id": "m33",
+        "title": "Missão 33",
+        "description": "Crush Them With My Bare Hands liderado por King Hulk.",
+        "setup": {
+          "mastermind": "King Hulk, Sakaarson",
+          "scheme": "Crush Them with my Bare Hands"
+        }
+      },
+      {
+        "id": "m34",
+        "title": "Missão 34",
+        "description": "World War Hulk liderado por Authoritarian Iron Man.",
+        "setup": {
+          "mastermind": "Authoritarian Iron Man",
+          "scheme": "World War Hulk"
+        }
+      },
+      {
+        "id": "m35",
+        "title": "Missão 35",
+        "description": "Deadland Hordes Charge the Wall liderado por Stryfe.",
+        "setup": {
+          "mastermind": "Stryfe",
+          "scheme": "Deadland Hordes Charge the Wall"
+        }
+      },
+      {
+        "id": "m36",
+        "title": "Missão 36",
+        "description": "Everybody Hates Deadpool liderado por Loki.",
+        "setup": {
+          "mastermind": "Loki",
+          "scheme": "Everybody Hates Deadpool"
+        }
+      },
+      {
+        "id": "m37",
+        "title": "Missão 37",
+        "description": "Deadpool Writes A Scheme liderado por Evil Deadpool.",
+        "setup": {
+          "mastermind": "Evil Deadpool",
+          "scheme": "Deadpool Writes a Scheme"
+        }
+      },
+      {
+        "id": "m38",
+        "title": "Missão 38",
+        "description": "War of the Frost Giants liderado por Wasteland Hulk.",
+        "setup": {
+          "mastermind": "Wasteland Hulk",
+          "scheme": "War of the Frost Giants"
+        }
+      },
+      {
+        "id": "m39",
+        "title": "Missão 39",
+        "description": "The Asgardian Test of Worth liderado por Ragnarok.",
+        "setup": {
+          "mastermind": "Ragnarok",
+          "scheme": "Asgardian Test of Worth"
+        }
+      },
+      {
+        "id": "m40",
+        "title": "Missão 40",
+        "description": "Go Back In Time to Slay Heroes’ Ancestors liderado por Apocalypse.",
         "setup": {
           "mastermind": "Apocalypse",
-          "scheme": "X-Cutioner's Song",
-          "villains": ["Four Horsemen of Apocalypse", "MLF"],
-          "henchmen": ["Phalanx"],
-          "heroRestrictions": "Apenas X-Men e X-Force"
+          "scheme": "Go Back in Time to Slay Heroes Ancestors"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ml_campaign_saga_5",
+    "title": "Saga 5",
+    "description": "Missões 41 a 50 da ML Campaign.",
+    "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
+    "requiredExpansions": [
+      "xmen",
+      "core",
+      "cap_75",
+      "phase_1",
+      "secret_wars_1",
+      "dimensions",
+      "revelations",
+      "dark_city",
+      "spiderman_homecoming",
+      "paint_the_town_red",
+      "civil_war"
+    ],
+    "missions": [
+      {
+        "id": "m41",
+        "title": "Missão 41",
+        "description": "Change the Outcome of WWII liderado por Red Skull.",
+        "setup": {
+          "mastermind": "Red Skull",
+          "scheme": "Change the Outcome of WWII"
+        }
+      },
+      {
+        "id": "m42",
+        "title": "Missão 42",
+        "description": "Massive Earthquake Generator liderado por Mephisto.",
+        "setup": {
+          "mastermind": "Mephisto",
+          "scheme": "Massive Earthquake Generator"
+        }
+      },
+      {
+        "id": "m43",
+        "title": "Missão 43",
+        "description": "Earthquake Drains the Ocean liderado por Madelyne Pryor.",
+        "setup": {
+          "mastermind": "Madelyne Pryor, Goblin Queen",
+          "scheme": "Earthquake Drains the Ocean"
+        }
+      },
+      {
+        "id": "m44",
+        "title": "Missão 44",
+        "description": "Anti-Mutant Hatred liderado por Vulture.",
+        "setup": {
+          "mastermind": "Vulture",
+          "scheme": "Anti Mutant Hatred"
+        }
+      },
+      {
+        "id": "m45",
+        "title": "Missão 45",
+        "description": "Mutant-Hunting Super Sentries liderado por The Hood.",
+        "setup": {
+          "mastermind": "The Hood",
+          "scheme": "Mutant Hunting Super Sentries"
+        }
+      },
+      {
+        "id": "m46",
+        "title": "Missão 46",
+        "description": "Reveal Heroes’ Secret Identities liderado por J. Jonah Jameson.",
+        "setup": {
+          "mastermind": "J. Jonah Jameson",
+          "scheme": "Reveal Heroes Secret Identities"
+        }
+      },
+      {
+        "id": "m47",
+        "title": "Missão 47",
+        "description": "Imprison Unregistered Superheroes liderado por Mysterio.",
+        "setup": {
+          "mastermind": "Mysterio",
+          "scheme": "Imprison Unregistered Superheroes"
+        }
+      },
+      {
+        "id": "m48",
+        "title": "Missão 48",
+        "description": "The Unbreakable Enigma Code liderado por Red Skull.",
+        "setup": {
+          "mastermind": "Red Skull",
+          "scheme": "The Unbreakable Enigma Code"
+        }
+      },
+      {
+        "id": "m49",
+        "title": "Missão 49",
+        "description": "The Clone Saga liderado por Baron Helmut Zemo.",
+        "setup": {
+          "mastermind": "Baron Helmut Zemo",
+          "scheme": "The Clone Saga"
+        }
+      },
+      {
+        "id": "m50",
+        "title": "Missão 50",
+        "description": "Avengers vs. X-Men liderado por Shadow King.",
+        "setup": {
+          "mastermind": "Shadow King",
+          "scheme": "Avengers vs X Men"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ml_campaign_saga_6",
+    "title": "Saga 6",
+    "description": "Missões 51 a 60 da ML Campaign.",
+    "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
+    "requiredExpansions": [
+      "champions",
+      "xmen",
+      "core",
+      "cap_75",
+      "noir",
+      "secret_wars_2",
+      "secret_wars_1",
+      "dark_city",
+      "revelations",
+      "ant_man",
+      "heroes_of_asgard",
+      "world_war_hulk",
+      "civil_war"
+    ],
+    "missions": [
+      {
+        "id": "m51",
+        "title": "Missão 51",
+        "description": "Secret Wars liderado por Magneto.",
+        "setup": {
+          "mastermind": "Magneto",
+          "scheme": "Secret Wars"
+        }
+      },
+      {
+        "id": "m52",
+        "title": "Missão 52",
+        "description": "Steal All the Oxygen on Earth liderado por Malekith.",
+        "setup": {
+          "mastermind": "Malekith the Accursed",
+          "scheme": "Steal All the Oxygen on Earth"
+        }
+      },
+      {
+        "id": "m53",
+        "title": "Missão 53",
+        "description": "Capture Baby Hope liderado por Morgan LeFay.",
+        "setup": {
+          "mastermind": "Epic Morgan Le Fay",
+          "scheme": "Capture Baby Hope"
+        }
+      },
+      {
+        "id": "m54",
+        "title": "Missão 54",
+        "description": "Steal the Weaponized Plutonium liderado por Spider-Queen.",
+        "setup": {
+          "mastermind": "Spider Queen",
+          "scheme": "Steal the Weaponized Plutonium"
+        }
+      },
+      {
+        "id": "m55",
+        "title": "Missão 55",
+        "description": "Nuclear Armageddon liderado por Arnim Zola.",
+        "setup": {
+          "mastermind": "Arnim Zola",
+          "scheme": "Nuclear Armageddon"
+        }
+      },
+      {
+        "id": "m56",
+        "title": "Missão 56",
+        "description": "Mutating Gamma Rays liderado por General Ross.",
+        "setup": {
+          "mastermind": "General Ross",
+          "scheme": "Mutating Gamma Rays"
+        }
+      },
+      {
+        "id": "m57",
+        "title": "Missão 57",
+        "description": "Cytoplasm Spike Invasion liderado por The Red King.",
+        "setup": {
+          "mastermind": "The Red King",
+          "scheme": "Cytoplasm Spike Invasion"
+        }
+      },
+      {
+        "id": "m58",
+        "title": "Missão 58",
+        "description": "Clash of the Monsters Unleashed liderado por Zombie Green Goblin.",
+        "setup": {
+          "mastermind": "Zombie Green Goblin",
+          "scheme": "Clash of the Monsters Unleashed"
+        }
+      },
+      {
+        "id": "m59",
+        "title": "Missão 59",
+        "description": "Secret Hydra Corruption liderado por Maria Hill.",
+        "setup": {
+          "mastermind": "Maria Hill, Director of S.H.I.E.L.D.",
+          "scheme": "Secret Hydra Corruption"
+        }
+      },
+      {
+        "id": "m60",
+        "title": "Missão 60",
+        "description": "Corrupt the Next Generation of Heroes liderado por Charles Xavier– Professor of Crime.",
+        "setup": {
+          "mastermind": "Charles Xavier, Professor of Crime",
+          "scheme": "Corrupt the Next Generation of Heroes"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ml_campaign_saga_7",
+    "title": "Saga 7",
+    "description": "Missões 61 a 70 da ML Campaign.",
+    "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
+    "requiredExpansions": [
+      "into_the_cosmos",
+      "xmen",
+      "infinity_saga",
+      "core",
+      "cap_75",
+      "black_panther",
+      "shield",
+      "dark_city",
+      "ant_man",
+      "champions",
+      "world_war_hulk",
+      "fantastic_four",
+      "deadpool"
+    ],
+    "missions": [
+      {
+        "id": "m61",
+        "title": "Missão 61",
+        "description": "Detonate the Helicarrier liderado por Hydra High Council.",
+        "setup": {
+          "mastermind": "HYDRA High Council",
+          "scheme": "Detonate the Helicarrier"
+        }
+      },
+      {
+        "id": "m62",
+        "title": "Missão 62",
+        "description": "Hydra Helicarrier Hunts Heroes liderado por Arnim Zola.",
+        "setup": {
+          "mastermind": "Arnim Zola",
+          "scheme": "Hydra Helicarrier Hunts Heroes"
+        }
+      },
+      {
+        "id": "m63",
+        "title": "Missão 63",
+        "description": "Hail Hydra liderado por Baron Heinrich Zemo.",
+        "setup": {
+          "mastermind": "Baron Heinrich Zemo",
+          "scheme": "Hail Hydra"
+        }
+      },
+      {
+        "id": "m64",
+        "title": "Missão 64",
+        "description": "S.H.I.E.L.D. vs. Hydra liderado por Hydra High Council.",
+        "setup": {
+          "mastermind": "HYDRA High Council",
+          "scheme": "SHIELD vs Hydra War"
+        }
+      },
+      {
+        "id": "m65",
+        "title": "Missão 65",
+        "description": "Hypnotize Every Human liderado por Fin Fang Foom.",
+        "setup": {
+          "mastermind": "Fin Fang Foom",
+          "scheme": "Hypnotize Every Human"
+        }
+      },
+      {
+        "id": "m66",
+        "title": "Missão 66",
+        "description": "Brainwash the Military liderado por General Ross.",
+        "setup": {
+          "mastermind": "General Ross",
+          "scheme": "Brainwash the Military"
+        }
+      },
+      {
+        "id": "m67",
+        "title": "Missão 67",
+        "description": "Hack Cerebro To…Control Messiah liderado por Ultron.",
+        "setup": {
+          "mastermind": "Ultron",
+          "scheme": "Hack Cerebro To…Control Messiah"
+        }
+      },
+      {
+        "id": "m68",
+        "title": "Missão 68",
+        "description": "Flood the Planet with Melted Glaciers liderado por Magus.",
+        "setup": {
+          "mastermind": "Magus",
+          "scheme": "Flood the Planet with Melted Glaciers"
+        }
+      },
+      {
+        "id": "m69",
+        "title": "Missão 69",
+        "description": "Deadpool Kills the Marvel Universe liderado por Arcade.",
+        "setup": {
+          "mastermind": "Arcade",
+          "scheme": "Deadpool Kills the Marvel Universe"
+        }
+      },
+      {
+        "id": "m70",
+        "title": "Missão 70",
+        "description": "Provoke a Clash of Nations liderado por Thanos.",
+        "setup": {
+          "mastermind": "Thanos",
+          "scheme": "Provoke a Clash of Nations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ml_campaign_saga_8",
+    "title": "Saga 8",
+    "description": "Missões 71 a 80 da ML Campaign.",
+    "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
+    "requiredExpansions": [
+      "messiah_complex",
+      "into_the_cosmos",
+      "xmen",
+      "new_mutants",
+      "annihilation",
+      "core",
+      "black_panther",
+      "secret_wars_1",
+      "ant_man",
+      "champions",
+      "realm_of_kings",
+      "civil_war"
+    ],
+    "missions": [
+      {
+        "id": "m71",
+        "title": "Missão 71",
+        "description": "Contest of Champions liderado por Exodus.",
+        "setup": {
+          "mastermind": "Exodus",
+          "scheme": "Contest of Champions the"
+        }
+      },
+      {
+        "id": "m72",
+        "title": "Missão 72",
+        "description": "Drain Mutant Powers To…Unleash Bio-Weapon liderado por Maximus.",
+        "setup": {
+          "mastermind": "Maximus the Mad",
+          "scheme": "Drain Mutant Powers To…Unleash Bio-Weapon"
+        }
+      },
+      {
+        "id": "m73",
+        "title": "Missão 73",
+        "description": "Legacy Virus liderado por Emperor Zheng Zu.",
+        "setup": {
+          "mastermind": "Emperor Zheng Zu",
+          "scheme": "The Legacy Virus"
+        }
+      },
+      {
+        "id": "m74",
+        "title": "Missão 74",
+        "description": "Plunder Wakanda’s Vibranium liderado por Ultron.",
+        "setup": {
+          "mastermind": "Ultron",
+          "scheme": "Plunder Wakandas Vibranium"
+        }
+      },
+      {
+        "id": "m75",
+        "title": "Missão 75",
+        "description": "Build an Army of Annihilation liderado por Emperor Vulcan.",
+        "setup": {
+          "mastermind": "Emperor Vulcan of the Shi’ar",
+          "scheme": "Build an Army of Annihilation"
+        }
+      },
+      {
+        "id": "m76",
+        "title": "Missão 76",
+        "description": "Horror of Horrors liderado por Morgan LeFey.",
+        "setup": {
+          "mastermind": "Morgan LeFey",
+          "scheme": "Horror of Horrors"
+        }
+      },
+      {
+        "id": "m77",
+        "title": "Missão 77",
+        "description": "X-Men Danger Room Goes Berserk liderado por Magus.",
+        "setup": {
+          "mastermind": "Magus",
+          "scheme": "X Men Danger Room Goes Berserk"
+        }
+      },
+      {
+        "id": "m78",
+        "title": "Missão 78",
+        "description": "Superhuman Baseball Game liderado por Misty Knight.",
+        "setup": {
+          "mastermind": "Misty Knight",
+          "scheme": "Superhuman Baseball Game"
+        }
+      },
+      {
+        "id": "m79",
+        "title": "Missão 79",
+        "description": "Hire Investigations To…Open Rifts liderado por Kang the Conqueror.",
+        "setup": {
+          "mastermind": "Kang the Conqueror",
+          "scheme": "Hire Investigations To…Open Rifts"
+        }
+      },
+      {
+        "id": "m80",
+        "title": "Missão 80",
+        "description": "Smash Two Dimensions Together liderado por Fin Fang Foom.",
+        "setup": {
+          "mastermind": "Fin Fang Foom",
+          "scheme": "Smash Two Dimensions Together"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ml_campaign_saga_9",
+    "title": "Saga 9",
+    "description": "Missões 81 a 90 da ML Campaign.",
+    "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
+    "requiredExpansions": [
+      "messiah_complex",
+      "xmen",
+      "annihilation",
+      "new_mutants",
+      "core",
+      "black_panther",
+      "noir",
+      "secret_wars_1",
+      "secret_wars_2",
+      "doctor_strange",
+      "guardians",
+      "ant_man",
+      "paint_the_town_red",
+      "civil_war"
+    ],
+    "missions": [
+      {
+        "id": "m81",
+        "title": "Missão 81",
+        "description": "Breach Parallel Dimensions liderado por Dormammu.",
+        "setup": {
+          "mastermind": "Dormammu",
+          "scheme": "Breach Parallel Dimensions"
+        }
+      },
+      {
+        "id": "m82",
+        "title": "Missão 82",
+        "description": "Pan-Dimensional Plague liderado por Ronin The Accuser.",
+        "setup": {
+          "mastermind": "Ronin The Accuser",
+          "scheme": "Pan Dimensional Plague"
+        }
+      },
+      {
+        "id": "m83",
+        "title": "Missão 83",
+        "description": "Splice Humans with Spider DNA liderado por Carnage.",
+        "setup": {
+          "mastermind": "Carnage",
+          "scheme": "Splice Humans with Spider DNA"
+        }
+      },
+      {
+        "id": "m84",
+        "title": "Missão 84",
+        "description": "Poison Lakes with Nanite Microbots liderado por The Supreme Intelligence of the Kree.",
+        "setup": {
+          "mastermind": "Supreme Intelligence of the Kree",
+          "scheme": "Poison Lakes with Nanite Microbots"
+        }
+      },
+      {
+        "id": "m85",
+        "title": "Missão 85",
+        "description": "Transform Commuters into Giant Ants liderado por Baron Helmut Zemo.",
+        "setup": {
+          "mastermind": "Baron Helmut Zemo",
+          "scheme": "Transform Commuters into Giant Ants"
+        }
+      },
+      {
+        "id": "m86",
+        "title": "Missão 86",
+        "description": "Raid Gene Banks To…Reveal Clones liderado por Shiklah the Demon Bride.",
+        "setup": {
+          "mastermind": "Shiklah the Demon Bride",
+          "scheme": "Raid Gene Banks to"
+        }
+      },
+      {
+        "id": "m87",
+        "title": "Missão 87",
+        "description": "Trapped in the Insane Asylum liderado por Nightmare.",
+        "setup": {
+          "mastermind": "Nightmare",
+          "scheme": "Trapped in the Insane Asylum"
+        }
+      },
+      {
+        "id": "m88",
+        "title": "Missão 88",
+        "description": "Hidden Heart of Darkness liderado por Dark Phoenix.",
+        "setup": {
+          "mastermind": "Dark Phoenix",
+          "scheme": "Hidden Heart of Darkness"
+        }
+      },
+      {
+        "id": "m89",
+        "title": "Missão 89",
+        "description": "Dark Phoenix Saga liderado por Spider-Queen.",
+        "setup": {
+          "mastermind": "Spider Queen",
+          "scheme": "The Dark Phoenix Saga"
+        }
+      },
+      {
+        "id": "m90",
+        "title": "Missão 90",
+        "description": "Cursed Pages of the Darkhold Tome liderado por Morgan LeFey.",
+        "setup": {
+          "mastermind": "Morgan LeFey",
+          "scheme": "Cursed Pages of the Darkhold Tome"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ml_campaign_saga_10",
+    "title": "Saga 10",
+    "description": "Missões 91 a 100 da ML Campaign.",
+    "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
+    "requiredExpansions": [
+      "messiah_complex",
+      "into_the_cosmos",
+      "venom",
+      "xmen",
+      "new_mutants",
+      "core",
+      "secret_wars_2",
+      "doctor_strange",
+      "revelations",
+      "dark_city",
+      "heroes_of_asgard",
+      "world_war_hulk",
+      "paint_the_town_red",
+      "fantastic_four"
+    ],
+    "missions": [
+      {
+        "id": "m91",
+        "title": "Missão 91",
+        "description": "House of M liderado por Emma Frost.",
+        "setup": {
+          "mastermind": "Emma Frost, The White Queen",
+          "scheme": "House of M"
+        }
+      },
+      {
+        "id": "m92",
+        "title": "Missão 92",
+        "description": "Capture Baby Hope liderado por Stryfe.",
+        "setup": {
+          "mastermind": "Stryfe",
+          "scheme": "Capture Baby Hope"
+        }
+      },
+      {
+        "id": "m93",
+        "title": "Missão 93",
+        "description": "Raid Gene Banks To…Control Messiah liderado por Ronin the Accuser.",
+        "setup": {
+          "mastermind": "Ronin the Accuser",
+          "scheme": "Raid Gene Banks to"
+        }
+      },
+      {
+        "id": "m94",
+        "title": "Missão 94",
+        "description": "Invincible Forcefield liderado por Carnage.",
+        "setup": {
+          "mastermind": "Carnage",
+          "scheme": "Invincible Force Field"
+        }
+      },
+      {
+        "id": "m95",
+        "title": "Missão 95",
+        "description": "Duels of Science & Magic liderado por Hela.",
+        "setup": {
+          "mastermind": "Hela, Goddess of Death",
+          "scheme": "Duels of Science & Magic"
+        }
+      },
+      {
+        "id": "m96",
+        "title": "Missão 96",
+        "description": "Sinister Ambitions liderado por Hybrid.",
+        "setup": {
+          "mastermind": "Hybrid",
+          "scheme": "Sinister Ambitions"
+        }
+      },
+      {
+        "id": "m97",
+        "title": "Missão 97",
+        "description": "Subjugate with Obedience Disks liderado por The Beyonder.",
+        "setup": {
+          "mastermind": "The Beyonder",
+          "scheme": "Subjugate with Obedience Disks"
+        }
+      },
+      {
+        "id": "m98",
+        "title": "Missão 98",
+        "description": "Claim Souls for Demons liderado por Onslaught.",
+        "setup": {
+          "mastermind": "Onslaught",
+          "scheme": "Claim Souls for Demons"
+        }
+      },
+      {
+        "id": "m99",
+        "title": "Missão 99",
+        "description": "Transform Citizens Into Demons liderado por Mojo.",
+        "setup": {
+          "mastermind": "Mojo",
+          "scheme": "Transform Citizens Into Demons"
+        }
+      },
+      {
+        "id": "m100",
+        "title": "Missão 100",
+        "description": "The Demon Bear Saga liderado por Mr. Sinister.",
+        "setup": {
+          "mastermind": "Mr. Sinister",
+          "scheme": "The Demon Bear Saga"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ml_campaign_saga_11",
+    "title": "Saga 11",
+    "description": "Missões 101 a 110 da ML Campaign.",
+    "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
+    "requiredExpansions": [
+      "messiah_complex",
+      "xmen",
+      "new_mutants",
+      "core",
+      "noir",
+      "realm_of_kings",
+      "phase_1",
+      "marvel_studios_phase_1",
+      "ant_man",
+      "spiderman_homecoming",
+      "mcu_guardians",
+      "civil_war",
+      "fantastic_four",
+      "deadpool"
+    ],
+    "missions": [
+      {
+        "id": "m101",
+        "title": "Missão 101",
+        "description": "The Korvac Saga liderado por Vulture.",
+        "setup": {
+          "mastermind": "Vulture",
+          "scheme": "The Korvac Saga"
+        }
+      },
+      {
+        "id": "m102",
+        "title": "Missão 102",
+        "description": "Hack Cerebro To…Open Rifts liderado por Charles Xavier, Professor of Crime.",
+        "setup": {
+          "mastermind": "Charles Xavier, Professor of Crime",
+          "scheme": "Hack Cerebro To…Open Rifts"
+        }
+      },
+      {
+        "id": "m103",
+        "title": "Missão 103",
+        "description": "Unleash the Power of the Cosmic Cube liderado por Galactus.",
+        "setup": {
+          "mastermind": "Galactus",
+          "scheme": "Unleash the Power of the Cosmic Cube"
+        }
+      },
+      {
+        "id": "m104",
+        "title": "Missão 104",
+        "description": "Tornado of Terrigen Mists liderado por Ragnarok.",
+        "setup": {
+          "mastermind": "Ragnarok",
+          "scheme": "Tornado of Terrigen Mists"
+        }
+      },
+      {
+        "id": "m105",
+        "title": "Missão 105",
+        "description": "Bathe the Earth in Cosmic Rays liderado por Dr. Doom.",
+        "setup": {
+          "mastermind": "Dr. Doom",
+          "scheme": "Bathe the Earth in Cosmic Rays"
+        }
+      },
+      {
+        "id": "m106",
+        "title": "Missão 106",
+        "description": "Deadpool Wants a Chimichanga liderado por Deathbird.",
+        "setup": {
+          "mastermind": "Deathbird",
+          "scheme": "Deadpool Wants a Chimichanga"
+        }
+      },
+      {
+        "id": "m107",
+        "title": "Missão 107",
+        "description": "Star-Lord’s Awesome Mix Tape liderado por Emperor Vulcan.",
+        "setup": {
+          "mastermind": "Emperor Vulcan of the Shi’ar",
+          "scheme": "Star lords Awesome Mix Tape"
+        }
+      },
+      {
+        "id": "m108",
+        "title": "Missão 108",
+        "description": "Crash the Moon into the Sun liderado por Loki.",
+        "setup": {
+          "mastermind": "Loki",
+          "scheme": "Crash the Moon into the Sun"
+        }
+      },
+      {
+        "id": "m109",
+        "title": "Missão 109",
+        "description": "Drain Mutant Powers To…Open Rifts liderado por Shadow King.",
+        "setup": {
+          "mastermind": "Shadow King",
+          "scheme": "Drain Mutant Powers To…Open Rifts"
+        }
+      },
+      {
+        "id": "m110",
+        "title": "Missão 110",
+        "description": "Trap Heroes in the Microverse liderado por Lady Deathstrike.",
+        "setup": {
+          "mastermind": "Lady Deathstrike",
+          "scheme": "Trap Heroes in the Microverse"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ml_campaign_saga_12",
+    "title": "Saga 12",
+    "description": "Missões 111 a 120 da ML Campaign.",
+    "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
+    "requiredExpansions": [
+      "messiah_complex",
+      "xmen",
+      "venom",
+      "into_the_cosmos",
+      "new_mutants",
+      "annihilation",
+      "core",
+      "cap_75",
+      "black_panther",
+      "realm_of_kings",
+      "secret_wars_1",
+      "dark_city",
+      "what_if",
+      "heroes_of_asgard",
+      "mcu_guardians"
+    ],
+    "missions": [
+      {
+        "id": "m111",
+        "title": "Missão 111",
+        "description": "Put Humanity on Trial liderado por Killmonger.",
+        "setup": {
+          "mastermind": "Killmonger, The Betrayer",
+          "scheme": "Put Humanity on Trial"
+        }
+      },
+      {
+        "id": "m112",
+        "title": "Missão 112",
+        "description": "Inescapable “Kyln” Space Prison liderado por The Goblin, Underworld Boss.",
+        "setup": {
+          "mastermind": "The Goblin, Underworld Boss",
+          "scheme": "Inescapable Kyln Space Prison"
+        }
+      },
+      {
+        "id": "m113",
+        "title": "Missão 113",
+        "description": "Televised Deathtraps of Mojoworld liderado por Belasco.",
+        "setup": {
+          "mastermind": "Belasco",
+          "scheme": "Televised Deathtraps of Mojoworld"
+        }
+      },
+      {
+        "id": "m114",
+        "title": "Missão 114",
+        "description": "Maximum Carnage liderado por Nimrod.",
+        "setup": {
+          "mastermind": "Nimrod, Super Sentinel",
+          "scheme": "Maximum Carnage"
+        }
+      },
+      {
+        "id": "m115",
+        "title": "Missão 115",
+        "description": "Devolve with Xerogen Crystals liderado por The Beyonder.",
+        "setup": {
+          "mastermind": "The Beyonder",
+          "scheme": "Devolve With Xerogen Crystals"
+        }
+      },
+      {
+        "id": "m116",
+        "title": "Missão 116",
+        "description": "Drain Mutant Powers To…Reveal Clones liderado por Belasco.",
+        "setup": {
+          "mastermind": "Belasco",
+          "scheme": "Drain Mutant Powers To…Reveal Clones"
+        }
+      },
+      {
+        "id": "m117",
+        "title": "Missão 117",
+        "description": "Ruin the Perfect Wedding liderado por Baron Heinrich Zemo.",
+        "setup": {
+          "mastermind": "Baron Heinrich Zemo",
+          "scheme": "Ruin The Perfect Wedding"
+        }
+      },
+      {
+        "id": "m118",
+        "title": "Missão 118",
+        "description": "Sneak Attack the Hero’s Homes liderado por Lady Deathstrike.",
+        "setup": {
+          "mastermind": "Lady Deathstrike",
+          "scheme": "Sneak Attack the Hero’s Homes"
+        }
+      },
+      {
+        "id": "m119",
+        "title": "Missão 119",
+        "description": "X-Cutioner’s Song liderado por Klaw.",
+        "setup": {
+          "mastermind": "Klaw",
+          "scheme": "X Cutioners Song"
+        }
+      },
+      {
+        "id": "m120",
+        "title": "Missão 120",
+        "description": "Invasion of the Skrull Shapeshifters liderado por Malekith.",
+        "setup": {
+          "mastermind": "Malekith the Accursed",
+          "scheme": "Secret Invasion of the Skrull Shapeshifters"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ml_campaign_saga_13",
+    "title": "Saga 13",
+    "description": "Missões 121 a 130 da ML Campaign.",
+    "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
+    "requiredExpansions": [
+      "xmen",
+      "annihilation",
+      "core",
+      "black_panther",
+      "realm_of_kings",
+      "secret_wars_1",
+      "secret_wars_2",
+      "doctor_strange",
+      "guardians",
+      "revelations",
+      "dark_city",
+      "spiderman_homecoming",
+      "mcu_guardians",
+      "civil_war"
+    ],
+    "missions": [
+      {
+        "id": "m121",
+        "title": "Missão 121",
+        "description": "Kree-Skrull War liderado por Annihilus.",
+        "setup": {
+          "mastermind": "Annihilus",
+          "scheme": "Kree Skrull War the"
+        }
+      },
+      {
+        "id": "m122",
+        "title": "Missão 122",
+        "description": "Intergalactic Kree Nega-Bomb liderado por Grim Reaper.",
+        "setup": {
+          "mastermind": "Grim Reaper",
+          "scheme": "Intergalactic Kree Nega Bomb"
+        }
+      },
+      {
+        "id": "m123",
+        "title": "Missão 123",
+        "description": "Scavenge Alien Weaponry liderado por Klaw.",
+        "setup": {
+          "mastermind": "Klaw",
+          "scheme": "Scavenge Alien Weaponry"
+        }
+      },
+      {
+        "id": "m124",
+        "title": "Missão 124",
+        "description": "Alien Brood Encounters liderado por Maximus the Mad.",
+        "setup": {
+          "mastermind": "Maximus the Mad",
+          "scheme": "Alien Brood Encounters"
+        }
+      },
+      {
+        "id": "m125",
+        "title": "Missão 125",
+        "description": "Unleash the Abilisk Space Monster liderado por Nightmare.",
+        "setup": {
+          "mastermind": "Nightmare",
+          "scheme": "Unleash The Abilisk Space Monster"
+        }
+      },
+      {
+        "id": "m126",
+        "title": "Missão 126",
+        "description": "Hire Investigations To…Unleash Bio-Weapon liderado por Kingpin.",
+        "setup": {
+          "mastermind": "Kingpin",
+          "scheme": "Hire Investigations To…Unleash Bio-Weapon"
+        }
+      },
+      {
+        "id": "m127",
+        "title": "Missão 127",
+        "description": "Master the Mysteries of Kung-Fu liderado por Zombie Green Goblin.",
+        "setup": {
+          "mastermind": "Zombie Green Goblin",
+          "scheme": "Master the Mysteries of Kung Fu"
+        }
+      },
+      {
+        "id": "m128",
+        "title": "Missão 128",
+        "description": "Mark of the Khonshu liderado por Dormammu.",
+        "setup": {
+          "mastermind": "Dormammu",
+          "scheme": "Mark of the Khonshu"
+        }
+      },
+      {
+        "id": "m129",
+        "title": "Missão 129",
+        "description": "Enthrone the Barons of Battleworld liderado por Misty Knight.",
+        "setup": {
+          "mastermind": "Misty Knight",
+          "scheme": "Enthrone the Barons of Battleworld"
+        }
+      },
+      {
+        "id": "m130",
+        "title": "Missão 130",
+        "description": "God Emperor of Battleworld liderado por Kang the Conqueror.",
+        "setup": {
+          "mastermind": "Kang the Conqueror",
+          "scheme": "God Emperor of Battleworld the"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ml_campaign_saga_14",
+    "title": "Saga 14",
+    "description": "Missões 131 a 140 da ML Campaign.",
+    "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
+    "requiredExpansions": [
+      "messiah_complex",
+      "into_the_cosmos",
+      "xmen",
+      "venom",
+      "annihilation",
+      "heroes_of_asgard",
+      "core",
+      "noir",
+      "secret_wars_1",
+      "doctor_strange",
+      "what_if",
+      "champions",
+      "world_war_hulk",
+      "fantastic_four"
+    ],
+    "missions": [
+      {
+        "id": "m131",
+        "title": "Missão 131",
+        "description": "Raid Gene Banks To…Open Rifts liderado por Magus.",
+        "setup": {
+          "mastermind": "Magus",
+          "scheme": "Raid Gene Banks to"
+        }
+      },
+      {
+        "id": "m132",
+        "title": "Missão 132",
+        "description": "Pulse Waves from the Negative Zone liderado por Arcade.",
+        "setup": {
+          "mastermind": "Arcade",
+          "scheme": "Pulse Waves from the Negative Zone"
+        }
+      },
+      {
+        "id": "m133",
+        "title": "Missão 133",
+        "description": "Hack Cerebro To...Unleash Bio-Weapon liderado por M.O.D.O.K..",
+        "setup": {
+          "mastermind": "MODOK",
+          "scheme": "Hack Cerebro To...Unleash Bio-Weapon"
+        }
+      },
+      {
+        "id": "m134",
+        "title": "Missão 134",
+        "description": "Clash of the Monsters Unleashed liderado por Zombie Green Goblin.",
+        "setup": {
+          "mastermind": "Zombie Green Goblin",
+          "scheme": "Clash of the Monsters Unleashed"
+        }
+      },
+      {
+        "id": "m135",
+        "title": "Missão 135",
+        "description": "Drain Mutant Powers to… Control Messiah liderado por Hybrid.",
+        "setup": {
+          "mastermind": "Hybrid",
+          "scheme": "Drain Mutant Powers to… Control Messiah"
+        }
+      },
+      {
+        "id": "m136",
+        "title": "Missão 136",
+        "description": "Ragnarök liderado por Killmonger.",
+        "setup": {
+          "mastermind": "Killmonger, The Betrayer",
+          "scheme": "Ragnarök"
+        }
+      },
+      {
+        "id": "m137",
+        "title": "Missão 137",
+        "description": "Dark World liderado por Ego.",
+        "setup": {
+          "mastermind": "The Goblin, Underworld Boss",
+          "scheme": "Dark World of Svartalfheim the"
+        }
+      },
+      {
+        "id": "m138",
+        "title": "Missão 138",
+        "description": "Hire Investigations To...Reveal Clones liderado por Mole Man.",
+        "setup": {
+          "mastermind": "Mole Man",
+          "scheme": "Hire Investigations To...Reveal Clones"
+        }
+      },
+      {
+        "id": "m139",
+        "title": "Missão 139",
+        "description": "Hack Cerebro To...Reveal Clones liderado por Bastion.",
+        "setup": {
+          "mastermind": "Bastion",
+          "scheme": "Hack Cerebro To...Reveal Clones"
+        }
+      },
+      {
+        "id": "m140",
+        "title": "Missão 140",
+        "description": "War for the Dream Dimension liderado por Emperor Zheng Zu.",
+        "setup": {
+          "mastermind": "Emperor Zheng Zu",
+          "scheme": "War for the Dream Dimension"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ml_campaign_saga_15",
+    "title": "Saga 15",
+    "description": "Missões 141 a 150 da ML Campaign.",
+    "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
+    "requiredExpansions": [
+      "messiah_complex",
+      "xmen",
+      "into_the_cosmos",
+      "infinity_saga",
+      "annihilation",
+      "core",
+      "black_panther",
+      "realm_of_kings",
+      "guardians",
+      "revelations",
+      "ant_man",
+      "heroes_of_asgard",
+      "mcu_guardians",
+      "civil_war"
+    ],
+    "missions": [
+      {
+        "id": "m141",
+        "title": "Missão 141",
+        "description": "Provoke The Sovereign War Fleet liderado por Annihilus.",
+        "setup": {
+          "mastermind": "Annihilus",
+          "scheme": "Provoke the Sovereign War Fleet"
+        }
+      },
+      {
+        "id": "m142",
+        "title": "Missão 142",
+        "description": "War of Kings liderado por Exodus.",
+        "setup": {
+          "mastermind": "Exodus",
+          "scheme": "War of Kings"
+        }
+      },
+      {
+        "id": "m143",
+        "title": "Missão 143",
+        "description": "Seize the Wakandan Throne liderado por Shadow King.",
+        "setup": {
+          "mastermind": "Shadow King",
+          "scheme": "Seize the Wakandan Throne"
+        }
+      },
+      {
+        "id": "m144",
+        "title": "Missão 144",
+        "description": "Raid Gene Banks To...Unleash Bio-Weapon liderado por Malekith.",
+        "setup": {
+          "mastermind": "Malekith the Accursed",
+          "scheme": "Raid Gene Banks to"
+        }
+      },
+      {
+        "id": "m145",
+        "title": "Missão 145",
+        "description": "Unite the Shards liderado por Dark Phoenix.",
+        "setup": {
+          "mastermind": "Dark Phoenix",
+          "scheme": "Unite the Shards"
+        }
+      },
+      {
+        "id": "m146",
+        "title": "Missão 146",
+        "description": "Forge the Infinity Gauntlet liderado por Poison Thanos.",
+        "setup": {
+          "mastermind": "Thanos",
+          "scheme": "Forge the Infinity Gauntlet"
+        }
+      },
+      {
+        "id": "m147",
+        "title": "Missão 147",
+        "description": "Hire Investigations To...Control Messiah liderado por Maria Hill.",
+        "setup": {
+          "mastermind": "Maria Hill, Director of S.H.I.E.L.D.",
+          "scheme": "Hire Investigations To...Control Messiah"
+        }
+      },
+      {
+        "id": "m148",
+        "title": "Missão 148",
+        "description": "Dark Reign of H.A.M.M.E.R. Officers liderado por Mister Sinister.",
+        "setup": {
+          "mastermind": "Mister Sinister",
+          "scheme": "Dark Reign of HAMMER Officers"
+        }
+      },
+      {
+        "id": "m149",
+        "title": "Missão 149",
+        "description": "Age of Ultron liderado por Bastion.",
+        "setup": {
+          "mastermind": "Bastion",
+          "scheme": "Age of Ultron"
+        }
+      },
+      {
+        "id": "m150",
+        "title": "Missão 150",
+        "description": "Annihilation: Conquest liderado por Grim Reaper.",
+        "setup": {
+          "mastermind": "Grim Reaper",
+          "scheme": "Annihilation Conquest"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ml_campaign_saga_16",
+    "title": "Saga 16",
+    "description": "Missões 151 a 151 da ML Campaign.",
+    "image": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80",
+    "requiredExpansions": [
+      "noir",
+      "dark_city",
+      "core"
+    ],
+    "missions": [
+      {
+        "id": "m151",
+        "title": "Missão 151",
+        "description": "Save Humanity liderado por Ego.",
+        "setup": {
+          "mastermind": "The Goblin, Underworld Boss",
+          "scheme": "Save Humanity"
         }
       }
     ]

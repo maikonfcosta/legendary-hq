@@ -19,13 +19,16 @@ export function HistoryTab({ history, addMatch, ownedExpansions }: HistoryTabPro
     score: 0
   });
 
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
+
   const availableMasterminds = cardsData.masterminds.filter(m => ownedExpansions.includes(m.expansion) || (m.expansion === 'core' && ownedExpansions.includes('core_2nd')));
   const availableSchemes = cardsData.schemes.filter(s => ownedExpansions.includes(s.expansion) || (s.expansion === 'core' && ownedExpansions.includes('core_2nd')));
 
   const handleManualSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    setErrorMsg(null);
     if (!formData.mastermind || !formData.scheme) {
-      alert("Selecione Mastermind e Scheme");
+      setErrorMsg("Selecione Mastermind e Scheme");
       return;
     }
     
@@ -117,6 +120,12 @@ export function HistoryTab({ history, addMatch, ownedExpansions }: HistoryTabPro
             </div>
             
             <form onSubmit={handleManualSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
+              {errorMsg && (
+                <div style={{ background: 'rgba(239, 68, 68, 0.2)', border: '1px solid #ef4444', color: '#ef4444', padding: '12px', borderRadius: '8px', textAlign: 'center' }}>
+                  {errorMsg}
+                </div>
+              )}
+              
               <div className="input-group" style={{ margin: '0' }}>
                 <label style={{alignSelf: 'flex-start', color: 'var(--text-secondary)', marginBottom: '4px', fontWeight: 600}}>Resultado da Partida</label>
                 <select className="glass-select" style={{ width: '100%', maxWidth: '100%', background: 'rgba(0,0,0,0.4)', color: formData.victory ? '#10b981' : '#ef4444' }} value={formData.victory ? 'win' : 'loss'} onChange={(e) => setFormData({...formData, victory: e.target.value === 'win'})}>

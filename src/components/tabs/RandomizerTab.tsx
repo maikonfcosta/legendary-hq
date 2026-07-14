@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Shuffle } from 'lucide-react';
 import type { SetupResult } from '../../utils/randomizer';
 import { SetupCard } from '../SetupCard';
@@ -9,9 +10,20 @@ interface RandomizerTabProps {
   setResult: (result: SetupResult | null) => void;
   handleDraw: () => void;
   handleFinishMatch: (victory: boolean) => void;
+  handleSaveSetup?: (name: string) => void;
 }
 
-export function RandomizerTab({ playerCount, setPlayerCount, result, handleDraw, handleFinishMatch }: RandomizerTabProps) {
+export function RandomizerTab({ playerCount, setPlayerCount, result, handleDraw, handleFinishMatch, handleSaveSetup }: RandomizerTabProps) {
+  const [showSavePrompt, setShowSavePrompt] = useState(false);
+  const [setupName, setSetupName] = useState('');
+
+  const confirmSave = () => {
+    if (setupName.trim() && handleSaveSetup) {
+      handleSaveSetup(setupName.trim());
+    }
+    setShowSavePrompt(false);
+    setSetupName('');
+  };
   return (
     <div className="fade-in">
       <div className="page-header" style={{ alignItems: 'center', textAlign: 'center', display: 'flex', flexDirection: 'column', marginBottom: '32px' }}>
@@ -53,7 +65,10 @@ export function RandomizerTab({ playerCount, setPlayerCount, result, handleDraw,
             {result.heroes.map(h => <SetupCard key={h.name} type="hero" title="Hero" name={h.name} subtitle={h.team.replace('_', ' ')} expansion={h.expansion} />)}
           </div>
 
-          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', marginTop: '48px', marginBottom: '24px' }}>
+          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', marginTop: '48px', marginBottom: '24px', flexWrap: 'wrap' }}>
+            <button onClick={() => setShowSavePrompt(true)} className="btn" style={{ background: 'rgba(59, 130, 246, 0.2)', border: '1px solid #3b82f6', color: '#3b82f6', minWidth: '160px', justifyContent: 'center', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              Salvar Setup (Favoritar)
+            </button>
             <button onClick={() => handleFinishMatch(true)} className="btn btn-primary" style={{ background: 'rgba(16, 185, 129, 0.2)', border: '1px solid #10b981', color: '#10b981', minWidth: '160px', justifyContent: 'center' }}>
               Registrar Vitória
             </button>
@@ -62,6 +77,31 @@ export function RandomizerTab({ playerCount, setPlayerCount, result, handleDraw,
             </button>
           </div>
         </section>
+      )}
+
+      {showSavePrompt && (
+        <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.85)', zIndex: 99999, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px', animation: 'fadeIn 0.2s ease-out' }}>
+          <div className="glass-panel" style={{ width: '100%', maxWidth: '400px', padding: '30px', position: 'relative' }}>
+            <h3 style={{ color: 'white', margin: '0 0 16px 0', fontSize: '1.2rem' }}>Salvar Setup</h3>
+            <p style={{ color: 'var(--text-secondary)', marginBottom: '16px', fontSize: '0.9rem' }}>Dê um nome para este setup para encontrá-lo depois:</p>
+            <input 
+              type="text" 
+              value={setupName}
+              onChange={(e) => setSetupName(e.target.value)}
+              placeholder="Ex: Guerras Secretas"
+              autoFocus
+              style={{ width: '100%', padding: '12px', borderRadius: '8px', background: 'rgba(0,0,0,0.3)', border: '1px solid var(--surface-border)', color: 'white', marginBottom: '24px', outline: 'none' }}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') confirmSave();
+                if (e.key === 'Escape') setShowSavePrompt(false);
+              }}
+            />
+            <div style={{ display: 'flex', gap: '12px', justifyContent: 'flex-end' }}>
+              <button onClick={() => setShowSavePrompt(false)} className="btn btn-secondary">Cancelar</button>
+              <button onClick={confirmSave} className="btn btn-primary">Salvar</button>
+            </div>
+          </div>
+        </div>
       )}
     </div>
   );

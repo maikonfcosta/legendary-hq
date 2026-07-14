@@ -1,4 +1,4 @@
-import { Home, Shuffle, Activity, BarChart2, Layers, BookOpen, ScrollText } from 'lucide-react';
+import { Home, Shuffle, Activity, BarChart2, Layers, BookOpen, ScrollText, Bookmark } from 'lucide-react';
 
 interface SidebarProps {
   activeTab: string;
@@ -24,6 +24,9 @@ export function Sidebar({ activeTab, handleTabChange, isMobileMenuOpen }: Sideba
         </button>
         <button className={`nav-link ${activeTab === 'randomizer' ? 'active' : ''}`} onClick={() => handleTabChange('randomizer')}>
           <Shuffle size={20} /> Gerador
+        </button>
+        <button className={`nav-link ${activeTab === 'savedSetups' ? 'active' : ''}`} onClick={() => handleTabChange('savedSetups')}>
+          <Bookmark size={20} /> Setups Salvos
         </button>
         <button className={`nav-link ${activeTab === 'stats' ? 'active' : ''}`} onClick={() => handleTabChange('stats')}>
           <BarChart2 size={20} /> Estatísticas

@@ -1,5 +1,6 @@
 import { BarChart2, Swords, TrendingUp, TrendingDown, Award, ShieldAlert } from 'lucide-react';
 import type { GameMatch } from '../../types/history';
+import achievementsData from '../../data/achievements.json';
 
 interface StatsTabProps {
   history: GameMatch[];
@@ -85,6 +86,61 @@ export function StatsTab({ history }: StatsTabProps) {
               </h3>
               <p style={{ color: 'var(--text-secondary)', fontSize: '1.2rem', fontWeight: 600 }}>{mostPlayedMastermind}</p>
             </div>
+          </div>
+
+          <div className="section-title text-primary" style={{ marginTop: '40px', marginBottom: '24px' }}>
+            <Award size={24} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '8px' }} /> 
+            Troféus e Conquistas
+          </div>
+          
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '16px', marginBottom: '40px' }}>
+            {achievementsData.map(ach => {
+              // Verifica se desbloqueou usando new Function
+              let unlocked = false;
+              try {
+                const checkFn = new Function('history', `return ${ach.condition}`);
+                unlocked = checkFn(history);
+              } catch (e) {
+                console.error(`Erro ao checar conquista ${ach.id}:`, e);
+              }
+
+              // Mapeamento dinâmico de ícones (Lucide)
+              const IconComp = {
+                'Swords': Swords,
+                'Shield': ShieldAlert,
+                'Trophy': Award,
+                'User': TrendingUp,
+                'Users': TrendingUp,
+                'Crown': Award
+              }[ach.icon] || Award;
+
+              return (
+                <div key={ach.id} className="glass-panel" style={{ 
+                  padding: '16px', 
+                  display: 'flex', 
+                  gap: '16px', 
+                  alignItems: 'center',
+                  opacity: unlocked ? 1 : 0.4,
+                  filter: unlocked ? 'none' : 'grayscale(100%)',
+                  borderLeft: unlocked ? '4px solid #eab308' : '4px solid transparent'
+                }}>
+                  <div style={{ 
+                    background: unlocked ? 'rgba(234, 179, 8, 0.2)' : 'rgba(255, 255, 255, 0.05)', 
+                    padding: '12px', 
+                    borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}>
+                    <IconComp size={24} color={unlocked ? '#eab308' : 'var(--text-secondary)'} />
+                  </div>
+                  <div>
+                    <h4 style={{ margin: '0 0 4px 0', fontSize: '1.05rem', color: unlocked ? 'white' : 'var(--text-secondary)' }}>{ach.title}</h4>
+                    <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: '1.4' }}>{ach.description}</p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </>
       )}

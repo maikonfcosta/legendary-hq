@@ -22,6 +22,8 @@ import { ReloadPrompt } from './components/ReloadPrompt';
 import { useAvatar } from './hooks/useAvatar';
 import { AvatarPickerModal } from './components/AvatarPickerModal';
 import { getCardImage } from './utils/imageLookup';
+import { useSavedSetups } from './hooks/useSavedSetups';
+import { SavedSetupsTab } from './components/tabs/SavedSetupsTab';
 
 function App() {
   const [playerCount, setPlayerCount] = useState(1);
@@ -29,9 +31,11 @@ function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [result, setResult] = useState<SetupResult | null>(null);
   const [popupMsg, setPopupMsg] = useState<string | null>(null);
+  const [confirmPopup, setConfirmPopup] = useState<{ message: string, onConfirm: () => void } | null>(null);
   
   const [ownedExpansions, setOwnedExpansions] = useSyncedCollection('lhq_ownedExpansions', ['core', 'core_2nd']);
   const { history, addMatch } = useGameHistory();
+  const { savedSetups, addSetup, removeSetup } = useSavedSetups();
   const { currentUser, login, logoutUser } = useAuth();
 
   const [showSettings, setShowSettings] = useState(false);
@@ -114,13 +118,17 @@ function App() {
   const [bystanders, setBystanders] = useLocalStorage('lhq_bystanders', 0);
 
   const resetTracker = () => {
-    if (confirm('Deseja zerar os contadores e começar uma nova partida?')) {
-      setRecruit(0);
-      setAttack(0);
-      setMasterStrikes(0);
-      setSchemeTwists(0);
-      setBystanders(0);
-    }
+    setConfirmPopup({
+      message: 'Deseja zerar os contadores e começar uma nova partida?',
+      onConfirm: () => {
+        setRecruit(0);
+        setAttack(0);
+        setMasterStrikes(0);
+        setSchemeTwists(0);
+        setBystanders(0);
+        setConfirmPopup(null);
+      }
+    });
   };
 
   const handleFinishMatch = async (victory: boolean) => {
@@ -235,7 +243,7 @@ function App() {
         </header>
         {/* Popups e Modais */}
         {popupMsg && (
-          <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.8)', zIndex: 99999, display: 'flex', alignItems: 'center', justifyContent: 'center', animation: 'fadeIn 0.2s ease-out' }}>
+          <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.85)', zIndex: 99999, display: 'flex', alignItems: 'center', justifyContent: 'center', animation: 'fadeIn 0.2s ease-out' }}>
             <div className="glass-panel" style={{ width: '90%', maxWidth: '350px', padding: '30px', position: 'relative', textAlign: 'center' }}>
               <button onClick={() => setPopupMsg(null)} style={{ position: 'absolute', top: '15px', right: '15px', background: 'transparent', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer' }}>
                 <X size={20} />
@@ -243,6 +251,21 @@ function App() {
               <h3 style={{ color: 'white', margin: '0 0 16px 0', fontSize: '1.2rem' }}>Aviso</h3>
               <p style={{ color: 'var(--text-secondary)', marginBottom: '24px', lineHeight: '1.5' }}>{popupMsg}</p>
               <button onClick={() => setPopupMsg(null)} className="btn btn-primary" style={{ width: '100%' }}>OK</button>
+            </div>
+          </div>
+        )}
+
+        {confirmPopup && (
+          <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.85)', zIndex: 99999, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px', animation: 'fadeIn 0.2s ease-out' }}>
+            <div className="glass-panel" style={{ width: '100%', maxWidth: '400px', padding: '30px', position: 'relative' }}>
+              <h3 style={{ color: 'white', margin: '0 0 16px 0', fontSize: '1.2rem' }}>Atenção</h3>
+              <p style={{ color: 'var(--text-secondary)', marginBottom: '24px', fontSize: '0.95rem', lineHeight: '1.5' }}>
+                {confirmPopup.message}
+              </p>
+              <div style={{ display: 'flex', gap: '12px', justifyContent: 'flex-end' }}>
+                <button onClick={() => setConfirmPopup(null)} className="btn btn-secondary">Cancelar</button>
+                <button onClick={confirmPopup.onConfirm} className="btn btn-primary" style={{ background: '#ef4444', borderColor: '#ef4444' }}>Confirmar</button>
+              </div>
             </div>
           </div>
         )}
@@ -293,12 +316,39 @@ function App() {
           {activeTab === 'history' && (
             <HistoryTab history={history} addMatch={addMatch} ownedExpansions={ownedExpansions} />
           )}
+          {activeTab === 'savedSetups' && (
+            <SavedSetupsTab 
+              setups={savedSetups}
+              removeSetup={removeSetup}
+              onPlaySetup={(s) => {
+                setResult(s);
+                handleTabChange('tracker');
+              }}
+              onRegisterMatch={async (s, victory, score, pCount) => {
+                await addMatch({
+                  mastermind: s.mastermind.name,
+                  scheme: s.scheme.name,
+                  victory,
+                  playerCount: pCount || 2,
+                  score: score || 0
+                });
+                setPopupMsg('Partida registrada no histórico com sucesso!');
+                handleTabChange('history');
+              }}
+            />
+          )}
           {activeTab === 'randomizer' && (
             <RandomizerTab 
               playerCount={playerCount} setPlayerCount={setPlayerCount}
               result={result} setResult={setResult}
               handleDraw={handleDraw}
               handleFinishMatch={handleFinishMatch}
+              handleSaveSetup={(name) => {
+                if (result) {
+                  addSetup(name, result);
+                  setPopupMsg('Setup salvo com sucesso na sua conta!');
+                }
+              }}
             />
           )}
           {activeTab === 'tracker' && (

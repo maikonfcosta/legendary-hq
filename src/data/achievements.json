@@ -1,0 +1,44 @@
+[
+  {
+    "id": "first_blood",
+    "title": "Primeiro Combate",
+    "description": "Jogue a sua primeira partida.",
+    "icon": "Swords",
+    "condition": "history.length >= 1"
+  },
+  {
+    "id": "veteran",
+    "title": "Veterano S.H.I.E.L.D.",
+    "description": "Jogue 10 partidas no total.",
+    "icon": "Shield",
+    "condition": "history.length >= 10"
+  },
+  {
+    "id": "savior",
+    "title": "Salvador do Multiverso",
+    "description": "Vença 5 partidas.",
+    "icon": "Trophy",
+    "condition": "history.filter(m => m.victory).length >= 5"
+  },
+  {
+    "id": "solo_master",
+    "title": "Lobo Solitário",
+    "description": "Vença 3 partidas jogando no modo Solo (1 Jogador).",
+    "icon": "User",
+    "condition": "history.filter(m => m.victory && m.playerCount === 1).length >= 3"
+  },
+  {
+    "id": "team_player",
+    "title": "Vingadores Unidos",
+    "description": "Vença uma partida com 4 ou mais jogadores.",
+    "icon": "Users",
+    "condition": "history.filter(m => m.victory && m.playerCount >= 4).length >= 1"
+  },
+  {
+    "id": "unstoppable",
+    "title": "Imparável",
+    "description": "Atinja 15 vitórias no total.",
+    "icon": "Crown",
+    "condition": "history.filter(m => m.victory).length >= 15"
+  }
+]

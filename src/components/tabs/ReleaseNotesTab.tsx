@@ -2,6 +2,26 @@ import { Tag, CheckCircle2, Star, Rocket } from 'lucide-react';
 
 const releases = [
   {
+    version: "1.5.0",
+    date: new Date().toLocaleDateString('pt-BR'),
+    title: "Setups Salvos & Mastery Dashboard 🏆",
+    description: "Gamificação e salvamento em nuvem de setups de partidas customizadas.",
+    highlights: [
+      {
+        icon: <Star size={18} style={{ color: '#fbc02d' }} />,
+        text: "Setups Salvos (Galeria): Salve suas combinações favoritas no Gerador para nunca perder aquele setup incrível. Jogue setups salvos com um único clique."
+      },
+      {
+        icon: <Rocket size={18} style={{ color: '#10b981' }} />,
+        text: "Dashboard de Conquistas (Mastery): Analisa automaticamente o seu Histórico do Firebase e desbloqueia troféus virtuais por metas alcançadas (Ex: Vencer 5 partidas no modo Solo)."
+      }
+    ],
+    features: [
+      "Integração total do LocalStorage e Firebase Firestore para as novas abas.",
+      "Troféus coloridos quando desbloqueados e cinza (grayscale) quando bloqueados."
+    ]
+  },
+  {
     version: "1.4.0",
     date: new Date().toLocaleDateString('pt-BR'),
     title: "Avatar & Assistente de Turno 🦸‍♂️",

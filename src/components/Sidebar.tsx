@@ -24,20 +24,20 @@ export function Sidebar({ activeTab, handleTabChange, isMobileMenuOpen }: Sideba
         <button className={`nav-link ${activeTab === 'tracker' ? 'active' : ''}`} onClick={() => handleTabChange('tracker')}>
           <Activity size={20} /> {t('sidebar.tracker')}
         </button>
-        <button className={`nav-link ${activeTab === 'campaigns' ? 'active' : ''}`} onClick={() => handleTabChange('campaigns')}>
-          <Map size={20} /> {t('sidebar.campaigns')}
-        </button>
         <button className={`nav-link ${activeTab === 'randomizer' ? 'active' : ''}`} onClick={() => handleTabChange('randomizer')}>
           <Shuffle size={20} /> {t('sidebar.randomizer')}
+        </button>
+        <button className={`nav-link ${activeTab === 'campaigns' ? 'active' : ''}`} onClick={() => handleTabChange('campaigns')}>
+          <Map size={20} /> {t('sidebar.campaigns')}
         </button>
         <button className={`nav-link ${activeTab === 'savedSetups' ? 'active' : ''}`} onClick={() => handleTabChange('savedSetups')}>
           <Bookmark size={20} /> {t('sidebar.savedSetups')}
         </button>
-        <button className={`nav-link ${activeTab === 'stats' ? 'active' : ''}`} onClick={() => handleTabChange('stats')}>
-          <BarChart2 size={20} /> {t('sidebar.stats')}
-        </button>
         <button className={`nav-link ${activeTab === 'history' ? 'active' : ''}`} onClick={() => handleTabChange('history')}>
           <ScrollText size={20} /> {t('sidebar.history')}
+        </button>
+        <button className={`nav-link ${activeTab === 'stats' ? 'active' : ''}`} onClick={() => handleTabChange('stats')}>
+          <BarChart2 size={20} /> {t('sidebar.stats')}
         </button>
         <button className={`nav-link ${activeTab === 'collection' ? 'active' : ''}`} onClick={() => handleTabChange('collection')}>
           <Layers size={20} /> Coleção

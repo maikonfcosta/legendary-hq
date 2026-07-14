@@ -1,3 +1,5 @@
+<center><img src="/public/logo.jpg" alt="Descrição" width="600" align="center"></center>
+
 # Legendary HQ 🦸‍♂️🦸‍♀️
 
 **Legendary HQ** é o seu assistente definitivo para o jogo de cartas **Legendary: A Marvel Deck Building Game**.

@@ -326,49 +326,49 @@
       "id": "madelyne_pryor_goblin_queen",
       "name": "Madelyne Pryor, Goblin Queen",
       "alwaysLeads": "Limbo",
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
       "id": "nimrod_super_sentinel",
       "name": "Nimrod, Super Sentinel",
       "alwaysLeads": "Sentinel Territories",
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
       "id": "wasteland_hulk",
       "name": "Wasteland Hulk",
       "alwaysLeads": "Wasteland",
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
       "id": "zombie_green_goblin",
       "name": "Zombie Green Goblin",
       "alwaysLeads": "The Deadlands",
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
       "id": "immortal_emperor_zheng_zhu",
       "name": "Immortal Emperor Zheng-Zhu",
       "alwaysLeads": "K'un-Lun",
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
       "id": "king_hyperion",
       "name": "King Hyperion",
       "alwaysLeads": "Utopolis",
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
       "id": "shiklah_the_demon_bride",
       "name": "Shiklah, the Demon Bride",
       "alwaysLeads": "Monster Metropolis",
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
       "id": "spider_queen",
       "name": "Spider-Queen",
       "alwaysLeads": "Spider-Infected",
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
       "id": "arnim_zola",
@@ -584,19 +584,19 @@
       "id": "iron_monger",
       "name": "Iron Monger",
       "alwaysLeads": "[/b] Iron Foes",
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
       "id": "loki",
       "name": "Loki",
       "alwaysLeads": "Enemies of Asgard",
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
       "id": "red_skull",
       "name": "Red Skull",
       "alwaysLeads": "HYDRA",
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
       "id": "ultron",
@@ -1350,82 +1350,82 @@
     {
       "id": "build_an_army_of_annihilation",
       "name": "Build an Army of Annihilation",
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
       "id": "corrupt_the_next_generation_of_heroes",
       "name": "Corrupt the Next Generation of Heroes",
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
       "id": "crush_them_with_my_bare_hands",
       "name": "Crush Them With My Bare Hands",
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
       "id": "dark_alliance",
       "name": "Dark Alliance",
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
       "id": "fragmented_realities",
       "name": "Fragmented Realities",
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
       "id": "master_of_tyrants",
       "name": "Master of Tyrants",
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
       "id": "pan_dimensional_plague",
       "name": "Pan-Dimensional Plague",
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
       "id": "smash_two_dimensions_together",
       "name": "Smash Two Dimensions Together",
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
       "id": "deadlands_hordes_charge_the_wall",
       "name": "Deadlands Hordes Charge the Wall",
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
       "id": "enthrone_the_barons_of_battleworld",
       "name": "Enthrone the Barons of Battleworld",
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
       "id": "the_fountain_of_eternal_life",
       "name": "The Fountain of Eternal Life",
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
       "id": "the_god_emperor_of_battleworld",
       "name": "The God-Emperor of Battleworld",
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
       "id": "the_mark_of_khonshu",
       "name": "The Mark of Khonshu",
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
       "id": "master_the_mysteries_of_kung_fu",
       "name": "Master the Mysteries of Kung-Fu",
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
       "id": "secret_wars",
       "name": "Secret Wars",
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
       "id": "sinister_ambitions",
       "name": "Sinister Ambitions",
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
       "id": "brainwash_the_military",
@@ -1650,42 +1650,42 @@
     {
       "id": "asgard_under_siege",
       "name": "Asgard Under Siege",
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
       "id": "destroy_the_cities_of_earth",
       "name": "Destroy the Cities of Earth!",
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
       "id": "enslave_minds_with_the_chitauri_scepter",
       "name": "Enslave Minds with the Chitauri Scepter",
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
       "id": "invade_asgard",
       "name": "Invade Asgard",
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
       "id": "radioactive_palladium_poisoning",
       "name": "Radioactive Palladium Poisoning",
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
       "id": "replace_earth_s_leaders_with_hydra",
       "name": "Replace Earth's Leaders with HYDRA",
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
       "id": "super_hero_civil_war",
       "name": "Super Hero Civil War",
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
       "id": "unleash_the_power_of_the_cosmic_cube",
       "name": "Unleash the Power of the Cosmic Cube",
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
       "id": "age_of_ultron",
@@ -2887,62 +2887,62 @@
     {
       "id": "the_deadlands",
       "name": "The Deadlands",
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
       "id": "domain_of_apocalypse",
       "name": "Domain of Apocalypse",
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
       "id": "limbo",
       "name": "Limbo",
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
       "id": "manhattan_earth_1610",
       "name": "Manhattan (Earth-1610)",
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
       "id": "sentinel_territories",
       "name": "Sentinel Territories",
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
       "id": "wasteland",
       "name": "Wasteland",
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
       "id": "deadpool_s_secret_secret_wars",
       "name": "Deadpool's Secret Secret Wars",
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
       "id": "guardians_of_knowhere",
       "name": "Guardians of Knowhere",
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
       "id": "k_un_lun",
       "name": "K'un-lun",
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
       "id": "monster_metropolis",
       "name": "Monster Metropolis",
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
       "id": "utopolis",
       "name": "Utopolis",
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
       "id": "x_men_92",
       "name": "X-Men '92",
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
       "id": "zola_s_creations",
@@ -3107,27 +3107,27 @@
     {
       "id": "chitauri",
       "name": "Chitauri",
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
       "id": "enemies_of_asgard",
       "name": "Enemies of Asgard",
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
       "id": "gamma_hunters",
       "name": "Gamma Hunters",
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
       "id": "hydra",
       "name": "HYDRA",
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
       "id": "iron_foes",
       "name": "Iron Foes",
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
       "id": "ultron_s_legacy",
@@ -3884,37 +3884,37 @@
     {
       "id": "ghost_racers",
       "name": "Ghost Racers",
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
       "id": "m_o_d_o_k_s",
       "name": "M.O.D.O.K.s",
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
       "id": "thor_corps",
       "name": "Thor Corps",
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
       "id": "khonshu_guardians",
       "name": "Khonshu Guardians",
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
       "id": "magma_men",
       "name": "Magma Men",
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
       "id": "fateful_resurrection",
       "name": "Fateful Resurrection",
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
       "id": "spider_infected",
       "name": "Spider-Infected",
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
       "id": "mandroid",
@@ -3979,22 +3979,22 @@
     {
       "id": "hammer_drone_army",
       "name": "Hammer Drone Army",
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
       "id": "hydra_pilots",
       "name": "HYDRA Pilots",
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
       "id": "hydra_spies",
       "name": "HYDRA Spies",
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
       "id": "ten_rings_fanatics",
       "name": "Ten Rings Fanatics",
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
       "id": "circus_of_crime",
@@ -4819,17 +4819,17 @@
       "expansion": "fear_itself"
     },
     {
-      "id": "apocalyptic_kitty_pryde_secret_wars_volume_1",
+      "id": "apocalyptic_kitty_pryde_secret_wars_1",
       "name": "Apocalyptic Kitty Pryde",
       "team": "x_men",
       "classes": [
         "covert",
         "tech"
       ],
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
-      "id": "black_bolt_secret_wars_volume_1",
+      "id": "black_bolt_secret_wars_1",
       "name": "Black Bolt",
       "team": "illuminati",
       "classes": [
@@ -4837,30 +4837,30 @@
         "covert",
         "strength"
       ],
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
-      "id": "black_panther_secret_wars_volume_1",
+      "id": "black_panther_secret_wars_1",
       "name": "Black Panther",
       "team": "illuminati",
       "classes": [
         "instinct",
         "strength"
       ],
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
-      "id": "captain_marvel_secret_wars_volume_1",
+      "id": "captain_marvel_secret_wars_1",
       "name": "Captain Marvel",
       "team": "avengers",
       "classes": [
         "ranged",
         "strength"
       ],
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
-      "id": "dr_strange_secret_wars_volume_1",
+      "id": "dr_strange_secret_wars_1",
       "name": "Dr. Strange",
       "team": "illuminati",
       "classes": [
@@ -4868,89 +4868,89 @@
         "instinct",
         "covert"
       ],
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
-      "id": "lady_thor_secret_wars_volume_1",
+      "id": "lady_thor_secret_wars_1",
       "name": "Lady Thor",
       "team": "avengers",
       "classes": [
         "ranged",
         "strength"
       ],
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
-      "id": "magik_secret_wars_volume_1",
+      "id": "magik_secret_wars_1",
       "name": "Magik",
       "team": "x_men",
       "classes": [
         "covert",
         "ranged"
       ],
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
-      "id": "maximus_secret_wars_volume_1",
+      "id": "maximus_secret_wars_1",
       "name": "Maximus",
       "team": "cabal",
       "classes": [
         "covert",
         "tech"
       ],
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
-      "id": "namor_the_sub_mariner_secret_wars_volume_1",
+      "id": "namor_the_sub_mariner_secret_wars_1",
       "name": "Namor, the Sub-Mariner",
       "team": "cabal",
       "classes": [
         "instinct",
         "strength"
       ],
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
-      "id": "old_man_logan_secret_wars_volume_1",
+      "id": "old_man_logan_secret_wars_1",
       "name": "Old Man Logan",
       "team": "x_men",
       "classes": [
         "instinct"
       ],
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
-      "id": "proxima_midnight_secret_wars_volume_1",
+      "id": "proxima_midnight_secret_wars_1",
       "name": "Proxima Midnight",
       "team": "cabal",
       "classes": [
         "instinct",
         "covert"
       ],
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
-      "id": "superior_iron_man_secret_wars_volume_1",
+      "id": "superior_iron_man_secret_wars_1",
       "name": "Superior Iron Man",
       "team": "illuminati",
       "classes": [
         "tech",
         "ranged"
       ],
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
-      "id": "thanos_secret_wars_volume_1",
+      "id": "thanos_secret_wars_1",
       "name": "Thanos",
       "team": "cabal",
       "classes": [
         "strength",
         "ranged"
       ],
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
-      "id": "ultimate_spider_man_secret_wars_volume_1",
+      "id": "ultimate_spider_man_secret_wars_1",
       "name": "Ultimate Spider-Man",
       "team": "spider_friends",
       "classes": [
@@ -4959,10 +4959,10 @@
         "tech",
         "covert"
       ],
-      "expansion": "secret_wars_volume_1"
+      "expansion": "secret_wars_1"
     },
     {
-      "id": "agent_venom_secret_wars_volume_2",
+      "id": "agent_venom_secret_wars_2",
       "name": "Agent Venom",
       "team": "spider_friends",
       "classes": [
@@ -4970,10 +4970,10 @@
         "instinct",
         "strength"
       ],
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
-      "id": "arkon_the_magnificent_secret_wars_volume_2",
+      "id": "arkon_the_magnificent_secret_wars_2",
       "name": "Arkon the Magnificent",
       "team": "unaffiliated",
       "classes": [
@@ -4981,20 +4981,20 @@
         "ranged",
         "instinct"
       ],
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
-      "id": "beast_secret_wars_volume_2",
+      "id": "beast_secret_wars_2",
       "name": "Beast",
       "team": "illuminati",
       "classes": [
         "strength",
         "tech"
       ],
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
-      "id": "black_swan_secret_wars_volume_2",
+      "id": "black_swan_secret_wars_2",
       "name": "Black Swan",
       "team": "cabal",
       "classes": [
@@ -5002,10 +5002,10 @@
         "instinct",
         "covert"
       ],
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
-      "id": "the_captain_and_the_devil_secret_wars_volume_2",
+      "id": "the_captain_and_the_devil_secret_wars_2",
       "name": "The Captain and the Devil",
       "team": "avengers",
       "classes": [
@@ -5014,20 +5014,20 @@
         "covert",
         "ranged"
       ],
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
-      "id": "captain_britain_secret_wars_volume_2",
+      "id": "captain_britain_secret_wars_2",
       "name": "Captain Britain",
       "team": "illuminati",
       "classes": [
         "strength",
         "covert"
       ],
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
-      "id": "corvus_glaive_secret_wars_volume_2",
+      "id": "corvus_glaive_secret_wars_2",
       "name": "Corvus Glaive",
       "team": "cabal",
       "classes": [
@@ -5035,20 +5035,20 @@
         "strength",
         "tech"
       ],
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
-      "id": "dr_punisher_soldier_supreme_secret_wars_volume_2",
+      "id": "dr_punisher_soldier_supreme_secret_wars_2",
       "name": "Dr. Punisher, Soldier Supreme",
       "team": "marvel_knights",
       "classes": [
         "tech",
         "ranged"
       ],
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
-      "id": "elsa_bloodstone_secret_wars_volume_2",
+      "id": "elsa_bloodstone_secret_wars_2",
       "name": "Elsa Bloodstone",
       "team": "shield",
       "classes": [
@@ -5057,10 +5057,10 @@
         "ranged",
         "strength"
       ],
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
-      "id": "phoenix_force_cyclops_secret_wars_volume_2",
+      "id": "phoenix_force_cyclops_secret_wars_2",
       "name": "Phoenix Force Cyclops",
       "team": "x_men",
       "classes": [
@@ -5068,30 +5068,30 @@
         "covert",
         "instinct"
       ],
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
-      "id": "ruby_summers_secret_wars_volume_2",
+      "id": "ruby_summers_secret_wars_2",
       "name": "Ruby Summers",
       "team": "x_men",
       "classes": [
         "ranged",
         "strength"
       ],
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
-      "id": "shang_chi_secret_wars_volume_2",
+      "id": "shang_chi_secret_wars_2",
       "name": "Shang-Chi",
       "team": "marvel_knights",
       "classes": [
         "instinct",
         "covert"
       ],
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
-      "id": "silk_secret_wars_volume_2",
+      "id": "silk_secret_wars_2",
       "name": "Silk",
       "team": "spider_friends",
       "classes": [
@@ -5100,10 +5100,10 @@
         "covert",
         "tech"
       ],
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
-      "id": "soulsword_colossus_secret_wars_volume_2",
+      "id": "soulsword_colossus_secret_wars_2",
       "name": "Soulsword Colossus",
       "team": "x_men",
       "classes": [
@@ -5111,10 +5111,10 @@
         "strength",
         "instinct"
       ],
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
-      "id": "spider_gwen_secret_wars_volume_2",
+      "id": "spider_gwen_secret_wars_2",
       "name": "Spider-Gwen",
       "team": "spider_friends",
       "classes": [
@@ -5123,17 +5123,17 @@
         "strength",
         "covert"
       ],
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
-      "id": "time_traveling_jean_grey_secret_wars_volume_2",
+      "id": "time_traveling_jean_grey_secret_wars_2",
       "name": "Time-Traveling Jean Grey",
       "team": "x_men",
       "classes": [
         "covert",
         "instinct"
       ],
-      "expansion": "secret_wars_volume_2"
+      "expansion": "secret_wars_2"
     },
     {
       "id": "agent_x_13_cap_75",
@@ -5917,17 +5917,17 @@
       "expansion": "world_war_hulk"
     },
     {
-      "id": "black_widow_marvel_studios_phase_1",
+      "id": "black_widow_phase_1",
       "name": "Black Widow",
       "team": "avengers",
       "classes": [
         "covert",
         "tech"
       ],
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
-      "id": "captain_america_marvel_studios_phase_1",
+      "id": "captain_america_phase_1",
       "name": "Captain America",
       "team": "avengers",
       "classes": [
@@ -5936,40 +5936,40 @@
         "tech",
         "covert"
       ],
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
-      "id": "hawkeye_marvel_studios_phase_1",
+      "id": "hawkeye_phase_1",
       "name": "Hawkeye",
       "team": "avengers",
       "classes": [
         "instinct",
         "tech"
       ],
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
-      "id": "hulk_marvel_studios_phase_1",
+      "id": "hulk_phase_1",
       "name": "Hulk",
       "team": "avengers",
       "classes": [
         "strength",
         "instinct"
       ],
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
-      "id": "iron_man_marvel_studios_phase_1",
+      "id": "iron_man_phase_1",
       "name": "Iron Man",
       "team": "avengers",
       "classes": [
         "tech",
         "ranged"
       ],
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
-      "id": "nick_fury_marvel_studios_phase_1",
+      "id": "nick_fury_phase_1",
       "name": "Nick Fury",
       "team": "shield",
       "classes": [
@@ -5977,17 +5977,17 @@
         "tech",
         "strength"
       ],
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
-      "id": "thor_marvel_studios_phase_1",
+      "id": "thor_phase_1",
       "name": "Thor",
       "team": "avengers",
       "classes": [
         "strength",
         "ranged"
       ],
-      "expansion": "marvel_studios_phase_1"
+      "expansion": "phase_1"
     },
     {
       "id": "ant_man_ant_man",

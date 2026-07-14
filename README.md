@@ -9,6 +9,8 @@ Criado com o objetivo de agilizar e aprimorar a experiência de jogo na mesa, o 
 - 🎲 **Smart Randomizer:** Sorteia Masterminds, Schemes, Villains, Henchmen e Heroes baseados exclusivamente na sua coleção pessoal.
 - 📦 **Minha Coleção:** Permite que você marque exatamente quais expansões você tem na estante.
 - 📊 **Game Tracker:** Assuma o controle da partida pelo celular! Conte seus Pontos de Recrutamento (Recruit), Pontos de Ataque, Master Strikes, Scheme Twists e Bystanders nocauteados.
+- 🗺️ **Modo Campanha:** Jogue diversas Sagas completas e Campanhas customizadas baseadas nas expansões que você possui, com restrições heroicas dinâmicas.
+- 💾 **Histórico e Estatísticas:** Todas as suas partidas e setups salvos são armazenados localmente e sincronizados em nuvem (via Firebase). Acompanhe sua performance e conquistas!
 - 📖 **Manuais e Regras:** Leia todos os PDFs oficiais de todas as expansões perfeitamente integrados ao aplicativo, com foco em uma navegação rápida durante as partidas.
 
 ## 🛠️ Tecnologias

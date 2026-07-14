@@ -2,8 +2,29 @@ import { Tag, CheckCircle2, Star, Rocket } from 'lucide-react';
 
 const releases = [
   {
-    version: "1.5.0",
+    version: "1.6.0",
     date: new Date().toLocaleDateString('pt-BR'),
+    title: "Modo Campanha Épico & Usabilidade 🗺️",
+    description: "Embarque em 16 Sagas oficiais ou crie suas próprias campanhas focadas nas expansões da sua coleção.",
+    highlights: [
+      {
+        icon: <Star size={18} style={{ color: '#fbc02d' }} />,
+        text: "Modo Campanha (+150 Missões): Viva as sagas do Universo Marvel seguindo o aclamado padrão ML Campaign. O progresso é salvo na nuvem e só desbloqueia missões com expansões que você possui."
+      },
+      {
+        icon: <Rocket size={18} style={{ color: '#10b981' }} />,
+        text: "Campanhas Customizadas & Restrições: Enfrente campanhas únicas geradas pela combinação das suas expansões (ex: 'Caos no Aranhaverso'), contendo Restrições Heroicas para subir o nível da dificuldade."
+      }
+    ],
+    features: [
+      "Aba de coleção redesenhada com botões rápidos de 'Selecionar Tudo' e 'Remover Tudo'.",
+      "Novo ordenamento do Menu Lateral para garantir fluidez na transição entre Gerador, Tracker e Histórico.",
+      "Correção e restauração de dezenas de Livros de Regras em PDF embutidos direto no App."
+    ]
+  },
+  {
+    version: "1.5.0",
+    date: "14/07/2026",
     title: "Setups Salvos & Mastery Dashboard 🏆",
     description: "Gamificação e salvamento em nuvem de setups de partidas customizadas.",
     highlights: [

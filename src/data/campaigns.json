@@ -228,6 +228,295 @@
     ]
   },
   {
+    "id": "custom_civil_war",
+    "title": "A Guerra Civil (Core + Civil War)",
+    "description": "Heróis contra heróis! Uma campanha focada no embate ideológico com mecânicas da Guerra Civil.",
+    "image": "https://images.unsplash.com/photo-1506450630739-16630f9a2d8a?w=400&q=80",
+    "requiredExpansions": [
+      "core",
+      "civil_war"
+    ],
+    "missions": [
+      {
+        "id": "custom_civil_war_m1",
+        "title": "Missão 1",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Maria Hill, Director of S.H.I.E.L.D.",
+          "scheme": "Legacy Virus the"
+        }
+      },
+      {
+        "id": "custom_civil_war_m2",
+        "title": "Missão 2",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Ragnarok",
+          "scheme": "Avengers vs. X-Men"
+        }
+      },
+      {
+        "id": "custom_civil_war_m3",
+        "title": "Missão 3",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Magneto",
+          "scheme": "Hairball"
+        }
+      },
+      {
+        "id": "custom_civil_war_m4",
+        "title": "Missão 4",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Red Skull",
+          "scheme": "Super Hero Civil War"
+        }
+      },
+      {
+        "id": "custom_civil_war_m5",
+        "title": "Missão 5",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Red Skull",
+          "scheme": "Nitro the Supervillian Threatens Crowds"
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_secret_wars",
+    "title": "O Mundo de Batalha (Guerras Secretas)",
+    "description": "Realidades colidem! Explore 5 missões épicas pelo Battleworld usando Secret Wars Vol 1 e 2.",
+    "image": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=400&q=80",
+    "requiredExpansions": [
+      "core",
+      "secret_wars_1",
+      "secret_wars_2"
+    ],
+    "missions": [
+      {
+        "id": "custom_secret_wars_m1",
+        "title": "Missão 1",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Dr. Doom",
+          "scheme": "Tide of Destruction"
+        }
+      },
+      {
+        "id": "custom_secret_wars_m2",
+        "title": "Missão 2",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Spider QueenTactic1",
+          "scheme": "Dark Apprentice"
+        }
+      },
+      {
+        "id": "custom_secret_wars_m3",
+        "title": "Missão 3",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Dr. Doom",
+          "scheme": "Dark Apprentice"
+        }
+      },
+      {
+        "id": "custom_secret_wars_m4",
+        "title": "Missão 4",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Spider QueenTactic2",
+          "scheme": "The Legacy Virus"
+        }
+      },
+      {
+        "id": "custom_secret_wars_m5",
+        "title": "Missão 5",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Zombie Green Goblin",
+          "scheme": "Core Scheme Twist"
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_spiderverse",
+    "title": "Caos no Aranhaverso",
+    "description": "Ameaças aracnídeas de múltiplas dimensões atacam Nova York!",
+    "image": "https://images.unsplash.com/photo-1549416560-592d6eab25ea?w=400&q=80",
+    "requiredExpansions": [
+      "core",
+      "paint_the_town_red",
+      "spiderman_homecoming"
+    ],
+    "missions": [
+      {
+        "id": "custom_spiderverse_m1",
+        "title": "Missão 1",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Mysterio",
+          "scheme": "Damage Control"
+        }
+      },
+      {
+        "id": "custom_spiderverse_m2",
+        "title": "Missão 2",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Magneto",
+          "scheme": "Secret Invasion of the Skrull Shapeshifters"
+        }
+      },
+      {
+        "id": "custom_spiderverse_m3",
+        "title": "Missão 3",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Magneto",
+          "scheme": "Portals to the Dark Dimension"
+        }
+      },
+      {
+        "id": "custom_spiderverse_m4",
+        "title": "Missão 4",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Epic Adrian Toomes",
+          "scheme": "Secret Invasion of the Skrull Shapeshifters"
+        }
+      },
+      {
+        "id": "custom_spiderverse_m5",
+        "title": "Missão 5",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Magneto",
+          "scheme": "Replace Earths Leaders with Killbots"
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_guardians",
+    "title": "Defensores da Galáxia",
+    "description": "Pegue sua nave e viaje pelas estrelas para derrotar ameaças cósmicas supremas.",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&q=80",
+    "requiredExpansions": [
+      "core",
+      "guardians",
+      "into_the_cosmos"
+    ],
+    "missions": [
+      {
+        "id": "custom_guardians_m1",
+        "title": "Missão 1",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Loki",
+          "scheme": "Annihilation Conquest"
+        }
+      },
+      {
+        "id": "custom_guardians_m2",
+        "title": "Missão 2",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Supreme Intelligence of the Kree",
+          "scheme": "Annihilation Conquest"
+        }
+      },
+      {
+        "id": "custom_guardians_m3",
+        "title": "Missão 3",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Magus",
+          "scheme": "Replace Earths Leaders with Killbots"
+        }
+      },
+      {
+        "id": "custom_guardians_m4",
+        "title": "Missão 4",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Thanos",
+          "scheme": "Annihilation Conquest"
+        }
+      },
+      {
+        "id": "custom_guardians_m5",
+        "title": "Missão 5",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Dr. Doom",
+          "scheme": "Turn the Soul of Adam Warlock"
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_villains",
+    "title": "A Era dos Vilões",
+    "description": "Inverta os papéis ou enfrente as forças mais sombrias de Villains e Fear Itself.",
+    "image": "https://images.unsplash.com/photo-1510255877478-43950fb4e0b0?w=400&q=80",
+    "requiredExpansions": [
+      "core",
+      "villains",
+      "fear_itself"
+    ],
+    "missions": [
+      {
+        "id": "custom_villains_m1",
+        "title": "Missão 1",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Professor X",
+          "scheme": "Crush HYDRA"
+        }
+      },
+      {
+        "id": "custom_villains_m2",
+        "title": "Missão 2",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Uru EnchantedIronManTactic1",
+          "scheme": "Secret Invasion of the Skrull Shapeshifters"
+        }
+      },
+      {
+        "id": "custom_villains_m3",
+        "title": "Missão 3",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Uru EnchantedIronManTactic2",
+          "scheme": "Unleash the Power of the Cosmic Cube core"
+        }
+      },
+      {
+        "id": "custom_villains_m4",
+        "title": "Missão 4",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Uru EnchantedIronManTactic4",
+          "scheme": "Replace Earths Leaders with Killbots"
+        }
+      },
+      {
+        "id": "custom_villains_m5",
+        "title": "Missão 5",
+        "description": "Venha preparado para este desafio temático.",
+        "setup": {
+          "mastermind": "Dr. Strange",
+          "scheme": "Replace Earth's Leaders with Killbots"
+        }
+      }
+    ]
+  },
+  {
     "id": "ml_campaign_saga_1",
     "title": "Saga 1: Ameaças Urbanas",
     "description": "Missões 1 a 10 da ML Campaign.",

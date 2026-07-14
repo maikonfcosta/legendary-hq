@@ -108,3 +108,66 @@ export const generateSetup = (playerCount: number, ownedExpansions: string[]): S
     bystanders: config.bystanders
   };
 };
+
+export const generateCampaignSetup = (playerCount: number, ownedExpansions: string[], missionSetup: any): SetupResult => {
+  const configs = {
+    1: { villains: 1, henchmen: 1, heroes: 3, bystanders: 1 },
+    2: { villains: 2, henchmen: 1, heroes: 5, bystanders: 2 },
+    3: { villains: 3, henchmen: 1, heroes: 5, bystanders: 8 },
+    4: { villains: 3, henchmen: 2, heroes: 5, bystanders: 8 },
+    5: { villains: 4, henchmen: 2, heroes: 6, bystanders: 12 }
+  };
+  const config = configs[playerCount as keyof typeof configs];
+
+  const filterByExpansion = <T extends { expansion: string }>(items: T[]) => 
+    items.filter(item => ownedExpansions.includes(item.expansion) || (item.expansion === 'core' && ownedExpansions.includes('core_2nd')));
+
+  const availableMasterminds = filterByExpansion(db.masterminds);
+  const availableSchemes = filterByExpansion(db.schemes);
+  const availableVillains = filterByExpansion(db.villains);
+  const availableHenchmen = filterByExpansion(db.henchmen);
+  const availableHeroes = filterByExpansion(db.heroes);
+
+  const mastermind = db.masterminds.find(m => m.name === missionSetup.mastermind) || getRandomItem(availableMasterminds);
+  const scheme = db.schemes.find(s => s.name === missionSetup.scheme) || getRandomItem(availableSchemes);
+
+  let requiredVillains: VillainGroup[] = missionSetup.villains 
+    ? missionSetup.villains.map((name: string) => db.villains.find(v => v.name === name)).filter(Boolean) as VillainGroup[]
+    : [];
+    
+  let requiredHenchmen: HenchmenGroup[] = missionSetup.henchmen
+    ? missionSetup.henchmen.map((name: string) => db.henchmen.find(h => h.name === name)).filter(Boolean) as HenchmenGroup[]
+    : [];
+
+  if (mastermind.alwaysLeads) {
+    const isVillain = db.villains.find(v => v.id === mastermind.alwaysLeads);
+    const isHenchmen = db.henchmen.find(h => h.id === mastermind.alwaysLeads);
+    
+    if (isVillain && !requiredVillains.some(v => v.id === isVillain.id)) requiredVillains.push(isVillain);
+    if (isHenchmen && !requiredHenchmen.some(h => h.id === isHenchmen.id)) requiredHenchmen.push(isHenchmen);
+  }
+
+  const villainsCountToDraw = Math.max(0, config.villains - requiredVillains.length);
+  const villains = [
+    ...requiredVillains,
+    ...getRandomItems(availableVillains, villainsCountToDraw, requiredVillains)
+  ];
+
+  const henchmenCountToDraw = Math.max(0, config.henchmen - requiredHenchmen.length);
+  const henchmen = [
+    ...requiredHenchmen,
+    ...getRandomItems(availableHenchmen, henchmenCountToDraw, requiredHenchmen)
+  ];
+
+  // TODO: Implement hero constraints logic later if needed
+  const heroes = getRandomItems(availableHeroes, config.heroes);
+
+  return {
+    mastermind,
+    scheme,
+    villains,
+    henchmen,
+    heroes,
+    bystanders: config.bystanders
+  };
+};

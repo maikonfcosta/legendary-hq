@@ -1,4 +1,5 @@
-import { Home, Shuffle, Activity, BarChart2, Layers, BookOpen, ScrollText, Bookmark } from 'lucide-react';
+import { Home, Shuffle, Activity, BarChart2, Layers, BookOpen, ScrollText, Bookmark, Map } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 interface SidebarProps {
   activeTab: string;
@@ -7,6 +8,7 @@ interface SidebarProps {
 }
 
 export function Sidebar({ activeTab, handleTabChange, isMobileMenuOpen }: SidebarProps) {
+  const { t } = useTranslation();
 
   return (
     <aside className={`sidebar ${isMobileMenuOpen ? 'open' : ''}`}>
@@ -20,19 +22,22 @@ export function Sidebar({ activeTab, handleTabChange, isMobileMenuOpen }: Sideba
           <Home size={20} /> Início
         </button>
         <button className={`nav-link ${activeTab === 'tracker' ? 'active' : ''}`} onClick={() => handleTabChange('tracker')}>
-          <Activity size={20} /> Tracker
+          <Activity size={20} /> {t('sidebar.tracker')}
+        </button>
+        <button className={`nav-link ${activeTab === 'campaigns' ? 'active' : ''}`} onClick={() => handleTabChange('campaigns')}>
+          <Map size={20} /> {t('sidebar.campaigns')}
         </button>
         <button className={`nav-link ${activeTab === 'randomizer' ? 'active' : ''}`} onClick={() => handleTabChange('randomizer')}>
-          <Shuffle size={20} /> Gerador
+          <Shuffle size={20} /> {t('sidebar.randomizer')}
         </button>
         <button className={`nav-link ${activeTab === 'savedSetups' ? 'active' : ''}`} onClick={() => handleTabChange('savedSetups')}>
-          <Bookmark size={20} /> Setups Salvos
+          <Bookmark size={20} /> {t('sidebar.savedSetups')}
         </button>
         <button className={`nav-link ${activeTab === 'stats' ? 'active' : ''}`} onClick={() => handleTabChange('stats')}>
-          <BarChart2 size={20} /> Estatísticas
+          <BarChart2 size={20} /> {t('sidebar.stats')}
         </button>
         <button className={`nav-link ${activeTab === 'history' ? 'active' : ''}`} onClick={() => handleTabChange('history')}>
-          <ScrollText size={20} /> Histórico
+          <ScrollText size={20} /> {t('sidebar.history')}
         </button>
         <button className={`nav-link ${activeTab === 'collection' ? 'active' : ''}`} onClick={() => handleTabChange('collection')}>
           <Layers size={20} /> Coleção

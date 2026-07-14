@@ -6,6 +6,7 @@ import { useLocalStorage } from './hooks/useLocalStorage';
 import { useSyncedCollection } from './hooks/useSyncedCollection';
 import { useAuth } from './contexts/AuthContext';
 import { useGameHistory } from './hooks/useGameHistory';
+import { useTranslation } from 'react-i18next';
 import packageJson from '../package.json';
 
 // Components
@@ -24,8 +25,12 @@ import { AvatarPickerModal } from './components/AvatarPickerModal';
 import { getCardImage } from './utils/imageLookup';
 import { useSavedSetups } from './hooks/useSavedSetups';
 import { SavedSetupsTab } from './components/tabs/SavedSetupsTab';
+import { CampaignsTab } from './components/tabs/CampaignsTab';
+import { useCampaignProgress } from './hooks/useCampaignProgress';
 
 function App() {
+  const { t, i18n } = useTranslation();
+  
   const [playerCount, setPlayerCount] = useState(1);
   const [activeTab, setActiveTab] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -33,10 +38,13 @@ function App() {
   const [popupMsg, setPopupMsg] = useState<string | null>(null);
   const [confirmPopup, setConfirmPopup] = useState<{ message: string, onConfirm: () => void } | null>(null);
   
+  const [activeCampaignMission, setActiveCampaignMission] = useState<{campaignId: string, missionId: string} | null>(null);
+
   const [ownedExpansions, setOwnedExpansions] = useSyncedCollection('lhq_ownedExpansions', ['core', 'core_2nd']);
   const { history, addMatch } = useGameHistory();
   const { savedSetups, addSetup, removeSetup } = useSavedSetups();
   const { currentUser, login, logoutUser } = useAuth();
+  const { completeMission } = useCampaignProgress();
 
   const [showSettings, setShowSettings] = useState(false);
   const [showAvatarPicker, setShowAvatarPicker] = useState(false);
@@ -93,8 +101,9 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (activeTab !== 'randomizer') {
+    if (activeTab !== 'randomizer' && activeTab !== 'tracker' && activeTab !== 'campaigns') {
       setResult(null);
+      setActiveCampaignMission(null);
     }
   }, [activeTab]);
 
@@ -141,15 +150,20 @@ function App() {
       playerCount,
       score: 0
     });
-    
-    setActiveTab('history');
-    setPopupMsg(`Partida salva no histórico com sucesso!`);
+
+    if (victory && activeCampaignMission) {
+      await completeMission(activeCampaignMission.campaignId, activeCampaignMission.missionId);
+      setActiveCampaignMission(null);
+      setPopupMsg(`Missão concluída! Partida salva no histórico.`);
+      setActiveTab('campaigns');
+    } else {
+      setActiveTab('history');
+      setPopupMsg(`Partida salva no histórico com sucesso!`);
+    }
     
     // Zera contadores
     setRecruit(0); setAttack(0); setMasterStrikes(0); setSchemeTwists(0); setBystanders(0);
     
-    // Opcional: redimensiona pra stats e limpa randomizer
-    setActiveTab('stats');
     setResult(null); 
   };
 
@@ -163,6 +177,7 @@ function App() {
     try {
       const setup = generateSetup(playerCount, ownedExpansions);
       setResult(setup);
+      setActiveCampaignMission(null);
     } catch (e: unknown) {
       setPopupMsg(e instanceof Error ? e.message : String(e));
     }
@@ -202,18 +217,22 @@ function App() {
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-secondary)' }}>
             <Globe size={18} />
             <select 
+              value={i18n.language}
+              onChange={(e) => {
+                i18n.changeLanguage(e.target.value);
+                localStorage.setItem('appLanguage', e.target.value);
+              }}
               style={{ background: 'transparent', color: 'var(--text-secondary)', border: 'none', cursor: 'pointer', outline: 'none', fontSize: '0.9rem' }}
             >
-              <option value="pt">PT</option>
-              <option value="en">EN</option>
-              <option value="es">ES</option>
+              <option value="pt-BR">PT</option>
+              <option value="en-US">EN</option>
             </select>
           </div>
 
           <button 
             onClick={() => setShowSettings(true)}
             style={{ background: 'transparent', color: 'var(--text-secondary)', border: 'none', padding: '4px', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-            title="Configurações"
+            title={t('settings.title')}
           >
             <Settings size={22} />
           </button>
@@ -278,8 +297,24 @@ function App() {
                 <X size={24} />
               </button>
               
-              <h2 style={{ marginBottom: '24px', display: 'flex', alignItems: 'center', gap: '10px' }}><Settings /> Configurações</h2>
+              <h2 style={{ marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '10px' }}><Settings /> {t('settings.title')}</h2>
+              <p style={{ color: 'var(--text-secondary)', marginBottom: '24px', fontSize: '0.9rem' }}>{t('settings.subtitle')}</p>
               
+              <div style={{ marginBottom: '24px' }}>
+                <h4 style={{ color: 'var(--text-secondary)', marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '8px' }}><Globe size={18} /> {t('settings.language')}</h4>
+                <select 
+                  value={i18n.language}
+                  onChange={(e) => {
+                    i18n.changeLanguage(e.target.value);
+                    localStorage.setItem('appLanguage', e.target.value);
+                  }}
+                  className="glass-select" style={{ width: '100%', background: 'rgba(0,0,0,0.4)' }}
+                >
+                  <option value="pt-BR">Português (Brasil)</option>
+                  <option value="en-US">English (US)</option>
+                </select>
+              </div>
+
               <div style={{ marginBottom: '30px' }}>
                 <h4 style={{ color: 'var(--text-secondary)', marginBottom: '15px', display: 'flex', alignItems: 'center', gap: '8px' }}><Volume2 size={18} /> Áudio</h4>
                 <button 
@@ -315,6 +350,31 @@ function App() {
           )}
           {activeTab === 'history' && (
             <HistoryTab history={history} addMatch={addMatch} ownedExpansions={ownedExpansions} />
+          )}
+          {activeTab === 'campaigns' && (
+            <CampaignsTab 
+              ownedExpansions={ownedExpansions}
+              onPlaySetup={(s, cId, mId) => {
+                setResult(s);
+                setActiveCampaignMission({ campaignId: cId, missionId: mId });
+                handleTabChange('tracker');
+              }}
+              onRegisterMatch={async (s, v, sc, pCount, cId, mId) => {
+                await addMatch({
+                  mastermind: s.mastermind.name,
+                  scheme: s.scheme.name,
+                  victory: v,
+                  playerCount: pCount || 2,
+                  score: sc || 0
+                });
+                if (v) {
+                  await completeMission(cId, mId);
+                  setPopupMsg('Partida registrada com sucesso! Missão da campanha concluída.');
+                } else {
+                  setPopupMsg('Partida registrada no histórico.');
+                }
+              }}
+            />
           )}
           {activeTab === 'savedSetups' && (
             <SavedSetupsTab 

@@ -1,0 +1,174 @@
+[
+  {
+    "id": "c_hydra_threat",
+    "title": "A Ameaça da HYDRA",
+    "description": "O Caveira Vermelha e o Doutor Destino estão unindo forças. Impeça seus roubos e evite que o Cubo Cósmico seja ativado!",
+    "requiredExpansions": ["core"],
+    "missions": [
+      {
+        "id": "m1_bank_robbery",
+        "title": "Missão 1: Assalto a Banco",
+        "setup": {
+          "mastermind": "Red Skull",
+          "scheme": "Midtown Bank Robbery",
+          "villains": ["HYDRA"],
+          "henchmen": ["Hand Ninjas"],
+          "heroRestrictions": "Nenhuma restrição"
+        }
+      },
+      {
+        "id": "m2_killbots",
+        "title": "Missão 2: Robôs Assassinos",
+        "setup": {
+          "mastermind": "Dr. Doom",
+          "scheme": "Replace Earth's Leaders with Killbots",
+          "villains": ["HYDRA", "Masters of Evil"],
+          "henchmen": ["Doombot Legion"],
+          "heroRestrictions": "Apenas Vingadores"
+        }
+      },
+      {
+        "id": "m3_cosmic_cube",
+        "title": "Missão 3: O Cubo Cósmico",
+        "setup": {
+          "mastermind": "Red Skull",
+          "scheme": "Unleash the Power of the Cosmic Cube",
+          "villains": ["HYDRA", "Masters of Evil"],
+          "henchmen": ["Sentinel"],
+          "heroRestrictions": "Nenhuma restrição"
+        }
+      }
+    ]
+  },
+  {
+    "id": "c_skrull_invasion",
+    "title": "Invasão Secreta",
+    "description": "Uma invasão Skrull está causando caos e dividindo os heróis. E Loki parece estar por trás do fortalecimento dessas forças intergaláticas.",
+    "requiredExpansions": ["core"],
+    "missions": [
+      {
+        "id": "m1_skrulls",
+        "title": "Missão 1: Infiltração",
+        "setup": {
+          "mastermind": "Loki",
+          "scheme": "Secret Invasion of the Skrull Shapeshifters",
+          "villains": ["Skrulls"],
+          "henchmen": ["Savage Land Mutates"],
+          "heroRestrictions": "Heróis S.H.I.E.L.D. obrigatórios"
+        }
+      },
+      {
+        "id": "m2_civil_war",
+        "title": "Missão 2: Guerra Civil",
+        "setup": {
+          "mastermind": "Dr. Doom",
+          "scheme": "Super Hero Civil War",
+          "villains": ["Skrulls", "Spider-Foes"],
+          "henchmen": ["Doombot Legion"],
+          "heroRestrictions": "Sem X-Men permitidos"
+        }
+      },
+      {
+        "id": "m3_dark_dimension",
+        "title": "Missão 3: Portais Negros",
+        "setup": {
+          "mastermind": "Loki",
+          "scheme": "Portals to the Dark Dimension",
+          "villains": ["Enemies of Asgard", "Skrulls"],
+          "henchmen": ["Hand Ninjas"],
+          "heroRestrictions": "Nenhuma restrição"
+        }
+      }
+    ]
+  },
+  {
+    "id": "c_mutant_danger",
+    "title": "A Irmandade",
+    "description": "Magneto lidera a Irmandade de Mutantes na liberação de prisioneiros e agora uma doença ameaça todos com o gene X.",
+    "requiredExpansions": ["core"],
+    "missions": [
+      {
+        "id": "m1_prison_break",
+        "title": "Missão 1: Fuga da Prisão",
+        "setup": {
+          "mastermind": "Magneto",
+          "scheme": "Negative Zone Prison Breakout",
+          "villains": ["Brotherhood"],
+          "henchmen": ["Sentinel"],
+          "heroRestrictions": "Nenhuma restrição"
+        }
+      },
+      {
+        "id": "m2_legacy_virus",
+        "title": "Missão 2: Vírus Legado",
+        "setup": {
+          "mastermind": "Magneto",
+          "scheme": "The Legacy Virus",
+          "villains": ["Brotherhood", "Radiation"],
+          "henchmen": ["Sentinel", "Savage Land Mutates"],
+          "heroRestrictions": "Apenas X-Men"
+        }
+      }
+    ]
+  },
+  {
+    "id": "c_dark_city_underworld",
+    "title": "Sombras de Dark City",
+    "description": "O submundo de Nova York está em polvorosa. O Rei do Crime governa as ruas, e demônios invadem as noites da cidade sombria.",
+    "requiredExpansions": ["core", "dark_city"],
+    "missions": [
+      {
+        "id": "m1_kingpin_streets",
+        "title": "Missão 1: Dominando as Ruas",
+        "setup": {
+          "mastermind": "Kingpin",
+          "scheme": "Organize the Underworld",
+          "villains": ["Streets of New York"],
+          "henchmen": ["Maggia Goons"],
+          "heroRestrictions": "Apenas heróis do tipo Marvel Knights (ex: Daredevil, Blade)"
+        }
+      },
+      {
+        "id": "m2_mephisto_demons",
+        "title": "Missão 2: A Ameaça Demoníaca",
+        "setup": {
+          "mastermind": "Mephisto",
+          "scheme": "Transform Citizens into Demons",
+          "villains": ["Underworld"],
+          "henchmen": ["Phalanx"],
+          "heroRestrictions": "Nenhuma restrição"
+        }
+      }
+    ]
+  },
+  {
+    "id": "c_apocalypse_rise",
+    "title": "A Ascensão do Apocalipse",
+    "description": "Apocalipse convocou seus Cavaleiros e está orquestrando a aniquilação dos mais fracos. Apenas os X-Men podem detê-lo.",
+    "requiredExpansions": ["core", "dark_city"],
+    "missions": [
+      {
+        "id": "m1_sinister_clones",
+        "title": "Missão 1: A Experiência do Sr. Sinistro",
+        "setup": {
+          "mastermind": "Mr. Sinister",
+          "scheme": "Capture Baby Hope",
+          "villains": ["Marauders"],
+          "henchmen": ["Sentinel"],
+          "heroRestrictions": "Apenas X-Men e X-Force"
+        }
+      },
+      {
+        "id": "m2_apocalypse_horsemen",
+        "title": "Missão 2: Os Quatro Cavaleiros",
+        "setup": {
+          "mastermind": "Apocalypse",
+          "scheme": "X-Cutioner's Song",
+          "villains": ["Four Horsemen of Apocalypse", "MLF"],
+          "henchmen": ["Phalanx"],
+          "heroRestrictions": "Apenas X-Men e X-Force"
+        }
+      }
+    ]
+  }
+]

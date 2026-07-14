@@ -1,0 +1,18 @@
+{
+  "sidebar": {
+    "randomizer": "Randomizer",
+    "tracker": "Tracker de Partida",
+    "savedSetups": "Setups Salvos",
+    "campaigns": "Campanhas",
+    "history": "Histórico",
+    "stats": "Estatísticas & Conquistas",
+    "settings": "Configurações",
+    "releaseNotes": "Release Notes"
+  },
+  "settings": {
+    "title": "Configurações",
+    "subtitle": "Personalize sua experiência no Legendary HQ.",
+    "language": "Idioma",
+    "languageSelect": "Selecione o idioma da interface:"
+  }
+}

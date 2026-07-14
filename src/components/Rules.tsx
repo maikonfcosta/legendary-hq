@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react'
 import { BookOpen, ShieldAlert, Swords, Users, Target, FileText, Download, X } from 'lucide-react'
 
-const PDF_BASE_URL = import.meta.env.VITE_PDF_BASE_URL || 'https://legendary-hq-docs.s3.amazonaws.com/docs';
+const PDF_BASE_URL = import.meta.env.VITE_PDF_BASE_URL || '/docs';
 
 const pdfManuals = [
   { name: 'Core Set (Inglês)', file: 'legendary_a_marvel_regras_ingles_13288.pdf', type: 'core', id: 'core' },
   { name: 'Core Set 2nd Edition', file: 'Legendary_2ndEdition_Rulebook.pdf', type: 'core', id: 'core_2nd' },
+  { name: 'Campanha - Masterminds e Schemes', file: 'ML Campaign Schemes-Masterminds.pdf', type: 'campaign', id: 'core' },
+  { name: 'Campanha - Times', file: 'ML Campaign Teams.pdf', type: 'campaign', id: 'core' },
   { name: 'Ant-Man', file: 'Legendary_Rules-Ant-Man.pdf', type: 'expansion', id: 'ant_man' },
   { name: 'Ant-Man & Wasp', file: 'AntMan_Wasp_Rulesheet.pdf', type: 'expansion', id: 'ant_man_wasp' },
   { name: 'Annihilation', file: 'Annihilation_Rules.pdf', type: 'expansion', id: 'annihilation' },
@@ -349,6 +351,32 @@ export function Rules({ ownedExpansions }: RulesProps) {
                   >
                     <div style={{ background: 'rgba(255,255,255,0.05)', padding: '10px', borderRadius: '8px' }}>
                       <FileText size={24} color="var(--text-secondary)" />
+                    </div>
+                    <div style={{ overflow: 'hidden' }}>
+                      <h5 style={{ color: 'white', margin: 0, fontSize: '1rem', whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden' }}>{manual.name}</h5>
+                      <span style={{ color: 'var(--text-secondary)', fontSize: '0.85rem' }}>Visualizar PDF (Popup)</span>
+                    </div>
+                  </button>
+                ))
+              )}
+            </div>
+
+            <h4 style={{ color: 'var(--primary-color)', fontSize: '1.3rem', marginBottom: '1rem', borderBottom: '1px solid var(--surface-border)', paddingBottom: '0.5rem', marginTop: '2rem' }}>
+              Modo Campanha
+            </h4>
+            <div className="card-grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))' }}>
+              {pdfManuals.filter(m => m.type === 'campaign' && ownedExpansions.includes(m.id)).length === 0 ? (
+                <p style={{ color: 'var(--text-secondary)' }}>Nenhum manual de campanha disponível.</p>
+              ) : (
+                pdfManuals.filter(m => m.type === 'campaign' && ownedExpansions.includes(m.id)).map((manual, index) => (
+                  <button 
+                    key={index} 
+                    onClick={() => setSelectedPdfUrl(`${PDF_BASE_URL}/${manual.file}`)}
+                    className="glass-panel pdf-card" 
+                    style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '15px', textDecoration: 'none', transition: 'all 0.2s', textAlign: 'left', cursor: 'pointer', background: 'transparent', border: '1px solid var(--surface-border)' }}
+                  >
+                    <div style={{ background: 'rgba(255,255,255,0.05)', padding: '10px', borderRadius: '8px' }}>
+                      <FileText size={24} color="var(--primary-color)" />
                     </div>
                     <div style={{ overflow: 'hidden' }}>
                       <h5 style={{ color: 'white', margin: 0, fontSize: '1rem', whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden' }}>{manual.name}</h5>

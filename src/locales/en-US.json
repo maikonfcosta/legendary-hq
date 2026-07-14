@@ -1,0 +1,18 @@
+{
+  "sidebar": {
+    "randomizer": "Randomizer",
+    "tracker": "Game Tracker",
+    "savedSetups": "Saved Setups",
+    "campaigns": "Campaigns",
+    "history": "Match History",
+    "stats": "Stats & Achievements",
+    "settings": "Settings",
+    "releaseNotes": "Release Notes"
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Customize your experience in Legendary HQ.",
+    "language": "Language",
+    "languageSelect": "Select the interface language:"
+  }
+}

@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { X, Search } from 'lucide-react';
 import cardsDB from '../data/cards.json';
 import { getCardImage } from '../utils/imageLookup';

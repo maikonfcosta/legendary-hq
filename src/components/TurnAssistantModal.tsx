@@ -1,4 +1,3 @@
-import React from 'react';
 import { X, AlertTriangle, Play, FastForward } from 'lucide-react';
 
 interface TurnAssistantModalProps {

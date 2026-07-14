@@ -424,7 +424,7 @@ function App() {
             />
           )}
           {activeTab === 'collection' && (
-            <CollectionTab ownedExpansions={ownedExpansions} toggleExpansion={toggleExpansion} />
+            <CollectionTab ownedExpansions={ownedExpansions} toggleExpansion={toggleExpansion} setOwnedExpansions={setOwnedExpansions} />
           )}
           {activeTab === 'rules' && <Rules ownedExpansions={ownedExpansions} />}
           {activeTab === 'releases' && <ReleaseNotesTab />}

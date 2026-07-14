@@ -6,16 +6,34 @@ const imageDBTyped = imageDB as Record<string, string>;
 interface CollectionTabProps {
   ownedExpansions: string[];
   toggleExpansion: (id: string) => void;
+  setOwnedExpansions: (expansions: string[]) => void;
 }
 
-export function CollectionTab({ ownedExpansions, toggleExpansion }: CollectionTabProps) {
+export function CollectionTab({ ownedExpansions, toggleExpansion, setOwnedExpansions }: CollectionTabProps) {
+  const handleSelectAll = () => {
+    const allIds = cardsData.expansions.map(exp => exp.id);
+    setOwnedExpansions(allIds);
+  };
+
+  const handleDeselectAll = () => {
+    setOwnedExpansions([]);
+  };
+
   return (
     <section className="fade-in">
       <div className="page-header" style={{ marginBottom: '24px' }}>
-        <h2 className="page-title">Sua Coleção</h2>
-        <p className="page-subtitle">
-          Selecione as expansões que você possui para usá-las no gerador e nas estatísticas.
-        </p>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '16px' }}>
+          <div>
+            <h2 className="page-title">Sua Coleção</h2>
+            <p className="page-subtitle">
+              Selecione as expansões que você possui para usá-las no gerador e nas estatísticas.
+            </p>
+          </div>
+          <div style={{ display: 'flex', gap: '12px' }}>
+            <button onClick={handleSelectAll} className="btn btn-secondary" style={{ fontSize: '0.85rem', padding: '6px 12px' }}>Selecionar Tudo</button>
+            <button onClick={handleDeselectAll} className="btn btn-secondary" style={{ fontSize: '0.85rem', padding: '6px 12px', borderColor: 'rgba(239, 68, 68, 0.3)', color: '#ef4444' }}>Remover Tudo</button>
+          </div>
+        </div>
       </div>
       
       <div className="collection-grid">

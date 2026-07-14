@@ -71,7 +71,8 @@
         "description": "Derrote as ameaças do Core Set.",
         "setup": {
           "mastermind": "Dr. Doom",
-          "scheme": "Unleash the Power of the Cosmic Cube core"
+          "scheme": "Unleash the Power of the Cosmic Cube core",
+          "heroRestrictions": "Sem cartas da classe Covert"
         }
       },
       {
@@ -80,7 +81,8 @@
         "description": "Derrote as ameaças do Core Set.",
         "setup": {
           "mastermind": "Magneto",
-          "scheme": "The Legacy Virus"
+          "scheme": "The Legacy Virus",
+          "heroRestrictions": "Pelo menos 2 heróis do time Marvel Knights no recrutamento"
         }
       },
       {
@@ -89,7 +91,8 @@
         "description": "Derrote as ameaças do Core Set.",
         "setup": {
           "mastermind": "Dr. Doom",
-          "scheme": "Midtown Bank Robbery"
+          "scheme": "Midtown Bank Robbery",
+          "heroRestrictions": "Sem cartas da classe Covert"
         }
       },
       {
@@ -98,7 +101,8 @@
         "description": "Derrote as ameaças do Core Set.",
         "setup": {
           "mastermind": "Red Skull",
-          "scheme": "The Legacy Virus"
+          "scheme": "The Legacy Virus",
+          "heroRestrictions": "Heróis devem ter custo misto (ímpar e par)"
         }
       },
       {
@@ -107,7 +111,8 @@
         "description": "Derrote as ameaças do Core Set.",
         "setup": {
           "mastermind": "Magneto",
-          "scheme": "Secret Invasion of the Skrull Shapeshifters"
+          "scheme": "Secret Invasion of the Skrull Shapeshifters",
+          "heroRestrictions": "Escolha apenas heróis que compartilham o mesmo Time (Team)"
         }
       }
     ]
@@ -128,7 +133,8 @@
         "description": "Enfrente os tiranos do submundo.",
         "setup": {
           "mastermind": "Loki",
-          "scheme": "Core Scheme Twist"
+          "scheme": "Core Scheme Twist",
+          "heroRestrictions": "Apenas Heróis de custo 5 ou menos"
         }
       },
       {
@@ -137,7 +143,8 @@
         "description": "Enfrente os tiranos do submundo.",
         "setup": {
           "mastermind": "Mr. Sinister",
-          "scheme": "X-Cutioner's Song"
+          "scheme": "X-Cutioner's Song",
+          "heroRestrictions": "Pelo menos 2 heróis do time Marvel Knights no recrutamento"
         }
       },
       {
@@ -146,7 +153,8 @@
         "description": "Enfrente os tiranos do submundo.",
         "setup": {
           "mastermind": "Red Skull",
-          "scheme": "Portals to the Dark Dimension"
+          "scheme": "Portals to the Dark Dimension",
+          "heroRestrictions": "Apenas Heróis de custo 5 ou menos"
         }
       },
       {
@@ -155,7 +163,8 @@
         "description": "Enfrente os tiranos do submundo.",
         "setup": {
           "mastermind": "Magneto",
-          "scheme": "Save Humanity"
+          "scheme": "Save Humanity",
+          "heroRestrictions": "Pelo menos 2 heróis do time Marvel Knights no recrutamento"
         }
       },
       {
@@ -164,7 +173,8 @@
         "description": "Enfrente os tiranos do submundo.",
         "setup": {
           "mastermind": "Mr. Sinister",
-          "scheme": "Legacy Virus the"
+          "scheme": "Legacy Virus the",
+          "heroRestrictions": "Sem cartas da classe Covert"
         }
       }
     ]
@@ -186,7 +196,8 @@
         "description": "Salve o mundo das ameaças de nível Ômega.",
         "setup": {
           "mastermind": "Arcade",
-          "scheme": "Nuclear Armageddon"
+          "scheme": "Nuclear Armageddon",
+          "heroRestrictions": "Sem cartas da classe Covert"
         }
       },
       {
@@ -195,7 +206,8 @@
         "description": "Salve o mundo das ameaças de nível Ômega.",
         "setup": {
           "mastermind": "Deathbird",
-          "scheme": "Steal the Weaponized Plutonium"
+          "scheme": "Steal the Weaponized Plutonium",
+          "heroRestrictions": "Apenas 1 carta de custo 7+ permitida no baralho"
         }
       },
       {
@@ -204,7 +216,8 @@
         "description": "Salve o mundo das ameaças de nível Ômega.",
         "setup": {
           "mastermind": "Shadow King",
-          "scheme": "Replace Earth's Leaders with Killbots"
+          "scheme": "Replace Earth's Leaders with Killbots",
+          "heroRestrictions": "Escolha apenas heróis que compartilham o mesmo Time (Team)"
         }
       },
       {
@@ -213,7 +226,8 @@
         "description": "Salve o mundo das ameaças de nível Ômega.",
         "setup": {
           "mastermind": "Onslaught",
-          "scheme": "Massive Earthquake Generator"
+          "scheme": "Massive Earthquake Generator",
+          "heroRestrictions": "Escolha apenas heróis que compartilham o mesmo Time (Team)"
         }
       },
       {
@@ -222,7 +236,8 @@
         "description": "Salve o mundo das ameaças de nível Ômega.",
         "setup": {
           "mastermind": "Epic Shadow King",
-          "scheme": "Replace Earths Leaders with Killbots"
+          "scheme": "Replace Earths Leaders with Killbots",
+          "heroRestrictions": "Máximo de 2 classes diferentes (ex: apenas Covert e Tech)"
         }
       }
     ]
@@ -243,7 +258,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Maria Hill, Director of S.H.I.E.L.D.",
-          "scheme": "Legacy Virus the"
+          "scheme": "Legacy Virus the",
+          "heroRestrictions": "Apenas Heróis de custo 5 ou menos"
         }
       },
       {
@@ -252,7 +268,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Ragnarok",
-          "scheme": "Avengers vs. X-Men"
+          "scheme": "Avengers vs. X-Men",
+          "heroRestrictions": "Pelo menos 2 heróis do time Marvel Knights no recrutamento"
         }
       },
       {
@@ -261,7 +278,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Magneto",
-          "scheme": "Hairball"
+          "scheme": "Hairball",
+          "heroRestrictions": "Escolha apenas heróis que compartilham o mesmo Time (Team)"
         }
       },
       {
@@ -270,7 +288,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Red Skull",
-          "scheme": "Super Hero Civil War"
+          "scheme": "Super Hero Civil War",
+          "heroRestrictions": "Pelo menos 2 heróis do time Marvel Knights no recrutamento"
         }
       },
       {
@@ -279,7 +298,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Red Skull",
-          "scheme": "Nitro the Supervillian Threatens Crowds"
+          "scheme": "Nitro the Supervillian Threatens Crowds",
+          "heroRestrictions": "Apenas 1 carta de custo 7+ permitida no baralho"
         }
       }
     ]
@@ -301,7 +321,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Dr. Doom",
-          "scheme": "Tide of Destruction"
+          "scheme": "Tide of Destruction",
+          "heroRestrictions": "Escolha apenas heróis que compartilham o mesmo Time (Team)"
         }
       },
       {
@@ -310,7 +331,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Spider QueenTactic1",
-          "scheme": "Dark Apprentice"
+          "scheme": "Dark Apprentice",
+          "heroRestrictions": "Proibido usar heróis do time Avengers"
         }
       },
       {
@@ -319,7 +341,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Dr. Doom",
-          "scheme": "Dark Apprentice"
+          "scheme": "Dark Apprentice",
+          "heroRestrictions": "Apenas Heróis com classe de Ataque (Instinct, Strength)"
         }
       },
       {
@@ -328,7 +351,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Spider QueenTactic2",
-          "scheme": "The Legacy Virus"
+          "scheme": "The Legacy Virus",
+          "heroRestrictions": "Máximo de 2 classes diferentes (ex: apenas Covert e Tech)"
         }
       },
       {
@@ -337,7 +361,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Zombie Green Goblin",
-          "scheme": "Core Scheme Twist"
+          "scheme": "Core Scheme Twist",
+          "heroRestrictions": "Pelo menos 2 heróis do time Marvel Knights no recrutamento"
         }
       }
     ]
@@ -359,7 +384,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Mysterio",
-          "scheme": "Damage Control"
+          "scheme": "Damage Control",
+          "heroRestrictions": "Pelo menos 2 heróis do time Marvel Knights no recrutamento"
         }
       },
       {
@@ -368,7 +394,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Magneto",
-          "scheme": "Secret Invasion of the Skrull Shapeshifters"
+          "scheme": "Secret Invasion of the Skrull Shapeshifters",
+          "heroRestrictions": "Heróis devem ter custo misto (ímpar e par)"
         }
       },
       {
@@ -377,7 +404,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Magneto",
-          "scheme": "Portals to the Dark Dimension"
+          "scheme": "Portals to the Dark Dimension",
+          "heroRestrictions": "Apenas cartas com classes de Tech ou Ranged"
         }
       },
       {
@@ -386,7 +414,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Epic Adrian Toomes",
-          "scheme": "Secret Invasion of the Skrull Shapeshifters"
+          "scheme": "Secret Invasion of the Skrull Shapeshifters",
+          "heroRestrictions": "Sorteie os heróis aleatoriamente, sem escolher"
         }
       },
       {
@@ -395,7 +424,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Magneto",
-          "scheme": "Replace Earths Leaders with Killbots"
+          "scheme": "Replace Earths Leaders with Killbots",
+          "heroRestrictions": "Heróis devem ter custo misto (ímpar e par)"
         }
       }
     ]
@@ -417,7 +447,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Loki",
-          "scheme": "Annihilation Conquest"
+          "scheme": "Annihilation Conquest",
+          "heroRestrictions": "Proibido usar heróis do time Avengers"
         }
       },
       {
@@ -426,7 +457,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Supreme Intelligence of the Kree",
-          "scheme": "Annihilation Conquest"
+          "scheme": "Annihilation Conquest",
+          "heroRestrictions": "Apenas Heróis com classe de Ataque (Instinct, Strength)"
         }
       },
       {
@@ -435,7 +467,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Magus",
-          "scheme": "Replace Earths Leaders with Killbots"
+          "scheme": "Replace Earths Leaders with Killbots",
+          "heroRestrictions": "Sem cartas da classe Covert"
         }
       },
       {
@@ -444,7 +477,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Thanos",
-          "scheme": "Annihilation Conquest"
+          "scheme": "Annihilation Conquest",
+          "heroRestrictions": "Máximo de 2 classes diferentes (ex: apenas Covert e Tech)"
         }
       },
       {
@@ -453,7 +487,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Dr. Doom",
-          "scheme": "Turn the Soul of Adam Warlock"
+          "scheme": "Turn the Soul of Adam Warlock",
+          "heroRestrictions": "Escolha apenas heróis que compartilham o mesmo Time (Team)"
         }
       }
     ]
@@ -475,7 +510,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Professor X",
-          "scheme": "Crush HYDRA"
+          "scheme": "Crush HYDRA",
+          "heroRestrictions": "Sem cartas da classe Covert"
         }
       },
       {
@@ -484,7 +520,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Uru EnchantedIronManTactic1",
-          "scheme": "Secret Invasion of the Skrull Shapeshifters"
+          "scheme": "Secret Invasion of the Skrull Shapeshifters",
+          "heroRestrictions": "Sem cartas da classe Covert"
         }
       },
       {
@@ -493,7 +530,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Uru EnchantedIronManTactic2",
-          "scheme": "Unleash the Power of the Cosmic Cube core"
+          "scheme": "Unleash the Power of the Cosmic Cube core",
+          "heroRestrictions": "Sorteie os heróis aleatoriamente, sem escolher"
         }
       },
       {
@@ -502,7 +540,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Uru EnchantedIronManTactic4",
-          "scheme": "Replace Earths Leaders with Killbots"
+          "scheme": "Replace Earths Leaders with Killbots",
+          "heroRestrictions": "Escolha apenas heróis que compartilham o mesmo Time (Team)"
         }
       },
       {
@@ -511,7 +550,8 @@
         "description": "Venha preparado para este desafio temático.",
         "setup": {
           "mastermind": "Dr. Strange",
-          "scheme": "Replace Earth's Leaders with Killbots"
+          "scheme": "Replace Earth's Leaders with Killbots",
+          "heroRestrictions": "Apenas cartas com classes de Tech ou Ranged"
         }
       }
     ]

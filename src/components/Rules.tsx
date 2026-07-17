@@ -55,7 +55,47 @@ interface RulesProps {
 export function Rules({ ownedExpansions }: RulesProps) {
   const [activeRuleTab, setActiveRuleTab] = useState('overview');
   const [selectedPdfFile, setSelectedPdfFile] = useState<string | null>(null);
-  const [useLocalFallback, setUseLocalFallback] = useState(false);
+  const [resolvedPdfUrl, setResolvedPdfUrl] = useState<string | null>(null);
+  const [isLoadingPdf, setIsLoadingPdf] = useState(false);
+
+  useEffect(() => {
+    if (!selectedPdfFile) {
+      setResolvedPdfUrl(null);
+      return;
+    }
+
+    setIsLoadingPdf(true);
+    const manualObj = pdfManuals.find(m => m.file === selectedPdfFile);
+    const subfolder = manualObj?.type === 'campaign' ? 'campanha' : 'regras';
+    
+    // Check if the file is in 'superpowers' manually if needed, but for now we map core/expansion to 'regras'
+    const localPath = `/docs/${subfolder}/${selectedPdfFile}`;
+    const remotePath = `${PDF_BASE_URL}/${subfolder}/${selectedPdfFile}`;
+
+    // If PDF_BASE_URL is not set or it's the same as local, just use local
+    if (!import.meta.env.VITE_PDF_BASE_URL || import.meta.env.VITE_PDF_BASE_URL === '/docs') {
+      setResolvedPdfUrl(localPath);
+      setIsLoadingPdf(false);
+      return;
+    }
+
+    // Try fetching the remote URL headers to see if it's valid
+    fetch(remotePath, { method: 'HEAD' })
+      .then(res => {
+        if (res.ok) {
+          setResolvedPdfUrl(remotePath);
+        } else {
+          setResolvedPdfUrl(localPath); // fallback to local on 404 etc
+        }
+      })
+      .catch(() => {
+        setResolvedPdfUrl(localPath); // fallback to local on CORS or network error
+      })
+      .finally(() => {
+        setIsLoadingPdf(false);
+      });
+
+  }, [selectedPdfFile]);
 
   // Impede scroll no body quando o modal está aberto
   useEffect(() => {
@@ -320,7 +360,7 @@ export function Rules({ ownedExpansions }: RulesProps) {
                 pdfManuals.filter(m => m.type === 'core' && ownedExpansions.includes(m.id)).map((manual, index) => (
                   <button 
                     key={index} 
-                    onClick={() => { setSelectedPdfFile(manual.file); setUseLocalFallback(false); }}
+                    onClick={() => setSelectedPdfFile(manual.file)}
                     className="glass-panel" 
                     style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '15px', textDecoration: 'none', transition: 'all 0.2s', borderLeft: '4px solid var(--primary-color)', textAlign: 'left', cursor: 'pointer', background: 'transparent', border: '1px solid var(--surface-border)' }}
                   >
@@ -346,7 +386,7 @@ export function Rules({ ownedExpansions }: RulesProps) {
                 pdfManuals.filter(m => m.type === 'expansion' && ownedExpansions.includes(m.id)).map((manual, index) => (
                   <button 
                     key={index} 
-                    onClick={() => { setSelectedPdfFile(manual.file); setUseLocalFallback(false); }}
+                    onClick={() => setSelectedPdfFile(manual.file)}
                     className="glass-panel pdf-card" 
                     style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '15px', textDecoration: 'none', transition: 'all 0.2s', textAlign: 'left', cursor: 'pointer', background: 'transparent', border: '1px solid var(--surface-border)' }}
                   >
@@ -372,7 +412,7 @@ export function Rules({ ownedExpansions }: RulesProps) {
                 pdfManuals.filter(m => m.type === 'campaign' && ownedExpansions.includes(m.id)).map((manual, index) => (
                   <button 
                     key={index} 
-                    onClick={() => { setSelectedPdfFile(manual.file); setUseLocalFallback(false); }}
+                    onClick={() => setSelectedPdfFile(manual.file)}
                     className="glass-panel pdf-card" 
                     style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '15px', textDecoration: 'none', transition: 'all 0.2s', textAlign: 'left', cursor: 'pointer', background: 'transparent', border: '1px solid var(--surface-border)' }}
                   >
@@ -428,20 +468,6 @@ export function Rules({ ownedExpansions }: RulesProps) {
                 Visualizador de Manual
               </h3>
               <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-                {!useLocalFallback && import.meta.env.VITE_PDF_BASE_URL && (
-                  <button 
-                    onClick={() => setUseLocalFallback(true)}
-                    className="btn"
-                    style={{ 
-                      padding: '5px 15px', 
-                      fontSize: '0.85rem', 
-                      backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                      border: '1px solid rgba(255, 255, 255, 0.2)'
-                    }}
-                  >
-                    Não carregou? Usar arquivo local
-                  </button>
-                )}
                 <button 
                   onClick={() => setSelectedPdfFile(null)}
                   style={{
@@ -454,12 +480,16 @@ export function Rules({ ownedExpansions }: RulesProps) {
                 </button>
               </div>
             </div>
-            <div style={{ flex: 1, position: 'relative' }}>
-              <iframe 
-                src={useLocalFallback ? `/docs/${selectedPdfFile}` : `${PDF_BASE_URL}/${selectedPdfFile}`} 
-                style={{ width: '100%', height: '100%', border: 'none' }}
-                title="Manual PDF"
-              />
+            <div style={{ flex: 1, position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              {isLoadingPdf ? (
+                <div style={{ color: 'white' }}>Verificando conexão com o manual...</div>
+              ) : resolvedPdfUrl ? (
+                <iframe 
+                  src={resolvedPdfUrl} 
+                  style={{ width: '100%', height: '100%', border: 'none' }}
+                  title="Manual PDF"
+                />
+              ) : null}
             </div>
           </div>
         </div>

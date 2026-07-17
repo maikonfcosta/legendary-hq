@@ -27,6 +27,9 @@ export default defineConfig({
             type: 'image/jpeg'
           }
         ]
+      },
+      workbox: {
+        navigateFallbackDenylist: [/^\/docs/]
       }
     })
   ],

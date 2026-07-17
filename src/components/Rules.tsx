@@ -54,17 +54,18 @@ interface RulesProps {
 
 export function Rules({ ownedExpansions }: RulesProps) {
   const [activeRuleTab, setActiveRuleTab] = useState('overview');
-  const [selectedPdfUrl, setSelectedPdfUrl] = useState<string | null>(null);
+  const [selectedPdfFile, setSelectedPdfFile] = useState<string | null>(null);
+  const [useLocalFallback, setUseLocalFallback] = useState(false);
 
   // Impede scroll no body quando o modal está aberto
   useEffect(() => {
-    if (selectedPdfUrl) {
+    if (selectedPdfFile) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'unset';
     }
     return () => { document.body.style.overflow = 'unset'; }
-  }, [selectedPdfUrl]);
+  }, [selectedPdfFile]);
 
   return (
     <div className="rules-container animation-fade-in">
@@ -319,7 +320,7 @@ export function Rules({ ownedExpansions }: RulesProps) {
                 pdfManuals.filter(m => m.type === 'core' && ownedExpansions.includes(m.id)).map((manual, index) => (
                   <button 
                     key={index} 
-                    onClick={() => setSelectedPdfUrl(`${PDF_BASE_URL}/${manual.file}`)}
+                    onClick={() => { setSelectedPdfFile(manual.file); setUseLocalFallback(false); }}
                     className="glass-panel" 
                     style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '15px', textDecoration: 'none', transition: 'all 0.2s', borderLeft: '4px solid var(--primary-color)', textAlign: 'left', cursor: 'pointer', background: 'transparent', border: '1px solid var(--surface-border)' }}
                   >
@@ -345,7 +346,7 @@ export function Rules({ ownedExpansions }: RulesProps) {
                 pdfManuals.filter(m => m.type === 'expansion' && ownedExpansions.includes(m.id)).map((manual, index) => (
                   <button 
                     key={index} 
-                    onClick={() => setSelectedPdfUrl(`${PDF_BASE_URL}/${manual.file}`)}
+                    onClick={() => { setSelectedPdfFile(manual.file); setUseLocalFallback(false); }}
                     className="glass-panel pdf-card" 
                     style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '15px', textDecoration: 'none', transition: 'all 0.2s', textAlign: 'left', cursor: 'pointer', background: 'transparent', border: '1px solid var(--surface-border)' }}
                   >
@@ -371,7 +372,7 @@ export function Rules({ ownedExpansions }: RulesProps) {
                 pdfManuals.filter(m => m.type === 'campaign' && ownedExpansions.includes(m.id)).map((manual, index) => (
                   <button 
                     key={index} 
-                    onClick={() => setSelectedPdfUrl(`${PDF_BASE_URL}/${manual.file}`)}
+                    onClick={() => { setSelectedPdfFile(manual.file); setUseLocalFallback(false); }}
                     className="glass-panel pdf-card" 
                     style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '15px', textDecoration: 'none', transition: 'all 0.2s', textAlign: 'left', cursor: 'pointer', background: 'transparent', border: '1px solid var(--surface-border)' }}
                   >
@@ -390,7 +391,7 @@ export function Rules({ ownedExpansions }: RulesProps) {
         )}
 
       {/* Modal / Popup PDF */}
-      {selectedPdfUrl && (
+      {selectedPdfFile && (
         <div style={{
           position: 'fixed',
           top: 0, left: 0, right: 0, bottom: 0,
@@ -426,20 +427,36 @@ export function Rules({ ownedExpansions }: RulesProps) {
                 <BookOpen size={20} color="var(--primary-color)" />
                 Visualizador de Manual
               </h3>
-              <button 
-                onClick={() => setSelectedPdfUrl(null)}
-                style={{
-                  background: 'transparent', border: 'none', color: 'white',
-                  cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  padding: '5px', borderRadius: '4px'
-                }}
-              >
-                <X size={24} />
-              </button>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+                {!useLocalFallback && import.meta.env.VITE_PDF_BASE_URL && (
+                  <button 
+                    onClick={() => setUseLocalFallback(true)}
+                    className="btn"
+                    style={{ 
+                      padding: '5px 15px', 
+                      fontSize: '0.85rem', 
+                      backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                      border: '1px solid rgba(255, 255, 255, 0.2)'
+                    }}
+                  >
+                    Não carregou? Usar arquivo local
+                  </button>
+                )}
+                <button 
+                  onClick={() => setSelectedPdfFile(null)}
+                  style={{
+                    background: 'transparent', border: 'none', color: 'white',
+                    cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    padding: '5px', borderRadius: '4px'
+                  }}
+                >
+                  <X size={24} />
+                </button>
+              </div>
             </div>
             <div style={{ flex: 1, position: 'relative' }}>
               <iframe 
-                src={selectedPdfUrl} 
+                src={useLocalFallback ? `/docs/${selectedPdfFile}` : `${PDF_BASE_URL}/${selectedPdfFile}`} 
                 style={{ width: '100%', height: '100%', border: 'none' }}
                 title="Manual PDF"
               />

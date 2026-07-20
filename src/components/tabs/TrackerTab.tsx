@@ -57,17 +57,14 @@ export function TrackerTab({ recruit, setRecruit, attack, setAttack, masterStrik
         <div>
           <h2 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             Game Tracker
-            <button 
-              onClick={() => setShowAssistant(true)}
-              style={{ background: 'transparent', border: 'none', color: 'var(--primary-color)', cursor: 'pointer', padding: 0, display: 'flex' }}
-              title="Assistente de Turno"
-            >
-              <HelpCircle size={20} />
-            </button>
           </h2>
           <p style={{ color: 'var(--text-secondary)' }}>Acompanhe os pontos do turno e o andamento da partida.</p>
         </div>
-        <div style={{ display: 'flex', gap: '10px' }}>
+        <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+          <button className="btn" style={{ background: 'var(--surface-bg)', border: '1px solid var(--primary-color)', color: 'white' }} onClick={() => setShowAssistant(true)}>
+            <HelpCircle size={18} style={{ marginRight: '8px', verticalAlign: 'middle', color: 'var(--primary-color)' }} />
+            Assistente
+          </button>
           <button className="btn" style={{ background: isConnected ? '#10b981' : 'transparent', border: '1px solid var(--primary-color)' }} onClick={() => setShowMultiplayerModal(true)}>
             <Network size={18} style={{ marginRight: '8px', verticalAlign: 'middle' }} />
             {isConnected ? `Online (${connections.length})` : 'Multiplayer'}

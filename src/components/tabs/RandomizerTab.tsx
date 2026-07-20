@@ -11,9 +11,10 @@ interface RandomizerTabProps {
   handleDraw: () => void;
   handleFinishMatch: (victory: boolean) => void;
   handleSaveSetup?: (name: string) => void;
+  activeChallenge?: any;
 }
 
-export function RandomizerTab({ playerCount, setPlayerCount, result, handleDraw, handleFinishMatch, handleSaveSetup }: RandomizerTabProps) {
+export function RandomizerTab({ playerCount, setPlayerCount, result, handleDraw, handleFinishMatch, handleSaveSetup, activeChallenge }: RandomizerTabProps) {
   const [showSavePrompt, setShowSavePrompt] = useState(false);
   const [setupName, setSetupName] = useState('');
 
@@ -28,19 +29,20 @@ export function RandomizerTab({ playerCount, setPlayerCount, result, handleDraw,
     <div className="fade-in">
       <div className="page-header" style={{ alignItems: 'center', textAlign: 'center', display: 'flex', flexDirection: 'column', marginBottom: '32px' }}>
         <div>
-          <h2 className="page-title">Gerador de Setup</h2>
-          <p className="page-subtitle">Descubra sua próxima batalha contra as forças do mal.</p>
+          <h2 className="page-title">{activeChallenge ? activeChallenge.title : "Gerador de Setup"}</h2>
+          <p className="page-subtitle">{activeChallenge ? "Você está jogando o Desafio Semanal Global." : "Descubra sua próxima batalha contra as forças do mal."}</p>
         </div>
         <div style={{ display: 'flex', gap: '16px', alignItems: 'center', marginTop: '24px' }}>
           <select 
             value={playerCount} 
             onChange={(e) => setPlayerCount(Number(e.target.value))}
-            style={{ background: 'rgba(0,0,0,0.5)', color: 'white', border: '1px solid rgba(255,255,255,0.2)', padding: '10px 16px', borderRadius: '8px', outline: 'none', fontSize: '1rem' }}
+            disabled={!!activeChallenge}
+            style={{ background: 'rgba(0,0,0,0.5)', color: 'white', border: '1px solid rgba(255,255,255,0.2)', padding: '10px 16px', borderRadius: '8px', outline: 'none', fontSize: '1rem', opacity: activeChallenge ? 0.5 : 1 }}
           >
             {[1, 2, 3, 4, 5].map(n => <option key={n} value={n}>{n} {n === 1 ? 'Jogador' : 'Jogadores'}</option>)}
           </select>
-          <button onClick={handleDraw} className="btn btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
-            <Shuffle size={20} /> Gerar Missão Aleatória
+          <button onClick={handleDraw} disabled={!!activeChallenge} className={activeChallenge ? "btn btn-secondary" : "btn btn-primary"} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', opacity: activeChallenge ? 0.5 : 1 }}>
+            <Shuffle size={20} /> {activeChallenge ? "Setup Travado" : "Gerar Missão Aleatória"}
           </button>
         </div>
       </div>

@@ -3,6 +3,7 @@ import { doc, getDoc, setDoc, onSnapshot } from 'firebase/firestore';
 import { db } from '../services/firebase';
 import { useAuth } from '../contexts/AuthContext';
 import type { GameMatch } from '../types/history';
+import { calculateMatchXp } from '../utils/rankUtils';
 
 export function useGameHistory() {
   const { currentUser } = useAuth();
@@ -50,10 +51,13 @@ export function useGameHistory() {
   }, [currentUser]);
 
   const addMatch = async (match: Omit<GameMatch, 'id' | 'date'>) => {
+    const xp = calculateMatchXp(match.victory, match.playerCount);
+    
     const newMatch: GameMatch = {
       ...match,
       id: crypto.randomUUID(),
-      date: new Date().toISOString()
+      date: new Date().toISOString(),
+      xp
     };
     
     const newHistory = [newMatch, ...localHistory];

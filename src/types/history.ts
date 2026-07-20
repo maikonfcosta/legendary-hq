@@ -6,4 +6,5 @@ export interface GameMatch {
   victory: boolean;
   score?: number;
   playerCount: number;
+  xp?: number;
 }

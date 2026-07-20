@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Globe, Settings, Volume2, VolumeX, Palette } from 'lucide-react';
 import type { SetupResult } from './utils/randomizer';
 import { generateSetup } from './utils/randomizer';
-import { useLocalStorage } from './hooks/useLocalStorage';
 import { useSyncedCollection } from './hooks/useSyncedCollection';
 import { useAuth } from './contexts/AuthContext';
 import { useGameHistory } from './hooks/useGameHistory';
@@ -27,6 +26,10 @@ import { useSavedSetups } from './hooks/useSavedSetups';
 import { SavedSetupsTab } from './components/tabs/SavedSetupsTab';
 import { CampaignsTab } from './components/tabs/CampaignsTab';
 import { useCampaignProgress } from './hooks/useCampaignProgress';
+import { useMultiplayer } from './contexts/MultiplayerContext';
+import { ChallengesTab } from './components/tabs/ChallengesTab';
+import { submitChallengeLog } from './services/challenges';
+import type { ChallengeData } from './services/challenges';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -39,6 +42,7 @@ function App() {
   const [confirmPopup, setConfirmPopup] = useState<{ message: string, onConfirm: () => void } | null>(null);
   
   const [activeCampaignMission, setActiveCampaignMission] = useState<{campaignId: string, missionId: string} | null>(null);
+  const [activeChallenge, setActiveChallenge] = useState<ChallengeData | null>(null);
 
   const [ownedExpansions, setOwnedExpansions] = useSyncedCollection('lhq_ownedExpansions', ['core', 'core_2nd']);
   const { history, addMatch } = useGameHistory();
@@ -101,9 +105,10 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (activeTab !== 'randomizer' && activeTab !== 'tracker' && activeTab !== 'campaigns') {
+    if (activeTab !== 'randomizer' && activeTab !== 'tracker' && activeTab !== 'campaigns' && activeTab !== 'challenges') {
       setResult(null);
       setActiveCampaignMission(null);
+      setActiveChallenge(null);
     }
   }, [activeTab]);
 
@@ -119,22 +124,52 @@ function App() {
     localStorage.setItem('lhq_sfx', String(newVal));
   };
 
-  // Tracker State
-  const [recruit, setRecruit] = useLocalStorage('lhq_recruit', 0);
-  const [attack, setAttack] = useLocalStorage('lhq_attack', 0);
-  const [masterStrikes, setMasterStrikes] = useLocalStorage('lhq_masterStrikes', 0);
-  const [schemeTwists, setSchemeTwists] = useLocalStorage('lhq_schemeTwists', 0);
-  const [bystanders, setBystanders] = useLocalStorage('lhq_bystanders', 0);
+  const playSetupSfx = () => {
+    if (!sfxEnabled) return;
+    try {
+      const ctx = new (window.AudioContext || (window as any).webkitAudioContext)();
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      
+      // Um arpejo ascendente para simular um sorteio heroico
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(300, ctx.currentTime);
+      osc.frequency.exponentialRampToValueAtTime(800, ctx.currentTime + 0.3);
+      
+      gain.gain.setValueAtTime(0, ctx.currentTime);
+      gain.gain.linearRampToValueAtTime(0.1, ctx.currentTime + 0.1);
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.3);
+      
+      osc.start(ctx.currentTime);
+      osc.stop(ctx.currentTime + 0.3);
+    } catch { /* erro ignorado se audio block */ }
+  };
+
+  // Tracker State from Multiplayer Context
+  const { gameState, updateGameState, resetGameState } = useMultiplayer();
+
+  const recruit = gameState.recruit;
+  const setRecruit = (val: number) => updateGameState({ recruit: val });
+  
+  const attack = gameState.attack;
+  const setAttack = (val: number) => updateGameState({ attack: val });
+  
+  const masterStrikes = gameState.masterStrikes;
+  const setMasterStrikes = (val: number) => updateGameState({ masterStrikes: val });
+  
+  const schemeTwists = gameState.schemeTwists;
+  const setSchemeTwists = (val: number) => updateGameState({ schemeTwists: val });
+  
+  const bystanders = gameState.bystanders;
+  const setBystanders = (val: number) => updateGameState({ bystanders: val });
 
   const resetTracker = () => {
     setConfirmPopup({
       message: 'Deseja zerar os contadores e começar uma nova partida?',
       onConfirm: () => {
-        setRecruit(0);
-        setAttack(0);
-        setMasterStrikes(0);
-        setSchemeTwists(0);
-        setBystanders(0);
+        resetGameState();
         setConfirmPopup(null);
       }
     });
@@ -160,9 +195,23 @@ function App() {
       setActiveTab('history');
       setPopupMsg(`Partida salva no histórico com sucesso!`);
     }
+
+    if (activeChallenge) {
+      let xp = victory ? 30 : 10; 
+      await submitChallengeLog(activeChallenge.id, currentUser, {
+        mastermind: result.mastermind.name,
+        scheme: result.scheme.name,
+        victory,
+        playerCount,
+        xpGained: xp,
+        score: 0
+      });
+      setActiveChallenge(null);
+      setPopupMsg(`Desafio Global registrado! Você ganhou ${xp} XP.`);
+    }
     
     // Zera contadores
-    setRecruit(0); setAttack(0); setMasterStrikes(0); setSchemeTwists(0); setBystanders(0);
+    resetGameState();
     
     setResult(null); 
   };
@@ -178,6 +227,22 @@ function App() {
       const setup = generateSetup(playerCount, ownedExpansions);
       setResult(setup);
       setActiveCampaignMission(null);
+      
+      // Dinamic Theme
+      const classCount: Record<string, number> = {};
+      setup.heroes.forEach(h => {
+        h.classes.forEach(c => {
+          const cls = c.toLowerCase();
+          classCount[cls] = (classCount[cls] || 0) + 1;
+        });
+      });
+      
+      const topClass = Object.entries(classCount).sort((a,b) => b[1] - a[1])[0]?.[0];
+      if (topClass && ['covert', 'instinct', 'ranged', 'strength', 'tech'].includes(topClass)) {
+        changeTheme(topClass);
+      }
+
+      playSetupSfx();
     } catch (e: unknown) {
       setPopupMsg(e instanceof Error ? e.message : String(e));
     }
@@ -380,11 +445,11 @@ function App() {
             <SavedSetupsTab 
               setups={savedSetups}
               removeSetup={removeSetup}
-              onPlaySetup={(s) => {
+              onPlaySetup={(s: SetupResult) => {
                 setResult(s);
                 handleTabChange('tracker');
               }}
-              onRegisterMatch={async (s, victory, score, pCount) => {
+              onRegisterMatch={async (s: SetupResult, victory: boolean, score?: number, pCount?: number) => {
                 await addMatch({
                   mastermind: s.mastermind.name,
                   scheme: s.scheme.name,
@@ -397,10 +462,28 @@ function App() {
               }}
             />
           )}
+          {activeTab === 'challenges' && (
+            <ChallengesTab 
+              ownedExpansions={ownedExpansions}
+              onPlayChallenge={async (challenge) => {
+                try {
+                  const { generateChallengeSetup } = await import('./utils/randomizer');
+                  const setup = generateChallengeSetup(playerCount, ownedExpansions, challenge.seedData);
+                  setResult(setup);
+                  setActiveChallenge(challenge);
+                  handleTabChange('randomizer');
+                  playSetupSfx();
+                } catch (err: any) {
+                  setPopupMsg(err.message || 'Erro ao gerar desafio');
+                }
+              }}
+            />
+          )}
           {activeTab === 'randomizer' && (
             <RandomizerTab 
               playerCount={playerCount} setPlayerCount={setPlayerCount}
               result={result} setResult={setResult}
+              activeChallenge={activeChallenge}
               handleDraw={handleDraw}
               handleFinishMatch={handleFinishMatch}
               handleSaveSetup={(name) => {

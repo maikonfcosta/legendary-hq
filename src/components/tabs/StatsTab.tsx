@@ -1,6 +1,7 @@
-import { BarChart2, Swords, TrendingUp, TrendingDown, Award, ShieldAlert } from 'lucide-react';
+import { BarChart2, Swords, TrendingUp, TrendingDown, Award, ShieldAlert, Star } from 'lucide-react';
 import type { GameMatch } from '../../types/history';
 import achievementsData from '../../data/achievements.json';
+import { getTotalXp, getRankFromXp } from '../../utils/rankUtils';
 
 interface StatsTabProps {
   history: GameMatch[];
@@ -12,6 +13,9 @@ export function StatsTab({ history }: StatsTabProps) {
   const wins = history.filter(m => m.victory).length;
   const losses = totalGames - wins;
   const winRate = totalGames > 0 ? Math.round((wins / totalGames) * 100) : 0;
+  
+  const totalXp = getTotalXp(history);
+  const { currentRank, nextRank, progress } = getRankFromXp(totalXp);
 
   // Analisa mastermind mais jogado
   const mastermindCounts = history.reduce((acc, match) => {
@@ -46,6 +50,27 @@ export function StatsTab({ history }: StatsTabProps) {
         </div>
       ) : (
         <>
+          <div className="glass-panel fade-in" style={{ padding: '24px', marginBottom: '32px', borderLeft: `6px solid ${currentRank.color}` }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
+              <div style={{ background: 'rgba(0,0,0,0.3)', padding: '16px', borderRadius: '50%', display: 'flex' }}>
+                <Star size={40} color={currentRank.color} />
+              </div>
+              <div style={{ flex: 1, minWidth: '200px' }}>
+                <p style={{ margin: 0, textTransform: 'uppercase', fontSize: '0.85rem', color: 'var(--text-secondary)', fontWeight: 'bold' }}>Patente Atual</p>
+                <h3 style={{ margin: '4px 0 12px 0', fontSize: '1.8rem', color: currentRank.color }}>{currentRank.name}</h3>
+                
+                <div style={{ width: '100%', background: 'rgba(255,255,255,0.1)', height: '8px', borderRadius: '4px', overflow: 'hidden' }}>
+                  <div style={{ height: '100%', background: currentRank.color, width: `${progress}%`, transition: 'width 1s ease-out' }}></div>
+                </div>
+                
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '8px', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+                  <span>{totalXp} XP</span>
+                  <span>{nextRank ? `Próximo: ${nextRank.minXp} XP` : 'Rank Máximo'}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '24px', marginBottom: '32px' }}>
             <div className="glass-panel" style={{ padding: '24px', textAlign: 'center', borderTop: '4px solid #2b82d9' }}>
               <Swords size={32} color="#2b82d9" style={{ margin: '0 auto 12px' }} />

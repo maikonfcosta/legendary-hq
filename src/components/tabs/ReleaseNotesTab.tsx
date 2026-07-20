@@ -2,6 +2,25 @@ import { Tag, CheckCircle2, Star, Rocket } from 'lucide-react';
 
 const releases = [
   {
+    version: "1.7.0",
+    date: new Date().toLocaleDateString('pt-BR'),
+    title: "Tracker Premium UI/UX 🎨",
+    description: "Uma camada de polimento visual e interações responsivas para o módulo Tracker.",
+    highlights: [
+      {
+        icon: <Star size={18} style={{ color: '#fbc02d' }} />,
+        text: "Feedback Tátil: Os contadores de recursos agora possuem uma pequena animação de pulso (pop-scale) ao serem clicados, melhorando a responsividade."
+      },
+      {
+        icon: <Rocket size={18} style={{ color: '#10b981' }} />,
+        text: "Mostradores Imersivos: Botões translúcidos com glows coloridos (vermelho e amarelo) substituem a antiga UI genérica, dando uma cara de mostrador de nave."
+      }
+    ],
+    features: [
+      "Modo Alerta (Tensão Máxima): Se o nível de Master Strikes ou Scheme Twists chegar a 5, o respectivo painel do Tracker começa a pulsar em vermelho denotando perigo iminente."
+    ]
+  },
+  {
     version: "1.6.0",
     date: new Date().toLocaleDateString('pt-BR'),
     title: "Modo Campanha Épico & Usabilidade 🗺️",

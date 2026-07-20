@@ -159,8 +159,16 @@ export const generateCampaignSetup = (playerCount: number, ownedExpansions: stri
     ...getRandomItems(availableHenchmen, henchmenCountToDraw, requiredHenchmen)
   ];
 
-  // TODO: Implement hero constraints logic later if needed
-  const heroes = getRandomItems(availableHeroes, config.heroes);
+  // Implementação dos heróis obrigatórios para campanha
+  let requiredHeroes: Hero[] = missionSetup.heroes
+    ? missionSetup.heroes.map((name: string) => db.heroes.find(h => h.name === name)).filter(Boolean) as Hero[]
+    : [];
+    
+  const heroesCountToDraw = Math.max(0, config.heroes - requiredHeroes.length);
+  const heroes = [
+    ...requiredHeroes,
+    ...getRandomItems(availableHeroes, heroesCountToDraw, requiredHeroes)
+  ];
 
   return {
     mastermind,
@@ -171,3 +179,8 @@ export const generateCampaignSetup = (playerCount: number, ownedExpansions: stri
     bystanders: config.bystanders
   };
 };
+
+export const generateChallengeSetup = (playerCount: number, ownedExpansions: string[], seedData: any): SetupResult => {
+  return generateCampaignSetup(playerCount, ownedExpansions, seedData);
+};
+

@@ -1,4 +1,4 @@
-import { Home, Shuffle, Activity, BarChart2, Layers, BookOpen, ScrollText, Bookmark, Map } from 'lucide-react';
+import { Home, Shuffle, Activity, BarChart2, Layers, BookOpen, ScrollText, Bookmark, Map, Trophy } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 interface SidebarProps {
@@ -32,6 +32,9 @@ export function Sidebar({ activeTab, handleTabChange, isMobileMenuOpen }: Sideba
         </button>
         <button className={`nav-link ${activeTab === 'savedSetups' ? 'active' : ''}`} onClick={() => handleTabChange('savedSetups')}>
           <Bookmark size={20} /> {t('sidebar.savedSetups')}
+        </button>
+        <button className={`nav-link ${activeTab === 'challenges' ? 'active' : ''}`} onClick={() => handleTabChange('challenges')}>
+          <Trophy size={20} /> Desafios
         </button>
         <button className={`nav-link ${activeTab === 'history' ? 'active' : ''}`} onClick={() => handleTabChange('history')}>
           <ScrollText size={20} /> {t('sidebar.history')}

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { doc, getDoc, setDoc, onSnapshot } from 'firebase/firestore';
 import { db } from '../services/firebase';
 import { useAuth } from '../contexts/AuthContext';
@@ -16,8 +16,11 @@ export function useSyncedCollection(key: string, initialValue: string[]) {
     }
   });
 
+  const localStateRef = useRef(localState);
+
   // Atualiza LocalStorage sempre que o estado mudar
   useEffect(() => {
+    localStateRef.current = localState;
     window.localStorage.setItem(key, JSON.stringify(localState));
   }, [key, localState]);
 
@@ -32,7 +35,7 @@ export function useSyncedCollection(key: string, initialValue: string[]) {
         const snapshot = await getDoc(docRef);
         // Se a conta for nova na nuvem, grava o que tem no local nela
         if (!snapshot.exists()) {
-          await setDoc(docRef, { ownedExpansions: localState }, { merge: true });
+          await setDoc(docRef, { ownedExpansions: localStateRef.current }, { merge: true });
         }
       } catch (e) {
         console.error('Error fetching doc:', e);
@@ -56,7 +59,8 @@ export function useSyncedCollection(key: string, initialValue: string[]) {
 
   // Atualizador do Estado (Atualiza Local + Cloud)
   const setSyncedState = async (valueOrFn: string[] | ((prev: string[]) => string[])) => {
-    const newValue = typeof valueOrFn === 'function' ? valueOrFn(localState) : valueOrFn;
+    const newValue = typeof valueOrFn === 'function' ? valueOrFn(localStateRef.current) : valueOrFn;
+    localStateRef.current = newValue;
     
     // Atualização otimista na tela (sem loading)
     setLocalState(newValue);

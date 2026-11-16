@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { doc, getDoc, setDoc, onSnapshot } from 'firebase/firestore';
 import { db } from '../services/firebase';
 import { useAuth } from '../contexts/AuthContext';
@@ -17,7 +17,10 @@ export function useGameHistory() {
     }
   });
 
+  const localHistoryRef = useRef(localHistory);
+
   useEffect(() => {
+    localHistoryRef.current = localHistory;
     window.localStorage.setItem('lhq_history', JSON.stringify(localHistory));
   }, [localHistory]);
 
@@ -30,7 +33,7 @@ export function useGameHistory() {
       try {
         const snapshot = await getDoc(docRef);
         if (!snapshot.exists() || !snapshot.data().history) {
-          await setDoc(docRef, { history: localHistory }, { merge: true });
+          await setDoc(docRef, { history: localHistoryRef.current }, { merge: true });
         }
       } catch (e) {
         console.error('Error fetching history:', e);

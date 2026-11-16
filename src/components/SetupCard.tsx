@@ -1,8 +1,5 @@
-import { getCardImage } from '../utils/imageLookup';
-import imageDB from '../data/imageDB.json';
+import { getCardImage, getBystanderImage } from '../utils/imageLookup';
 import cardsDB from '../data/cards.json';
-
-const imageDBTyped = imageDB as Record<string, string>;
 
 interface SetupCardProps {
   type: 'mastermind' | 'scheme' | 'villain' | 'henchmen' | 'hero' | 'bystander';
@@ -14,12 +11,9 @@ interface SetupCardProps {
 }
 
 export function SetupCard({ type, title, name, subtitle, highlight = false, expansion }: SetupCardProps) {
-  let imgSrc;
-  if (type === 'bystander') {
-    imgSrc = imageDBTyped["Core Bystander.jpg"];
-  } else {
-    imgSrc = getCardImage(name, type, expansion);
-  }
+  const imgSrc = type === 'bystander'
+    ? getBystanderImage()
+    : getCardImage(name, type, expansion);
   
   const expansionObj = cardsDB.expansions.find((e: any) => e.id === expansion);
   const expansionName = expansionObj ? expansionObj.name : null;

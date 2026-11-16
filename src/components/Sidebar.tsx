@@ -12,6 +12,12 @@ export function Sidebar({ activeTab, handleTabChange, isMobileMenuOpen }: Sideba
   const { t } = useTranslation();
   const [isCollapsed, setIsCollapsed] = useState(false);
 
+  const handleLogoClick = () => {
+    if (typeof window !== 'undefined' && window.innerWidth > 768) {
+      setIsCollapsed(prev => !prev);
+    }
+  };
+
   return (
     <aside className={`sidebar ${isMobileMenuOpen ? 'open' : ''} ${isCollapsed ? 'collapsed' : ''}`}>
       <div className="sidebar-logo">
@@ -19,7 +25,7 @@ export function Sidebar({ activeTab, handleTabChange, isMobileMenuOpen }: Sideba
           src="/logo.jpg" 
           alt="Legendary HQ Logo" 
           className="logo-img desktop-only-click" 
-          onClick={() => setIsCollapsed(!isCollapsed)}
+          onClick={handleLogoClick}
           style={{ cursor: 'pointer' }}
           title={isCollapsed ? "Expandir Menu" : "Recolher Menu"}
         />

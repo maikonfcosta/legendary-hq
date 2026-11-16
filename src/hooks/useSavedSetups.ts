@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { doc, getDoc, setDoc, onSnapshot } from 'firebase/firestore';
 import { db } from '../services/firebase';
 import { useAuth } from '../contexts/AuthContext';
@@ -23,7 +23,10 @@ export function useSavedSetups() {
     }
   });
 
+  const localSetupsRef = useRef(localSetups);
+
   useEffect(() => {
+    localSetupsRef.current = localSetups;
     window.localStorage.setItem('lhq_saved_setups', JSON.stringify(localSetups));
   }, [localSetups]);
 
@@ -36,7 +39,7 @@ export function useSavedSetups() {
       try {
         const snapshot = await getDoc(docRef);
         if (!snapshot.exists() || !snapshot.data().savedSetups) {
-          await setDoc(docRef, { savedSetups: localSetups }, { merge: true });
+          await setDoc(docRef, { savedSetups: localSetupsRef.current }, { merge: true });
         }
       } catch (e) {
         console.error('Error fetching setups:', e);

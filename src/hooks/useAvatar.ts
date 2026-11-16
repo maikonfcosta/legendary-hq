@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { doc, getDoc, setDoc, onSnapshot } from 'firebase/firestore';
 import { db } from '../services/firebase';
 import { useAuth } from '../contexts/AuthContext';
@@ -14,7 +14,9 @@ export function useAvatar() {
     }
   });
 
+  const localStateRef = useRef(localState);
   useEffect(() => {
+    localStateRef.current = localState;
     if (localState) {
       window.localStorage.setItem('lhq_avatarId', localState);
     } else {
@@ -30,8 +32,8 @@ export function useAvatar() {
     const syncInitial = async () => {
       try {
         const snapshot = await getDoc(docRef);
-        if (!snapshot.exists() && localState) {
-          await setDoc(docRef, { avatarId: localState }, { merge: true });
+        if (!snapshot.exists() && localStateRef.current) {
+          await setDoc(docRef, { avatarId: localStateRef.current }, { merge: true });
         }
       } catch (e) {
         console.error('Error fetching doc:', e);

@@ -46,7 +46,7 @@ export function TrackerTab({ recruit, setRecruit, attack, setAttack, masterStrik
     try {
       await joinGame(joinId);
       setShowMultiplayerModal(false);
-    } catch (e) {
+    } catch {
       alert('Erro ao conectar: Verifique o ID.');
     }
   };

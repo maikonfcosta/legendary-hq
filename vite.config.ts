@@ -7,7 +7,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'prompt',
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg', 'logo.jpg'],
+      includeAssets: ['favicon.ico', 'favicon.svg', 'logo.jpg'],
       manifest: {
         name: 'Legendary HQ',
         short_name: 'Legendary HQ',
@@ -33,4 +33,7 @@ export default defineConfig({
       }
     })
   ],
+  build: {
+    chunkSizeWarningLimit: 1200
+  }
 })

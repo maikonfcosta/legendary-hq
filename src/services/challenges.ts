@@ -61,7 +61,7 @@ export async function submitChallengeLog(challengeId: string, currentUser: any, 
     throw new Error('Usuário precisa estar logado para salvar o desafio.');
   }
   try {
-    const logRef = doc(db, 'lhq_challenges_logs', `${challengeId}_${currentUser.uid}`);
+    const logRef = doc(db, 'leaderboards', challengeId, 'entries', currentUser.uid);
     await setDoc(logRef, {
       userId: currentUser.uid,
       userName: currentUser.displayName || 'Jogador Anônimo',
@@ -71,5 +71,6 @@ export async function submitChallengeLog(challengeId: string, currentUser: any, 
     }, { merge: true });
   } catch (error) {
     console.error("Erro ao salvar log do desafio", error);
+    throw error;
   }
 }

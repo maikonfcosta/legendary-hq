@@ -3,7 +3,7 @@ import { Tag, CheckCircle2, Star, Rocket } from 'lucide-react';
 const releases = [
   {
     version: "1.7.0",
-    date: new Date().toLocaleDateString('pt-BR'),
+    date: "16/07/2026",
     title: "Tracker Premium UI/UX 🎨",
     description: "Uma camada de polimento visual e interações responsivas para o módulo Tracker.",
     highlights: [
@@ -22,7 +22,7 @@ const releases = [
   },
   {
     version: "1.6.0",
-    date: new Date().toLocaleDateString('pt-BR'),
+    date: "15/07/2026",
     title: "Modo Campanha Épico & Usabilidade 🗺️",
     description: "Embarque em 16 Sagas oficiais ou crie suas próprias campanhas focadas nas expansões da sua coleção.",
     highlights: [

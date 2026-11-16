@@ -2,22 +2,33 @@ import imageDB from '../data/imageDB.json';
 import cardsDB from '../data/cards.json';
 
 const images = imageDB as Record<string, string>;
-const keys = Object.keys(images);
+const precomputedKeys = Object.keys(images).map(key => ({
+  key,
+  normalized: key.toLowerCase().replace(/[^a-z0-9]/g, '')
+}));
+
+const imageCache = new Map<string, string | undefined>();
+
+export const getBystanderImage = (): string | undefined => {
+  return images["Core Bystander.jpg"] || undefined;
+};
 
 export const getCardImage = (cardName: string, category: 'mastermind' | 'scheme' | 'hero' | 'villain' | 'henchmen', expansion?: string): string | undefined => {
+  const cacheKey = `${category}_${cardName}_${expansion || ''}`.toLowerCase();
+  if (imageCache.has(cacheKey)) {
+    return imageCache.get(cacheKey);
+  }
+
   const search = cardName.toLowerCase().replace(/[^a-z0-9]/g, '');
   
   // Encontrar todas as chaves que contêm o nome
-  const matches = keys.filter(key => {
-    const normalizedKey = key.toLowerCase().replace(/[^a-z0-9]/g, '');
-    return normalizedKey.includes(search);
-  });
+  const matches = precomputedKeys.filter(item => item.normalized.includes(search));
 
   if (matches.length > 0) {
     // Ordenar as correspondências para pegar a melhor imagem
-    matches.sort((a, b) => {
-      const normA = a.toLowerCase().replace(/[^a-z0-9]/g, '');
-      const normB = b.toLowerCase().replace(/[^a-z0-9]/g, '');
+    matches.sort((itemA, itemB) => {
+      const normA = itemA.normalized;
+      const normB = itemB.normalized;
       
       let scoreA = 0;
       let scoreB = 0;
@@ -55,12 +66,14 @@ export const getCardImage = (cardName: string, category: 'mastermind' | 'scheme'
       }
 
       // 3. Critério de desempate: a string mais curta
-      return a.length - b.length;
+      return itemA.key.length - itemB.key.length;
     });
 
     const bestMatch = matches[0];
-    if (bestMatch && images[bestMatch]) {
-      return images[bestMatch];
+    if (bestMatch && images[bestMatch.key]) {
+      const result = images[bestMatch.key];
+      imageCache.set(cacheKey, result);
+      return result;
     }
   }
 
@@ -69,10 +82,13 @@ export const getCardImage = (cardName: string, category: 'mastermind' | 'scheme'
     const expObj = cardsDB.expansions.find((e: any) => e.id === expansion);
     if (expObj && expObj.image) {
       if (images[expObj.image]) {
-        return images[expObj.image];
+        const result = images[expObj.image];
+        imageCache.set(cacheKey, result);
+        return result;
       }
     }
   }
 
+  imageCache.set(cacheKey, undefined);
   return undefined;
 };

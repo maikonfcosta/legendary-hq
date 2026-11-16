@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import { Menu, X, Globe, Settings, Volume2, VolumeX, Palette } from 'lucide-react';
 import type { SetupResult } from './utils/randomizer';
-import { generateSetup } from './utils/randomizer';
+import { generateSetup, generateChallengeSetup } from './utils/randomizer';
 import { useSyncedCollection } from './hooks/useSyncedCollection';
 import { useAuth } from './contexts/AuthContext';
 import { useGameHistory } from './hooks/useGameHistory';
@@ -10,26 +10,45 @@ import packageJson from '../package.json';
 
 // Components
 import { Sidebar } from './components/Sidebar';
-import { Rules } from './components/Rules';
 import { HomeTab } from './components/tabs/HomeTab';
-import { StatsTab } from './components/tabs/StatsTab';
-import { HistoryTab } from './components/tabs/HistoryTab';
-import { CollectionTab } from './components/tabs/CollectionTab';
 import { RandomizerTab } from './components/tabs/RandomizerTab';
 import { TrackerTab } from './components/tabs/TrackerTab';
-import { ReleaseNotesTab } from './components/tabs/ReleaseNotesTab';
 import { ReloadPrompt } from './components/ReloadPrompt';
 import { useAvatar } from './hooks/useAvatar';
 import { AvatarPickerModal } from './components/AvatarPickerModal';
 import { getCardImage } from './utils/imageLookup';
 import { useSavedSetups } from './hooks/useSavedSetups';
-import { SavedSetupsTab } from './components/tabs/SavedSetupsTab';
-import { CampaignsTab } from './components/tabs/CampaignsTab';
 import { useCampaignProgress } from './hooks/useCampaignProgress';
 import { useMultiplayer } from './contexts/MultiplayerContext';
-import { ChallengesTab } from './components/tabs/ChallengesTab';
 import { submitChallengeLog } from './services/challenges';
 import type { ChallengeData } from './services/challenges';
+
+// Lazy-loaded secondary tabs
+const Rules = lazy(() => import('./components/Rules').then(m => ({ default: m.Rules })));
+const StatsTab = lazy(() => import('./components/tabs/StatsTab').then(m => ({ default: m.StatsTab })));
+const HistoryTab = lazy(() => import('./components/tabs/HistoryTab').then(m => ({ default: m.HistoryTab })));
+const CollectionTab = lazy(() => import('./components/tabs/CollectionTab').then(m => ({ default: m.CollectionTab })));
+const ReleaseNotesTab = lazy(() => import('./components/tabs/ReleaseNotesTab').then(m => ({ default: m.ReleaseNotesTab })));
+const SavedSetupsTab = lazy(() => import('./components/tabs/SavedSetupsTab').then(m => ({ default: m.SavedSetupsTab })));
+const CampaignsTab = lazy(() => import('./components/tabs/CampaignsTab').then(m => ({ default: m.CampaignsTab })));
+const ChallengesTab = lazy(() => import('./components/tabs/ChallengesTab').then(m => ({ default: m.ChallengesTab })));
+
+let sharedAudioCtx: AudioContext | null = null;
+const getAudioContext = (): AudioContext | null => {
+  try {
+    const AudioCtx = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
+    if (!AudioCtx) return null;
+    if (!sharedAudioCtx || sharedAudioCtx.state === 'closed') {
+      sharedAudioCtx = new AudioCtx();
+    }
+    if (sharedAudioCtx.state === 'suspended') {
+      void sharedAudioCtx.resume();
+    }
+    return sharedAudioCtx;
+  } catch {
+    return null;
+  }
+};
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -75,7 +94,8 @@ function App() {
       const target = (e.target as HTMLElement).closest('button, a, .home-card');
       if (target) {
         try {
-          const ctx = new (window.AudioContext || (window as any).webkitAudioContext)();
+          const ctx = getAudioContext();
+          if (!ctx) return;
           const osc = ctx.createOscillator();
           const gain = ctx.createGain();
           osc.connect(gain);
@@ -104,14 +124,6 @@ function App() {
     return () => document.removeEventListener('click', clickHandler);
   }, []);
 
-  useEffect(() => {
-    if (activeTab !== 'randomizer' && activeTab !== 'tracker' && activeTab !== 'campaigns' && activeTab !== 'challenges') {
-      setResult(null);
-      setActiveCampaignMission(null);
-      setActiveChallenge(null);
-    }
-  }, [activeTab]);
-
   const changeTheme = (newTheme: string) => {
     setTheme(newTheme);
     document.body.setAttribute('data-theme', newTheme);
@@ -127,7 +139,8 @@ function App() {
   const playSetupSfx = () => {
     if (!sfxEnabled) return;
     try {
-      const ctx = new (window.AudioContext || (window as any).webkitAudioContext)();
+      const ctx = getAudioContext();
+      if (!ctx) return;
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();
       osc.connect(gain);
@@ -197,17 +210,26 @@ function App() {
     }
 
     if (activeChallenge) {
-      let xp = victory ? 30 : 10; 
-      await submitChallengeLog(activeChallenge.id, currentUser, {
-        mastermind: result.mastermind.name,
-        scheme: result.scheme.name,
-        victory,
-        playerCount,
-        xpGained: xp,
-        score: 0
-      });
+      const xp = victory ? 30 : 10;
+      if (currentUser && currentUser.uid) {
+        try {
+          await submitChallengeLog(activeChallenge.id, currentUser, {
+            mastermind: result.mastermind.name,
+            scheme: result.scheme.name,
+            victory,
+            playerCount,
+            xpGained: xp,
+            score: 0
+          });
+          setPopupMsg(`Desafio Global registrado! Você ganhou ${xp} XP.`);
+        } catch (err) {
+          console.error('Falha ao enviar log do desafio:', err);
+          setPopupMsg('Partida salva no histórico local.');
+        }
+      } else {
+        setPopupMsg(`Desafio finalizado (${xp} XP)! Conecte sua conta Google para figurar no ranking global.`);
+      }
       setActiveChallenge(null);
-      setPopupMsg(`Desafio Global registrado! Você ganhou ${xp} XP.`);
     }
     
     // Zera contadores
@@ -409,108 +431,109 @@ function App() {
 
         {/* Main Content Area */}
         <main className="main-content">
-          {activeTab === 'home' && <HomeTab onNavigate={handleTabChange} />}
-          {activeTab === 'stats' && (
-            <StatsTab history={history} />
-          )}
-          {activeTab === 'history' && (
-            <HistoryTab history={history} addMatch={addMatch} ownedExpansions={ownedExpansions} />
-          )}
-          {activeTab === 'campaigns' && (
-            <CampaignsTab 
-              ownedExpansions={ownedExpansions}
-              onPlaySetup={(s, cId, mId) => {
-                setResult(s);
-                setActiveCampaignMission({ campaignId: cId, missionId: mId });
-                handleTabChange('tracker');
-              }}
-              onRegisterMatch={async (s, v, sc, pCount, cId, mId) => {
-                await addMatch({
-                  mastermind: s.mastermind.name,
-                  scheme: s.scheme.name,
-                  victory: v,
-                  playerCount: pCount || 2,
-                  score: sc || 0
-                });
-                if (v) {
-                  await completeMission(cId, mId);
-                  setPopupMsg('Partida registrada com sucesso! Missão da campanha concluída.');
-                } else {
-                  setPopupMsg('Partida registrada no histórico.');
-                }
-              }}
-            />
-          )}
-          {activeTab === 'savedSetups' && (
-            <SavedSetupsTab 
-              setups={savedSetups}
-              removeSetup={removeSetup}
-              onPlaySetup={(s: SetupResult) => {
-                setResult(s);
-                handleTabChange('tracker');
-              }}
-              onRegisterMatch={async (s: SetupResult, victory: boolean, score?: number, pCount?: number) => {
-                await addMatch({
-                  mastermind: s.mastermind.name,
-                  scheme: s.scheme.name,
-                  victory,
-                  playerCount: pCount || 2,
-                  score: score || 0
-                });
-                setPopupMsg('Partida registrada no histórico com sucesso!');
-                handleTabChange('history');
-              }}
-            />
-          )}
-          {activeTab === 'challenges' && (
-            <ChallengesTab 
-              ownedExpansions={ownedExpansions}
-              onPlayChallenge={async (challenge) => {
-                try {
-                  const { generateChallengeSetup } = await import('./utils/randomizer');
-                  const setup = generateChallengeSetup(playerCount, ownedExpansions, challenge.seedData);
-                  setResult(setup);
-                  setActiveChallenge(challenge);
-                  handleTabChange('randomizer');
-                  playSetupSfx();
-                } catch (err: any) {
-                  setPopupMsg(err.message || 'Erro ao gerar desafio');
-                }
-              }}
-            />
-          )}
-          {activeTab === 'randomizer' && (
-            <RandomizerTab 
-              playerCount={playerCount} setPlayerCount={setPlayerCount}
-              result={result} setResult={setResult}
-              activeChallenge={activeChallenge}
-              handleDraw={handleDraw}
-              handleFinishMatch={handleFinishMatch}
-              handleSaveSetup={(name) => {
-                if (result) {
-                  addSetup(name, result);
-                  setPopupMsg('Setup salvo com sucesso na sua conta!');
-                }
-              }}
-            />
-          )}
-          {activeTab === 'tracker' && (
-            <TrackerTab 
-              recruit={recruit} setRecruit={setRecruit}
-              attack={attack} setAttack={setAttack}
-              masterStrikes={masterStrikes} setMasterStrikes={setMasterStrikes}
-              schemeTwists={schemeTwists} setSchemeTwists={setSchemeTwists}
-              bystanders={bystanders} setBystanders={setBystanders}
-              resetTracker={resetTracker}
-              currentSetup={result}
-              onFinishMatch={handleFinishMatch}
-            />
-          )}
-          {activeTab === 'collection' && (
-            <CollectionTab ownedExpansions={ownedExpansions} toggleExpansion={toggleExpansion} setOwnedExpansions={setOwnedExpansions} />
-          )}
-          {activeTab === 'rules' && <Rules ownedExpansions={ownedExpansions} />}
-          {activeTab === 'releases' && <ReleaseNotesTab />}
+          <Suspense fallback={<div className="fade-in" style={{ textAlign: 'center', padding: '60px', color: 'var(--text-secondary)' }}>Carregando...</div>}>
+            {activeTab === 'home' && <HomeTab onNavigate={handleTabChange} />}
+            {activeTab === 'stats' && (
+              <StatsTab history={history} />
+            )}
+            {activeTab === 'history' && (
+              <HistoryTab history={history} addMatch={addMatch} ownedExpansions={ownedExpansions} />
+            )}
+            {activeTab === 'campaigns' && (
+              <CampaignsTab 
+                ownedExpansions={ownedExpansions}
+                onPlaySetup={(s, cId, mId) => {
+                  setResult(s);
+                  setActiveCampaignMission({ campaignId: cId, missionId: mId });
+                  handleTabChange('tracker');
+                }}
+                onRegisterMatch={async (s, v, sc, pCount, cId, mId) => {
+                  await addMatch({
+                    mastermind: s.mastermind.name,
+                    scheme: s.scheme.name,
+                    victory: v,
+                    playerCount: pCount || 2,
+                    score: sc || 0
+                  });
+                  if (v) {
+                    await completeMission(cId, mId);
+                    setPopupMsg('Partida registrada com sucesso! Missão da campanha concluída.');
+                  } else {
+                    setPopupMsg('Partida registrada no histórico.');
+                  }
+                }}
+              />
+            )}
+            {activeTab === 'savedSetups' && (
+              <SavedSetupsTab 
+                setups={savedSetups}
+                removeSetup={removeSetup}
+                onPlaySetup={(s: SetupResult) => {
+                  setResult(s);
+                  handleTabChange('tracker');
+                }}
+                onRegisterMatch={async (s: SetupResult, victory: boolean, score?: number, pCount?: number) => {
+                  await addMatch({
+                    mastermind: s.mastermind.name,
+                    scheme: s.scheme.name,
+                    victory,
+                    playerCount: pCount || 2,
+                    score: score || 0
+                  });
+                  setPopupMsg('Partida registrada no histórico com sucesso!');
+                  handleTabChange('history');
+                }}
+              />
+            )}
+            {activeTab === 'challenges' && (
+              <ChallengesTab 
+                ownedExpansions={ownedExpansions}
+                onPlayChallenge={(challenge) => {
+                  try {
+                    const setup = generateChallengeSetup(playerCount, ownedExpansions, challenge.seedData);
+                    setResult(setup);
+                    setActiveChallenge(challenge);
+                    handleTabChange('randomizer');
+                    playSetupSfx();
+                  } catch (err: unknown) {
+                    setPopupMsg(err instanceof Error ? err.message : 'Erro ao gerar desafio');
+                  }
+                }}
+              />
+            )}
+            {activeTab === 'randomizer' && (
+              <RandomizerTab 
+                playerCount={playerCount} setPlayerCount={setPlayerCount}
+                result={result} setResult={setResult}
+                activeChallenge={activeChallenge}
+                handleDraw={handleDraw}
+                handleFinishMatch={handleFinishMatch}
+                handleSaveSetup={(name) => {
+                  if (result) {
+                    addSetup(name, result);
+                    setPopupMsg('Setup salvo com sucesso na sua conta!');
+                  }
+                }}
+              />
+            )}
+            {activeTab === 'tracker' && (
+              <TrackerTab 
+                recruit={recruit} setRecruit={setRecruit}
+                attack={attack} setAttack={setAttack}
+                masterStrikes={masterStrikes} setMasterStrikes={setMasterStrikes}
+                schemeTwists={schemeTwists} setSchemeTwists={setSchemeTwists}
+                bystanders={bystanders} setBystanders={setBystanders}
+                resetTracker={resetTracker}
+                currentSetup={result}
+                onFinishMatch={handleFinishMatch}
+              />
+            )}
+            {activeTab === 'collection' && (
+              <CollectionTab ownedExpansions={ownedExpansions} toggleExpansion={toggleExpansion} setOwnedExpansions={setOwnedExpansions} />
+            )}
+            {activeTab === 'rules' && <Rules ownedExpansions={ownedExpansions} />}
+            {activeTab === 'releases' && <ReleaseNotesTab />}
+          </Suspense>
         </main>
 
         {/* Footer / Créditos */}

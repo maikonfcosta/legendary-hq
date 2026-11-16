@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Map, Lock, Play, CheckCircle2 } from 'lucide-react';
+import { Map, Lock, Play, CheckCircle2, AlertTriangle } from 'lucide-react';
 import campaignsData from '../../data/campaigns.json';
+import cardsData from '../../data/cards.json';
 import { useCampaignProgress } from '../../hooks/useCampaignProgress';
 import { generateCampaignSetup } from '../../utils/randomizer';
 import { SetupDecklistModal } from '../SetupDecklistModal';
@@ -27,6 +28,33 @@ export function CampaignsTab({ onPlaySetup, onRegisterMatch, ownedExpansions }: 
     campaignId: string;
     missionId: string;
   } | null>(null);
+
+  const checkMissionRequirements = (missionSetup: any): { canPlay: boolean; missing: string[] } => {
+    const missing = new Set<string>();
+    const hasCore = ownedExpansions.includes('core') || ownedExpansions.includes('core_2nd');
+    
+    const checkItem = (name: string, list: any[]) => {
+      if (!name) return;
+      const item = list.find((x: any) => x.name === name);
+      if (item) {
+        const isCore = item.expansion === 'core' || item.expansion === 'core_2nd';
+        if (isCore) {
+          if (!hasCore) missing.add('Core Set');
+        } else if (!ownedExpansions.includes(item.expansion)) {
+          const expName = item.expansion.replace(/_/g, ' ').replace(/\b\w/g, (l: string) => l.toUpperCase());
+          missing.add(expName);
+        }
+      }
+    };
+
+    if (missionSetup.mastermind) checkItem(missionSetup.mastermind, (cardsData as any).masterminds);
+    if (missionSetup.scheme) checkItem(missionSetup.scheme, (cardsData as any).schemes);
+    
+    return {
+      canPlay: missing.size === 0,
+      missing: Array.from(missing)
+    };
+  };
 
   const handlePlayMission = (mission: any) => {
     try {
@@ -76,6 +104,7 @@ export function CampaignsTab({ onPlaySetup, onRegisterMatch, ownedExpansions }: 
             const isCompleted = completedMissions.includes(mission.id);
             // First mission is always unlocked, others unlock if previous is completed
             const isUnlocked = index === 0 || completedMissions.includes(selectedCampaign.missions[index - 1].id);
+            const reqs = checkMissionRequirements(mission.setup);
 
             return (
               <div key={mission.id} className="glass-panel" style={{ padding: '24px', opacity: isUnlocked ? 1 : 0.6, borderLeft: isCompleted ? '4px solid #10b981' : isUnlocked ? '4px solid #3b82f6' : '4px solid #475569' }}>
@@ -99,6 +128,11 @@ export function CampaignsTab({ onPlaySetup, onRegisterMatch, ownedExpansions }: 
                             <strong style={{ color: '#3b82f6' }}>Restrição de Heróis:</strong> {mission.setup.heroRestrictions}
                           </div>
                         )}
+                        {!reqs.canPlay && (
+                          <div style={{ width: '100%', color: '#f87171', fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '6px', marginTop: '4px' }}>
+                            <AlertTriangle size={14} /> Requer expansão: {reqs.missing.join(', ')} (sorteio usará substitutos da sua coleção)
+                          </div>
+                        )}
                       </div>
                     )}
                   </div>
@@ -106,9 +140,11 @@ export function CampaignsTab({ onPlaySetup, onRegisterMatch, ownedExpansions }: 
                   {isUnlocked && !isCompleted && (
                     <button 
                       onClick={() => handlePlayMission(mission)} 
-                      className="btn btn-primary"
+                      className={`btn ${reqs.canPlay ? 'btn-primary' : 'btn-secondary'}`}
+                      style={{ opacity: reqs.canPlay ? 1 : 0.85 }}
+                      title={reqs.canPlay ? 'Jogar Missão' : 'Jogar com substitutos da coleção'}
                     >
-                      Jogar
+                      {reqs.canPlay ? 'Jogar' : 'Jogar (Adaptação)'}
                     </button>
                   )}
                   {isCompleted && (
